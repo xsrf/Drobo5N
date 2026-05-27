@@ -1,0 +1,1413 @@
+-------------------- CRASH LOG FLASH FILE START --------------------
+Log Generated: WED DEC 09 16:31:51 2015
+
+Host Name: bootHost 
+Target Name: vxTarget 
+User: target 
+Ethernet port #1 initialized
+neta1 Interface Loaded
+neta1 Interface Started
+neta1 Interface - Link Up, 1000 Full
+Attempting to register custom syscalls group
+ipAttached to interface neta1 ip=
+Can't Set IP address to <neta1> interface..bootline does not have ethernet ipAddress
+
+Adding 10495 symbols for standalone.
+wdbConfig: error configuring WDB communication interface
+ 
+
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]Detected Marvell USB. Setting MV_USB_MODE_REG = 0x
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+      ]]]]]]]]]]]  ]]]]     ]]]]]]]]]]       ]]              ]]]]         (R)
+ ]     ]]]]]]]]]  ]]]]]]     ]]]]]]]]       ]]               ]]]]            
+ ]]     ]]]]]]]  ]]]]]]]]     ]]]]]] ]     ]]                ]]]]            
+ ]]]     ]]]]] ]    ]]]  ]     ]]]] ]]]   ]]]]]]]]]  ]]]] ]] ]]]]  ]]   ]]]]]
+ ]]]]     ]]]  ]]    ]  ]]]     ]] ]]]]] ]]]]]]   ]] ]]]]]]] ]]]] ]]   ]]]]  
+ ]]]]]     ]  ]]]]     ]]]]]      ]]]]]]]] ]]]]   ]] ]]]]    ]]]]]]]    ]]]] 
+ ]]]]]]      ]]]]]     ]]]]]]    ]  ]]]]]  ]]]]   ]] ]]]]    ]]]]]]]]    ]]]]
+ ]]]]]]]    ]]]]]  ]    ]]]]]]  ]    ]]]   ]]]]   ]] ]]]]    ]]]] ]]]]    ]]]]
+ ]]]]]]]]  ]]]]]  ]]]    ]]]]]]]      ]     ]]]]]]]  ]]]]    ]]]]  ]]]] ]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]       Development System
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]       VxWorks 6.8
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]       KERNEL: WIND version 2.13
+ ]]]]]]]]]]]]]]]]]]]]]]]]]       Copyright Wind River Systems, Inc., 1984-2012
+
+ CPU: Marvell Sheeva 88SV584x, Board= Shockwave 1.0 ARMARCHV7 LE core.  Processor #0.
+ Memory Size: 0x1fe70000.  BSP version 2.3.1.
+ Created: Nov 16 2015, 16:07:53
+ ED&R Policy Mode: Deployed
+ WDB Comm Type: WDB_COMM_END
+ WDB: Agent configuration failed.
+[tRootTask] 1970-01-01 00:00:00: kCmdInit: Initialising kernel command line 'k' Command handler
+[tRootTask] 1970-01-01 00:00:00: diskCmdRegister: Installing k disk Commands
+
+3
+ESA Register Driver Found Board version [2, stuffing option 1
+Initialising boot SEEPROM handler
+Checking boot register values in serialEEPROM ...
+vxWorksRewriting boot register data to serialEEPROM...
+ *reg addr: 0xD0040000
+]# reg addr: 0xD0040000
+reg addr: 0xD0040000
+reg addr: 0xD0040000
+reg data: 0x55704452
+reg data: 0x55704452
+reg data: 0x55704452
+reg data: 0x55704452
+reg addr: 0xD0040008
+reg addr: 0xD0040008
+reg addr: 0xD0040008
+reg addr: 0xD0040008
+reg data: 0x01000508
+reg data: 0x01000508
+reg data: 0x01000508
+reg data: 0x01000508
+reg addr: 0xD0040010
+0x48fd4c8 (BusM A): INFO: usb2Msc - Storage driver got a device attach notification.
+reg addr: 0xD0040010
+reg addr: 0xD0040010
+reg addr: 0xD0040010
+0x48fd4c8 (BusM A): INFO: usb2Msc - Mounting device (PDT 0x0 PQ 0x0 RMB 0x0) VID =          : PID = USB DISK MODULE  : REV = PMAP
+0x48fd4c8 (BusM A): INFO: usb2Msc - Device 0x2 LUN 0 of 1005568 (KB) will be mounted with base name /bd0
+reg data: 0xD0000004
+reg data: 0xD0000004
+reg data: 0xD0000004
+reg data: 0xD0000004
+reg addr: 0xD0040014
+reg addr: 0xD0040014
+reg addr: 0xD0040014
+reg addr: 0xD0040014
+reg data: 0x00000000
+reg data: 0x00000000
+/bd0/  - disk check in progress ...
+/bd0/vxWorks/bd0/LxImage /bd0/ENVY.bin                                                    dosChkLib : CLOCK_REALTIME is being reset to WED DEC 09 15:55:08 2015
+Value obtained from file system volume descriptor pointer: 0x433cce8
+The old setting was THU JAN 01 00:00:01 1970
+Accepted system dates are greater than THU DEC 27 00:00:00 1990
+reg data: 0x00000000
+reg data: 0x00000000
+reg addr: 0xD0041804
+reg addr: 0xD0041804
+reg addr: 0xD0041804
+reg addr: 0xD0041804
+reg data: 0x00000001
+reg data: 0x00000001
+reg data: 0x00000001
+reg data: 0x00000001
+reg addr: 0xD0040018
+/bd0/  - Volume is OK 
+
+          total # of clusters:  62,580
+         # of free clusters:  61,357
+          # of bad clusters:  0
+           total free space:  981,712 Kb
+reg addr: 0xD0040018
+reg addr: 0xD0040018
+reg addr: 0xD0040018
+reg data: 0x00000004
+reg data: 0x00000004
+reg data: 0x00000004
+reg data: 0x00000004
+reg addr: 0xD004001C
+reg addr: 0xD004001C
+    max contiguous free space:  1,005,256,704 bytes
+                 # of files:  3
+               # of folders:  0
+       total bytes in files:  19,508 Kb
+           # of lost chains:  0
+   total bytes in lost chains:  0
+reg addr: 0xD004001C
+reg addr: 0xD004001C
+reg data: 0x00000000
+reg data: 0x00000000
+reg data: 0x00000000
+reg data: 0x00000000
+reg addr: 0xD0041808
+reg addr: 0xD0041808
+reg addr: 0xD0041808
+reg addr: 0xD0041808
+reg data: 0x00000000
+reg data: 0x00000000
+reg data: 0x00000000
+reg data: 0x00000000
+reg addr: 0xD0040020
+reg addr: 0xD0040020
+reg addr: 0xD0040020
+reg addr: 0xD0040020
+reg data: 0x00000004
+reg data: 0x00000004
+reg data: 0x00000004
+reg data: 0x00000004
+reg addr: 0xD0040024
+reg addr: 0xD0040024
+reg addr: 0xD0040024
+reg addr: 0xD0040024
+reg data: 0x00000000
+reg data: 0x00000000
+reg data: 0x00000000
+reg data: 0x00000000
+reg addr: 0xD0018010
+reg addr: 0xD0018010
+reg addr: 0xD0018010
+reg addr: 0xD0018010
+reg data: 0x11111141
+reg data: 0x11111141
+reg data: 0x11111141
+reg data: 0x11111141
+reg addr: 0xD0001400
+reg addr: 0xD0001400
+reg addr: 0xD0001400
+reg addr: 0xD0001400
+reg data: 0x7200C400
+reg data: 0x7200C400
+0x3f39610 (tErfTask): INFO: usb2Msc - Device /bd0 has been claimed by filesystem
+NOTIFY: hDevice 0x2 lun 0 medium changed (mediumInsert = 1)
+reg data: 0x7200C400
+reg data: 0x7200C400
+reg addr: 0xFFFFFFFF
+reg addr: 0xFFFFFFFF
+reg addr: 0xFFFFFFFF
+reg addr: 0xFFFFFFFF
+reg data: 0xFFFFFFFF
+reg data: 0xFFFFFFFF
+reg data: 0xFFFFFFFF
+reg data: 0xFFFFFFFF
+Register Update Occurred - Please reboot system to load new boot registers
+<<<<Flash Upgrade Driver - version 1.0 - installed.
+IsFlashForDroboPro: We are NOT running on Drobo Pro deal with flash accordingly
+Failed to get flash layout...this is expected for Optimus Prime, which does not have NOR Flash.
+
+System Configuration
+
+CHIP   : MV88F7846 Rev 2
+CPU    : Marvell PJ4B (584) v7 (Rev 2)
+BOARD  : Shockwave 1.0 (0x0)
+CLOCKs : tClk  =  250MHz, sysClk =  600MHz
+         L2Clk =  600MHz  pClk   = 1200MHz
+
+ETH_JUMBO_SUPPORT   = Disabled
+BRIDGING_SUPPORT    = Enabled
+MULTI_Q_SUPPORT     = Disabled
+NAT_SUPPORT         = Disabled
+VFP_SUPPORT         = Enabled
+L2 Cache            = Enabled
+IO coherency        = Enabled
+Get DATE: 2015-12-10 (Thursday)  TIME:  8:26:06
+
+
+=======================> HW Revision Register == 0x00000491
+
+Board Type 2, Rev 2 (Shockwave MVT), Spin = 2
+Stuffing Opt = 1 (No EthDebug), DevDebugBitz = 0x0
+
+
+	Drobo 5N
+	Shockwave
+	I Serve only Files!
+
+==============================================================================
+Initializing PMU...
+Reading PMU Version...
+PMU Version: 1.0.0x0078, Download Version 120 (Variant 0) [Failsafe Ver 3]
+Considering an Update to the PMU ... 
+PMU is up to date for this MVT board.
+
+    Reading 0xac from PMU GPIO Port 1 [ @0x0020 ]
+
+    Reading 0x2f from PMU GPIO Port 2 [ @0x0028 ]
+
+    Reading 0x71 from PMU GPIO Port 3 [ @0x0018 ]
+
+    Reading 0x11 from PMU GPIO Port 4 [ @0x001c ]
+    HARDWARE CONFIG MATCH-UP :-)
+    PMU Board Ident==1 (5-Slot) ... AND Vx reads Board Type 2 ("Shockwave")
+==============================================================================
+	PMU is Running on AC Power :-)
+==============================================================================
+==============================================================================
+This Optimus Prime PMU is NOT configured for Early-Follow of DDR3 Reset...Fixing
+This Optimus Prime Board Supports Self-Refresh without VRM_EN
+	...PMU will DISABLE VRM_EN during a reboot/shutdown cycle.
+	PMU BootOnBatt Counter DEFAULT is now 3
+	PMU BootOnBatt Counter ACTUAL is now 3
+==============================================================================
+PMU Disk Temp Deltas:    4,   4,   4,   1,   0, 
+PMU Skip-OverTemp Setting: 0x0000
+PMU Shutdown Status: 0x00
+	PMU Shutdown IS NOT Pending!
+	PMU Shutdown Reasons are Fully Enabled
+	Disk Array Temp is Within Tolerances
+	CPU Core Temp   is Within Tolerances
+	PMU Core Temp   is Within Tolerances
+PMU Shutdown Reason: 0x00
+PMUCmd: "A" --> "a"
+"Y" --> "0x06A0,42:45.95,723,0,0"
+"B" --> "6,2,2,0,0,7"
+ Total = 0:0 in 2 cycles
+
+PMU reports Power Switch Shutdown
+PMU state machine current state is 'NORMAL' [0x06]
+PMU reports the DRAM data was INVALID at bootup [0xa0]
+Accumulated Up-time = 0 days: 0 hours: 42 minutes: 46.006 seconds
+  (6 Active cycles, 7 Power cycles)
+  Latest battery backup time      = 01:12:18 (hh:mm:ss)
+  Longest battery backup time     = 00:00:00 (hh:mm:ss)
+  Accumulated battery backup time = 00:00:00 (hh:mm:ss)
+  (2 Backup cycles, 2 Completed cycles, 0 Failed cycles, 0 Backup flags)
+PMU Reports Voltages:  (AC == 12.145V)    (Batt ==  4.130V)
+PMU LED Dimming: Default==25, Current==25
+PMU Fan Speed AutoAdjust has been ENABLED
+PMU Fan Speed: Default== 1, Current== 1
+PMU Init Done
+==============================================================================
+****	ArmadaXP is Type B0
+Launching LED Sequencer...
+LED Sequencer...Launched
+LED Sequencer...Testing...
+Setup Kernel/RTP Messaging Interface
+Initialising kernel<->RTP queues with 80 entries
+USB command/response Q's @ 0xf4102000/0xf4103000
+MULTI ISSUE command/response Q's @ 0x0/0xf4105000
+FAST PATH QUEUING RTP INTERFACE ENABLED
+64-BIT HOST LBAs ENABLED
+Setup Kernel/RTP Resource Release Messaging Interface
+Initialising kernel<->RTP resource release queues with 80 entries
+MULTI ISSUE RESOURCE RELEASE Q's @ 0xf4106000/0xf4107000
+FAST PATH QUEUING RTP RESOURCE RELEASE INTERFACE ENABLED
+IntConnect pISR==0x01074f18 was Successful for Cause==32 ("PMU Panic")
+IntConnect pISR==0x01074fb0 was Successful for Cause==40 ("PMU PowerDownReq")
+IntConnect pISR==0x01074e9c was Successful for Cause==57 ("PMU OverTemp")
+IntConnect pISR==0x010750c4 was Successful for Cause==29 ("Disk Detected")
+IntDisable for Cause==65 ("Clear Disk Button")
+
+
+  ***** Initializing the Kernel's Thermal Monitor *****
+   ***** Spawning the Kernel's Thermal Monitor *****
+   ***** Executing Auxilliary Task for the Kernel's Thermal Monitor *****
+
+KERNEL BOOTUP: usrAppInit: INFO: bootup with backup battery OFF
+
+Not Turning the battery ON ye 
+PMUCmd: "~29" --> "~29!"
+PMUCmd: "K" --> "k"
+Intercore Access Device Driver - Version 1.0 - Installed.
+
+
+	Shockwave MVT Init Compleat!
+
+[tRootTask] 2015-12-10 08:26:09: diskInterfaceInitialise: Starting Disk Driver(s) Initialisation.
+[tRootTask] 2015-12-10 08:26:09: bspDiskConfigureDiskTable: Configuring drive tables for 5-Slot (BumbleBee or Shockwave)
+[tRootTask] 2015-12-10 08:26:09: diskInterfaceInitialise: System has 6 slots
+[tRootTask] 2015-12-10 08:26:09: diskDriverInstall:
+[tRootTask] 2015-12-10 08:26:09: showDiskTbs: Dumping Disk Driver Config Tables:
+[New Disk Thread] 2015-12-10 08:26:09: diskConfigureNewDiskThread: Starting thread
+[tRootTask] 2015-12-10 08:26:09: 
+[tRootTask] 2015-12-10 08:26:09:   Dumping Disk Adapter Table
+[tRootTask] 2015-12-10 08:26:09:     Adapter Instance   Adapter Address   Adapter Data Address
+[tRootTask] 2015-12-10 08:26:09:            0            0x01D73158            0x00000000
+[tRootTask] 2015-12-10 08:26:09:            1            0x01D73158            0x00000000
+[tRootTask] 2015-12-10 08:26:09:            2            0x01D73164            0x00000000
+Max Disk Temp: [tRootTask] 2015-12-10 08:26:09: 
+[tRootTask] 2015-12-10 08:26:09:    Dumping Disk Slot Config Table:
+[tRootTask] 2015-12-10 08:26:09:     Adapter Instance   Connection    Physical Slot   Adapter Channel    Initialised    Device Pointer
+[tRootTask] 2015-12-10 08:26:09:         2                DRIVE             0              0                 No           0x04917ACC
+[tRootTask] 2015-12-10 08:26:09:         1                DRIVE             1              0                 No           0x0491816C
+[tRootTask] 2015-12-10 08:26:09:         1                DRIVE             2              1                 No           0x04B350B8
+[tRootTask] 2015-12-10 08:26:09:         0                DRIVE             3              0                 No           0x04B355F0
+[tRootTask] 2015-12-10 08:26:09:         0                DRIVE             4              1                 No           0x04B35BA0
+[tRootTask] 2015-12-10 08:26:09:         2                DRIVE             5              1                 No           0x04B36240
+[tRootTask] 2015-12-10 08:26:09: diskInterfaceInitialise: Calling init with adapter 2 (0x01ED1008) and slot 0 (0x01ECFCD8)
+[tRootTask] 2015-12-10 08:26:09: mvSataControllerRegister: Initialising Marvell Embedded SATA adapter
+[tRootTask] 2015-12-10 08:26:09: mvSataInterfaceGetAdapaterData:
+[tRootTask] 2015-12-10 08:26:09: mvEmbSataInitItegratedSata: Integrated Sata device found as legacy SATA adapter 0; system adapter 2
+[tRootTask] 2015-12-10 08:26:09: sysMvEmbSataDeviceInit: unit  = 0; mvSataUnits = 1
+[tRootTask] 2015-12-10 08:26:09: sysMvEmbSataDeviceInit: INTEGRATED_SATA
+[tRootTask] 2015-12-10 08:26:09: sysMvEmbSataDeviceInit: Connecting SATA interrupt 55
+[tRootTask] 2015-12-10 08:26:09: 
+[tRootTask] 2015-12-10 08:26:09: requestQAlignment 0x1000 responseQAlignment 0x400
+[tRootTask] 2015-12-10 08:26:09:  channel 0 request q phy addr 4b4b000
+[tRootTask] 2015-12-10 08:26:09:  channel 0 response q phy addr 4919000
+[tRootTask] 2015-12-10 08:26:09:  channel 1 request q phy addr 4b4d000
+[tRootTask] 2015-12-10 08:26:09:  channel 1 response q phy addr 4919800
+[tRootTask] 2015-12-10 08:26:09: 
+[tRootTask] 2015-12-10 08:26:09: mvSataControllerRegister: Initialising Embedded adapter 0 (system adapter 2), channel 0 of 2
+[tRootTask] 2015-12-10 08:26:09: mvSataControllerRegister: data @ 0x04B4A6B8, adapter @ 0x01EF0F58, channels @ 2
+[tRootTask] 2015-12-10 08:26:09: diskInterfaceInitialise: Creating Slot 0
+[Sata Evnt] 2015-12-10 08:26:09: mvEmbSataEventThread: Starting thread
+[tRootTask] 2015-12-10 08:26:09: diskVxDeviceCreate: Driver 19 for slot 0
+[tRootTask] 2015-12-10 08:26:09: diskInterfaceInitialise: Calling init with adapter 1 (0x01ED1000) and slot 1 (0x01ECFCEC)
+[tRootTask] 2015-12-10 08:26:09: ahciPerformPhyConfig: Loading phy regs for 9122
+0x68f7474[ (tRootTask): diskDriAhciStorageRegister: 
+0x68f7474 (tRootTask): diskDriAhciInstInit: 
+0x68f7474 (tRootTask): diskDriAhciInstInit2: 
+0x68f7474 (tRootTask): diskDriAhciInstInit2: Storing 0x04B67F24 to adapter table entry 0
+0x68f7474 (tRootTask): diskDriAhciInstConnect: 
+0x68f7474 (tRootTask): diskDriAhciInstConnect: Initialising channel 0 of 2 on adapter 0 as slot 3
+0x68f7474 (tRootTask): diskDriAhciInstConnect: Initialising channel 1 of 2 on adapter 0 as slot 4
+0x68f7474 (tRootTask): diskDriAhciInstInit: 
+0x68f7474 (tRootTask): diskDriAhciInstInit2: 
+0x68f7474 (tRootTask): diskDriAhciInstInit2: Storing 0x0491A498 to adapter table entry 1
+0x68f7474 (tRootTask): diskDriAhciInstConnect: 
+tRootTask] 2015-12-10 08:26:10: ahciPerformPhyConfig: Loading phy regs for 9122
+24 C, Ave Disk Temp: 23 C, Fan Speed = [tRootTask] 2015-12-10 08:26:10: showDiskTbs: Dumping Disk Driver Config Tables:
+[tRootTask] 2015-12-10 08:26:10: 
+[tRootTask] 2015-12-10 08:26:10:   Dumping Disk Adapter Table
+[tRootTask] 2015-12-10 08:26:10:     Adapter Instance   Adapter Address   Adapter Data Address
+[tRootTask] 2015-12-10 08:26:10:            0            0x01D73158            0x04B67F24
+[tRootTask] 2015-12-10 08:26:10:            1            0x01D73158            0x0491A498
+[tRootTask] 2015-12-10 08:26:10:            2            0x01D73164            0x04B4A6B8
+[tRootTask] 2015-12-10 08:26:10: 
+[tRootTask] 2015-12-10 08:26:10:    Dumping Disk Slot Config Table:
+[tRootTask] 2015-12-10 08:26:10:     Adapter Instance   Connection    Physical Slot   Adapter Channel    Initialised    Device Pointer
+[tRootTask] 2015-12-10 08:26:10:         2                DRIVE             0              0                Yes           0x04917ACC
+[tRootTask] 2015-12-10 08:26:10:         1                DRIVE             1              0                 No           0x0491816C
+[tRootTask] 2015-12-10 08:26:10:         1                DRIVE             2              1                 No           0x04B350B8
+[tRootTask] 2015-12-10 08:26:10:         0                DRIVE             3              0                 No           0x04B355F0
+[tRootTask] 2015-12-10 08:26:10:         0                DRIVE             4              1                 No           0x04B35BA0
+[tRootTask] 2015-12-10 08:26:10:         2                DRIVE             5              1                 No           0x04B36240
+[tRootTask] 2015-12-10 08:26:10: diskInterfaceInitialise: Creating Slot 1
+[tRootTask] 2015-12-10 08:26:10: diskVxDeviceCreate: Driver 19 for slot 1
+[tRootTask] 2015-12-10 08:26:10: diskInterfaceInitialise: Calling init with adapter 1 (0x01ED1000) and slot 2 (0x01ECFD00)
+[tRootTask] 2015-12-10 08:26:10: diskInterfaceInitialise: Creating Slot 2
+[tRootTask] 2015-12-10 08:26:10: diskVxDeviceCreate: Driver 19 for slot 2
+[tRootTask] 2015-12-10 08:26:10: diskInterfaceInitialise: Calling init with adapter 0 (0x01ED0FF8) and slot 3 (0x01ECFD14)
+[tRootTask] 2015-12-10 08:26:10: diskInterfaceInitialise: Creating Slot 3
+[tRootTask] 2015-12-10 08:26:10: diskVxDeviceCreate: Driver 19 for slot 3
+[tRootTask] 2015-12-10 08:26:10: diskInterfaceInitialise: Calling init with adapter 0 (0x01ED0FF8) and slot 4 (0x01ECFD28)
+[tRootTask] 2015-12-10 08:26:10: diskInterfaceInitialise: Creating Slot 4
+[tRootTask] 2015-12-10 08:26:10: diskVxDeviceCreate: Driver 19 for slot 4
+[tRootTask] 2015-12-10 08:26:10: diskInterfaceInitialise: Calling init with adapter 2 (0x01ED1008) and slot 5 (0x01ECFD3C)
+[tRootTask] 2015-12-10 08:26:10: mvSataControllerRegister: Initialising Marvell Embedded SATA adapter
+[tRootTask] 2015-12-10 08:26:10: mvSataControllerRegister: Initialising Embedded adapter 0 (system adapter 2), channel 1 of 2
+[tRootTask] 2015-12-10 08:26:10: diskInterfaceInitialise: Creating Slot 5
+[tRootTask] 2015-12-10 08:26:10: diskVxDeviceCreate: Driver 19 for slot 5
+[tRootTask] 2015-12-10 08:26:10: showDiskTbs: Dumping Disk Driver Config Tables:
+[tRootTask] 2015-12-10 08:26:10: 
+[tRootTask] 2015-12-10 08:26:10:   Dumping Disk Adapter Table
+[tRootTask] 2015-12-10 08:26:10:     Adapter Instance   Adapter Address   Adapter Data Address
+[tRootTask] 2015-12-10 08:26:10:            0            0x01D73158            0x04B67F24
+[tRootTask] 2015-12-10 08:26:10:            1            0x01D73158            0x0491A498
+[tRootTask] 2015-12-10 08:26:10:            2            0x01D73164            0x04B4A6B8
+[tRootTask] 2015-12-10 08:26:10: 
+[tRootTask] 2015-12-10 08:26:10:    Dumping Disk Slot Config Table:
+[tRootTask] 2015-12-10 08:26:10:     Adapter Instance   Connection    Physical Slot   Adapter Channel    Initialised    Device Pointer
+[tRootTask] 2015-12-10 08:26:10:         2                DRIVE             0              0                Yes           0x04917ACC
+[tRootTask] 2015-12-10 08:26:10:         1                DRIVE             1              0                Yes           0x0491816C
+[tRootTask] 2015-12-10 08:26:10:         1                DRIVE             2              1                Yes           0x04B350B8
+[tRootTask] 2015-12-10 08:26:10:         0                DRIVE             3              0                Yes           0x04B355F0
+[tRootTask] 2015-12-10 08:26:10:         0                DRIVE             4              1                Yes           0x04B35BA0
+[tRootTask] 2015-12-10 08:26:10:         2                DRIVE             5              1                Yes           0x04B36240
+[tRootTask] 2015-12-10 08:26:10: diskInterfaceInitialise: Completed Disk Driver Initialisation: SUCCESS
+[tRootTask] 2015-12-10 08:26:10: diskVx2InterfaceInitialise: Starting Disk Driver Vx2 Initialisation
+[tRootTask] 2015-12-10 08:26:10: diskVx2InterfaceInitialise: Allocated DiskVx2DeviceStructure for '/disk' at 0x0491BD58
+[tRootTask] 2015-12-10 08:26:10: diskDriverInstall:
+[tRootTask] 2015-12-10 08:26:10: diskVx2InterfaceInitialise: Completed Disk Driver Initialisation: SUCCESS
+[tRootTask] 2015-12-10 08:26:10: rtpEventInit: Created message queue /PNPMQ0 with addr 0x3f2b010, size 16
+[tRootTask] 2015-12-10 08:26:10: 
+diskEnumerateDrives:75: >>>>	Patiently Waiting for Drives to come up . . .
+[0x68f7474 (tRootTask): diskDriAhciInstConnect: Initialising channel 0 of 2 on adapter 1 as slot 1
+0x68f7474 (tRootTask): diskDriAhciInstConnect: Initialising channel 1 of 2 on adapter 1 as slot 2
+tRootTask] 2015-12-10 08:26:10: diskSetDrivePowerModeBySlot: Setting power mode to DISK_POWER_STATE_ON for slot 0
+[tRootTask] 2015-12-10 08:26:10: bspDiskSetDrivePowerModeBySlot: slot: 0  mode: DISK_POWER_STATE_ON
+[tRootTask] 2015-12-10 08:26:10: bspSetDrivePower: Set power ON for slot 0  drivesPowered: 0x0
+ [tRootTask] 2015-12-10 08:26:10: bspSetDrivesPowered: drivesToPower: 0x1
+[tRootTask] 2015-12-10 08:26:10: diskSetDrivePowerModeBySlot: Leaving with status of DISK_OK(0x0000)
+[tRootTask] 2015-12-10 08:26:10: diskEnumerateDrives: Powering on Slot 0
+1, Sampling Period = 60 sec
+  Slot 0: 23 C, Slot 1: 23 C, Slot 2: 23 C, Slot 3: 24 C, 
+  Slot 4: 24 C, Slot 5:  0 C, Slot 6:  0 C, Slot 7:  0 C, 
+  CPU Core Temp: 29 C, PMU Core Temp = 26 C
+Temperature Thresholds for Disk:  Interest== 52, Warning== 55, Critical== 56 -- Override==OFF
+Temperature Thresholds for CPU :  Interest== 95, Warning==101, Critical==104 -- Override==OFF
+Temperature Thresholds for PMU :  Interest== 78, Warning== 82, Critical== 84 -- Override==OFF
+DriInterrupt: 2015-12-10 08:26:10: mvSataInterruptServiceRoutine: EDMA Error detected on LBA: 0x0
+DriInterrupt: 2015-12-10 08:26:10: ------------------------------------------------
+DriInterrupt: 2015-12-10 08:26:10: SATAHC Int Cause  [0xd00a0014]: 0x00000000
+DriInterrupt: 2015-12-10 08:26:10: SATAHC Main Cause [0xd00a0020]: 0x00000001
+DriInterrupt: 2015-12-10 08:26:10: Edma Config       [0xd00a2000]: 0x0000101f
+DriInterrupt: 2015-12-10 08:26:10: Edma Int Cause    [0xd00a2008]: 0x00000010
+DriInterrupt: 2015-12-10 08:26:10: Edma Command      [0xd00a2028]: 0x00000000
+DriInterrupt: 2015-12-10 08:26:10: Edma Status       [0xd00a2030]: 0x00001140
+DriInterrupt: 2015-12-10 08:26:10: SATA IF Config    [0xd00a2050]: 0x00186095
+DriInterrupt: 2015-12-10 08:26:10: SATA SStatus      [0xd00a2300]: 0x00000123
+DriInterrupt: 2015-12-10 08:26:10: SATA SError       [0xd00a2304]: 0x04010000
+DriInterrupt: 2015-12-10 08:26:10: Shadow Error      [0xd00a2104]: 0x00000000
+DriInterrupt: 2015-12-10 08:26:10: Shadow Status     [0xd00a211c]: 0x80808080
+DriInterrupt: 2015-12-10 08:26:10: ReqQ in-ptr       [0xd00a2014]: 0x00000000
+DriInterrupt: 2015-12-10 08:26:10: ReqQ out-ptr      [0xd00a2018]: 0x00000000
+DriInterrupt: 2015-12-10 08:26:10: RespQ in-ptr      [0xd00a2020]: 0x00000000
+DriInterrupt: 2015-12-10 08:26:10: RespQ out-ptr     [0xd00a2024]: 0x00000000
+DriInterrupt: 2015-12-10 08:26:10: cmdActive[0]: 0x0  cmdActive[1]: 0x0
+DriInterrupt: 2015-12-10 08:26:10: ------------------------------------------------
+DriInterrupt: 2015-12-10 08:26:10: mvSataInterruptServiceRoutine:  port: 0  deviceInterrupt: 0x0  responseDone: 0x0  edmaError: 0x1
+DriInterrupt: 2015-12-10 08:26:10: 0 0: Edma Error Reg 0x10
+DriInterrupt: 2015-12-10 08:26:10: Device Connect Detected
+DriInterrupt: 2015-12-10 08:26:10: mvSataInterruptServiceRoutine:  Callback NOT ACTIVATED for port 0!  cmdActivated[0]: 0x0  cmdActivated[1]: 0x0 unitCause: 0x0  mainCause: 0x1
+[tRootTask] 2015-12-10 08:26:11: diskSetDrivePowerModeBySlot: Setting power mode to DISK_POWER_STATE_ON for slot 1
+[tRootTask] 2015-12-10 08:26:11: bspDiskSetDrivePowerModeBySlot: slot: 1  mode: DISK_POWER_STATE_ON
+[tRootTask] 2015-12-10 08:26:11: bspSetDrivePower: Set power ON for slot 1  drivesPowered: 0x1
+[tRootTask] 2015-12-10 08:26:11: bspSetDrivesPowered: drivesToPower: 0x3
+[tRootTask] 2015-12-10 08:26:11: diskSetDrivePowerModeBySlot: Leaving with status of DISK_OK(0x0000)
+[tRootTask] 2015-12-10 08:26:11: diskEnumerateDrives: Powering on Slot 1
+[Sata Evnt] 2015-12-10 08:26:11: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:11: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:11: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:11: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+interrupt: AHCI Drive Inserted unit: 1  drive: 0 portIntr: 0x400000 sataStatus: 0x123
+[tRootTask] 2015-12-10 08:26:12: diskSetDrivePowerModeBySlot: Setting power mode to DISK_POWER_STATE_ON for slot 2
+[tRootTask] 2015-12-10 08:26:12: bspDiskSetDrivePowerModeBySlot: slot: 2  mode: DISK_POWER_STATE_ON
+[tRootTask] 2015-12-10 08:26:12: bspSetDrivePower: Set power ON for slot 2  drivesPowered: 0x3
+[tRootTask] 2015-12-10 08:26:12: bspSetDrivesPowered: drivesToPower: 0x7
+[tRootTask] 2015-12-10 08:26:12: diskSetDrivePowerModeBySlot: Leaving with status of DISK_OK(0x0000)
+[tRootTask] 2015-12-10 08:26:12: diskEnumerateDrives: Powering on Slot 2
+[Sata Evnt] 2015-12-10 08:26:12: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:12: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:12: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:12: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+interrupt: AHCI Drive Inserted unit: 1  drive: 1 portIntr: 0x400000 sataStatus: 0x123
+[tRootTask] 2015-12-10 08:26:13: diskSetDrivePowerModeBySlot: Setting power mode to DISK_POWER_STATE_ON for slot 3
+[tRootTask] 2015-12-10 08:26:13: bspDiskSetDrivePowerModeBySlot: slot: 3  mode: DISK_POWER_STATE_ON
+[tRootTask] 2015-12-10 08:26:13: bspSetDrivePower: Set power ON for slot 3  drivesPowered: 0x7
+[tRootTask] 2015-12-10 08:26:13: bspSetDrivesPowered: drivesToPower: 0xf
+[tRootTask] 2015-12-10 08:26:13: diskSetDrivePowerModeBySlot: Leaving with status of DISK_OK(0x0000)
+[tRootTask] 2015-12-10 08:26:13: diskEnumerateDrives: Powering on Slot 3
+[Sata Evnt] 2015-12-10 08:26:13: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:13: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:13: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:13: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+interrupt: AHCI Drive Inserted unit: 0  drive: 0 portIntr: 0x400000 sataStatus: 0x133
+[tRootTask] 2015-12-10 08:26:14: diskSetDrivePowerModeBySlot: Setting power mode to DISK_POWER_STATE_ON for slot 4
+[tRootTask] 2015-12-10 08:26:14: bspDiskSetDrivePowerModeBySlot: slot: 4  mode: DISK_POWER_STATE_ON
+[tRootTask] 2015-12-10 08:26:14: bspSetDrivePower: Set power ON for slot 4  drivesPowered: 0xf
+[tRootTask] 2015-12-10 08:26:14: bspSetDrivesPowered: drivesToPower: 0x1f
+[tRootTask] 2015-12-10 08:26:14: diskSetDrivePowerModeBySlot: Leaving with status of DISK_OK(0x0000)
+[tRootTask] 2015-12-10 08:26:14: diskEnumerateDrives: Powering on Slot 4
+[Sata Evnt] 2015-12-10 08:26:14: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:14: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:14: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:14: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+interrupt: AHCI Drive Inserted unit: 0  drive: 1 portIntr: 0x400000 sataStatus: 0x123
+![Sata Evnt] 2015-12-10 08:26:15: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:15: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:15: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:15: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+![Sata Evnt] 2015-12-10 08:26:17: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:17: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:17: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:17: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+![Sata Evnt] 2015-12-10 08:26:18: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:18: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:18: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:18: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+![Sata Evnt] 2015-12-10 08:26:19: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:19: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:19: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:19: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+[tAhciMon] 2015-12-10 08:26:19: 
+
+SETTING SATA LINK SPEEDS
+
+0x4b686bc (tAhciMon): Limit SATA speed to GEN2
+![Sata Evnt] 2015-12-10 08:26:20: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:20: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:20: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:20: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+0x4b686bc (tAhciMon): Limit SATA speed to GEN2
+0x4b686bc (tAhciMon): Restarting Port unit: 1  drive: 0 portIntr: 0x0 sataStatus: 0x0
+Instantiating /ahci01 as rawFs,  device = 0x40001
+[tAhciMon] 2015-12-10 08:26:21: 
+
+SETTING SATA LINK SPEEDS
+
+0x4b686bc (tAhciMon): Limit SATA speed to GEN2
+[New Disk Thread] 2015-12-10 08:26:21: Set slot 1's last insertion sequence number to 1
+[New Disk Thread] 2015-12-10 08:26:21: diskScsiSendSATABySlot:
+[New Disk Thread] 2015-12-10 08:26:21: diskSendRequestToSlot(1):
+
+[New Disk Thread] 2015-12-10 08:26:21: diskSendRequestToSlot(1): status: DISK_OK(0x00)
+[New Disk Thread] 2015-12-10 08:26:21: diskConfigureNewDiskThread: diskConfigureNewDiskReally() for slot 1 returned 0
+[New Disk Thread] 2015-12-10 08:26:21: 
+**************************
+rtpEventNotifyDiskInsert: Device connection event received. Adapter 0, Slot 1
+Total inserts: 1, Total removes: 0, Sequence number: 1
+**************************
+[New Disk Thread] 2015-12-10 08:26:21: rtpEventNotifyDiskInsert: new eventOrder 0x2
+![tRootTask] 2015-12-10 08:26:21: diskEnumerateDrives: Drive in slot 1 enumerated after 10 seconds
+[Sata Evnt] 2015-12-10 08:26:21: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:21: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:21: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:21: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+0x4b686bc (tAhciMon): Limit SATA speed to GEN2
+0x4b686bc (tAhciMon): Restarting Port unit: 1  drive: 1 portIntr: 0x0 sataStatus: 0x0
+![Sata Evnt] 2015-12-10 08:26:22: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:22: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:22: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:22: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+Instantiating /ahci02 as rawFs,  device = 0x60001
+[tAhciMon] 2015-12-10 08:26:22: 
+
+SETTING SATA LINK SPEEDS
+
+0x4b686bc (tAhciMon): Limit SATA speed to GEN2
+[New Disk Thread] 2015-12-10 08:26:22: Set slot 2's last insertion sequence number to 2
+[New Disk Thread] 2015-12-10 08:26:22: diskScsiSendSATABySlot:
+[New Disk Thread] 2015-12-10 08:26:22: diskSendRequestToSlot(2):
+
+[New Disk Thread] 2015-12-10 08:26:22: diskSendRequestToSlot(2): status: DISK_OK(0x00)
+[New Disk Thread] 2015-12-10 08:26:22: diskConfigureNewDiskThread: diskConfigureNewDiskReally() for slot 2 returned 0
+[New Disk Thread] 2015-12-10 08:26:22: 
+**************************
+rtpEventNotifyDiskInsert: Device connection event received. Adapter 0, Slot 2
+Total inserts: 2, Total removes: 0, Sequence number: 2
+**************************
+[New Disk Thread] 2015-12-10 08:26:22: rtpEventNotifyDiskInsert: new eventOrder 0x6
+![tRootTask] 2015-12-10 08:26:23: diskEnumerateDrives: Drive in slot 2 enumerated after 13 seconds
+[Sata Evnt] 2015-12-10 08:26:23: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:23: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:23: Device not identified on channel 0
+[Sata Evnt] 2015-12-10 08:26:23: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 0
+0x4b686bc (tAhciMon): Limit SATA speed to GEN2
+0x4b686bc (tAhciMon): Restarting Port unit: 0  drive: 0 portIntr: 0x0 sataStatus: 0x0
+Instantiating /ahci03 as rawFs,  device = 0x80001
+[tAhciMon] 2015-12-10 08:26:24: 
+
+SETTING SATA LINK SPEEDS
+
+0x4b686bc (tAhciMon): Limit SATA speed to GEN2
+[New Disk Thread] 2015-12-10 08:26:24: Set slot 3's last insertion sequence number to 3
+[New Disk Thread] 2015-12-10 08:26:24: diskScsiSendSATABySlot:
+[New Disk Thread] 2015-12-10 08:26:24: diskSendRequestToSlot(3):
+
+[New Disk Thread] 2015-12-10 08:26:24: diskSendRequestToSlot(3): status: DISK_OK(0x00)
+[New Disk Thread] 2015-12-10 08:26:24: diskConfigureNewDiskThread: diskConfigureNewDiskReally() for slot 3 returned 0
+[New Disk Thread] 2015-12-10 08:26:24: 
+**************************
+rtpEventNotifyDiskInsert: Device connection event received. Adapter 0, Slot 3
+Total inserts: 3, Total removes: 0, Sequence number: 3
+**************************
+[New Disk Thread] 2015-12-10 08:26:24: rtpEventNotifyDiskInsert: new eventOrder 0xe
+![tRootTask] 2015-12-10 08:26:24: diskEnumerateDrives: Drive in slot 3 enumerated after 14 seconds
+[Sata Evnt] 2015-12-10 08:26:24: mvSataCheckForDriveStart: (slot 0)
+[Sata Evnt] 2015-12-10 08:26:24: mvSataCheckForDriveStart: Drive connected on slot 0 (adapter 2 and channel 0)
+[Sata Evnt] 2015-12-10 08:26:24: mvConfigSataDisk: slot 0 STARTED
+[Sata Evnt] 2015-12-10 08:26:24: activateEdma: channel: 0
+[Sata Evnt] 2015-12-10 08:26:24: mvSataCheckForDriveStart: Completed StartChannel for slot 0 startCheck: 1
+[Sata Evnt] 2015-12-10 08:26:24: mvSataCheckForDriveStart: Completed diskConfigureNewDisk() for slot 0
+[New Disk Thread] 2015-12-10 08:26:24: Set slot 0's last insertion sequence number to 4
+[New Disk Thread] 2015-12-10 08:26:24: mvSataSendCommand: Created single access mutex for slot 0, chan 0
+[New Disk Thread] 2015-12-10 08:26:24: mvSataSendCommand: Non-DMA, cdbLength == 0
+[New Disk Thread] 2015-12-10 08:26:24: -----------------------------
+[New Disk Thread] 2015-12-10 08:26:24: Dumping txPacket at: 0x4b4703c
+[New Disk Thread] 2015-12-10 08:26:24: -----------------------------
+[New Disk Thread] 2015-12-10 08:26:24: slot             : 0
+[New Disk Thread] 2015-12-10 08:26:24: channel          : 0
+[New Disk Thread] 2015-12-10 08:26:24: cdbLength        : 0
+[New Disk Thread] 2015-12-10 08:26:24: feature          : 0
+[New Disk Thread] 2015-12-10 08:26:24: count            : 0
+[New Disk Thread] 2015-12-10 08:26:24: lba              : 0
+[New Disk Thread] 2015-12-10 08:26:24: device           : 0
+[New Disk Thread] 2015-12-10 08:26:24: command          : MV_ATA_COMMAND_IDENTIFY
+[New Disk Thread] 2015-12-10 08:26:24: dataLengthInBytes: 512
+[New Disk Thread] 2015-12-10 08:26:24: numSglElements   : 1
+[New Disk Thread] 2015-12-10 08:26:24: timeout          : 20
+[New Disk Thread] 2015-12-10 08:26:24: txNumber         : 0
+[New Disk Thread] 2015-12-10 08:26:25: dir              : READ
+[New Disk Thread] 2015-12-10 08:26:25: sglList[0].count : 1
+[New Disk Thread] 2015-12-10 08:26:25: sglList[0].buf   : 0x4911640
+0x4b686bc (tAhciMon): Limit SATA speed to GEN2
+[New Disk Thread] 2015-12-10 08:26:25: -----------------------------
+0x4b686bc (tAhciMon): Restarting Port unit: 0  drive: 1 portIntr: 0x0 sataStatus: 0x0
+[New Disk Thread] 2015-12-10 08:26:25: enableSaDevInterrupts: chan 0: pAdapter->interruptsAreMasked: 0 mainMask: 0x105  ORing in: 0x2
+[New Disk Thread] 2015-12-10 08:26:25: enableSaDevInterrupts: chan 0: pAdapter->interruptsAreMasked: 0 mainMask: 0x107  ORing in: 0x2
+[New Disk Thread] 2015-12-10 08:26:25: sendNoneUdmaCommand: cmdType: 1  protocolType: 1  isExt: 0  Features: 0x0  sectorCount: 0x0  lbaLow: 0x0  lbaMid: 0x0  lbaHigh: 0x0 pParams: 0x1ef10ac[DriInterrupt: 2015-12-10 08:26:25: INTERRUPT received.  mainCause: 0x2 intCause: 0x100 edmaCause: 0x0 edmaCmd0: 0x0 edmaCmd1: 0x0 cmdActive[0]: 0xec cmdActive[1]: 0x0
+DriInterrupt: 2015-12-10 08:26:25: mvSataInterruptServiceRoutine:  port: 0  deviceInterrupt: 0x100  responseDone: 0x0  edmaError: 0x0
+DriInterrupt: 2015-12-10 08:26:25: handleDeviceInterrupt: port 0
+DriInterrupt: 2015-12-10 08:26:25: handlePIOInterrupt: channel 0: PIO Interrupt: cmd 0xEC, protocolType 1. ATAstatus 0x58
+DriInterrupt: 2015-12-10 08:26:25: mvSataSendCommandCB: chan: 0 complType: 0 eDmaCause: 0x0 pCommandInfo->returnCode: 48 diskOpReturnVal: 0 errRegister: 0x0 intEnable: 0x107 edmaIntEnable: 0xfddff198
+New Disk Thread] 2015-12-10 08:26:25: mvSataSendCommand: MV_QUEUE_COMMAND_RESULT_OK  timeout: 1200
+[New Disk Thread] 2015-12-10 08:26:25: mvSataSendCommand: SemWait COMPLETE for channel: 0 diskOpReturnVal: 0
+[New Disk Thread] 2015-12-10 08:26:25: diskScsiSendSATABySlot:
+[New Disk Thread] 2015-12-10 08:26:25: diskSendRequestToSlot(0):
+
+[New Disk Thread] 2015-12-10 08:26:25: diskSendRequestToSlot(0): status: DISK_OK(0x00)
+[New Disk Thread] 2015-12-10 08:26:25: diskConfigureNewDiskThread: diskConfigureNewDiskReally() for slot 0 returned 0
+[New Disk Thread] 2015-12-10 08:26:25: 
+**************************
+rtpEventNotifyDiskInsert: Device connection event received. Adapter 0, Slot 0
+Total inserts: 4, Total removes: 0, Sequence number: 4
+**************************
+[New Disk Thread] 2015-12-10 08:26:25: rtpEventNotifyDiskInsert: new eventOrder 0xf
+Instantiating /ahci04 as rawFs,  device = 0xa0001
+[New Disk Thread] 2015-12-10 08:26:25: Set slot 4's last insertion sequence number to 5
+[New Disk Thread] 2015-12-10 08:26:25: diskScsiSendSATABySlot:
+[New Disk Thread] 2015-12-10 08:26:25: diskSendRequestToSlot(4):
+
+[New Disk Thread] 2015-12-10 08:26:25: diskSendRequestToSlot(4): status: DISK_OK(0x00)
+[New Disk Thread] 2015-12-10 08:26:25: diskConfigureNewDiskThread: diskConfigureNewDiskReally() for slot 4 returned 0
+[New Disk Thread] 2015-12-10 08:26:25: 
+**************************
+rtpEventNotifyDiskInsert: Device connection event received. Adapter 0, Slot 4
+Total inserts: 5, Total removes: 0, Sequence number: 5
+**************************
+[New Disk Thread] 2015-12-10 08:26:25: rtpEventNotifyDiskInsert: new eventOrder 0x1f
+![tRootTask] 2015-12-10 08:26:25: diskEnumerateDrives: Drive in slot 0 enumerated after 15 seconds
+[tRootTask] 2015-12-10 08:26:25: diskEnumerateDrives: Drive in slot 4 enumerated after 15 seconds
+![tRootTask] 2015-12-10 08:26:26: diskEnumerateDrives: Enumeration Complete after 16 seconds.  Found and enumerated 5 drives.
+[tRootTask] 2015-12-10 08:26:26: Hardware watchdog enabled : expiry time = 5 seconds
+[tRootTask] 2015-12-10 08:26:27: 
+
+[tRootTask] 2015-12-10 08:26:27: Id                    Absolute    Size In Bytes  Virtual Address  Physical Address   Alignment     Zeroed
+[tRootTask] 2015-12-10 08:26:27: SM_ID_HEADER          Yes           0x00001000     0xF4108000       0x7BFFD000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_J2              Yes           0x00A00000     0xD0100000       0x7B5FD000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_J1              Yes           0x0CE00000     0xB6000000       0x6E7FD000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_NV_DRAM_SIM     Yes           0x00100000     0xF4109000       0x6E6FD000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_UNCACHED        Yes           0x00E1F000     0xD0B00000       0x6D8DE000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_HLBAT           Yes           0x0A100000     0xF4600000       0x637DE000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_CRO             Yes           0x03200000     0xC2E00000       0x605DE000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_ALLOC           Yes           0x00001000     0xF4209000       0x605DD000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_ZMDT            Yes           0x08000000     0xC6000000       0x585DD000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_SBFC            Yes           0x04000000     0xD4800000       0x545DD000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_MGMTPOOL        Yes           0x00008000     0xF420A000       0x545D5000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_IC_SGL          Yes           0x00100000     0xF4212000       0x544D5000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_AMIT            Yes           0x00800000     0xFE700000       0x53CD5000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_SHMQ            Yes           0x00200000     0xFEF00000       0x53AD5000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_SHLX            Yes           0x00200000     0xFF100000       0x538D5000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: SM_ID_SHVX            Yes           0x00200000     0xFF300000       0x536D5000      0x00001000       No 
+[tRootTask] 2015-12-10 08:26:27: drStartPersistentLogging
+[tRootTask] 2015-12-10 08:26:27: Created /bd0/Crashlogs directory
+[tRootTask] 2015-12-10 08:26:27: found directory entry .
+[tRootTask] 2015-12-10 08:26:27: found directory entry ..
+[tRootTask] 2015-12-10 08:26:27: Found 0 crash log files with total size 0 bytes[tRootTask] 2015-12-10 08:26:27: Preparing to Analyze Hibernation Status
+[tRootTask] 2015-12-10 08:26:27: Starting Analysis of Hibernation Status
+[tRootTask] 2015-12-10 08:26:27: Creating new log file
+[tRootTask] 2015-12-10 08:26:28: HIB: ERROR: Could not open hibernate header file. Possible Journal loss.
+[tRootTask] 2015-12-10 08:26:28: ==================================================
+[tRootTask] 2015-12-10 08:26:28: J2                      0xD0100000     10485760
+[tRootTask] 2015-12-10 08:26:28: J1                      0xB6000000     216006656
+[tRootTask] 2015-12-10 08:26:28: J1TAGS                  0xF4109000     1048576
+[tRootTask] 2015-12-10 08:26:28: AMIT                    0xFE700000     8388608
+[tRootTask] 2015-12-10 08:26:28: Hibernation Status is now Nominal
+[tRootTask] 2015-12-10 08:26:28: Hibernation Status is not Clean, so turning Battery ON
+[tRootTask] 2015-12-10 08:26:28: Hibernation Status will be written to eUSB
+==============================================================================
+Vx Kernel (A)utomated (M)emory (I)ntegrity (T)est ...
+==============================================================================
+NVS Data:
+	@ 0	0xffffffff
+	@ 1	0xfff7ffff
+	@ 2	0xfbfeffff
+	@ 3	0xffffffff
+pHdr1==0xfe700010, pHdr2==0xfe700020, pPattern==0xfe700030, Pattern Size==0x007fffd0
+AMIT Found DRAM Battery OFF and NO Valid Hibernation Record: Valid AMIT Pattern NOT available
+Can't Open "/bd0/amitLog" for Reading
+Error Reading AMIT History
+AMIT History Updated with "o"
+AMIT Hdr-Mirror has been Fixed-Up
+HDR: (@0xfe700010) MAGIC==0x4afacade, Start==0xb4a54a1d, Step==0x3f07031f, ChkSum==0x3ea7181a
+AMIT Pattern Write for 0x007fffd0 Bytes...
+AMIT Pattern Established
+AMIT Pattern is Ready for the Next Iteration
+==============================================================================
+==============================================================================
+AMIT HISTORY:
+o
+==============================================================================
+[tRootTask] 2015-12-10 08:26:28: j1Init: J1 [virt 0xB6000000 for 0x0CE00000]
+[tHibernate] 2015-12-10 08:26:28: Hibernate task starting
+[tHibernate] 2015-12-10 08:26:28: Deleted /bd0/ENVY.bin 
+[tHibernate] 2015-12-10 08:26:28:  ******* BOOT COUNT: 1 *******
+HIB: ERROR. Could not open /bd0/RebootReason. 
+[tRootTask] 2015-12-10 08:26:28: j1Init: Wiping J1 [virt 0xB6000000 for 0x0CE00000] because the backup battery and HIB are OFF
+[tRootTask] 2015-12-10 08:26:28: j1Init: Wiping J1 Tags [virt 0xF4109000 for 0x00100000] because the backup battery and HIB are OFF
+[tRootTask] 2015-12-10 08:26:28: j1Init: J1 and J1 Tags Wipe succeeded
+[tRootTask] 2015-12-10 08:26:28: journalValid: J1 has been Wiped...is marked as Valid
+j1DualPoolInit: 
+J1 region size is 216006656 bytes, totalBuffers = 2742
+J1 transBufCount is 2048, bulkBufCount is 694
+J1 Bulk buf size is 262144 bytes, trans buf size is 16384 bytes
+J1 sizeof (WriteBufferDescriptor is 128
+J1 TransBufferAreaSize is 33816576, BulkBufferAreaSize is 182190080
+wbJ1PoolInit: 97 - Init J1 Transactional Pool
+wbJ1PoolInit: 97 - Init J1 Bulk Pool
+--------Buffer Pool: Trans
+Buffer start address: 0xb6000200 (0)
+Descriptor start address: 0xc2d80200 (cd80000)
+NumBuffers: 2048
+Free singles: 0
+	Single head: 0x00000000
+Free doubles: 1024
+	Double head: 0xC2D80200
+Free total: 2048
+--------Buffer Pool: Bulk
+Buffer start address: 0xb8000200 (2000000)
+Descriptor start address: 0xc2dc0200 (cdc0000)
+NumBuffers: 694
+Free singles: 0
+	Single head: 0x00000000
+Free doubles: 347
+	Double head: 0xC2DC0200
+Free total: 694
+[tRootTask] 2015-12-10 08:26:28: j2Init: Wiping J2 [virt 0xD0100000 for 0x00A00000] because the backup battery is OFF
+[tRootTask] 2015-12-10 08:26:29: j2Init: J2 Wipe succeeded
+[tRootTask] 2015-12-10 08:26:29: journalValid: J2 has been Wiped...is marked as Valid
+[tRootTask] 2015-12-10 08:26:29: journalValid: J1 & J2 are now protectable
+SHARED_MEM TABLE
+id 1 abs 1 size 0x1000 virtAddr f4108000 phyAddr 7bffd000 alignment 1000 attr db options 1 zero 0 
+id 6 abs 1 size 0xa00000 virtAddr d0100000 phyAddr 7b5fd000 alignment 1000 attr db options 1 zero 0 
+id 5 abs 1 size 0xce00000 virtAddr b6000000 phyAddr 6e7fd000 alignment 1000 attr db options 1 zero 0 
+id 3 abs 1 size 0x100000 virtAddr f4109000 phyAddr 6e6fd000 alignment 1000 attr db options 1 zero 0 
+id 11 abs 1 size 0xe1f000 virtAddr d0b00000 phyAddr 6d8de000 alignment 1000 attr db options 1 zero 0 
+id 7 abs 1 size 0xa100000 virtAddr f4600000 phyAddr 637de000 alignment 1000 attr db options 1 zero 0 
+id 16 abs 1 size 0x3200000 virtAddr c2e00000 phyAddr 605de000 alignment 1000 attr 15b options 1 zero 0 
+id 8 abs 1 size 0x1000 virtAddr f4209000 phyAddr 605dd000 alignment 1000 attr 15b options 1 zero 0 
+id 9 abs 1 size 0x8000000 virtAddr c6000000 phyAddr 585dd000 alignment 1000 attr 15b options 1 zero 0 
+id 10 abs 1 size 0x4000000 virtAddr d4800000 phyAddr 545dd000 alignment 1000 attr 15b options 1 zero 0 
+id 2 abs 1 size 0x8000 virtAddr f420a000 phyAddr 545d5000 alignment 1000 attr 1db options 0 zero 0 
+id 4 abs 1 size 0x100000 virtAddr f4212000 phyAddr 544d5000 alignment 1000 attr db options 1 zero 0 
+id 12 abs 1 size 0x800000 virtAddr fe700000 phyAddr 53cd5000 alignment 1000 attr db options 1 zero 0 
+id 13 abs 1 size 0x200000 virtAddr fef00000 phyAddr 53ad5000 alignment 1000 attr db options 1 zero 0 
+id 14 abs 1 size 0x200000 virtAddr ff100000 phyAddr 538d5000 alignment 1000 attr db options 1 zero 0 
+id 15 abs 1 size 0x200000 virtAddr ff300000 phyAddr 536d5000 alignment 1000 attr db options 1 zero 0 
+id 16 abs 29068052 size 0xd0012000 virtAddr d0012000 phyAddr d0012000 alignment d0012004 attr d0012008 options d001200c zero d0012010 
+SHARED_MEM: CPU0: READY TO WAIT FOR CPU1 TO COME ONLINE
+SHARED_MEM: CPU0: CPU1 ONLINE. STARTING INIT AND REPLAY
+CopySDRegionFromPartitionScheme: INFO: Copy /HEAD to HEAD id=0 Shared Data Region at phy addr: 0x7bffd000 virt addr: 0xf4108000 size 0x1000
+CopySDRegionFromPartitionScheme: INFO: Copy /nvramPSRAM to nvra id=1 Shared Data Region at phy addr: 0x7b5fd000 virt addr: 0xd0100000 size 0xa00000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHJ1 to SHJ1 id=2 Shared Data Region at phy addr: 0x6e7fd000 virt addr: 0xb6000000 size 0xce00000
+CopySDRegionFromPartitionScheme: INFO: Copy /nvramDRAMSim to nvra id=3 Shared Data Region at phy addr: 0x6e6fd000 virt addr: 0xf4109000 size 0x100000
+CopySDRegionFromPartitionScheme: INFO: Copy /UncachedPool to Unca id=4 Shared Data Region at phy addr: 0x6d8de000 virt addr: 0xd0b00000 size 0xe1f000
+CopySDRegionFromPartitionScheme: INFO: Copy /readbuffer to read id=5 Shared Data Region at phy addr: 0x637de000 virt addr: 0xf4600000 size 0xa100000
+CopySDRegionFromPartitionScheme: INFO: Copy /crobuffer to crob id=6 Shared Data Region at phy addr: 0x605de000 virt addr: 0xc2e00000 size 0x3200000
+CopySDRegionFromPartitionScheme: INFO: Copy /allocator to allo id=7 Shared Data Region at phy addr: 0x605dd000 virt addr: 0xf4209000 size 0x1000
+CopySDRegionFromPartitionScheme: INFO: Copy /ZMDT to ZMDT id=8 Shared Data Region at phy addr: 0x585dd000 virt addr: 0xc6000000 size 0x8000000
+CopySDRegionFromPartitionScheme: INFO: Copy /SBFC to SBFC id=9 Shared Data Region at phy addr: 0x545dd000 virt addr: 0xd4800000 size 0x4000000
+CopySDRegionFromPartitionScheme: INFO: Copy /mgmtpool to mgmt id=10 Shared Data Region at phy addr: 0x545d5000 virt addr: 0xf420a000 size 0x8000
+CopySDRegionFromPartitionScheme: INFO: Copy /SGLD to SGLD id=11 Shared Data Region at phy addr: 0x544d5000 virt addr: 0xf4212000 size 0x100000
+CopySDRegionFromPartitionScheme: INFO: Copy /AMIT to AMIT id=12 Shared Data Region at phy addr: 0x53cd5000 virt addr: 0xfe700000 size 0x800000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHMQ to SHMQ id=13 Shared Data Region at phy addr: 0x53ad5000 virt addr: 0xfef00000 size 0x200000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHLX to SHLX id=14 Shared Data Region at phy addr: 0x538d5000 virt addr: 0xff100000 size 0x200000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHVX to SHVX id=15 Shared Data Region at phy addr: 0x536d5000 virt addr: 0xff300000 size 0x200000
+FindSharedMemPartition: tag. SHMQ regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xfef00000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xfef00000
+SHARED_MEM: INITIALIZED SHARED MEMORY @addr 0x0xf4108000
+SHARED_MEM: CPU0: INITIALIZATION OF SHARED MEMORY BY CPU0 DONE
+icLinuxPanic: Starting Linux Panic Thread
+FindSharedMemPartition: tag. SHMQ regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xfef00000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xfef00000
+[iscsiCmd] 2015-12-10 08:26:29: SHMQueueInit: CPU0: Ready to wait for CPU1 to come online for queue init wait
+[iscsiCmd] 2015-12-10 08:26:30: SHMQueueInit: CPU0: CPU1 online. It is now waiting for queue init
+[iscsiCmd] 2015-12-10 08:26:30: SHMQueueInit: CPU0: Starting queue init.
+[iscsiCmd] 2015-12-10 08:26:30: SHARED_MEM: CPU0: Queue Init done by CPU0
+FindSharedMemPartition: tag. SGLD regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xf4212000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xf4212000
+FindSharedMemPartition: tag. read regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xf4600000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xf4600000
+FindSharedMemPartition: tag. SHJ1 regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xb6000000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xb6000000
+FindSharedMemPartition: tag. SHLX regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xff100000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xff100000
+FindSharedMemPartition: tag. SHVX regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xff300000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xff300000
+vxDynFreeListInit: Vx dyn free list has 56 entries.
+Waiting on SHMQueue
+[iscsiCmd] iscsiResourceReleaseThread: Starting
+iscsiResponseThread: Starting
+interCoreGeneralCommThread: Starting
+mgmtCmdThread: Starting
+2015-12-10 08:26:30: icNetworkIoctl: SET_LX_COMMON_INFO: Setting values: serial number: DRB154901A00995
+[tMgmtCmd] 2015-12-10 08:26:30: Bound mgmtCmdThread to cpu 0
+usrRtpAppInit: Setting nvram allocator base address to 0xF4209000
+Spawning RTP: /romfs/runesa.vxe 
+0x68f7474 (tRootTask): 
+KERNEL FULLY INITIALIZED: IT IS SAFE TO RUN RTPs NOW
+Waiting for i/f enable
+Trace created enabled: zonemanager:info:flow
+Trace created enabled: zonemanager:error:flow
+RTP getting ED&R state - currently set to Deployed mode
+Trace created enabled: layoutmanager:error:flow
+Trace created enabled: rmdtracker:error:flow
+Trace created enabled: ledman:error:flow
+Trace created enabled: dlbamdtracker:error:flow
+Trace created enabled: diskhotplug:vrbl:flow
+Trace created enabled: deadlockwd:error:flow
+Trace created enabled: scrub:error:flow
+Trace created enabled: scrub:info:flow
+Trace created enabled: databuf:all:flow
+Trace created enabled: scavenger:error:flow
+Trace created enabled: scavenger:debug:flow
+Trace created enabled: cpmanager:vrbl:flow
+Trace created enabled: cpmanager:vrbm:flow
+Trace created enabled: cpmanager:error:flow
+Trace created enabled: cmzone:error:flow
+Trace created enabled: clustermanager:error:flow
+Trace created enabled: clustermanager:info:flow
+Trace created enabled: catmanager:error:flow
+Trace created enabled: catmanager:info:flow
+Trace created enabled: cal:error:flow
+Trace created enabled: cal:info:flow
+Trace created enabled: cachemanager:error:flow
+Trace created enabled: clt:error:flow
+Trace created enabled: clt:info:flow
+Trace created enabled: bfc:metaIO:error
+Trace created enabled: bfc:startup:flow
+Trace created enabled: bfc:corruption:error
+Trace created enabled: bfc:vsmap:flow
+Trace created enabled: bfc:disk:flow
+Trace created enabled: bfc:esa:lookup
+Trace created enabled: hrm:flush:flow
+Trace created enabled: hrm:warn:flow
+Trace created enabled: hrm:error:flow
+Trace created enabled: hrm:info:flow
+Trace created enabled: Sched:warn:flow
+Trace created enabled: Sched:error:flow
+Trace created enabled: nvram:info:flow
+Trace created enabled: nvram:error:flow
+Trace created enabled: hrm:vrbl:flow
+Trace created enabled: hrm:warn:flow
+Trace created enabled: hrm:error:flow
+Trace created enabled: hrm:info:flow
+Trace created enabled: J2Manager:vrbl:flow
+Trace created enabled: J2Manager:error:flow
+Trace created enabled: J2Manager:info:flow
+Trace created enabled: hlbatracker:error:flow
+Trace created enabled: Firmwareupg:error:flow
+Trace created enabled: zmdtracker:error:flow
+Trace created enabled: z0it:error:flow
+Trace created enabled: j1:vrbl:journal
+Trace created enabled: j1:vrbl:info
+Trace created enabled: j1:error:flow
+Trace created enabled: std:cout:data
+Trace created enabled: ssp:error:flow
+Trace created enabled: systemmanager:vrbl:flow
+Trace created enabled: systemmanager:info:flow
+Trace created enabled: systemmanager:error:flow
+Trace created enabled: systemmanager:vrbl:dpm
+Trace created enabled: spmm:vrbl:flow
+Trace created enabled: spmm:error:flow
+Trace created enabled: rm:warn:flow
+Trace created enabled: rm:error:flow
+Trace created enabled: rm:info:flow
+Trace created enabled: memorypool:info:flow
+Trace created enabled: memorypool:error:flow
+Trace created enabled: luninfo:error:flow
+Trace created enabled: j1:error:flow
+Trace created enabled: j1r:vrbl:flow
+Trace created enabled: j1r:warn:flow
+Trace created enabled: j1r:error:flow
+Trace created enabled: j1r:info:flow
+Trace created enabled: j1r:info2:flow
+Trace created enabled: idlemonitor:error:flow
+Trace created enabled: hostappmanager:info:flow
+Trace created enabled: hostappmanager:error:flow
+Trace created enabled: hostappmanager:error:reply
+Trace created enabled: event:vrbl:flow
+Trace created enabled: eventlog:error:flow
+Trace created enabled: epm:error:flow
+Trace created enabled: epm:info:flow
+Trace created enabled: ErrorInjection:error:flow
+Trace created enabled: dud:vrbl:flow
+Trace created enabled: dud:error:flow
+Trace created enabled: powermanager:error:flow
+Trace created enabled: dpm:vrbl:flow
+Trace created enabled: dpm:warn:flow
+Trace created enabled: dpm:error:flow
+Trace created enabled: dpm:info:flow
+Trace created enabled: dm:error:flow
+Trace created enabled: dm:info:all
+Trace created enabled: diaginfo:error:flow
+Trace created enabled: defragmenter:info:target
+Trace created enabled: defragmenter:error:flow
+Trace created enabled: default:error:flow
+Trace created enabled: diags:vrbl:flow
+Unable to open the FlashConfigFile: /bd0/FlashConfigData
+FlashConfigData: DemoMode = 0
+DISK_CLEAR button: 0
+FlashConfigData: ClearDisk = 0
+2015-12-10,08:26:31.46: Binaries built with ENABLE_BRICK = 1
+2015-12-10,08:26:31.46: Kernel diag handlers : 
+2015-12-10,08:26:31.46: /proc/drobo/disk/show
+2015-12-10,08:26:31.46: /proc/drobo/disk/log
+2015-12-10,08:26:31.46: /proc/drobo/../kernel/meminfo
+2015-12-10,08:26:31.46: /proc/drobo/../kernel/version
+2015-12-10,08:26:31.46: /proc/drobo/../kernel/bootline
+2015-12-10,08:26:31.46: Kernel diags buffer size = 65536
+ In BRICK mode - Ignoring cleardisk request
+ClearDisk(final) = 0
+
+fast ticks per us = 25
+2015-12-10,08:26:31.46: Output redirected to stdout & log
+2015-12-10,08:26:31.46: *** Someone is setting 'Blade' to '0' ***
+2015-12-10,08:26:31.48: *** Someone is setting 'Node' to '0' ***
+2015-12-10,08:26:31.81: Console configured	[*.........]
+2015-12-10,08:26:31.83: 
+2015-12-10,08:26:31.83: SHOCKWAVE PLATFORM SOFTWARE BUILD
+2015-12-10,08:26:31.83: 
+2015-12-10,08:26:31.83: Build Date/Time: Nov 16 2015,15:56:39
+2015-12-10,08:26:31.83: Version Number: 8.79.77980M(3.3.0)(3.3.0) NODEBUG BUILD (GCC) (Marvell Sheeva 88SV584x, Board= Shockwave 1.0 ARMARCHV7 LE core)
+2015-12-10,08:26:31.83: 
+2015-12-10,08:26:31.83: LABMODE is DISABLED
+2015-12-10,08:26:31.83: 
+2015-12-10,08:26:31.83: Enabled board features:
+2015-12-10,08:26:31.83: -----------------------
+2015-12-10,08:26:31.83: Transport fathpath code ENABLED
+2015-12-10,08:26:31.83: Diagnostics log code ENABLED
+2015-12-10,08:26:31.83: TDFeaturelib code ENABLED
+2015-12-10,08:26:31.84: Flash image code ENABLED
+2015-12-10,08:26:31.84: Disk presence detect ENABLED
+2015-12-10,08:26:31.84: PMU ENABLED
+2015-12-10,08:26:31.84: LX Core ENABLED
+2015-12-10,08:26:31.84: RealTimeClock ENABLED
+2015-12-10,08:26:31.86: MV78X00 CPU ENABLED
+2015-12-10,08:26:31.86: Number of vxWorks cores is 1
+2015-12-10,08:26:31.86: Shutdown LED ENABLED
+2015-12-10,08:26:31.86: LED dimming ENABLED
+2015-12-10,08:26:31.88: Max drives supported : 6
+2015-12-10,08:26:31.88: 
+2015-12-10,08:26:31.88: Features enabled in this build:
+2015-12-10,08:26:31.88: -------------------------------
+2015-12-10,08:26:31.89: Clear disk on reboot in demomode is ENABLED
+2015-12-10,08:26:31.89: Cluster Scavenger feature ENABLED
+2015-12-10,08:26:31.89: Striping feature ENABLED
+2015-12-10,08:26:31.91: Async ClusterManager bitmap parsing feature ENABLED
+2015-12-10,08:26:31.91: Extending lock support feature ENABLED
+2015-12-10,08:26:31.91: Diags bypass locks feature is ENABLED
+2015-12-10,08:26:31.93: J2 dual buffer feature ENABLED
+2015-12-10,08:26:31.93: J2 parallel spill feature is ENABLED
+2015-12-10,08:26:31.93: J1 replay tagging is ENABLED
+2015-12-10,08:26:31.94: HRM dropping of HLBAT locks is ENABLED
+2015-12-10,08:26:31.94: ErrorInjection is ENABLED
+2015-12-10,08:26:31.94: RTP Heap usage tripwire set at 0x08000000 bytes
+2015-12-10,08:26:31.96: Write journal support ENABLED with 16 writer threads and 16 reader threads
+2015-12-10,08:26:31.96: WRITESAME0/UNMAP support is ENABLED
+2015-12-10,08:26:31.96: Readahead support enabled with support for 10 streams
+2015-12-10,08:26:31.98: System standby is ENABLED
+2015-12-10,08:26:31.98: Event log recording ENABLED
+2015-12-10,08:26:31.98: SMART monitoring ENABLED
+2015-12-10,08:26:32.00: Data Scrubber scrubbing METADATA and USERDATA
+2015-12-10,08:26:32.00: Calendar Server ENABLED
+2015-12-10,08:26:32.00: PSRAM battery power off in standby is ENABLED
+2015-12-10,08:26:32.01: On-Proc monitor is ENABLED
+2015-12-10,08:26:32.01: Read Prioritization queuing is ENABLED
+2015-12-10,08:26:32.01: Multi I/O issue transport is ENABLED
+2015-12-10,08:26:32.03: Use of Zone Patching is ENABLED
+2015-12-10,08:26:32.03: Use of DRStripe relayout readahead is ENABLED
+2015-12-10,08:26:32.03: Use of fast Mirrored Zone reads is ENABLED
+2015-12-10,08:26:32.04: Write coalescing min request set to 2304KiB
+2015-12-10,08:26:32.04: Reboot after LUN change is ENABLED
+2015-12-10,08:26:32.04: ClusterManager multiple bitmap segments are ENABLED
+2015-12-10,08:26:32.06: Defragmenter is ENABLED
+2015-12-10,08:26:32.06: Use of MStripeX and M3StripeX Zones is ENABLED
+2015-12-10,08:26:32.06: Ordered lock pending queues are ENABLED
+2015-12-10,08:26:32.08: Dynamic WorkerThread priorities are ENABLED
+2015-12-10,08:26:32.08: LockObject based priority inheritance is ENABLED
+2015-12-10,08:26:32.08: CRO splitting is ENABLED
+2015-12-10,08:26:32.09: Bypass of CATM lock is ENABLED
+2015-12-10,08:26:32.09: Hold lock on SyncOnCRO is ENABLED
+2015-12-10,08:26:32.09: Stripe alignment of writes is ENABLED
+2015-12-10,08:26:32.11: Aggressive background threads ENABLED
+2015-12-10,08:26:32.11: Tiering is ENABLED
+2015-12-10,08:26:32.11: Physical tiering is ENABLED
+2015-12-10,08:26:32.11: ZMDT snapshotting is ENABLED
+2015-12-10,08:26:32.13: BFC is ENABLED
+2015-12-10,08:26:32.13: Aggressive BFC population is ENABLED
+2015-12-10,08:26:32.13: CONSUMER platform build
+2015-12-10,08:26:32.13: Write-worker interlock is ENABLED
+2015-12-10,08:26:32.14: 
+2015-12-10,08:26:32.14: Features disabled in this build:
+2015-12-10,08:26:32.14: --------------------------------
+2015-12-10,08:26:32.14: Checked features are disabled
+2015-12-10,08:26:32.16: Custom Windview events disabled
+2015-12-10,08:26:32.16: Reduced Region Size feature disabled
+2015-12-10,08:26:32.16: J1 disk flushing feature disabled
+2015-12-10,08:26:32.18: Reduced Thresholds feature disabled
+2015-12-10,08:26:32.18: Stats Gathering feature disabled
+2015-12-10,08:26:32.18: Capacity Console Display feature disabled
+2015-12-10,08:26:32.19: Read-after-write verify feature disabled
+2015-12-10,08:26:32.19: Verify redundancy after writes feature disabled
+2015-12-10,08:26:32.19: Always Zero Init new Zones feature disabled
+2015-12-10,08:26:32.21: Lock heirarchy enforcement feature disabled
+2015-12-10,08:26:32.21: One I/O at a time feature is disabled
+2015-12-10,08:26:32.21: J2 journal pass through mode is disabled
+2015-12-10,08:26:32.23: J2 journal copy to DRAM is disabled
+2015-12-10,08:26:32.23: J2 journal mirroring to DRAM is disabled
+2015-12-10,08:26:32.23: ZoneManager MirrorOnly Zone pool is disabled
+2015-12-10,08:26:32.24: ZoneManager prefer Mirrored Zones is disabled
+2015-12-10,08:26:32.24: SMART testing disabled
+2015-12-10,08:26:32.24: Auto format LUNs as FAT32 disabled
+2015-12-10,08:26:32.26: Spin on bad J2 signature is disabled
+2015-12-10,08:26:32.26: Scheduler watchdog is disabled
+2015-12-10,08:26:32.26: Scheduler watchdog monitor is disabled
+2015-12-10,08:26:32.28: Lock duration monitor is disabled
+2015-12-10,08:26:32.28: ReadAhead ZM queuing is disabled
+2015-12-10,08:26:32.28: ClientRequest diags contexts are disabled
+2015-12-10,08:26:32.29: Use of Dual Disk Redundancy by default is disabled
+2015-12-10,08:26:32.29: Prefer diagonal parity for recovery is disabled
+2015-12-10,08:26:32.29: Use of small Regions for Demo Mode is disabled
+2015-12-10,08:26:32.31: Automatic LUN management is disabled
+2015-12-10,08:26:32.31: Backup LUN management is disabled
+2015-12-10,08:26:32.31: Buffer marking is disabled
+2015-12-10,08:26:32.33: Buffer mark checking is disabled
+2015-12-10,08:26:32.33: 
+2015-12-10,08:26:32.33: After signals	[.*........]
+2015-12-10,08:26:32.36: Initializing object pools and slabs
+2015-12-10,08:26:32.36: Slab pool <7STLSlabILj12EE> created empty (perCore[0] = 0xffab86a0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.36: Slab pool <7STLSlabILj16EE> created empty (perCore[0] = 0xffab86e0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.36: Slab pool <7STLSlabILj20EE> created empty (perCore[0] = 0xffab8720; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.38: Slab pool <7STLSlabILj24EE> created empty (perCore[0] = 0xffab8760; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.38: Slab pool <7STLSlabILj28EE> created empty (perCore[0] = 0xffab87a0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.39: Slab pool <7STLSlabILj36EE> created empty (perCore[0] = 0xffab87e0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.41: Slab pool <7STLSlabILj40EE> created empty (perCore[0] = 0xffab8820; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.41: Slab pool <7STLSlabILj44EE> created empty (perCore[0] = 0xffab8860; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.43: Slab pool <7STLSlabILj48EE> created empty (perCore[0] = 0xffab88a0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.44: Slab pool <7STLSlabILj56EE> created empty (perCore[0] = 0xffab88e0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.44: Slab pool <7STLSlabILj72EE> created empty (perCore[0] = 0xffab8920; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.46: Slab pool <24SlabLightweightSemaphore> created empty (perCore[0] = 0xffab9e60; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.46: obj pool <12VxWorksMutexIXadL_Z18vxworks_mutex_initEEXadL_Z15vxworks_destroyEEXadL_Z12vxworks_lockEEXadL_Z16vxworks_try_lockEEXadL_Z14vxworks_unlockEEXadL_Z22vxworks_mutex_getownerEEXadL_Z26vxworks_getnumblockedtasksEEE> entries = 3000, baseAddress = 0x00000000
+2015-12-10,08:26:32.54: Slab pool <N14LockObjectBase17PendingLockObjectE> created empty (perCore[0] = 0xffab8580; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.54: Slab pool <N10LockObject11SharedOwnerE> created empty (perCore[0] = 0xffab85c0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.54: Slab pool <N19ExtendingLockObject11SharedOwnerE> created empty (perCore[0] = 0xffab8600; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.54: Slab pool <N8SlabListIN12SlabListPtrsIN17CacheRangeTracker16CacheRangeObjectEE10PtrWrapperEE9node_typeE> created empty (perCore[0] = 0xffaba1e0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.54: Slab pool <N8SlabListIN12SlabListPtrsI18CacheTrackerObjectE10PtrWrapperEE9node_typeE> created empty (perCore[0] = 0xffaba220; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.56: Slab pool <18CacheTrackerObject> created empty (perCore[0] = 0xffab9ea0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.58: obj pool <14USBHostRequest> entries = 4000, baseAddress = 0x00000000
+2015-12-10,08:26:32.59: obj pool <16MultiHostRequest> entries = 5000, baseAddress = 0x00000000
+2015-12-10,08:26:32.59: Slab pool <N9DataBlock14DataBlockValueE> created empty (perCore[0] = 0xffab8540; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.59: Slab pool <9DataStore> created empty (perCore[0] = 0xffab9ee0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.61: Slab pool <N8SlabListI9DataBlockE9node_typeE> created empty (perCore[0] = 0xffab89c0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.63: obj pool <7DiskSGL> entries = 144, baseAddress = 0x00000000
+2015-12-10,08:26:32.63: Slab pool <N11clidTracker4elemE> created empty (perCore[0] = 0xffab9f20; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.64: Slab pool <9J2subTran> created empty (perCore[0] = 0xffab9de0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.66: Slab pool <5J2set> created empty (perCore[0] = 0xffab9e20; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.66: Slab pool <N4J2io4elemE> created empty (perCore[0] = 0xffab9f60; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.68: Slab pool <N10DataWindow8DataPaneE> created empty (perCore[0] = 0xffab8980; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.69: obj pool <11MemoryBlock> entries = 300, baseAddress = 0x00000000
+2015-12-10,08:26:32.71: obj pool <15WriteCATEntries> entries = 36, baseAddress = 0x00000000
+2015-12-10,08:26:32.71: Slab pool <11BitmapRange> created empty (perCore[0] = 0xffab9fe0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.71: Slab pool <15ClusterRunIndex> created empty (perCore[0] = 0xffab9fa0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.73: Slab pool <N8SlabListIN10Dispatcher16PerCpuWorkerList12THREAD_STATEEE9node_typeE> created empty (perCore[0] = 0xffaba1a0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.74: Slab pool <N9IOTracker12ExtendedLockE> created empty (perCore[0] = 0xffab8640; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.74: Slab pool <N9IOTracker20ExtendingLockObjectsE> created empty (perCore[0] = 0xffaba020; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.76: Slab pool <N9IOTracker15ioTrackerPoliceE> created empty (perCore[0] = 0xffaba060; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.78: Slab pool <N9IOTracker20TransactionIDWrapperE> created empty (perCore[0] = 0xffaba0a0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.78: Slab pool <16IOTrackerWrapper> created empty (perCore[0] = 0xffaba0e0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.79: Slab pool <14_readq_element> created empty (perCore[0] = 0xffaba120; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:32.81: Slab pool <9SlabArrayIP18CacheTrackerObjectLj6EE> created empty (perCore[0] = 0xffaba160; sizeof(perCore) = 0x00000040
+Flash Configuration Values
+
+
+2015-12-10,08:26:32.83:  ====%%%%==== FW-Download: Helper Thread Created!!  Asking it to check CRC & fixup System Images ... 
+2015-12-10,08:26:32.86: Debug init	[..*.......]
+2015-12-10,08:26:32.91: Added shared data region /UncachedPool to core dump mem filter : 0xd0b00000 length 0x00e1f000
+2015-12-10,08:26:32.91: obj pool <19MemoryBlockUncached> entries = 450, baseAddress = 0xd0b00000
+2015-12-10,08:26:33.00: Could not Open File "/bd0/hdr".  May be missing?
+2015-12-10,08:26:33.00: Could not Open File "/bd0/hdr_prev".  May be missing?
+2015-12-10,08:26:33.00: Could not Open File "/bd0/LxHdr".  May be missing?
+2015-12-10,08:26:33.00: Could not Open File "/bd0/LxHdr_prev".  May be missing?
+2015-12-10,08:26:33.00: Could not Open File "/bd0/LXFS.hdr".  May be missing?
+Creating MemoryBlockUncached pool at baseAddress d0b00000 to d191e100
+2015-12-10,08:26:33.28: Number of CRO's:204800
+2015-12-10,08:26:33.29: Added shared data region /crobuffer to core dump mem filter : 0xc2e00000 length 0x03200000
+2015-12-10,08:26:33.29: obj pool <N17CacheRangeTracker16CacheRangeObjectE> entries = 204800, baseAddress = 0xc2e00000
+2015-12-10,08:26:33.74: Added shared data region /SHJ1 to core dump mem filter : 0xb6000000 length 0x0ce00000
+SHJ1 @ 0xb6000000
+2015-12-10,08:26:33.74: Added shared data region /SHMQ to core dump mem filter : 0xfef00000 length 0x00200000
+SHMQ @ 0xfef00000
+2015-12-10,08:26:33.76: Added shared data region /SHLX to core dump mem filter : 0xff100000 length 0x00200000
+SHLX @ 0xff100000
+2015-12-10,08:26:33.76: Added shared data region /SHVX to core dump mem filter : 0xff300000 length 0x00200000
+SHVX @ 0xff300000
+2015-12-10,08:26:33.76: Idle loop for core 0 bound; physical CPU ID 0
+2015-12-10,08:26:40.76: CPU 0 reports a loop rate of 577150000
+2015-12-10,08:26:40.76: IdleMonitor reports a total loop rate of 577150000 loops per second
+2015-12-10,08:26:40.78: IdleMonitor Initialize passed	[...*......]
+2015-12-10,08:26:40.79: Added shared data region /usbSgList to core dump mem filter : 0xf4100000 length 0x00002000
+2015-12-10,08:26:40.79: Added shared data region /usbCmdResp to core dump mem filter : 0xf4102000 length 0x00004000
+HibernateSc called ...with 3 
+2015-12-10,08:26:40.89: ELM: Thu Dec 10 08:26:40 2015: 
+2015-12-10,08:26:40.89: SYSTEM BOOTING:
+2015-12-10,08:26:40.89: ELM: Thu Dec 10 08:26:40 2015: ELM: Boot 5N DRB154901A00995 Flags: 0xa0 bat OFF HIB OFF AMIT 'o' ver: 8.79.77980M(3.3.0)
+2015-12-10,08:26:40.89: ELM: Thu Dec 10 08:26:40 2015: ELM: HIB: ERROR: Could not open hibernate header file. Possible Journal loss.
+2015-12-10,08:26:40.89: 
+2015-12-10,08:26:41.11: EventLogManager Initialize passed	[....*.....]
+Failed to open the RBRES PM region, PM free space = 16384 : creating RBRES
+2015-12-10,08:26:41.13: ELM: Thu Dec 10 08:26:41 2015: RebootReason: No stored reboot reason - possible powerloss
+2015-12-10,08:26:41.28: SM: PMU current version = 1.000.00078 desired version = 1.000.00078
+2015-12-10,08:26:41.48: SystemStatusPool.cpp:89 SystemStatusPool: Init compleat
+2015-12-10,08:26:41.53: SPMM: Timer id = -644246784
+2015-12-10,08:26:41.53: Added shared data region /nvramDRAMSim to core dump mem filter : 0xf4109000 length 0x00100000
+2015-12-10,08:26:41.54: Added shared data region /nvramPSRAM to core dump mem filter : 0xd0100000 length 0x00a00000
+2015-12-10,08:26:41.61: nvram.cpp:187 NVRAM was wiped, initializing region 0
+2015-12-10,08:26:42.31: nvram.cpp:187 NVRAM was wiped, initializing region 1
+2015-12-10,08:26:42.31: NVRAM Initialize passed	[.....*....]
+2015-12-10,08:26:42.39: Added shared data region /ZMDT to core dump mem filter : 0xc6000000 length 0x08000000
+2015-12-10,08:26:42.68: Added shared data region /readbuffer to core dump mem filter : 0xf4600000 length 0x0a100000
+2015-12-10,08:26:42.73: Added shared data region /readbuffer to core dump mem filter : 0xf4600000 length 0x0a100000
+2015-12-10,08:26:42.73: Cache init complete	[......*...]
+GetBuffer for 0x10011001
+GetBuffer: base region address 0xd0100000 offset of partition 0x00000040
+GetBuffer 0xd0100040
+2015-12-10,08:26:42.74: J2Manager::initialize: locating j2soft at 0xd0100040
+2015-12-10,08:26:42.74: J2::initialize: J2 signature missing initialising NVRAM for 6 disks.
+2015-12-10,08:26:42.74: ELM: Thu Dec 10 08:26:42 2015: J2::initialize: signature Read from NVRAM: 0x55555555 signature expected: 0x4a323130 [CONTROLLED PSRAM WIPE]
+2015-12-10,08:26:42.89: J2::Init: NVRAM quick test PASSED on journal 0
+2015-12-10,08:26:42.89: J2Manager::initialize: initialised disk 0 with journalette at 0xd0100440, next at 0xd02aad40
+2015-12-10,08:26:43.03: J2::Init: NVRAM quick test PASSED on journal 1
+2015-12-10,08:26:43.03: J2Manager::initialize: initialised disk 1 with journalette at 0xd02aad40, next at 0xd0455640
+2015-12-10,08:26:43.18: J2::Init: NVRAM quick test PASSED on journal 2
+2015-12-10,08:26:43.18: J2Manager::initialize: initialised disk 2 with journalette at 0xd0455640, next at 0xd05fff40
+2015-12-10,08:26:43.31: J2::Init: NVRAM quick test PASSED on journal 3
+2015-12-10,08:26:43.31: J2Manager::initialize: initialised disk 3 with journalette at 0xd05fff40, next at 0xd07aa840
+2015-12-10,08:26:43.49: J2::Init: NVRAM quick test PASSED on journal 4
+2015-12-10,08:26:43.49: J2Manager::initialize: initialised disk 4 with journalette at 0xd07aa840, next at 0xd0955140
+2015-12-10,08:26:43.63: J2::Init: NVRAM quick test PASSED on journal 5
+2015-12-10,08:26:43.63: J2Manager::initialize: initialised disk 5 with journalette at 0xd0955140, next at 0xd0affa40
+2015-12-10,08:26:43.63: J2 Initialize passed	[.......*..]
+2015-12-10,08:26:43.64: Added shared data region /usbCmdResp to core dump mem filter : 0xf4102000 length 0x00004000
+2015-12-10,08:26:43.64: Added shared data region /resRel to core dump mem filter : 0xf4106000 length 0x00002000
+2015-12-10,08:26:43.64: Added shared data region /SGLD to core dump mem filter : 0xf4212000 length 0x00100000
+2015-12-10,08:26:43.64: HRM:Multi: found 167 icore SGLs
+2015-12-10,08:26:43.69: Added shared data region /SHJ1 to core dump mem filter : 0xb6000000 length 0x0ce00000
+2015-12-10,08:26:43.73: Added shared data region /readbuffer to core dump mem filter : 0xf4600000 length 0x0a100000
+2015-12-10,08:26:43.96: HRManager Initialize passed	[........*.]
+2015-12-10,08:26:44.31: EPM Initialize passed	[.........*]
+2015-12-10,08:26:44.33: Driver "/disk" opened OK with handle 8
+2015-12-10,08:26:44.33: Disk Interface Capabilities:
+2015-12-10,08:26:44.33: 	Number of Slots: 6
+2015-12-10,08:26:44.33: 	Capabilities bitmap: 0x0000000000000000
+2015-12-10,08:26:44.33: 	Max SGL length: 128
+2015-12-10,08:26:44.33: 	Default timeout in seconds: 20
+SetupHotPlug
+mvCheckHotPlug: Dropping pre-enumeration disk insert event for drive 1
+mvCheckHotPlug: Dropping pre-enumeration disk insert event for drive 2
+mvCheckHotPlug: Dropping pre-enumeration disk insert event for drive 3
+mvCheckHotPlug: Dropping pre-enumeration disk insert event for drive 0
+mvCheckHotPlug: Dropping pre-enumeration disk insert event for drive 4
+mvCheckHotPlug: Msg Rcvd; Adapter 29504259 Drive 29504102 Event 9 
+2015-12-10,08:26:44.53: [tHotPlug] MainLoop: mvCheckHotPlug() returned; eventID=9; adapterID=29504259; driveID=29504102
+2015-12-10,08:26:44.64: DiskManager Initialize passed	[*........*]
+2015-12-10,08:26:44.66: DiskPackManager Initialize passed	[.*.......*]
+2015-12-10,08:26:44.68: RegionManager Initialize passed	[..*......*]
+2015-12-10,08:26:44.69: ZoneManager Initialize passed	[...*.....*]
+2015-12-10,08:26:44.73: LayoutManager Initialize passed	[....*....*]
+2015-12-10,08:26:44.74: Zone0InfoTable Initialize passed	[.....*...*]
+2015-12-10,08:26:44.76: CAL::Initialize: read wall clock of Thu Dec 10 08:26:44 2015
+2015-12-10,08:26:44.76: Calendar Server Initialize passed	[......*..*]
+2015-12-10,08:26:44.78: Reset state for ClusterPool BULK
+2015-12-10,08:26:44.78: Reset state for ClusterPool TRANS
+2015-12-10,08:26:44.78: ClusterManager Initialize passed	[.......*.*]
+2015-12-10,08:26:44.79: CatManager Initialize passed	[........**]
+2015-12-10,08:26:44.81: DeadlockWatchdog Initialize passed	[*.......**]
+2015-12-10,08:26:44.84: Added shared data region /mgmtpool to core dump mem filter : 0xf420a000 length 0x00008000
+2015-12-10,08:26:44.84: Host App Manager Initialize passed	[.*......**]
+2015-12-10,08:26:44.86: DiskUtilizationDaemon Initialize passed	[..*.....**]
+2015-12-10,08:26:44.88: J1tag Initialize passed	[...*....**]
+2015-12-10,08:26:44.89: TopEnd Initialize passed	[....*...**]
+GetBuffer for 0x10012001
+GetBuffer: base region address 0xf4109000 offset of partition 0x00000040
+GetBuffer 0xf4109040
+2015-12-10,08:26:44.91: Writejournal Initialize passed	[.....*..**]
+2015-12-10,08:26:44.94: Dispatcher Initialize passed	[......*.**]
+2015-12-10,08:26:44.98: DataScrubber Initialize passed	[.......***]
+2015-12-10,08:26:45.00: tDefrag thread created
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.00: HLBAT::cachePrefillThread: startedHLBAT::cachePrefillThread: startedHLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.01: 
+2015-12-10,08:26:45.01: 
+2015-12-10,08:26:45.01: HLBAT::cachePrefillThread: startedHLBAT::cachePrefillThread: startedHLBAT::cachePrefillThread: started
+2015-12-10,08:26:45.03: 
+2015-12-10,08:26:45.03: 
+2015-12-10,08:26:45.03: Slab pool <Created relayout thread number Created relayout thread number Created relayout thread number Created relayout thread number N3BFCI19BFCProductionParamsE14RangeListEntryINS1_11VirtualAddrEEE0123> created empty (perCore[0] = 
+2015-12-10,08:26:45.06: 
+2015-12-10,08:26:45.06: 
+2015-12-10,08:26:45.06: 
+2015-12-10,08:26:45.06: 0xffae31e0; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:45.06: Slab pool <N3BFCI19BFCProductionParamsE14RangeListEntryINS1_12PhysicalAddrEEE> created empty (perCore[0] = 0xffae3220; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:45.08: Slab pool <N3BFCI19BFCProductionParamsE14RangeListEntryINS1_10RegionAddrEEE> created empty (perCore[0] = 0xffae3260; sizeof(perCore) = 0x00000040
+2015-12-10,08:26:45.09: disabling event handling	[*......***]
+2015-12-10,08:26:45.13: DiskManager LoadDiskPack called
+Number of adapters 3
+Number of drives 6
+Adapter 0 has 2 channels
+Adapter 0 channel 0 = /sata00
+Adapter 0 channel 1 = /sata01
+Adapter 1 has 2 channels
+Adapter 1 channel 0 = /sata02
+Adapter 1 channel 1 = /sata03
+Adapter 2 has 2 channels
+Adapter 2 channel 0 = /sata04
+Adapter 2 channel 1 = /sata05
+2015-12-10,08:26:45.14: DM::UpdateMap
+getDrivesPresentBitmap() drivemap = 0x1f number_of_drives = 5
+2015-12-10,08:26:45.14: DM::UpdateMap phys drive map now 0x1f (5 disks)
+2015-12-10,08:26:45.14: [iRunesa] LoadDiskPack: slot 0's initial insertion sequence number is 4
+2015-12-10,08:26:45.16: [iRunesa] SetLastInsertSeqno: setting slot 0's last insertion sequence number to 4
+DO::Initialize 0
+DO::SetupDiskQueue
+targetDrive: OpenDrive 0: devname = /sata00
+Opened drive 0, devname = '/sata00', Handle = 11
+2015-12-10,08:26:45.18: [iRunesa] Acknowledging slot 0's insertion sequence number of 4
+[iRunesa] 2015-12-10 08:26:45: diskSetInsertionResponse: RTP updated insertion response number to 4 on slot 0 (last device insertion sequence number 4)
+ResetDrive 0
+Drive 0 features: setSupported=0x0000, setsSupported=0x0000, featureExtension=0x0000
+  featureEnabled85=0x0000, featureEnabled86=0x0000, featureDefault=0x0000
+  AAM is disabled
+2015-12-10,08:26:45.24: Drive '0' Model '        WDC WD10EZEX-00KSATA            ' Rev '15.01H15' Serial '     WD-WCC1S4573942'
+2015-12-10,08:26:45.24: Number bytes per sector = 512
+2015-12-10,08:26:45.24: [iRunesa] LoadDiskPack: slot 1's initial insertion sequence number is 1
+2015-12-10,08:26:45.24: [iRunesa] SetLastInsertSeqno: setting slot 1's last insertion sequence number to 1
+DO::Initialize 1
+DO::SetupDiskQueue
+targetDrive: OpenDrive 1: devname = /sata01
+Opened drive 1, devname = '/sata01', Handle = 12
+2015-12-10,08:26:45.26: [iRunesa] Acknowledging slot 1's insertion sequence number of 1
+[iRunesa] 2015-12-10 08:26:45: diskSetInsertionResponse: RTP updated insertion response number to 1 on slot 1 (last device insertion sequence number 1)
+ResetDrive 1
+Drive 1 features: setSupported=0x0000, setsSupported=0x0000, featureExtension=0x0000
+  featureEnabled85=0x0000, featureEnabled86=0x0000, featureDefault=0x0000
+  AAM is disabled
+2015-12-10,08:26:45.31: Drive '1' Model '        WDC WD5000AVDS-6SATA            ' Rev '01.00A01' Serial '     WD-WCAV9DM63423'
+2015-12-10,08:26:45.31: Number bytes per sector = 512
+2015-12-10,08:26:45.31: [iRunesa] LoadDiskPack: slot 2's initial insertion sequence number is 2
+2015-12-10,08:26:45.33: [iRunesa] SetLastInsertSeqno: setting slot 2's last insertion sequence number to 2
+DO::Initialize 2
+DO::SetupDiskQueue
+targetDrive: OpenDrive 2: devname = /sata02
+Opened drive 2, devname = '/sata02', Handle = 13
+2015-12-10,08:26:45.34: [iRunesa] Acknowledging slot 2's insertion sequence number of 2
+[iRunesa] 2015-12-10 08:26:45: diskSetInsertionResponse: RTP updated insertion response number to 2 on slot 2 (last device insertion sequence number 2)
+ResetDrive 2
+Drive 2 features: setSupported=0x0000, setsSupported=0x0000, featureExtension=0x0000
+  featureEnabled85=0x0000, featureEnabled86=0x0000, featureDefault=0x0000
+  AAM is disabled
+2015-12-10,08:26:45.38: Drive '2' Model '        WDC WD5000AVDS-6SATA            ' Rev '01.00A01' Serial '     WD-WCAV9AU44777'
+2015-12-10,08:26:45.39: Number bytes per sector = 512
+2015-12-10,08:26:45.39: [iRunesa] LoadDiskPack: slot 3's initial insertion sequence number is 3
+2015-12-10,08:26:45.41: [iRunesa] SetLastInsertSeqno: setting slot 3's last insertion sequence number to 3
+DO::Initialize 3
+DO::SetupDiskQueue
+targetDrive: OpenDrive 3: devname = /sata03
+Opened drive 3, devname = '/sata03', Handle = 14
+2015-12-10,08:26:45.43: [iRunesa] Acknowledging slot 3's insertion sequence number of 3
+[iRunesa] 2015-12-10 08:26:45: diskSetInsertionResponse: RTP updated insertion response number to 3 on slot 3 (last device insertion sequence number 3)
+ResetDrive 3
+Drive 3 features: setSupported=0x0000, setsSupported=0x0000, featureExtension=0x0000
+  featureEnabled85=0x0000, featureEnabled86=0x0000, featureDefault=0x0000
+  AAM is disabled
+2015-12-10,08:26:45.46: Drive '3' Model '        WDC WD5000AAKX-0SATA            ' Rev '19.01H19' Serial '     WD-WCC2EAZ83410'
+2015-12-10,08:26:45.48: Number bytes per sector = 512
+2015-12-10,08:26:45.48: [iRunesa] LoadDiskPack: slot 4's initial insertion sequence number is 5
+2015-12-10,08:26:45.49: [iRunesa] SetLastInsertSeqno: setting slot 4's last insertion sequence number to 5
+DO::Initialize 4
+DO::SetupDiskQueue
+targetDrive: OpenDrive 4: devname = /sata04
+Opened drive 4, devname = '/sata04', Handle = 15
+2015-12-10,08:26:45.51: [iRunesa] Acknowledging slot 4's insertion sequence number of 5
+[iRunesa] 2015-12-10 08:26:45: diskSetInsertionResponse: RTP updated insertion response number to 5 on slot 4 (last device insertion sequence number 5)
+ResetDrive 4
+Drive 4 features: setSupported=0x0000, setsSupported=0x0000, featureExtension=0x0000
+  featureEnabled85=0x0000, featureEnabled86=0x0000, featureDefault=0x0000
+  AAM is disabled
+2015-12-10,08:26:45.54: Drive '4' Model '        WDC WD5000AVDS-6SATA            ' Rev '01.00A01' Serial '     WD-WCAV9AU49809'
+2015-12-10,08:26:45.56: Number bytes per sector = 512
+2015-12-10,08:26:45.84: J2Manager::startSoft: disk 1=>[WD-WCAV9DM63423 WDCWD5000AVDS-6SATA 01.00A01]
+2015-12-10,08:26:45.84: J2Manager::startSoft: disk 3=>[WD-WCC2EAZ83410 WDCWD5000AAKX-0SATA 19.01H19]
+2015-12-10,08:26:45.84: J2Manager::startSoft: disk 0=>[WD-WCC1S4573942 WDCWD10EZEX-00KSATA 15.01H15]
+2015-12-10,08:26:45.84: J2Manager::startSoft: disk 2=>[WD-WCAV9AU44777 WDCWD5000AVDS-6SATA 01.00A01]
+2015-12-10,08:26:45.84: J2Manager::startSoft: disk 4=>[WD-WCAV9AU49809 WDCWD5000AVDS-6SATA 01.00A01]
+2015-12-10,08:26:45.84: DiskManager LoadDiskPack passed
+2015-12-10,08:26:45.84: enabling event handling	[.*.....***]
+2015-12-10,08:26:45.88: CAL::registerAlarm: added
+2015-12-10,08:26:45.88: 	startTime	:Thu Dec 10 08:26:45 2015
+2015-12-10,08:26:45.88: 	expiryTime	:Thu Dec 10 08:36:45 2015
+2015-12-10,08:26:45.88: 	deliveryTime	:Thu Jan  1 00:00:00 1970
+2015-12-10,08:26:45.88: 	duration	:10Mins
+2015-12-10,08:26:45.88: 	remaining	:10Mins
+2015-12-10,08:26:45.88: 	source		:0x534d4c44 [DLMS]
+2015-12-10,08:26:45.88: 	type		:ONE SHOT SINGLE BOOT
+2015-12-10,08:26:45.89: CAL::registerAlarm: added
+2015-12-10,08:26:45.89: 	startTime	:Thu Dec 10 08:26:45 2015
+2015-12-10,08:26:45.89: 	expiryTime	:Thu Dec 10 08:36:45 2015
+2015-12-10,08:26:45.91: 	deliveryTime	:Thu Jan  1 00:00:00 1970
+2015-12-10,08:26:45.91: 	duration	:10Mins
+2015-12-10,08:26:45.91: 	remaining	:10Mins
+2015-12-10,08:26:45.91: 	source		:0x50494e48 [HNIP]
+2015-12-10,08:26:45.93: 	type		:ONE SHOT SINGLE BOOT
+2015-12-10,08:26:45.93: DLBAT flushed	[..*....***]
+2015-12-10,08:26:45.94: ELM: Thu Dec 10 08:26:45 2015: DPM: WE ARE IN BRICK MODE. FAILING TO LOAD THE PACK
+2015-12-10,08:26:45.94:  ____   _____  ______  _____  _    __ ___      ___   ______   __    _______ 
+2015-12-10,08:26:45.94: |  _ \|  __ \ |_   _|// ____|| |  / /| |\    //| | | ___  ||  __ \ |  ____|
+2015-12-10,08:26:45.96: | |_) || |__) \  | |  | |    | | / / | | \  // | | | |  | || |  | || |__   
+2015-12-10,08:26:45.96: |  _ < |  _  /   | |  | |    | |/ /  | |  \//  | | | |  | || |  | ||  __|  
+2015-12-10,08:26:45.98: | |_) || | \ \  _| |_ | |___ | | \ \ | |       | | | |__| || |__| || |____ 
+2015-12-10,08:26:45.98: |____//|_|  \ \|_____|\_____||_|  \_\|_|       |_| |______|| ___ / |______|
+2015-12-10,08:26:46.00: 
+IoSc: state = 0, serial = 0x0
+Interfaces enabled from the RTP ... bringing up No Interface first ...
+iSCSI ENABLED
+Interface ENABLED via syscall
+2015-12-10,08:26:46.16: Load failure, clearing LEDs
+[icCmd] 2015-12-10 08:26:46: interCoreGeneralCommThread: iSCSI stack UP message received
+[icCmd] 2015-12-10 08:26:46: ACTIVATING iSCSI INTERFACE WITH LUN&INTERFACES
+interfaceMakeActive called with int: iSCSI, active_int = No Interface
+Sending stack UP state up to the RTP.
+
+iSCSI interface is ENABLED
+NO active J1 manager recorded
+rtp_interface_status = 1 rtp_interface_down_sent = 0 first_make_active = 1 reset_count = 0
+takeDownOtherInterfaces:
+Interface iSCSI state is: ENABLED
+[icCmd] 2015-12-10 08:26:46: iSCSIMSChangeState: Called. New State: 2
+2015-12-10,08:26:46.18: USBHostRequest::rxCmd: iSCSI Stack Connected
+iSCSI ACTIVE
+2015-12-10,08:26:46.18: DISK PACK FAILED TO LOAD! USB IS UP BUT YOU CAN'T WRITE UNTIL PROBLEMS RECTIFIED!
+2015-12-10,08:26:52.24: LoadAbubs lun 0
+2015-12-10,08:27:36.16: DPM::discoverDis: slot 0 is 0x74706db0 sectors (931.51GiB)
+2015-12-10,08:27:36.16: 	=> Setting DIS LBAs to 0x0/0x3a37d900/0x74706d30
+2015-12-10,08:27:36.46: DPM::discoverDis: slot 1 is 0x3a386030 sectors (465.76GiB)
+2015-12-10,08:27:36.46: 	=> Setting DIS LBAs to 0x0/0x1d1c2100/0x3a385fb0
+2015-12-10,08:27:36.46: 	=> PackId = 0xf198ca23f198ca2c/0x4 [LD #1] layout = 3/2
+2015-12-10,08:27:36.73: DPM::discoverDis: slot 2 is 0x3a386030 sectors (465.76GiB)
+2015-12-10,08:27:36.73: 	=> Setting DIS LBAs to 0x0/0x1d1c2100/0x3a385fb0
+2015-12-10,08:27:36.73: 	=> PackId = 0xfc22752cfc227535/0x4 [LD #7] layout = 3/2
+2015-12-10,08:27:37.00: DPM::discoverDis: slot 3 is 0x3a386030 sectors (465.76GiB)
+2015-12-10,08:27:37.00: 	=> Setting DIS LBAs to 0x0/0x1d1c2100/0x3a385fb0
+2015-12-10,08:27:37.00: 	=> PackId = 0x17666d4817666d51/0x4 [LD #8] layout = 3/2
+2015-12-10,08:27:37.31: DPM::discoverDis: slot 4 is 0x3a386030 sectors (465.76GiB)
+2015-12-10,08:27:37.31: 	=> Setting DIS LBAs to 0x0/0x1d1c2100/0x3a385fb0
+2015-12-10,08:27:37.31: 	=> PackId = 0xf198ca23f198ca2c/0x4 [LD #9] layout = 3/2
+2015-12-10,08:27:14.00: ELM: Thu Dec 10 08:27:14 2015: HAM: ESA Time set by host at uptime: 1 mins, 35 secs. TimeZone is (GMT -8h0m) 
+2015-12-09,16:29:30.00: ELM: Wed Dec 09 16:29:30 2015: HAM: ESA Time set by host at uptime: 1 mins, 36 secs. TimeZone is (GMT -8h0m) 
+[tHibernate] 2015-12-09 16:31:07: RTP is deleted 
+[tHibernate] 2015-12-09 16:31:07: Hibernation has 'taken care' of RTP...
+[tHibernate] 2015-12-09 16:31:07: 
+Disabling all un-Needed Interrupts (Notably: PMU Panic/PowerDownReq)
+[tHibernate] 2015-12-09 16:31:08: PMU Shutdown Timer: 118.70 seconds (7122 sysTicks) Remaining
+[tHibernate] 2015-12-09 16:31:08: HIB: hibernate header is marked DIRTY 
+[tHibernate] 2015-12-09 16:31:09: Copy to eUSB - Done
+[tHibernate] 2015-12-09 16:31:49: Copy to eUSB - Done
+[tHibernate] 2015-12-09 16:31:49: Copy to eUSB - Done
+[tHibernate] 2015-12-09 16:31:51: Copy to eUSB - Done
+[tHibernate] 2015-12-09 16:31:51: Hibernation Record Update Completes...
+Writing diagnostics to flash file /bd0/Crashlogs/crashlog-20151209-1631, please wait.
+
+Log Generated: WED DEC 09 16:31:51 2015
+-------------------- CRASH LOG FLASH FILE END ----------------------

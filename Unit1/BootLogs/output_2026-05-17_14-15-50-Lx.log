@@ -1,0 +1,326 @@
+Uncompressing Linux... done, booting the kernel.
+[    0.000000] Booting Linux on physical CPU 1
+[    0.000000] Linux version 3.2.96-3 (drobo@80b6fdb6c46c) (gcc version 6.4.0 (GCC) ) #1 SMP Tue May 21 21:58:06 UTC 2019
+[    0.000000] CPU: Marvell PJ4Bv7 Processor [562f5842] revision 2 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[    0.000000] Machine: Marvell Armada XP Development Board
+[    0.000000] Using UBoot passing parameters structure
+[    0.000000] bootconsole [earlycon0] enabled
+[    0.000000] memblock_add_region memory start 0x20000000  size 0x58200000 
+[    0.000000] memblock_add_region memory start 0x78200000  size 0x7e00000 
+[    0.000000] memblock_add_region reserved start 0x53000000  size 0x29000000 
+[    0.000000] memblock_add_region reserved start 0x200081c0  size 0x6f2bf4 
+[    0.000000] memblock_add_region reserved start 0x20004000  size 0x4000 
+[    0.000000] Memory policy: ECC disabled, Data cache writealloc
+[    0.000000] memblock_add_region reserved start 0x52ffc000  size 0x4000 
+[    0.000000] memblock_add_region reserved start 0x52ff8000  size 0x4000 
+[    0.000000] memblock_add_region reserved start 0x52ff4000  size 0x4000 
+[    0.000000] memblock_add_region reserved start 0x52ff0000  size 0x4000 
+[    0.000000] memblock_add_region reserved start 0x52fec000  size 0x4000 
+[    0.000000] memblock_add_region reserved start 0x52fe8000  size 0x4000 
+[    0.000000] memblock_add_region reserved start 0x52fe4000  size 0x4000 
+[    0.000000] SMP: init cpus
+[    0.000000] PERCPU: Embedded 3 pages/cpu @80a08000 s22144 r8192 d18816 u49152
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 98111
+[    0.000000] Kernel command line: rootfstype=jffs2 root=/dev/mtdblock3 rw mtdparts=cfi_flash_0:1m@0m(nor_hdr),3m@1m(var),30m@4m(rfs0),30m@34m(rfs1) ip=169.254.1.12:169.254.189.174:169.254.1.1:255.255.0.0:shockwave:eth0:none mv_cpu_count=3 mv_rsrc=uart1:eth0:spi:mstr mv_sh_mem=0x80000000:0x100000 mv_ipc=0 vmalloc=550M console=ttyS0,115200 earlyprintk=ttyS0,1152000 pm_level=off
+[    0.000000] PID hash table entries: 4096 (order: 0, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 262144 (order: 6, 1048576 bytes)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 5, 524288 bytes)
+[    0.000000] Memory: 1536MB = 1536MB total
+[    0.000000] Memory: 889008k/889008k available, 683856k reserved, 65536K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff4000   (  16 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xd8800000 - 0xfa800000   ( 544 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0xd8200000   (1410 MB)
+[    0.000000]     pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+[    0.000000]     modules : 0x7f000000 - 0x7fe00000   (  14 MB)
+[    0.000000]       .text : 0x80008000 - 0x805f4000   (6064 kB)
+[    0.000000]       .init : 0x805f4000 - 0x80629680   ( 214 kB)
+[    0.000000]       .data : 0x8062a000 - 0x806620a8   ( 225 kB)
+[    0.000000]        .bss : 0x806620cc - 0x806fadb4   ( 612 kB)
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] NR_IRQS:211
+[    0.000000] Initializing ArmadaXP SOC Timer 3
+[    0.000000] sched_clock: 32 bits at 25MHz, resolution 40ns, wraps every 171798ms
+[    0.000201] Calibrating delay loop... 1196.85 BogoMIPS (lpj=5984256)
+[    0.092934] pid_max: default: 32768 minimum: 301
+[    0.097766] Security Framework initialized
+[    0.101964] SELinux:  Initializing.
+[    0.105629] Mount-cache hash table entries: 2048
+[    0.111039] CPU: Testing write buffer coherency: ok
+[    0.116210] CPU0: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.121973] SMP: prepare CPUs (3 cores)
+[    0.126238] Setting Clocks for secondary CPUs
+[    0.132103] SMP: CPU 1 Waking up CPU 2
+[    0.156160] CPU1: Booted secondary processor
+[    0.190062] CPU1: thread -1, cpu 2, socket 0, mpidr 80000002
+[    0.190782] SMP: CPU 1 Waking up CPU 3
+[    0.224643] CPU2: Booted secondary processor
+[    0.260068] CPU2: thread -1, cpu 3, socket 0, mpidr 80000003
+[    0.260272] Brought up 3 CPUs
+[    0.273392] SMP: Total of 3 processors activated (3590.55 BogoMIPS).
+[    0.280926] devtmpfs: initialized
+[    0.289044] xor: measuring software checksum speed
+[    0.340070]    arm4regs  :  1020.800 MB/sec
+[    0.390070]    8regs     :   648.000 MB/sec
+[    0.440083]    32regs    :   795.200 MB/sec
+[    0.444335] xor: using function: arm4regs (1020.800 MB/sec)
+[    0.450235] NET: Registered protocol family 16
+[    0.456075] Aurora: Working in ARMv7 mode
+[    0.460193] L0 cache Enabled
+[    0.463148] Speculative Prefetch Disabled
+[    0.467241] Support IO coherency.
+[    0.475648] Skipping MPP configuration and GPIO interrupt enabling.
+[    0.610053] Warning: AMP Address decode windows reg != 0
+[    0.617411] Initialized Address decode windows
+[    0.622241] 
+[    0.623817]   Marvell Armada-XP DB-78460-BP rev 2.0 Board -  Soc: MV88F5570 Rev 8 LE
+[    0.631687]   Detected Tclk 250000000, SysClk 600000000, FabricClk 600000000, PClk 1200000000
+[    0.640274]   LSP version: linux-3.2.58-2014_T2.0p2 (16KB SW Page Size)
+[    0.646945]   AMP: Resources - uart1 - eth0 - xor1 - spi - mstr 
+[    0.653081] 
+[    0.655631] Register platform device: mv_neta_port_0
+[    0.681241] bio: create slab <bio-0> at 0
+[    0.850143] raid6: int32x1    197 MB/s
+[    1.020159] raid6: int32x2    178 MB/s
+[    1.190159] raid6: int32x4    162 MB/s
+[    1.360344] raid6: int32x8    159 MB/s
+[    1.364164] raid6: using algorithm int32x1 (197 MB/s)
+[    1.370980] SCSI subsystem initialized
+[    1.376977] Switching to clocksource axp_clocksource
+[    1.400355] NET: Registered protocol family 2
+[    1.410362] IP route cache hash table entries: 16384 (order: 2, 65536 bytes)
+[    1.418030] TCP established hash table entries: 65536 (order: 5, 524288 bytes)
+[    1.425882] TCP bind hash table entries: 65536 (order: 5, 524288 bytes)
+[    1.433046] TCP: Hash tables configured (established 65536 bind 65536)
+[    1.439632] TCP reno registered
+[    1.442878] UDP hash table entries: 1024 (order: 1, 32768 bytes)
+[    1.448995] UDP-Lite hash table entries: 1024 (order: 1, 32768 bytes)
+[    1.455862] NET: Registered protocol family 1
+[    1.460738] RPC: Registered named UNIX socket transport module.
+[    1.466764] RPC: Registered udp transport module.
+[    1.471535] RPC: Registered tcp transport module.
+[    1.476321] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.484019]   o 1 Giga ports supported
+[    1.487844]   o SKB recycle supported (Enabled)
+[    1.492478]   o NETA acceleration mode 1
+[    1.496470]   o RX Queue support: 8 Queues * 128 Descriptors
+[    1.502208]   o TX Queue support: 8 Queues * 532 Descriptors
+[    1.507927]   o GSO supported
+[    1.510964]   o GRO supported
+[    1.514014]   o Receive checksum offload supported
+[    1.518868]   o Transmit checksum offload supported
+[    1.523818]   o Driver ERROR statistics enabled
+[    1.528412] 
+[    1.530025] port #0: is_sgmii=0, is_rgmii=1, phy_addr=0
+[    1.535565]   o Loading network interface(s) for port #0: cpu_mask=0xf, tx_csum_limit=9800
+[    1.543940] 
+[    1.545512]   o Port 0 is connected to Linux netdevice
+[    1.554560]     o eth0, ifindex = 2, GbE port = 0
+[    1.562796] 	giga p=0: mtu=1500, mac=00:1a:62:04:8f:a8 (platform)
+[    1.568952] 
+[    1.571523] audit: initializing netlink socket (disabled)
+[    1.577020] type=2000 audit(1.570:1): initialized
+[    1.639830] highmem bounce pool size: 64 pages
+[    1.645035] Loading notifyfs 0.11
+[    1.648470] notifyfs loaded with sizeof(ino_t)=4.
+[    1.653553] JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    1.659996] aufs 3.2-20131104
+[    1.663060] msgmni has been set to 1608
+[    1.667933] async_tx: api initialized (async)
+[    1.672380] io scheduler noop registered
+[    1.676370] io scheduler deadline registered (default)
+[    1.681621] io scheduler cfq registered
+[    1.690466] Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+[    1.697509] serial8250.0: ttyS0 at MMIO 0xd0012100 (irq = 42) is a 16550A
+[    1.704383] console [ttyS0] enabled, bootconsole disabled
+[    1.704383] console [ttyS0] enabled, bootconsole disabled
+[    1.715678] shared_mem: kernel panic notifier registered
+[    1.721008] shared_mem: kernel panic dumper registered
+[    1.726181] SHARED_MEM: mapping shared memory Header physical addr 7bffc000 virtual addr 0xd8868000
+[    1.735261] SHARED_MEM: INIT: Shared Memory Header in Kernel space at Addr: 0xd8868000
+[    1.743222] shared_mem: shm_doorbell_init: IRQ 0x1 requested, doorbell mask 2197c queue_os_info b16961e0
+[    1.752751] shared_mem: shared_mem_module_init: Location of shm_dev: b16961c0
+[    1.759908] shared_mem: shared_mem_module_init: Intercore message checksum is enabled
+[    1.768099] brd: module loaded
+[    1.771947] loop: module loaded
+[    1.775113] dri_dnas_scsi_init: init... dri_dnas_dev at line 5526 (16KB SW Page Size)
+[    1.783320] shared_mem: wait_for_init_shared_mem: Entering mutex for shm_dev at b16961c0
+[    1.791439] SHARED_MEM: CPU1: READY TO WAIT FOR INITIALIZATION OF SHARED MEMORY
+[    1.792464] 
+[    1.792467] INFO: Found cfi_flash_0 0 - base 0xd8000000, size 0x4000000, bus 2
+[    1.792488] INFO: Found cfi_flash_1 1 - base 0xdc000000, size 0x4000000, bus 2
+[    1.792495] INFO: flashInfoFill - Found 2 Flash Devices
+[    1.792501] INFO: flash_map_init - detected 2 devices
+[    1.792508] MTD: Initialize the cfi_flash_0 device at address 0xd8000000
+[    1.793218] 
+[    1.793220] INFO: Io remapped successfully - phy addr = 0xd8000000, virt addr = 0xd9000000
+[    1.793231] INFO: Using cfi_probe to probe cfi_flash_0 at address 0xd8000000, size 0x4000000, width 2m
+[    1.793310] cfi_flash_0: Found 1 x16 devices at 0x0 in 16-bit bank. Manufacturer ID 0x0000c2 Chip ID 0x00227e
+[    1.793325] Amd/Fujitsu Extended Query Table at 0x0040
+[    1.793339]   Amd/Fujitsu Extended Query version 1.3.
+[    1.793349] number of CFI chips: 1
+[    1.793355]  - detected OK
+[    1.793374] 4 cmdlinepart partitions found on MTD device cfi_flash_0
+[    1.793381] Creating 4 MTD partitions on "cfi_flash_0":
+[    1.793395] 0x000000000000-0x000000100000 : "nor_hdr"
+[    1.794310] 0x000000100000-0x000000400000 : "var"
+[    1.795166] 0x000000400000-0x000002200000 : "rfs0"
+[    1.796043] 0x000002200000-0x000004000000 : "rfs1"
+[    1.796891]  - OK.
+[    1.796897] MTD: Initialize the cfi_flash_1 device at address 0xdc000000
+[    1.797607] 
+[    1.797609] INFO: Io remapped successfully - phy addr = 0xdc000000, virt addr = 0xde000000
+[    1.797619] INFO: Using cfi_probe to probe cfi_flash_1 at address 0xdc000000, size 0x4000000, width 2m
+[    1.797682] cfi_flash_1: Found 1 x16 devices at 0x0 in 16-bit bank. Manufacturer ID 0x0000c2 Chip ID 0x00227e
+[    1.797694] Amd/Fujitsu Extended Query Table at 0x0040
+[    1.797708]   Amd/Fujitsu Extended Query version 1.3.
+[    1.797715] number of CFI chips: 1
+[    1.797721]  - detected OK - OK.
+[    1.962632] bonding: Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+[    1.972776] md: raid6 personality registered for level 6
+[    1.978105] md: raid5 personality registered for level 5
+[    1.983446] md: raid4 personality registered for level 4
+[    1.988773] oprofile: hardware counters not available
+[    1.993859] oprofile: using timer interrupt.
+[    1.998218] nf_conntrack version 0.5.0 (13890 buckets, 55560 max)
+[    2.004688] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.010102] TCP cubic registered
+[    2.013506] NET: Registered protocol family 10
+[    2.018568] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    2.024050] IPv6 over IPv4 tunneling driver
+[    2.028796] NET: Registered protocol family 17
+[    2.033325] 8021q: 802.1Q VLAN Support v1.8
+[    2.037538] VFP support v0.3: implementor 56 architecture 2 part 20 variant 9 rev 6
+[    2.045306] registered taskstats version 1
+[    2.052299] pool #0: pkt_size=1536, buf_size=1632 - 2048 of 2048 buffers added
+[    2.060000] eth0: started
+[    2.063019] ADDRCONF(NETDEV_UP): eth0: link is not ready
+[  122.082267] IP-Config: Complete:
+[  122.085506]      device=eth0, addr=169.254.1.12, mask=255.255.0.0, gw=169.254.1.1,
+[  122.092892]      host=shockwave, domain=, nis-domain=(none),
+[  122.098578]      bootserver=169.254.189.174, rootserver=169.254.189.174, rootpath=
+[  122.106700] md: Skipping autodetection of RAID arrays. (raid=autodetect will force)
+[  132.092113] SHARED_MEM: CPU1: INITIALIZATION STARTED BY CPU0. WAITING ON INIT DONE
+[  132.202109] SHARED_MEM: CPU1: INITIALIZATION OF SHARED MEMORY BY CPU0 DONE DETECTED
+[  132.209792] wait_for_init_shared_mem: Exiting Mutex for shared memory init
+[  132.216697] SHARED_MEM: shared_mem_open: About to take semaphore.
+[  132.222817] SHARED_MEM: shared_mem_open: Got Semaphore.
+[  132.228060] shared_mem: wait_for_init_shared_mem: Entering mutex for shm_dev at b16961c0
+[  132.236182] wait_for_init_shared_mem: Exiting Mutex for shared memory init
+[  132.245483] SHARED_MEM: region name SHJ1  phy_addr 6e7f8000 virt_addr e3000000 size ce00000
+[  132.255747] SHARED_MEM: region name read  phy_addr 637d8000 virt_addr f0000000 size a100000
+[  132.264167] SHARED_MEM: region name SGLD  phy_addr 544c8000 virt_addr d8a00000 size 100000
+[  132.272493] SHARED_MEM: region name SHMQ  phy_addr 53ac8000 virt_addr d8c00000 size 200000
+[  132.280813] SHARED_MEM: region name SHLX  phy_addr 538c8000 virt_addr dd400000 size 200000
+[  132.289140] SHARED_MEM: region name SHVX  phy_addr 536c8000 virt_addr dd800000 size 200000
+[  132.297482] SHARED_MEM: region name LXPM  phy_addr 533c8000 virt_addr ddc00000 size 300000
+[  132.305787] shared_mem_panic_dump_init: kernel panic dump initialized: phys=533c8000 virt=ddc00000 size=3145728 rec_size=4096 max_count=767
+[  132.318351] SHARED_MEM: shared_mem_open: Incremented open count: 0x1
+[  132.324734] Shared Memory Partition Map Addresses:
+[  132.329539] -----------------------------------------------------------------------------
+[  132.337749] SHJ1: Start:	 0xe3000000, End:	 0xefe00000, Phys:	 0x6e7f8000
+[  132.344564] HLRC: Start:	 0xf0000000, End:	 0xfa100000, Phys:	 0x637d8000
+[  132.351374] SGLD: Start:	 0xd8a00000, End:	 0xd8b00000, Phys:	 0x544c8000
+[  132.358189] SHLX: Start:	 0xdd400000, End:	 0xdd600000, Phys:	 0x538c8000
+[  132.365004] SHVX: Start:	 0xdd800000, End:	 0xdda00000, Phys:	 0x536c8000
+[  132.371814] -----------------------------------------------------------------------------
+[  132.380026] SHARED_MEM: shm_queue_sync_cores: Mapped SHMQ partition at phys addr: 0x7bffc000 in kernel mem for size 0x200000
+[  132.391281] SHARED_MEM: CPU1: shm_queue_sync_cores: Ready to wait for init of SHMQ
+[  132.612106] SHARED_MEM: CPU1: shm_queue_sync_cores: Queue Init Started CPU0. Waiting on Init Done
+[  132.621008] SHARED_MEM: CPU1: shm_queue_sync_cores: Init of SHMQ done
+[  133.632218] handle_intercore_msg: Got a NET_INFO request
+[  133.635540] JFFS2 notice: (1) jffs2_build_xattr_subsystem: complete building xattr subsystem, 0 of xdatum (0 unchecked, 0 orphan) and 0 of xref (0 dead, 0 orphan) found.
+[  133.636007] VFS: Mounted root (jffs2 filesystem) on device 31:3.
+[  133.636219] Freeing init memory: 208K
+[  133.663458] handle_intercore_msg: Got UNEXPECTED_REBOOT message
+[  138.328540] type=1403 audit(138.320:2): policy loaded auid=4294967295 ses=4294967295
+[1969-12-31,16:02:18.569868402] rcS: INFO: started.
+[1969-12-31,16:02:18.798285242] 10: INFO: Mounting /proc
+[1969-12-31,16:02:18.833100162] 10: INFO: Mounting binfmt_misc
+[1969-12-31,16:02:18.851922402] 10: INFO: Mounting debugfs
+[1969-12-31,16:02:18.866124162] 10: INFO: Mounting /dev
+[1969-12-31,16:02:18.880580282] 10: INFO: Mounting /dev/pts
+[1969-12-31,16:02:18.899710122] 10: INFO: Mounting /dev/shm
+[1969-12-31,16:02:18.923157202] 10: INFO: Remounting rootfs as read-only
+[1969-12-31,16:02:18.938539922] 10: INFO: Mounting /tmp
+[1969-12-31,16:02:18.952801482] 10: INFO: Mounting /lib/modules
+[1969-12-31,16:02:18.967070082] 10: INFO: Mounting /bin as rw
+[1969-12-31,16:02:18.988296482] 10: INFO: Mounting /etc as rw
+[1969-12-31,16:02:19.008748882] 10: INFO: Mounting tmpfs /mnt/DroboFS
+[1969-12-31,16:02:19.023593402] 10: INFO: Mounting tmpfs /var
+[1969-12-31,16:02:19.033744762] 10: mount_filesystems finished.
+[1969-12-31,16:02:19.044644922] 20: INFO: Setting up mdev
+[1969-12-31,16:02:19.112957442] 20: INFO: Creating /dev/shared_mem
+[1969-12-31,16:02:19.128740282] 20: INFO: Applying SELinux labels in /dev
+[1969-12-31,16:02:19.289141282] 20: create_devices finished.
+[  140.324881] JFFS2 notice: (392) jffs2_build_xattr_subsystem: complete building xattr subsystem, 9 of xdatum (0 unchecked, 0 orphan) and 77 of xref (0 dead, 15 orphan) found.
+[1969-12-31,16:02:20.344340762] 30: INFO: Fixing file permissions in /var...
+[1969-12-31,16:02:20.518220682] 30: INFO: File permission check completed.
+[1969-12-31,16:02:20.523559042] 30: INFO: Starting SELinux relabel in /var...
+[1969-12-31,16:02:20.645286122] 30: INFO: SELinux relabeling of /var successful.
+[1969-12-31,16:02:20.650985882] 30: INFO: Deleting files under directory /var/lock...
+[1969-12-31,16:02:20.661662802] 30: INFO: Deleting files under directory /var/run...
+removed '/var/run/utmp'
+[1969-12-31,16:02:20.682662362] 30: mount_var finished. /dev/mtdblock1 mounted as /var.
+[1969-12-31,16:02:20.693769242] 40: INFO: calling sysctl /etc/sysctl.conf
+kernel.panic_on_oops = 1
+vm.panic_on_oom = 1
+vm.dirty_background_ratio = 5
+vm.dirty_ratio = 10
+vm.dirty_expire_centisecs = 100
+vm.dirty_writeback_centisecs = 100
+net.ipv4.tcp_rmem = 16384 65536 8388608
+net.ipv4.tcp_wmem = 16384 65536 8388608
+net.ipv4.neigh.default.gc_thresh1 = 1024
+net.ipv4.neigh.default.gc_thresh2 = 2048
+net.ipv4.neigh.default.gc_thresh3 = 4096
+net.ipv4.neigh.default.gc_stale_time = 3600
+net.ipv4.neigh.default.gc_interval = 3600
+net.ipv4.conf.all.arp_announce = 2
+net.ipv4.conf.all.arp_ignore = 1
+[1969-12-31,16:02:20.779047362] 40: INFO: calling sysctl /etc/sysctl_dev.conf
+[1969-12-31,16:02:20.789415122] 40: INFO: calling set_proc.sh
+[1969-12-31,16:02:20.874193882] 40: INFO: calling set_proc_dev.sh
+[1969-12-31,16:02:20.884622922] 40: set_sysconf finished.
+[1969-12-31,16:02:20.898918682] rcS: INFO: finished.
+shockwave:/ # [1969-12-31,16:02:20.915446882] rcS.2: INFO: started.
+[1969-12-31,16:02:21.941088962] 50: INFO: Updating hostname
+Reinitializing monit daemon
+[1969-12-31,16:02:22.964820362] 50: INFO: Merging hosts files
+[1969-12-31,16:02:22.991824082] 50: INFO: Bringing up lo
+[1969-12-31,16:02:23.007828162] 50: INFO: Bringing up network
+[  145.092010] eth0: stopped
+[  145.144256] eth0: started
+[  145.147362] ADDRCONF(NETDEV_UP): eth0: link is not ready
+[1969-12-31,16:02:25.183221882] 50: start_network finished.
+[1969-12-31,16:02:25.189356482] rcS.2: INFO: Starting avahi
+[1969-12-31,16:02:25.916457322] rcS.2: INFO: Starting logrotate
+[1969-12-31,16:02:26.125134002] rcS.2: INFO: Starting syslog
+[1969-12-31,16:02:26.488665882] rcS.2: INFO: Starting incron
+[1969-12-31,16:02:32.513393482] rcS.2: INFO: Starting sudo
+[1969-12-31,16:02:32.682180362] rcS.2: INFO: Starting LXcpuHistory
+[1969-12-31,16:02:32.755900242] rcS.2: INFO: Starting LXmemHistory
+[1969-12-31,16:02:32.871369362] rcS.2: INFO: Starting LXnetHistory
+[  152.935241] handle_intercore_msg: Got ISCSI_ENABLE message
+[  152.949490] handle_intercore_msg: QUEUING ISCSI_ENABLE to sysfs
+[1969-12-31,16:02:32.984886482] rcS.2: INFO: Starting ntpd
+[1969-12-31,16:02:33.070558002] rcS.2: INFO: Starting recovery server
+listening on [::]:4999 ...
+[1969-12-31,16:02:33.090178042] rcS.2: INFO: Updating diags configuration
+[1969-12-31,16:02:33.220015362] rcS.2: INFO: Starting nasd
+[1969-12-31,16:02:33.496828562] rcS.2: INFO: finished.
+[  155.962788] scsi0 : dri_dnas, version 2.1.0 [20170725], Commands: 0, Aborts: 0, Device Resets: 0
+[  155.974828] scsi 0:0:0:0: Direct-Access     Drobo    5N               1.00 PQ: 0 ANSI: 5
+[  155.991415] sd 0:0:0:0: [sda] physical block alignment offset: 3584
+[  155.997757] sd 0:0:0:0: [sda] 1 512-byte logical blocks: (512 B/512 B)
+[  155.998404] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[  156.009644] sd 0:0:0:0: [sda] 4096-byte physical blocks
+[  156.020322] sd 0:0:0:0: [sda] Write Protect is off
+[  156.027227] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, supports DPO and FUA
+[  156.047669]  sda: unknown partition table
+[  156.061964] sd 0:0:0:0: [sda] Attached SCSI disk
+[  156.291625] dri_dnas_ioctl: setting sdev for dnas_dev b1695dc0 to afae46c0
+nc: timeout
+ 

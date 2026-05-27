@@ -1,0 +1,982 @@
+-------------------- CRASH LOG FLASH FILE START --------------------
+Log Generated: SUN APR 18 01:13:48 2004
+
+Host Name: bootHost 
+Target Name: vxTarget 
+User: target 
+Ethernet port #1 initialized
+neta1 Interface Loaded; MAC: 00:50:43:F8:1F:19
+neta1 Interface Started
+neta1 Interface - Link Up, 1000 Full
+Attempting to register custom syscalls group
+ipAttached to interface neta1 ip=
+Can't Set IP address to <neta1> interface..bootline does not have ethernet ipAddress
+
+Adding 10529 symbols for standalone.
+wdbConfig: error configuring WDB communication interface
+ 
+
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]Detected Marvell USB. Setting MV_USB_MODE_REG = 0x
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+      ]]]]]]]]]]]  ]]]]     ]]]]]]]]]]       ]]              ]]]]         (R)
+ ]     ]]]]]]]]]  ]]]]]]     ]]]]]]]]       ]]               ]]]]            
+ ]]     ]]]]]]]  ]]]]]]]]     ]]]]]] ]     ]]                ]]]]            
+ ]]]     ]]]]] ]    ]]]  ]     ]]]] ]]]   ]]]]]]]]]  ]]]] ]] ]]]]  ]]   ]]]]]
+ ]]]]     ]]]  ]]    ]  ]]]     ]] ]]]]] ]]]]]]   ]] ]]]]]]] ]]]] ]]   ]]]]  
+ ]]]]]     ]  ]]]]     ]]]]]      ]]]]]]]] ]]]]   ]] ]]]]    ]]]]]]]    ]]]] 
+ ]]]]]]      ]]]]]     ]]]]]]    ]  ]]]]]  ]]]]   ]] ]]]]    ]]]]]]]]    ]]]]
+ ]]]]]]]    ]]]]]  ]    ]]]]]]  ]    ]]]   ]]]]   ]] ]]]]    ]]]] ]]]]    ]]]]
+ ]]]]]]]]  ]]]]]  ]]]    ]]]]]]]      ]     ]]]]]]]  ]]]]    ]]]]  ]]]] ]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]       Development System
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]       VxWorks 6.8
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]       KERNEL: WIND version 2.13
+ ]]]]]]]]]]]]]]]]]]]]]]]]]       Copyright Wind River Systems, Inc., 1984-2012
+
+ CPU: Marvell Sheeva 88SV584x, Board= Shockwave 1.0 ARMARCHV7 LE core.  Processor #0.
+ Memory Size: 0x1fe70000.  BSP version 2.3.1.
+ Created: Aug 10 2017, 11:26:31
+ ED&R Policy Mode: Deployed
+ WDB Comm Type: WDB_COMM_END
+ WDB: Agent configuration failed.
+[tRootTask] 1970-01-01 00:00:00: kCmdInit: Initialising kernel command line 'k' Command handler
+[tRootTask] 1970-01-01 00:00:00: diskCmdRegister: Installing k disk Commands
+
+3
+ESA Register Driver Found Board version [2, stuffing option 1
+Initialising boot SEEPROM handler
+Checking boot register values in serialEEPROM ...
+vxWorks<<<<Flash Upgrade Driver - version 1.0 - installed.
+ *IsFlashForDroboPro: We are NOT running on Drobo Pro deal with flash accordingly
+Failed to get flash layout...this is expected for Optimus Prime, which does not have NOR Flash.
+
+System Configuration
+
+CHIP   : MV88F7846 Rev 2
+CPU    : Marvell PJ4B (584) v7 (Rev 2)
+BOARD  : Shockwave 1.0 (0x0)
+CLOCKs : tClk  =  250MHz, sysClk =  600MHz
+         L2Clk =  600MHz  pClk   = 1200MHz
+
+ETH_JUMBO_SUPPORT   = Disabled
+BRIDGING_SUPPORT    = Enabled
+MULTI_Q_SUPPORT     = Disabled
+NAT_SUPPORT         = Disabled
+VFP_SUPPORT         = Enabled
+L2 Cache            = Enabled
+IO coherency        = Enabled
+Get DATE: 2004-04-18 (Sunday)  TIME:  1:10:52
+]# 
+
+=======================> HW Revision Register == 0x00000491
+
+Board Type 2, Rev 2 (Shockwave MVT), Spin = 2
+Stuffing Opt = 1 (No EthDebug), DevDebugBitz = 0x0
+
+
+	Drobo 5N
+	Shockwave
+	I Serve only Files!
+
+==============================================================================
+Initializing PMU...
+Reading PMU Version...
+PMU Version: 1.0.0x0078, Download Version 120 (Variant 0) [Failsafe Ver 3]
+Considering an Update to the PMU ... 
+PMU is up to date for this MVT board.
+
+    Reading 0xa8 from PMU GPIO Port 1 [ @0x0020 ]
+
+    Reading 0x2f from PMU GPIO Port 2 [ @0x0028 ]
+
+    Reading 0x71 from PMU GPIO Port 3 [ @0x0018 ]
+0x49e43a0 (BusM A): INFO: usb2Msc - Storage driver got a device attach notification.
+
+    Reading 0x11 from PMU GPIO Port 4 [ @0x001c ]
+0x49e43a0 (BusM A): INFO: usb2Msc - Mounting device (PDT 0x0 PQ 0x0 RMB 0x0) VID =          : PID = USB DISK MODULE  : REV = PMAP
+0x49e43a0 (BusM A): INFO: usb2Msc - Device 0x2 LUN 0 of 1005568 (KB) will be mounted with base name /bd0
+==============================================================================
+	PMU is Running on AC Power :-)
+==============================================================================
+==============================================================================
+This Optimus Prime PMU is configured for Early-Follow of DDR3 Reset
+This Optimus Prime Board Supports Self-Refresh only with VRM_EN
+/bd0/  - disk check in progress ...
+/bd0/vxWorks/bd0/LxImage 	...PMU will ENABLE VRM_EN during a reboot/shutdown cycle.
+/bd0/bootCount/bd0/Crashlogs /bd0/Crashlogs/crashlog-20151209-1631/bd0/Crashlogs/crashlog-20161024-2304 /bd0/Crashlogs/crashlog-20161230-0208 /bd0/Crashlogs/crashlog-20170105-0511 /bd0/Crashlogs/crashlog-20170108-2328 /bd0/Crashlogs/crashlog-20170108-2348 /bd0/Crashlogs/crashlog-20170721-0656 /bd0/Crashlogs/crashlog-20170723-1730 /bd0/Crashlogs/crashlog-20170724-0504 /bd0/Crashlogs/crashlog-20170801-1041 /bd0/Crashlogs/crashlog-20040418-0036 /bd0/Crashlogs/crashlog-20040418-0051 /bd0/Crashlogs/crashlog-20040418-0109 /bd0/NoCrashMsg                       /bd0/hibLog     /bd0/hibHdr /bd0/amitLog/bd0/FlashConfigData/bd0/RebootReason    /bd0/hdr          /bd0/vxWorks_prev/bd0/hdr_prev     	PMU BootOnBatt Counter DEFAULT is now 3
+/bd0/eventLog /bd0/LxImage_prev/bd0/LxHdr_prev   /bd0/LxHdr                                              	PMU BootOnBatt Counter ACTUAL is now 3
+==============================================================================
+PMU Disk Temp Deltas:  /bd0/  - Volume is OK 
+
+          total # of clusters:  62,580
+         # of free clusters:  59,498
+          # of bad clusters:  0
+           total free space:  951,968 Kb
+  4,   4,     max contiguous free space:  739,115,008 bytes
+                 # of files:  29
+               # of folders:  1
+       total bytes in files:  49,014 Kb
+           # of lost chains:  0
+   total bytes in lost chains:  0
+  4,   1,   0, 
+PMU Skip-OverTemp Setting: 0x0000
+PMU Shutdown Status: 0x00
+	PMU Shutdown IS NOT Pending!
+	PMU Shutdown Reasons are Fully Enabled
+	Disk Array Temp is Within Tolerances
+	CPU Core Temp   is Within Tolerances
+	PMU Core Temp   is Within Tolerances
+PMU Shutdown Reason: 0x00
+PMUCmd: "A" --> "a"
+"Y" --> "0x06D0,51376:30.08,742,0,0"
+"B" --> "26,2,2,0,0,18"
+ Total = 0:0 in 2 cycles
+
+PMU reports AC Power Failure
+PMU state machine current state is 'NORMAL' [0x06]
+PMU reports the DRAM data was INVALID at bootup [0xd0]
+Accumulated Up-time = 35 days: 16 hours: 16 minutes: 30.019 seconds
+  (26 Active cycles, 18 Power cycles)
+  Latest battery backup time      = 01:14:12 (hh:mm:ss)
+  Longest battery backup time     = 00:00:00 (hh:mm:ss)
+  Accumulated battery backup time = 00:00:00 (hh:mm:ss)
+  (2 Backup cycles, 2 Completed cycles, 0 Failed cycles, 0 Backup flags)
+PMU Reports Voltages:  (AC == 11.424V)    (Batt ==  3.737V)
+0x40214ec (tErfTask): INFO: usb2Msc - Device /bd0 has been claimed by filesystem
+NOTIFY: hDevice 0x2 lun 0 medium changed (mediumInsert = 1)
+PMU LED Dimming: Default==25, Current==25
+PMU Fan Speed AutoAdjust has been ENABLED
+PMU Fan Speed: Default== 1, Current== 1
+PMU Init Done
+==============================================================================
+****	ArmadaXP is Type B0
+Launching LED Sequencer...
+LED Sequencer...Launched
+LED Sequencer...Testing...
+Setup Kernel/RTP Messaging Interface
+Initialising kernel<->RTP queues with 80 entries
+USB command/response Q's @ 0xf4102000/0xf4103000
+MULTI ISSUE command/response Q's @ 0x0/0xf4105000
+FAST PATH QUEUING RTP INTERFACE ENABLED
+64-BIT HOST LBAs ENABLED
+Setup Kernel/RTP Resource Release Messaging Interface
+Initialising kernel<->RTP resource release queues with 80 entries
+MULTI ISSUE RESOURCE RELEASE Q @ 0xf4107000
+FAST PATH QUEUING RTP RESOURCE RELEASE INTERFACE ENABLED
+IntConnect pISR==0x01076950 was Successful for Cause==32 ("PMU Panic")
+IntConnect pISR==0x010769e8 was Successful for Cause==40 ("PMU PowerDownReq")
+IntConnect pISR==0x010768d4 was Successful for Cause==57 ("PMU OverTemp")
+IntConnect pISR==0x01076afc was Successful for Cause==29 ("Disk Detected")
+IntDisable for Cause==65 ("Clear Disk Button")
+
+
+  ***** Initializing the Kernel's Thermal Monitor *****
+   ***** Spawning the Kernel's Thermal Monitor *****
+   ***** Executing Auxilliary Task for the Kernel's Thermal Monitor *****
+
+KERNEL BOOTUP: usrAppInit: INFO: bootup with backup battery OFF
+
+Not Turning the battery ON ye 
+PMUCmd: "~41" --> "~41!"
+PMUCmd: "K" --> "k"
+Intercore Access Device Driver - Version 1.0 - Installed.
+
+
+	Shockwave MVT Init Compleat!
+
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Starting Disk Driver(s) Initialisation.
+[tRootTask] 2004-04-18 01:10:55: bspDiskConfigureDiskTable: Configuring drive tables for 5-Slot (BumbleBee or Shockwave)
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: System has 6 slots
+[tRootTask] 2004-04-18 01:10:55: diskDriverInstall:
+[tRootTask] 2004-04-18 01:10:55: showDiskTbs: Dumping Disk Driver Config Tables:
+[New Disk Thread] 2004-04-18 01:10:55: diskConfigureNewDiskThread: Starting thread
+[tRootTask] 2004-04-18 01:10:55: 
+[tRootTask] 2004-04-18 01:10:55:   Dumping Disk Adapter Table
+[tRootTask] 2004-04-18 01:10:55:     Adapter Instance   Adapter Address   Adapter Data Address
+[tRootTask] 2004-04-18 01:10:55:            0            0x01E69158            0x00000000
+[tRootTask] 2004-04-18 01:10:55:            1            0x01E69158            0x00000000
+[tRootTask] 2004-04-18 01:10:55:            2            0x01E69168            0x00000000
+Max Disk Temp: [tRootTask] 2004-04-18 01:10:55: 
+[tRootTask] 2004-04-18 01:10:55:    Dumping Disk Slot Config Table:
+[tRootTask] 2004-04-18 01:10:55:     Adapter Instance   Connection    Physical Slot   Adapter Channel    Initialised    Device Pointer
+[tRootTask] 2004-04-18 01:10:55:         2                DRIVE             0              0                 No           0x04C06758
+[tRootTask] 2004-04-18 01:10:55:         1                DRIVE             1              0                 No           0x04C06FFC
+[tRootTask] 2004-04-18 01:10:55:         1                DRIVE             2              1                 No           0x04C078A0
+[tRootTask] 2004-04-18 01:10:55:         0                DRIVE             3              0                 No           0x04C08144
+[tRootTask] 2004-04-18 01:10:55:         0                DRIVE             4              1                 No           0x04C089E8
+[tRootTask] 2004-04-18 01:10:55:         2                DRIVE             5              1                 No           0x04C0928C
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Calling init with adapter 2 (0x01FC74C0) and slot 0 (0x01FC6140)
+[tRootTask] 2004-04-18 01:10:55: mvSataControllerRegister: Initialising Marvell Embedded SATA adapter
+[tRootTask] 2004-04-18 01:10:55: mvSataInterfaceGetAdapaterData:
+[tRootTask] 2004-04-18 01:10:55: mvEmbSataInitItegratedSata: Integrated Sata device found as legacy SATA adapter 0; system adapter 2
+[tRootTask] 2004-04-18 01:10:55: sysMvEmbSataDeviceInit: unit  = 0; mvSataUnits = 1
+[tRootTask] 2004-04-18 01:10:55: sysMvEmbSataDeviceInit: INTEGRATED_SATA
+[tRootTask] 2004-04-18 01:10:55: sysMvEmbSataDeviceInit: Connecting SATA interrupt 55
+[tRootTask] 2004-04-18 01:10:55: 
+[tRootTask] 2004-04-18 01:10:55: requestQAlignment 0x1000 responseQAlignment 0x400
+[tRootTask] 2004-04-18 01:10:55:  channel 0 request q phy addr 4c1e000
+[tRootTask] 2004-04-18 01:10:55:  channel 0 response q phy addr 4c20000
+[tRootTask] 2004-04-18 01:10:55:  channel 1 request q phy addr 4c21000
+[tRootTask] 2004-04-18 01:10:55:  channel 1 response q phy addr 4c22800
+[tRootTask] 2004-04-18 01:10:55: 
+[tRootTask] 2004-04-18 01:10:55: mvSataControllerRegister: Initialising Embedded adapter 0 (system adapter 2), channel 0 of 2
+[tRootTask] 2004-04-18 01:10:55: mvSataControllerRegister: data @ 0x04C1DBB0, adapter @ 0x01FE73F8, channels @ 2
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Creating Slot 0
+[Sata Evnt] 2004-04-18 01:10:55: mvEmbSataEventThread: Starting thread
+[tRootTask] 2004-04-18 01:10:55: diskVxDeviceCreate: Driver 19 for slot 0
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Calling init with adapter 1 (0x01FC74B8) and slot 1 (0x01FC6154)
+[tRootTask] 2004-04-18 01:10:55: ahciPerformPhyConfig: Loading phy regs for 9122-B2 (rev: 0x12)
+[0x69de324 (tRootTask): diskDriAhciStorageRegister: 
+0x69de324 (tRootTask): diskDriAhciInstInit: 
+0x69de324 (tRootTask): diskDriAhciInstInit2: 
+0x69de324 (tRootTask): diskDriAhciInstInit2: Storing 0x04C3C884 to adapter table entry 0
+0x69de324 (tRootTask): diskDriAhciInstConnect: 
+0x69de324 (tRootTask): diskDriAhciInstConnect: Initialising channel 0 of 2 on adapter 0 as slot 3
+0x69de324 (tRootTask): diskDriAhciInstConnect: Initialising channel 1 of 2 on adapter 0 as slot 4
+0x69de324 (tRootTask): diskDriAhciInstInit: 
+0x69de324 (tRootTask): diskDriAhciInstInit2: 
+0x69de324 (tRootTask): diskDriAhciInstInit2: Storing 0x04CC6408 to adapter table entry 1
+0x69de324 (tRootTask): diskDriAhciInstConnect: 
+tRootTask] 2004-04-18 01:10:55: ahciPerformPhyConfig: Loading phy regs for 9122-B2 (rev: 0x12)
+40 C, Ave Disk Temp: [tRootTask] 2004-04-18 01:10:55: showDiskTbs: Dumping Disk Driver Config Tables:
+[tRootTask] 2004-04-18 01:10:55: 
+[tRootTask] 2004-04-18 01:10:55:   Dumping Disk Adapter Table
+[tRootTask] 2004-04-18 01:10:55:     Adapter Instance   Adapter Address   Adapter Data Address
+[tRootTask] 2004-04-18 01:10:55:            0            0x01E69158            0x04C3C884
+[tRootTask] 2004-04-18 01:10:55:            1            0x01E69158            0x04CC6408
+[tRootTask] 2004-04-18 01:10:55:            2            0x01E69168            0x04C1DBB0
+[tRootTask] 2004-04-18 01:10:55: 
+[tRootTask] 2004-04-18 01:10:55:    Dumping Disk Slot Config Table:
+[tRootTask] 2004-04-18 01:10:55:     Adapter Instance   Connection    Physical Slot   Adapter Channel    Initialised    Device Pointer
+[tRootTask] 2004-04-18 01:10:55:         2                DRIVE             0              0                Yes           0x04C06758
+[tRootTask] 2004-04-18 01:10:55:         1                DRIVE             1              0                 No           0x04C06FFC
+[tRootTask] 2004-04-18 01:10:55:         1                DRIVE             2              1                 No           0x04C078A0
+[tRootTask] 2004-04-18 01:10:55:         0                DRIVE             3              0                 No           0x04C08144
+[tRootTask] 2004-04-18 01:10:55:         0                DRIVE             4              1                 No           0x04C089E8
+[tRootTask] 2004-04-18 01:10:55:         2                DRIVE             5              1                 No           0x04C0928C
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Creating Slot 1
+[tRootTask] 2004-04-18 01:10:55: diskVxDeviceCreate: Driver 19 for slot 1
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Calling init with adapter 1 (0x01FC74B8) and slot 2 (0x01FC6168)
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Creating Slot 2
+[tRootTask] 2004-04-18 01:10:55: diskVxDeviceCreate: Driver 19 for slot 2
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Calling init with adapter 0 (0x01FC74B0) and slot 3 (0x01FC617C)
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Creating Slot 3
+[tRootTask] 2004-04-18 01:10:55: diskVxDeviceCreate: Driver 19 for slot 3
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Calling init with adapter 0 (0x01FC74B0) and slot 4 (0x01FC6190)
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Creating Slot 4
+[tRootTask] 2004-04-18 01:10:55: diskVxDeviceCreate: Driver 19 for slot 4
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Calling init with adapter 2 (0x01FC74C0) and slot 5 (0x01FC61A4)
+[tRootTask] 2004-04-18 01:10:55: mvSataControllerRegister: Initialising Marvell Embedded SATA adapter
+[tRootTask] 2004-04-18 01:10:55: mvSataControllerRegister: Initialising Embedded adapter 0 (system adapter 2), channel 1 of 2
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Creating Slot 5
+[tRootTask] 2004-04-18 01:10:55: diskVxDeviceCreate: Driver 19 for slot 5
+[tRootTask] 2004-04-18 01:10:55: showDiskTbs: Dumping Disk Driver Config Tables:
+[tRootTask] 2004-04-18 01:10:55: 
+[tRootTask] 2004-04-18 01:10:55:   Dumping Disk Adapter Table
+[tRootTask] 2004-04-18 01:10:55:     Adapter Instance   Adapter Address   Adapter Data Address
+[tRootTask] 2004-04-18 01:10:55:            0            0x01E69158            0x04C3C884
+[tRootTask] 2004-04-18 01:10:55:            1            0x01E69158            0x04CC6408
+[tRootTask] 2004-04-18 01:10:55:            2            0x01E69168            0x04C1DBB0
+[tRootTask] 2004-04-18 01:10:55: 
+[tRootTask] 2004-04-18 01:10:55:    Dumping Disk Slot Config Table:
+[tRootTask] 2004-04-18 01:10:55:     Adapter Instance   Connection    Physical Slot   Adapter Channel    Initialised    Device Pointer
+[tRootTask] 2004-04-18 01:10:55:         2                DRIVE             0              0                Yes           0x04C06758
+[tRootTask] 2004-04-18 01:10:55:         1                DRIVE             1              0                Yes           0x04C06FFC
+[tRootTask] 2004-04-18 01:10:55:         1                DRIVE             2              1                Yes           0x04C078A0
+[tRootTask] 2004-04-18 01:10:55:         0                DRIVE             3              0                Yes           0x04C08144
+[tRootTask] 2004-04-18 01:10:55:         0                DRIVE             4              1                Yes           0x04C089E8
+[tRootTask] 2004-04-18 01:10:55:         2                DRIVE             5              1                Yes           0x04C0928C
+[tRootTask] 2004-04-18 01:10:55: diskInterfaceInitialise: Completed Disk Driver Initialisation: SUCCESS
+[tRootTask] 2004-04-18 01:10:55: diskVx2InterfaceInitialise: Starting Disk Driver Vx2 Initialisation
+[tRootTask] 2004-04-18 01:10:55: diskVx2InterfaceInitialise: Allocated DiskVx2DeviceStructure for '/disk' at 0x04D4CF28
+[tRootTask] 2004-04-18 01:10:55: diskDriverInstall:
+[tRootTask] 2004-04-18 01:10:55: diskVx2InterfaceInitialise: Completed Disk Driver Initialisation: SUCCESS
+[tRootTask] 2004-04-18 01:10:55: rtpEventInit: Created message queue /PNPMQ0 with addr 0x4013010, size 16
+[tRootTask] 2004-04-18 01:10:56: 
+diskEnumerateDrives:79: >>>>	Patiently Waiting for Drives to come up . . .
+[0x69de324 (tRootTask): diskDriAhciInstConnect: Initialising channel 0 of 2 on adapter 1 as slot 1
+0x69de324 (tRootTask): diskDriAhciInstConnect: Initialising channel 1 of 2 on adapter 1 as slot 2
+tRootTask] 2004-04-18 01:10:56: diskEnumerateDrives: Enumeration Complete after 0 seconds.  Found and enumerated 0 drives.
+[tRootTask] 2004-04-18 01:10:56: Hardware watchdog enabled : expiry time = 5 seconds
+[tRootTask26] 2004-04-18 01:10:57: 
+
+[tRootTask] 2004-04-18 01:10:57: Id                    Absolute    Size In Bytes  Virtual Address  Physical Address   Alignment     Zeroed
+[tRootTask] 2004-04-18 01:10:57: SM_ID_HEADER          Yes           0x00002000     0xF4108000       0x7BFFC000      0x00001000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_J2              Yes           0x00A00000     0xD0100000       0x7B5FC000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_J1              Yes           0x0CE00000     0xB6000000       0x6E7FC000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_NV_DRAM_SIM     Yes           0x00100000     0xF410A000       0x6E6FC000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_UNCACHED        Yes           0x00E1F000     0xD0B00000       0x6D8DC000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_HLBAT           Yes           0x0A100000     0xF4600000       0x637DC000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_CRO             Yes           0x03200000     0xC2E00000       0x605DC000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_ALLOC           Yes           0x00001000     0xF420A000       0x605D8000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_ZMDT            Yes           0x08000000     0xC6000000       0x585D8000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_SBFC            Yes           0x04000000     0xD4800000       0x545D8000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_MGMTPOOL        Yes           0x00008000     0xF420B000       0x545D0000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_IC_SGL          Yes           0x00100000     0xF4213000       0x544D0000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_AMIT            Yes           0x00800000     0xFE700000       0x53CD0000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_SHMQ            Yes           0x00200000     0xFEF00000       0x53AD0000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_SHLX            Yes           0x00200000     0xFF100000       0x538D0000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: SM_ID_SHVX            Yes           0x00200000     0xFF300000       0x536D0000      0x00004000       No 
+[tRootTask] 2004-04-18 01:10:57: drStartPersistentLogging
+ C, Fan Speed =  1, Sampling Period = 60 sec
+  [tRootTask] 2004-04-18 01:10:57: found directory entry .
+[tRootTask] 2004-04-18 01:10:57: found directory entry ..
+[tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20151209-1631
+Slot 0: 24 C, Slot 1: 23[tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20161024-2304
+ C, Slot 2: 24 C, [tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20161230-0208
+Slot 3: 23 C, 
+  [tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20170105-0511
+Slot 4: 40 C, Slot 5:  0 C, Slot 6:  0 C, Slot 7[tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20170108-2328
+:  0 C, 
+  CPU Core Temp: 41 C, PMU Core Temp = [tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20170108-2348
+38 C
+Temperature Thresholds for Disk:  Interest==[tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20170721-0656
+ 52, Warning== 55, Critical== 56 -- Override==OFF[tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20170723-1730
+
+Temperature Thresholds for CPU :  Interest== [tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20170724-0504
+95, Warning==101, Critical==104 -- Override==OFF[tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20170801-1041
+
+Temperature Thresholds for PMU :  Interest== 78[tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20040418-0036
+, Warning== 82, Critical== 84 -- Override==OFF
+[tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20040418-0051
+[tRootTask] 2004-04-18 01:10:57: found directory entry crashlog-20040418-0109
+[tRootTask] 2004-04-18 01:10:57: Found 13 crash log files with total size 6120559 bytes[tRootTask] 2004-04-18 01:10:57: Preparing to Analyze Hibernation Status
+[tRootTask] 2004-04-18 01:10:57: Starting Analysis of Hibernation Status
+[tRootTask] 2004-04-18 01:10:57: Creating new log file
+[tRootTask] 2004-04-18 01:10:57: HIB: Flags for J2 are isComplete: 0, isDirty: 0
+[tRootTask] 2004-04-18 01:10:57: HIB: Flags for J1 are isComplete: 0, isDirty: 0
+[tRootTask] 2004-04-18 01:10:57: HIB: Flags for J1TAGS are isComplete: 0, isDirty: 0
+[tRootTask] 2004-04-18 01:10:57: HIB: Flags for AMIT are isComplete: 0, isDirty: 0
+[tRootTask] 2004-04-18 01:10:57: Hibernation Status is now Nominal
+[tRootTask] 2004-04-18 01:10:57: Hibernation Status will be written to eUSB
+==============================================================================
+Vx Kernel (A)utomated (M)emory (I)ntegrity (T)est ...
+==============================================================================
+NVS Data:
+	@ 0	0xffffffff
+	@ 1	0xffffffff
+	@ 2	0xffffffff
+	@ 3	0xffffffff
+pHdr1==0xfe700010, pHdr2==0xfe700020, pPattern==0xfe700030, Pattern Size==0x007fffd0
+AMIT Found DRAM Battery OFF and NO Valid Hibernation Record: Valid AMIT Pattern NOT available
+AMIT History Updated with "o"
+AMIT Hdr-Mirror has been Fixed-Up
+HDR: (@0xfe700010) MAGIC==0x4afacade, Start==0xb4a54a1d, Step==0x3f07031f, ChkSum==0x3ea7181a
+AMIT Pattern Write for 0x007fffd0 Bytes...
+AMIT Pattern Established
+AMIT Pattern is Ready for the Next Iteration
+==============================================================================
+==============================================================================
+AMIT HISTORY:
+o..oo.....oo....ooooo
+==============================================================================
+[tRootTask] 2004-04-18 01:10:57: j1Init: J1 [virt 0xB6000000 for 0x0CE00000]
+[tHibernate] 2004-04-18 01:10:57: Hibernate task starting
+[tHibernate] 2004-04-18 01:10:57:  ******* BOOT COUNT: 21 *******
+[tHibernate] 2004-04-18 01:10:57: restoreRebootReason: Creating RBRES PM region
+[tRootTask] 2004-04-18 01:10:58: j1Init: Wiping J1 [virt 0xB6000000 for 0x0CE00000] because the backup battery and HIB are OFF
+[tRootTask] 2004-04-18 01:10:58: j1Init: Wiping J1 Tags [virt 0xF410A000 for 0x00100000] because the backup battery and HIB are OFF
+[tRootTask] 2004-04-18 01:10:58: j1Init: J1 and J1 Tags Wipe succeeded
+[tRootTask] 2004-04-18 01:10:58: journalValid: J1 has been Wiped...is marked as Valid
+j1DualPoolInit: 
+J1 region size is 216006656 bytes, totalBuffers = 2742
+J1 transBufCount is 2048, bulkBufCount is 694
+J1 Bulk buf size is 262144 bytes, trans buf size is 16384 bytes
+J1 sizeof (WriteBufferDescriptor) is 128
+J1 TransBufferAreaSize is 33816576, BulkBufferAreaSize is 182190080
+wbJ1PoolInit: 100 - Init J1 Transactional Pool
+wbJ1PoolInit: 100 - Init J1 Bulk Pool
+--------Buffer Pool: Trans
+Buffer start address: 0xb6000200 (0)
+Descriptor start address: 0xc2d80200 (cd80000)
+NumBuffers: 2048
+Free singles: 0
+	Single head: 0x00000000
+Free doubles: 1024
+	Double head: 0xC2D80200
+Free total: 2048
+--------Buffer Pool: Bulk
+Buffer start address: 0xb8000200 (2000000)
+Descriptor start address: 0xc2dc0200 (cdc0000)
+NumBuffers: 694
+Free singles: 0
+	Single head: 0x00000000
+Free doubles: 347
+	Double head: 0xC2DC0200
+Free total: 694
+[tRootTask] 2004-04-18 01:10:58: j2Init: Wiping J2 [virt 0xD0100000 for 0x00A00000] because the backup battery is OFF
+[tRootTask] 2004-04-18 01:10:59: j2Init: J2 Wipe succeeded
+[tRootTask] 2004-04-18 01:10:59: journalValid: J2 has been Wiped...is marked as Valid
+[tRootTask] 2004-04-18 01:10:59: journalValid: J1 & J2 are now protectable
+SHARED_MEM TABLE
+id 1 abs 1 size 0x2000 virtAddr f4108000 phyAddr 7bffc000 alignment 1000 attr db options 1 zero 0 
+id 6 abs 1 size 0xa00000 virtAddr d0100000 phyAddr 7b5fc000 alignment 4000 attr db options 1 zero 0 
+id 5 abs 1 size 0xce00000 virtAddr b6000000 phyAddr 6e7fc000 alignment 4000 attr db options 1 zero 0 
+id 3 abs 1 size 0x100000 virtAddr f410a000 phyAddr 6e6fc000 alignment 4000 attr db options 1 zero 0 
+id 11 abs 1 size 0xe1f000 virtAddr d0b00000 phyAddr 6d8dc000 alignment 4000 attr db options 1 zero 0 
+id 7 abs 1 size 0xa100000 virtAddr f4600000 phyAddr 637dc000 alignment 4000 attr db options 1 zero 0 
+id 16 abs 1 size 0x3200000 virtAddr c2e00000 phyAddr 605dc000 alignment 4000 attr 15b options 1 zero 0 
+id 8 abs 1 size 0x1000 virtAddr f420a000 phyAddr 605d8000 alignment 4000 attr 15b options 1 zero 0 
+id 9 abs 1 size 0x8000000 virtAddr c6000000 phyAddr 585d8000 alignment 4000 attr 15b options 1 zero 0 
+id 10 abs 1 size 0x4000000 virtAddr d4800000 phyAddr 545d8000 alignment 4000 attr 15b options 1 zero 0 
+id 2 abs 1 size 0x8000 virtAddr f420b000 phyAddr 545d0000 alignment 4000 attr 1db options 0 zero 0 
+id 4 abs 1 size 0x100000 virtAddr f4213000 phyAddr 544d0000 alignment 4000 attr db options 1 zero 0 
+id 12 abs 1 size 0x800000 virtAddr fe700000 phyAddr 53cd0000 alignment 4000 attr db options 1 zero 0 
+id 13 abs 1 size 0x200000 virtAddr fef00000 phyAddr 53ad0000 alignment 4000 attr db options 1 zero 0 
+id 14 abs 1 size 0x200000 virtAddr ff100000 phyAddr 538d0000 alignment 4000 attr db options 1 zero 0 
+id 15 abs 1 size 0x200000 virtAddr ff300000 phyAddr 536d0000 alignment 4000 attr db options 1 zero 0 
+id 16 abs 30067112 size 0xd0012000 virtAddr d0012000 phyAddr d0012000 alignment d0012004 attr d0012008 options d001200c zero d0012010 
+SHARED_MEM: CPU0: READY TO WAIT FOR CPU1 TO COME ONLINE
+SHARED_MEM: CPU0: CPU1 ONLINE. STARTING INIT AND REPLAY
+CopySDRegionFromPartitionScheme: INFO: Copy /HEAD to HEAD id=0 Shared Data Region at phy addr: 0x7bffc000 virt addr: 0xf4108000 size 0x2000
+CopySDRegionFromPartitionScheme: INFO: Copy /nvramPSRAM to nvra id=1 Shared Data Region at phy addr: 0x7b5fc000 virt addr: 0xd0100000 size 0xa00000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHJ1 to SHJ1 id=2 Shared Data Region at phy addr: 0x6e7fc000 virt addr: 0xb6000000 size 0xce00000
+CopySDRegionFromPartitionScheme: INFO: Copy /nvramDRAMSim to nvra id=3 Shared Data Region at phy addr: 0x6e6fc000 virt addr: 0xf410a000 size 0x100000
+CopySDRegionFromPartitionScheme: INFO: Copy /UncachedPool to Unca id=4 Shared Data Region at phy addr: 0x6d8dc000 virt addr: 0xd0b00000 size 0xe1f000
+CopySDRegionFromPartitionScheme: INFO: Copy /readbuffer to read id=5 Shared Data Region at phy addr: 0x637dc000 virt addr: 0xf4600000 size 0xa100000
+CopySDRegionFromPartitionScheme: INFO: Copy /crobuffer to crob id=6 Shared Data Region at phy addr: 0x605dc000 virt addr: 0xc2e00000 size 0x3200000
+CopySDRegionFromPartitionScheme: INFO: Copy /allocator to allo id=7 Shared Data Region at phy addr: 0x605d8000 virt addr: 0xf420a000 size 0x1000
+CopySDRegionFromPartitionScheme: INFO: Copy /ZMDT to ZMDT id=8 Shared Data Region at phy addr: 0x585d8000 virt addr: 0xc6000000 size 0x8000000
+CopySDRegionFromPartitionScheme: INFO: Copy /SBFC to SBFC id=9 Shared Data Region at phy addr: 0x545d8000 virt addr: 0xd4800000 size 0x4000000
+CopySDRegionFromPartitionScheme: INFO: Copy /mgmtpool to mgmt id=10 Shared Data Region at phy addr: 0x545d0000 virt addr: 0xf420b000 size 0x8000
+CopySDRegionFromPartitionScheme: INFO: Copy /SGLD to SGLD id=11 Shared Data Region at phy addr: 0x544d0000 virt addr: 0xf4213000 size 0x100000
+CopySDRegionFromPartitionScheme: INFO: Copy /AMIT to AMIT id=12 Shared Data Region at phy addr: 0x53cd0000 virt addr: 0xfe700000 size 0x800000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHMQ to SHMQ id=13 Shared Data Region at phy addr: 0x53ad0000 virt addr: 0xfef00000 size 0x200000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHLX to SHLX id=14 Shared Data Region at phy addr: 0x538d0000 virt addr: 0xff100000 size 0x200000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHVX to SHVX id=15 Shared Data Region at phy addr: 0x536d0000 virt addr: 0xff300000 size 0x200000
+FindSharedMemPartition: tag. SHMQ regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xfef00000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xfef00000
+SHARED_MEM: INITIALIZED SHARED MEMORY @addr 0x0xf4108000
+SHARED_MEM: CPU0: INITIALIZATION OF SHARED MEMORY BY CPU0 DONE
+icLinuxPanic: Starting Linux Panic Thread
+FindSharedMemPartition: tag. SHMQ regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xfef00000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xfef00000
+[iscsiCmd] 2004-04-18 01:10:59: SHMQueueInit: CPU0: Ready to wait for CPU1 to come online for queue init wait
+[iscsiCmd] 2004-04-18 01:10:59: SHMQueueInit: CPU0: CPU1 online. It is now waiting for queue init
+[iscsiCmd] 2004-04-18 01:10:59: SHMQueueInit: CPU0: Starting queue init.
+[iscsiCmd] 2004-04-18 01:10:59: SHARED_MEM: CPU0: Queue Init done by CPU0
+FindSharedMemPartition: tag. SGLD regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xf4213000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xf4213000
+FindSharedMemPartition: tag. read regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xf4600000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xf4600000
+FindSharedMemPartition: tag. SHJ1 regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xb6000000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xb6000000
+FindSharedMemPartition: tag. SHLX regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xff100000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xff100000
+FindSharedMemPartition: tag. SHVX regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xff300000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xff300000
+vxDynFreeListInit: Vx dyn free list has 56 entries.
+Waiting on SHMQueue
+[iscsiCmd] iscsiResourceReleaseThread: Starting
+iscsiResponseThread: Starting
+interCoreGeneralCommThread: Starting
+mgmtCmdThread: Starting
+2004-04-18 01:10:59: icNetworkIoctl: SET_LX_COMMON_INFO: Setting values: serial number: DRB154901A00995
+[tMgmtCmd] 2004-04-18 01:10:59: Bound mgmtCmdThread to cpu 0
+usrRtpAppInit: Setting nvram allocator base address to 0xF420A000
+Attempting to spawn RTP: /romfs/runesa.vxe 
+0x69de324 (tRootTask): 
+KERNEL FULLY INITIALIZED: IT IS SAFE TO RUN RTPs NOW
+Waiting for i/f enable
+Trace created enabled: zonemanager:info:flow
+Trace created enabled: zonemanager:error:flow
+RTP getting ED&R state - currently set to Deployed mode
+Trace created enabled: layoutmanager:error:flow
+Trace created enabled: layoutmanager:info:flow
+Trace created enabled: rmdtracker:error:flow
+Trace created enabled: ledman:error:flow
+Trace created enabled: dlbamdtracker:error:flow
+Trace created enabled: diskhotplug:vrbl:flow
+Trace created enabled: deadlockwd:error:flow
+Trace created enabled: scrub:error:flow
+Trace created enabled: scrub:info:flow
+Trace created enabled: databuf:all:flow
+Trace created enabled: scavenger:error:flow
+Trace created enabled: scavenger:info:flow
+Trace created enabled: scavenger:debug:flow
+Trace created enabled: cpmanager:vrbl:flow
+Trace created enabled: cpmanager:vrbm:flow
+Trace created enabled: cpmanager:error:flow
+Trace created enabled: cmzone:error:flow
+Trace created enabled: clustermanager:error:flow
+Trace created enabled: clustermanager:info:flow
+Trace created enabled: catmanager:error:flow
+Trace created enabled: catmanager:info:flow
+Trace created enabled: cal:error:flow
+Trace created enabled: cal:info:flow
+Trace created enabled: cachemanager:error:flow
+Trace created enabled: catmscanner:info:target
+Trace created enabled: catmscanner:error:flow
+Trace created enabled: catmscanner:corrupt:flow
+Trace created enabled: clt:error:flow
+Trace created enabled: clt:info:flow
+Trace created enabled: bfc:metaIO:error
+Trace created enabled: bfc:startup:flow
+Trace created enabled: bfc:corruption:error
+Trace created enabled: bfc:vsmap:flow
+Trace created enabled: bfc:disk:flow
+Trace created enabled: bfc:esa:lookup
+Trace created enabled: hrm:flush:flow
+Trace created enabled: hrm:warn:flow
+Trace created enabled: hrm:error:flow
+Trace created enabled: hrm:info:flow
+Trace created enabled: Sched:warn:flow
+Trace created enabled: Sched:error:flow
+Trace created enabled: nvram:info:flow
+Trace created enabled: nvram:error:flow
+Trace created enabled: hrm:vrbl:flow
+Trace created enabled: hrm:warn:flow
+Trace created enabled: hrm:error:flow
+Trace created enabled: hrm:info:flow
+Trace created enabled: J2Manager:vrbl:flow
+Trace created enabled: J2Manager:error:flow
+Trace created enabled: J2Manager:info:flow
+Trace created enabled: J2Manager:test:atomicity
+Trace created enabled: hlbatracker:error:flow
+Trace created enabled: Firmwareupg:vrbl:flow
+Trace created enabled: Firmwareupg:error:flow
+Trace created enabled: bgsched:info:default
+Trace created enabled: bgsched:warn:default
+Trace created enabled: bgsched:error:default
+Trace created enabled: zmdtracker:info:flow
+Trace created enabled: zmdtracker:error:flow
+Trace created enabled: z0it:error:flow
+Trace created enabled: j1:vrbl:journal
+Trace created enabled: j1:vrbl:info
+Trace created enabled: j1:error:flow
+Trace created enabled: std:cout:data
+Trace created enabled: ssp:error:flow
+Trace created enabled: systemmanager:vrbl:flow
+Trace created enabled: systemmanager:info:flow
+Trace created enabled: systemmanager:error:flow
+Trace created enabled: systemmanager:vrbl:dpm
+Trace created enabled: spmm:vrbl:flow
+Trace created enabled: spmm:error:flow
+Trace created enabled: rm:warn:flow
+Trace created enabled: rm:error:flow
+Trace created enabled: rm:info:flow
+Trace created enabled: pauser:info:flow
+Trace created enabled: pauser:warn:flow
+Trace created enabled: pauser:error:flow
+Trace created enabled: memorypool:info:flow
+Trace created enabled: memorypool:error:flow
+Trace created enabled: mlfq:info:default
+Trace created enabled: mlfq:warn:default
+Trace created enabled: mlfq:error:default
+Trace created enabled: luninfo:error:flow
+Trace created enabled: j1:error:flow
+Trace created enabled: j1r:vrbl:flow
+Trace created enabled: j1r:warn:flow
+Trace created enabled: j1r:error:flow
+Trace created enabled: j1r:info:flow
+Trace created enabled: j1r:info2:flow
+Trace created enabled: idlemonitor:error:flow
+Trace created enabled: hostappmanager:vrbh:dload
+Trace created enabled: hostappmanager:info:flow
+Trace created enabled: hostappmanager:error:flow
+Trace created enabled: hostappmanager:error:reply
+Trace created enabled: event:vrbl:flow
+Trace created enabled: eventlog:error:flow
+Trace created enabled: epm:error:flow
+Trace created enabled: epm:info:flow
+Trace created enabled: ErrorInjection:error:flow
+Trace created enabled: dud:vrbl:flow
+Trace created enabled: dud:error:flow
+Trace created enabled: powermanager:error:flow
+Trace created enabled: dpm:vrbl:flow
+Trace created enabled: dpm:warn:flow
+Trace created enabled: dpm:error:flow
+Trace created enabled: dpm:info:flow
+Trace created enabled: dm:error:flow
+Trace created enabled: dm:info:all
+Trace created enabled: diaginfo:error:flow
+Trace created enabled: defragmenter:info:target
+Trace created enabled: defragmenter:error:flow
+Trace created enabled: default:error:flow
+Trace created enabled: diags:vrbl:flow
+FlashConfigData: DemoMode = 0
+CLEAR_CONFIG button: 0
+FlashConfigData: ClearDisk = 0
+2004-04-18,01:11:02.09: Binaries built with ENABLE_BRICK = 0
+2004-04-18,01:11:02.09: Kernel diag handlers : 
+2004-04-18,01:11:02.09: /proc/drobo/disk/show
+2004-04-18,01:11:02.09: /proc/drobo/disk/smart
+2004-04-18,01:11:02.09: /proc/drobo/disk/log
+2004-04-18,01:11:02.09: /proc/drobo/perf/j1
+2004-04-18,01:11:02.09: /proc/drobo/../kernel/meminfo
+2004-04-18,01:11:02.09: /proc/drobo/../kernel/version
+2004-04-18,01:11:02.09: /proc/drobo/../kernel/bootline
+2004-04-18,01:11:02.09: Kernel diags buffer size = 65536
+2004-04-18,01:11:02.09: Initializing object pools and slabs
+2004-04-18,01:11:02.09: Slab pool <7STLSlabILj12EE> created empty (perCore[0] = 0xffb54080; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.11: Slab pool <7STLSlabILj16EE> created empty (perCore[0] = 0xffb540c0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.11: Slab pool <7STLSlabILj20EE> created empty (perCore[0] = 0xffb54100; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.13: Slab pool <7STLSlabILj24EE> created empty (perCore[0] = 0xffb54140; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.14: Slab pool <7STLSlabILj28EE> created empty (perCore[0] = 0xffb54180; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.14: Slab pool <7STLSlabILj36EE> created empty (perCore[0] = 0xffb541c0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.16: Slab pool <7STLSlabILj40EE> created empty (perCore[0] = 0xffb54200; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.19: Slab pool <7STLSlabILj44EE> created empty (perCore[0] = 0xffb54240; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.19: Slab pool <7STLSlabILj48EE> created empty (perCore[0] = 0xffb54280; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.19: Slab pool <7STLSlabILj56EE> created empty (perCore[0] = 0xffb542c0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.19: Slab pool <7STLSlabILj68EE> created empty (perCore[0] = 0xffb54300; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.21: Slab pool <7STLSlabILj72EE> created empty (perCore[0] = 0xffb54340; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.23: Slab pool <7STLSlabILj100EE> created empty (perCore[0] = 0xffb54380; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.23: Slab pool <7STLSlabILj272EE> created empty (perCore[0] = 0xffb543c0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.24: Slab pool <7STLSlabILj284EE> created empty (perCore[0] = 0xffb54400; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.26: Slab pool <7STLSlabILj288EE> created empty (perCore[0] = 0xffb54440; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.26: Slab pool <7STLSlabILj296EE> created empty (perCore[0] = 0xffb54480; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.28: Slab pool <7STLSlabILj304EE> created empty (perCore[0] = 0xffb544c0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.29: Slab pool <24SlabLightweightSemaphore> created empty (perCore[0] = 0xffb55a80; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.29: Slab pool <N19ExtendingLockObject11SharedOwnerE> created empty (perCore[0] = 0xffb53fe0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.34: obj pool <12VxWorksMutexIXadL_Z18vxworks_mutex_initEEXadL_Z15vxworks_destroyEEXadL_Z12vxworks_lockEEXadL_Z16vxworks_try_lockEEXadL_Z14vxworks_unlockEEXadL_Z22vxworks_mutex_getownerEEXadL_Z26vxworks_getnumblockedtasksEEE> entries = 3000, baseAddress = 0x00000000
+2004-04-18,01:11:02.39: Slab pool <N14LockObjectBase17PendingLockObjectE> created empty (perCore[0] = 0xffb53f20; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.39: Slab pool <N10LockObject11SharedOwnerE> created empty (perCore[0] = 0xffb53fa0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.39: Slab pool <N8SlabListIN12SlabListPtrsIN17CacheRangeTracker16CacheRangeObjectEE10PtrWrapperEE9node_typeE> created empty (perCore[0] = 0xffb55dc0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.39: Slab pool <N8SlabListIN12SlabListPtrsI18CacheTrackerObjectE10PtrWrapperEE9node_typeE> created empty (perCore[0] = 0xffb55e00; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.39: Slab pool <18CacheTrackerObject> created empty (perCore[0] = 0xffb55ac0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.41: obj pool <14USBHostRequest> entries = 4000, baseAddress = 0x00000000
+2004-04-18,01:11:02.43: obj pool <16MultiHostRequest> entries = 5000, baseAddress = 0x00000000
+2004-04-18,01:11:02.43: Slab pool <N9DataBlock14DataBlockValueE> created empty (perCore[0] = 0xffb53ee0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.44: Slab pool <9DataStore> created empty (perCore[0] = 0xffb55b00; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.44: Slab pool <N8SlabListI9DataBlockE9node_typeE> created empty (perCore[0] = 0xffb54560; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.46: obj pool <7DiskSGL> entries = 144, baseAddress = 0x00000000
+2004-04-18,01:11:02.48: Slab pool <N11clidTracker4elemE> created empty (perCore[0] = 0xffb55b40; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.48: Slab pool <9J2subTran> created empty (perCore[0] = 0xffb55a00; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.49: Slab pool <5J2set> created empty (perCore[0] = 0xffb55a40; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.49: Slab pool <N4J2io4elemE> created empty (perCore[0] = 0xffb55b80; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.51: Slab pool <N10DataWindow8DataPaneE> created empty (perCore[0] = 0xffb54520; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.53: obj pool <11MemoryBlock> entries = 300, baseAddress = 0x00000000
+2004-04-18,01:11:02.54: obj pool <15WriteCATEntries> entries = 36, baseAddress = 0x00000000
+2004-04-18,01:11:02.54: Slab pool <11BitmapRange> created empty (perCore[0] = 0xffb55c00; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.54: Slab pool <15ClusterRunIndex> created empty (perCore[0] = 0xffb55bc0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.56: Slab pool <N8SlabListIN10Dispatcher16PerCpuWorkerList12THREAD_STATEEE9node_typeE> created empty (perCore[0] = 0xffb55d80; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.58: Slab pool <N9IOTracker12ExtendedLockE> created empty (perCore[0] = 0xffb54020; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.61: Slab pool <N9IOTracker20ExtendingLockObjectsE> created empty (perCore[0] = 0xffb55c40; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.61: Slab pool <N9IOTracker15ioTrackerPoliceE> created empty (perCore[0] = 0xffb55c80; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.61: Slab pool <N9IOTracker20TransactionIDWrapperE> created empty (perCore[0] = 0xffb55cc0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.63: Slab pool <16IOTrackerWrapper> created empty (perCore[0] = 0xffb55d00; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:02.63: Slab pool <9SlabArrayIP18CacheTrackerObjectLj6EE> created empty (perCore[0] = 0xffb55d40; sizeof(perCore) = 0x00000040
+ClearDisk(final) = 0
+
+fast ticks per us = 25
+2004-04-18,01:11:02.64: Output redirected to stdout & log
+2004-04-18,01:11:02.66: *** Someone is setting 'Blade' to '0' ***
+2004-04-18,01:11:02.66: *** Someone is setting 'Node' to '0' ***
+2004-04-18,01:11:03.00: Console configured	[*.........]
+2004-04-18,01:11:03.01: 
+2004-04-18,01:11:03.01: SHOCKWAVE PLATFORM SOFTWARE BUILD
+2004-04-18,01:11:03.01: 
+2004-04-18,01:11:03.01: Build Date/Time: Aug 10 2017,11:17:24
+2004-04-18,01:11:03.01: Version Number: 8.105.93977(3.5.14)(3.5.14) NODEBUG BUILD (GCC) (Marvell Sheeva 88SV584x, Board= Shockwave 1.0 ARMARCHV7 LE core)
+2004-04-18,01:11:03.01: 
+2004-04-18,01:11:03.01: LABMODE is DISABLED
+2004-04-18,01:11:03.01: 
+2004-04-18,01:11:03.01: Enabled board features:
+2004-04-18,01:11:03.01: -----------------------
+2004-04-18,01:11:03.01: Transport fathpath code ENABLED
+2004-04-18,01:11:03.01: Diagnostics log code ENABLED
+2004-04-18,01:11:03.01: TDFeaturelib code ENABLED
+2004-04-18,01:11:03.01: Flash image code ENABLED
+2004-04-18,01:11:03.03: Disk presence detect ENABLED
+2004-04-18,01:11:03.03: PMU ENABLED
+2004-04-18,01:11:03.03: LX Core ENABLED
+2004-04-18,01:11:03.03: RealTimeClock ENABLED
+2004-04-18,01:11:03.04: MV78X00 CPU ENABLED
+2004-04-18,01:11:03.04: Number of vxWorks cores is 1
+2004-04-18,01:11:03.04: Shutdown LED ENABLED
+2004-04-18,01:11:03.04: LED dimming ENABLED
+2004-04-18,01:11:03.06: Max drives supported : 6
+2004-04-18,01:11:03.06: 
+2004-04-18,01:11:03.06: Features enabled in this build:
+2004-04-18,01:11:03.06: -------------------------------
+2004-04-18,01:11:03.08: Clear disk on reboot in demomode is ENABLED
+2004-04-18,01:11:03.08: Cluster Scavenger feature ENABLED
+2004-04-18,01:11:03.08: Striping feature ENABLED
+2004-04-18,01:11:03.09: Async ClusterManager bitmap parsing feature ENABLED
+2004-04-18,01:11:03.09: Extending lock support feature ENABLED
+2004-04-18,01:11:03.09: Diags bypass locks feature is ENABLED
+2004-04-18,01:11:03.11: J2 dual buffer feature ENABLED
+2004-04-18,01:11:03.11: J2 parallel spill feature is ENABLED
+2004-04-18,01:11:03.11: J1 replay tagging is ENABLED
+2004-04-18,01:11:03.13: HRM dropping of HLBAT locks is ENABLED
+2004-04-18,01:11:03.13: ErrorInjection is ENABLED
+2004-04-18,01:11:03.13: RTP Heap usage tripwire set at 0x08000000 bytes
+2004-04-18,01:11:03.14: Write journal support ENABLED with 16 writer threads and 16 reader threads
+2004-04-18,01:11:03.14: WRITESAME0/UNMAP support is ENABLED
+2004-04-18,01:11:03.14: Readahead support enabled with support for 10 streams
+2004-04-18,01:11:03.16: Exclusive reliance on uber-readahead is ENABLED
+2004-04-18,01:11:03.16: System standby is ENABLED
+2004-04-18,01:11:03.18: Event log recording ENABLED
+2004-04-18,01:11:03.18: SMART monitoring ENABLED
+2004-04-18,01:11:03.18: Data Scrubber scrubbing METADATA and USERDATA
+2004-04-18,01:11:03.18: Calendar Server ENABLED
+2004-04-18,01:11:03.19: PSRAM battery power off in standby is ENABLED
+2004-04-18,01:11:03.19: On-Proc monitor is ENABLED
+2004-04-18,01:11:03.19: Read Prioritization queuing is ENABLED
+2004-04-18,01:11:03.21: Multi I/O issue transport is ENABLED
+2004-04-18,01:11:03.21: Use of Zone Patching is ENABLED
+2004-04-18,01:11:03.21: Use of DRStripe relayout readahead is ENABLED
+2004-04-18,01:11:03.23: Use of fast Mirrored Zone reads is ENABLED
+2004-04-18,01:11:03.23: Write coalescing min request set to 2304KiB
+2004-04-18,01:11:03.23: Reboot after LUN change is ENABLED
+2004-04-18,01:11:03.24: ClusterManager multiple bitmap segments are ENABLED
+2004-04-18,01:11:03.24: Defragmenter is ENABLED
+2004-04-18,01:11:03.24: CATM Scanner is ENABLED
+2004-04-18,01:11:03.26: Use of MStripeX and M3StripeX Zones is ENABLED
+2004-04-18,01:11:03.26: Ordered lock pending queues are ENABLED
+2004-04-18,01:11:03.26: Dynamic WorkerThread priorities are ENABLED
+2004-04-18,01:11:03.28: LockObject based priority inheritance is ENABLED
+2004-04-18,01:11:03.28: CRO splitting is ENABLED
+2004-04-18,01:11:03.28: Bypass of CATM lock is ENABLED
+2004-04-18,01:11:03.29: Hold lock on SyncOnCRO is ENABLED
+2004-04-18,01:11:03.29: Stripe alignment of writes is ENABLED
+2004-04-18,01:11:03.29: Aggressive background threads ENABLED
+2004-04-18,01:11:03.31: Tiering is ENABLED
+2004-04-18,01:11:03.31: Physical tiering is ENABLED
+2004-04-18,01:11:03.31: ZMDT snapshotting is ENABLED
+2004-04-18,01:11:03.31: BFC is ENABLED
+2004-04-18,01:11:03.33: Aggressive BFC population is ENABLED
+2004-04-18,01:11:03.33: CONSUMER platform build
+2004-04-18,01:11:03.33: Write-worker interlock is ENABLED
+2004-04-18,01:11:03.33: 4KiB alignment is ENABLED without assertions
+2004-04-18,01:11:03.34: 
+2004-04-18,01:11:03.34: Features disabled in this build:
+2004-04-18,01:11:03.34: --------------------------------
+2004-04-18,01:11:03.36: Checked features are disabled
+2004-04-18,01:11:03.36: Custom Windview events disabled
+2004-04-18,01:11:03.36: Reduced Region Size feature disabled
+2004-04-18,01:11:03.36: J1 disk flushing feature disabled
+2004-04-18,01:11:03.39: Reduced Thresholds feature disabled
+2004-04-18,01:11:03.39: Stats Gathering feature disabled
+2004-04-18,01:11:03.39: Capacity Console Display feature disabled
+2004-04-18,01:11:03.39: Read-after-write verify feature disabled
+2004-04-18,01:11:03.39: Verify redundancy after writes feature disabled
+2004-04-18,01:11:03.39: Always Zero Init new Zones feature disabled
+2004-04-18,01:11:03.41: Lock heirarchy enforcement feature disabled
+2004-04-18,01:11:03.41: One I/O at a time feature is disabled
+2004-04-18,01:11:03.43: J2 journal pass through mode is disabled
+2004-04-18,01:11:03.43: J2 journal copy to DRAM is disabled
+2004-04-18,01:11:03.43: J2 journal mirroring to DRAM is disabled
+2004-04-18,01:11:03.44: ZoneManager MirrorOnly Zone pool is disabled
+2004-04-18,01:11:03.44: ZoneManager prefer Mirrored Zones is disabled
+2004-04-18,01:11:03.44: SMART testing disabled
+2004-04-18,01:11:03.46: Auto format LUNs as FAT32 disabled
+2004-04-18,01:11:03.46: Spin on bad J2 signature is disabled
+2004-04-18,01:11:03.46: Scheduler watchdog is disabled
+2004-04-18,01:11:03.46: Scheduler watchdog monitor is disabled
+2004-04-18,01:11:03.48: Lock duration monitor is disabled
+2004-04-18,01:11:03.48: ReadAhead ZM queuing is disabled
+2004-04-18,01:11:03.48: ClientRequest diags contexts are disabled
+2004-04-18,01:11:03.49: Use of Dual Disk Redundancy by default is disabled
+2004-04-18,01:11:03.49: Prefer diagonal parity for recovery is disabled
+2004-04-18,01:11:03.49: Use of small Regions for Demo Mode is disabled
+2004-04-18,01:11:03.51: Automatic LUN management is disabled
+2004-04-18,01:11:03.51: Backup LUN management is disabled
+2004-04-18,01:11:03.53: Buffer marking is disabled
+2004-04-18,01:11:03.53: Buffer mark checking is disabled
+2004-04-18,01:11:03.53: Prefer DDR metadata is disabled
+2004-04-18,01:11:03.53: 
+2004-04-18,01:11:03.54: After signals	[.*........]
+Flash Configuration Values
+
+leddimminglevel: 59
+
+2004-04-18,01:11:03.56:  ====%%%%==== FW-Download: Helper Thread Created!!  Asking it to check CRC & fixup System Images ... 
+2004-04-18,01:11:03.73: Could not Open File "/bd0/rtphdr".  May be missing?
+2004-04-18,01:11:03.73: Could not Open File "/bd0/rtphdr_prev".  May be missing?
+2004-04-18,01:11:03.88: Debug init	[..*.......]
+2004-04-18,01:11:03.91: Added shared data region /UncachedPool to core dump mem filter : 0xd0b00000 length 0x00e1f000
+2004-04-18,01:11:03.91: obj pool <19MemoryBlockUncached> entries = 450, baseAddress = 0xd0b00000
+Creating MemoryBlockUncached pool at baseAddress d0b00000 to d191e100
+2004-04-18,01:11:04.28: Number of CRO's:204800
+2004-04-18,01:11:04.31: Added shared data region /crobuffer to core dump mem filter : 0xc2e00000 length 0x03200000
+2004-04-18,01:11:04.31: obj pool <N17CacheRangeTracker16CacheRangeObjectE> entries = 204800, baseAddress = 0xc2e00000
+2004-04-18,01:11:04.71: Added shared data region /SHJ1 to core dump mem filter : 0xb6000000 length 0x0ce00000
+SHJ1 @ 0xb6000000
+2004-04-18,01:11:04.71: Added shared data region /SHMQ to core dump mem filter : 0xfef00000 length 0x00200000
+SHMQ @ 0xfef00000
+2004-04-18,01:11:04.71: Added shared data region /SHLX to core dump mem filter : 0xff100000 length 0x00200000
+SHLX @ 0xff100000
+2004-04-18,01:11:04.73: Added shared data region /SHVX to core dump mem filter : 0xff300000 length 0x00200000
+SHVX @ 0xff300000
+2004-04-18,01:11:04.83: Idle loop for core 0 bound; physical CPU ID 0
+2004-04-18,01:11:08.01: Could not Open File "/bd0/LXFS.hdr".  May be missing?
+2004-04-18,01:11:11.73: CPU 0 reports a loop rate of 579550000
+2004-04-18,01:11:11.73: IdleMonitor reports a total loop rate of 579550000 loops per second
+2004-04-18,01:11:11.74: IdleMonitor Initialize passed	[...*......]
+2004-04-18,01:11:11.76: Added shared data region /usbSgList to core dump mem filter : 0xf4100000 length 0x00002000
+2004-04-18,01:11:11.76: Added shared data region /usbCmdResp to core dump mem filter : 0xf4102000 length 0x00004000
+HibernateSc called ...with 3 
+2004-04-18,01:11:11.86: ELM: Sun Apr 18 01:11:11 2004: 
+2004-04-18,01:11:11.86: SYSTEM BOOTING:
+2004-04-18,01:11:11.86: ELM: Sun Apr 18 01:11:11 2004: ELM: Boot 5N DRB154901A00995 Flags: 0xd0 bat OFF HIB OFF AMIT 'o' ver: 8.105.93977(3.5.14)
+2004-04-18,01:11:12.08: EventLogManager Initialize passed	[....*.....]
+2004-04-18,01:11:12.09: ELM: Sun Apr 18 01:11:12 2004: RebootReason: Shutdown because of loss of AC power
+2004-04-18,01:11:12.24: SM: PMU current version = 1.000.00078 desired version = 1.000.00078
+2004-04-18,01:11:12.44: SystemStatusPool.cpp:89 SystemStatusPool: Init compleat
+2004-04-18,01:11:12.58: Added shared data region /nvramDRAMSim to core dump mem filter : 0xf410a000 length 0x00100000
+2004-04-18,01:11:12.59: Added shared data region /nvramPSRAM to core dump mem filter : 0xd0100000 length 0x00a00000
+2004-04-18,01:11:12.66: nvram.cpp:187 NVRAM was wiped, initializing region 0
+2004-04-18,01:11:13.36: nvram.cpp:187 NVRAM was wiped, initializing region 1
+2004-04-18,01:11:13.36: NVRAM Initialize passed	[.....*....]
+2004-04-18,01:11:13.44: Added shared data region /ZMDT to core dump mem filter : 0xc6000000 length 0x08000000
+2004-04-18,01:11:13.73: Added shared data region /readbuffer to core dump mem filter : 0xf4600000 length 0x0a100000
+2004-04-18,01:11:13.78: Added shared data region /readbuffer to core dump mem filter : 0xf4600000 length 0x0a100000
+2004-04-18,01:11:13.78: Cache init complete	[......*...]
+2004-04-18,01:11:13.79: Added shared data region /usbCmdResp to core dump mem filter : 0xf4102000 length 0x00004000
+2004-04-18,01:11:13.81: Added shared data region /resRel to core dump mem filter : 0xf4106000 length 0x00002000
+2004-04-18,01:11:13.81: Added shared data region /SGLD to core dump mem filter : 0xf4213000 length 0x00100000
+2004-04-18,01:11:13.81: HRM:Multi: found 167 icore SGLs
+2004-04-18,01:11:13.84: Added shared data region /SHJ1 to core dump mem filter : 0xb6000000 length 0x0ce00000
+2004-04-18,01:11:13.88: Added shared data region /readbuffer to core dump mem filter : 0xf4600000 length 0x0a100000
+2004-04-18,01:11:13.89: SPMM: Timer id = -636527680
+2004-04-18,01:11:14.11: HRManager Initialize passed	[.......*..]
+2004-04-18,01:11:14.44: TopEnd Initialize passed	[........*.]
+2004-04-18,01:11:14.78: Dispatcher Initialize passed	[.........*]
+GetBuffer for 0x10011001
+GetBuffer: base region address 0xd0100000 offset of partition 0x00000040
+GetBuffer 0xd0100040
+2004-04-18,01:11:14.79: J2Manager::initialize: locating j2soft at 0xd0100040
+2004-04-18,01:11:14.79: J2::initialize: J2 signature missing initialising NVRAM for 6 disks.
+2004-04-18,01:11:14.79: ELM: Sun Apr 18 01:11:14 2004: J2::initialize: signature Read from NVRAM: 0x55555555 signature expected: 0x4a323130 [CONTROLLED PSRAM WIPE]
+2004-04-18,01:11:14.93: J2::Init: NVRAM quick test PASSED on journal 0
+2004-04-18,01:11:14.93: J2Manager::initialize: initialised disk 0 with journalette at 0xd0100440, next at 0xd02aad40
+2004-04-18,01:11:15.06: J2::Init: NVRAM quick test PASSED on journal 1
+2004-04-18,01:11:15.06: J2Manager::initialize: initialised disk 1 with journalette at 0xd02aad40, next at 0xd0455640
+2004-04-18,01:11:15.21: J2::Init: NVRAM quick test PASSED on journal 2
+2004-04-18,01:11:15.21: J2Manager::initialize: initialised disk 2 with journalette at 0xd0455640, next at 0xd05fff40
+2004-04-18,01:11:15.34: J2::Init: NVRAM quick test PASSED on journal 3
+2004-04-18,01:11:15.34: J2Manager::initialize: initialised disk 3 with journalette at 0xd05fff40, next at 0xd07aa840
+2004-04-18,01:11:15.49: J2::Init: NVRAM quick test PASSED on journal 4
+2004-04-18,01:11:15.49: J2Manager::initialize: initialised disk 4 with journalette at 0xd07aa840, next at 0xd0955140
+2004-04-18,01:11:15.63: J2::Init: NVRAM quick test PASSED on journal 5
+2004-04-18,01:11:15.63: J2Manager::initialize: initialised disk 5 with journalette at 0xd0955140, next at 0xd0affa40
+2004-04-18,01:11:15.63: J2 Initialize passed	[*........*]
+2004-04-18,01:11:15.64: EPM Initialize passed	[.*.......*]
+2004-04-18,01:11:15.66: Driver "/disk" opened OK with handle 8
+2004-04-18,01:11:15.66: Disk Interface Capabilities:
+2004-04-18,01:11:15.68: 	Number of Slots: 6
+2004-04-18,01:11:15.68: 	Capabilities bitmap: 0x0000000000000000
+2004-04-18,01:11:15.68: 	Max SGL length: 128
+2004-04-18,01:11:15.68: 	Default timeout in seconds: 20
+SetupHotPlug
+mvCheckHotPlug: Msg Rcvd; Adapter 30508637 Drive 30508440 Event 9 
+2004-04-18,01:11:15.88: [tHotPlug] MainLoop: mvCheckHotPlug() returned; eventID=9; adapterID=30508637; driveID=30508440
+2004-04-18,01:11:15.88: DiskManager Initialize passed	[..*......*]
+2004-04-18,01:11:15.89: DiskPackManager Initialize passed	[...*.....*]
+2004-04-18,01:11:15.91: RegionManager Initialize passed	[....*....*]
+2004-04-18,01:11:15.93: ZoneManager Initialize passed	[.....*...*]
+2004-04-18,01:11:15.96: LayoutManager Initialize passed	[......*..*]
+2004-04-18,01:11:15.98: Zone0InfoTable Initialize passed	[.......*.*]
+2004-04-18,01:11:16.00: CAL::Initialize: read wall clock of Sun Apr 18 01:11:16 2004
+2004-04-18,01:11:16.00: Calendar Server Initialize passed	[........**]
+2004-04-18,01:11:16.01: Reset state for ClusterPool BULK
+2004-04-18,01:11:16.01: Reset state for ClusterPool TRANS
+2004-04-18,01:11:16.01: ClusterManager Initialize passed	[*.......**]
+2004-04-18,01:11:16.03: CatManager Initialize passed	[.*......**]
+2004-04-18,01:11:16.04: DiskUtilizationDaemon Initialize passed	[..*.....**]
+2004-04-18,01:11:16.06: J1tag Initialize passed	[...*....**]
+GetBuffer for 0x10012001
+GetBuffer: base region address 0xf410a000 offset of partition 0x00000040
+GetBuffer 0xf410a040
+2004-04-18,01:11:16.09: Writejournal Initialize passed	[....*...**]
+2004-04-18,01:11:16.11: Added shared data region /mgmtpool to core dump mem filter : 0xf420b000 length 0x00008000
+2004-04-18,01:11:16.11: Host App Manager Initialize passed	[.....*..**]
+2004-04-18,01:11:16.13: DeadlockWatchdog Initialize passed	[......*.**]
+2004-04-18,01:11:16.16: DataScrubber Initialize passed	[.......***]
+2004-04-18,01:11:16.18: tDefrag thread created
+2004-04-18,01:11:16.18: tCATMScan thread created
+2004-04-18,01:11:16.18: HLBAT::cachePrefillThread: started
+2004-04-18,01:11:16.18: HLBAT::cachePrefillThread: started
+2004-04-18,01:11:16.18: HLBAT::cachePrefillThread: started
+2004-04-18,01:11:16.18: HLBAT::cachePrefillThread: started
+2004-04-18,01:11:16.18: HLBAT::cachePrefillThread: started
+2004-04-18,01:11:16.18: HLBAT::cachePrefillThread: started
+2004-04-18,01:11:16.18: HLBAT::cachePrefillThread: started
+2004-04-18,01:11:16.18: HLBAT::cachePrefillThread: started
+2004-04-18,01:11:16.18: Slab pool <N3BFCI19BFCProductionParamsE14RangeListEntryINS1_11VirtualAddrEEE> created empty (perCore[0] = 0xffb84340; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:16.19: Created relayout thread number Created relayout thread number Created relayout thread number Created relayout thread number Slab pool <0123N3BFCI19BFCProductionParamsE14RangeListEntryINS1_12PhysicalAddrEEE
+2004-04-18,01:11:16.21: 
+2004-04-18,01:11:16.21: 
+2004-04-18,01:11:16.21: 
+2004-04-18,01:11:16.21: > created empty (perCore[0] = 0xffb84380; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:16.23: Slab pool <N3BFCI19BFCProductionParamsE14RangeListEntryINS1_10RegionAddrEEE> created empty (perCore[0] = 0xffb843c0; sizeof(perCore) = 0x00000040
+2004-04-18,01:11:16.24: disabling event handling	[*......***]
+2004-04-18,01:11:16.26: DiskManager LoadDiskPack called
+Number of adapters 3
+Number of drives 6
+Adapter 0 has 2 channels
+Adapter 0 channel 0 = /sata00
+Adapter 0 channel 1 = /sata01
+Adapter 1 has 2 channels
+Adapter 1 channel 0 = /sata02
+Adapter 1 channel 1 = /sata03
+Adapter 2 has 2 channels
+Adapter 2 channel 0 = /sata04
+Adapter 2 channel 1 = /sata05
+2004-04-18,01:11:16.28: DM::UpdateMap
+getDrivesPresentBitmap() drivemap = 0x0 number_of_drives = 0
+2004-04-18,01:11:16.29: [iRunesa] DM::UpdateMap phys drive map now 0 (0 disks)
+2004-04-18,01:11:16.29: DiskManager LoadDiskPack passed
+2004-04-18,01:11:16.29: enabling event handling	[.*.....***]
+2004-04-18,01:11:16.33: CAL::registerAlarm: added
+2004-04-18,01:11:16.33: 	startTime	:Sun Apr 18 01:11:16 2004
+2004-04-18,01:11:16.33: 	expiryTime	:Sun Apr 18 01:21:16 2004
+2004-04-18,01:11:16.33: 	deliveryTime	:Thu Jan  1 00:00:00 1970
+2004-04-18,01:11:16.33: 	duration	:10Mins
+2004-04-18,01:11:16.33: 	remaining	:10Mins
+2004-04-18,01:11:16.34: 	source		:0x534d4c44 [DLMS]
+2004-04-18,01:11:16.34: 	type		:ONE SHOT SINGLE BOOT
+2004-04-18,01:11:16.34: CAL::registerAlarm: added
+2004-04-18,01:11:16.34: 	startTime	:Sun Apr 18 01:11:16 2004
+2004-04-18,01:11:16.36: 	expiryTime	:Sun Apr 18 01:21:16 2004
+2004-04-18,01:11:16.36: 	deliveryTime	:Thu Jan  1 00:00:00 1970
+2004-04-18,01:11:16.36: 	duration	:10Mins
+2004-04-18,01:11:16.38: 	remaining	:10Mins
+2004-04-18,01:11:16.38: 	source		:0x50494e48 [HNIP]
+2004-04-18,01:11:16.38: 	type		:ONE SHOT SINGLE BOOT
+2004-04-18,01:11:16.38: DLBAT flushed	[..*....***]
+2004-04-18,01:11:16.41: DIS discovery complete	[...*...***]
+2004-04-18,01:11:16.43: ELM: Sun Apr 18 01:11:16 2004: DPM::doColdStart: NO DISKS FOUND DURING PACK DISCOVERY
+2004-04-18,01:11:16.43: Canceling SM boot alarm
+2004-04-18,01:11:16.43: Notifying SPMM of system initialization
+IoSc: state = 0, serial = 0x0
+Interfaces enabled from the RTP ... bringing up No Interface first ...
+iSCSI ENABLED
+Interface ENABLED via syscall
+2004-04-18,01:11:16.44: Load failure, clearing LEDs
+[icCmd] 2004-04-18 01:11:16: interCoreGeneralCommThread: NAS stack UP message received
+[icCmd] 2004-04-18 01:11:16: ACTIVATING NAS INTERFACE WITH LUN&INTERFACES
+interfaceMakeActive called with int: iSCSI, active_int = No Interface
+Sending stack UP state up to the RTP.
+
+iSCSI interface is ENABLED
+!!! NO active J1 manager recorded !!!
+rtp_interface_status = 1 rtp_interface_down_sent = 0 first_make_active = 1 reset_count = 0
+takeDownOtherInterfaces:
+2004-04-18,01:11:16.46: [USBtxShim] rxCmd: interface stack state command: flags 0x00000048; interface number 4; old state 1
+Interface iSCSI state is: ENABLED
+[icCmd] 2004-04-18 01:11:16: iSCSIMSChangeState: Called. New State: 2
+iSCSI ACTIVE
+2004-04-18,01:11:16.46: DISK PACK FAILED TO LOAD! USB IS UP BUT YOU CAN'T WRITE UNTIL PROBLEMS RECTIFIED!
+2004-04-18,01:11:16.49: USBHostRequest::rxCmd: iSCSI Stack Connected
+2004-04-18,01:11:16.51: [USBtxShim] transportUpdate: updating stack state for interface 4 from 1 to 0
+2004-04-18,01:11:22.54: LoadAbubs lun 0
+[tHibernate] 2004-04-18 01:13:47: System Hibernation: bringDownReason = other
+[tHibernate] 2004-04-18 01:13:47: 
+Disabling all un-Needed Interrupts (Notably: PMU Panic/PowerDownReq)
+[tHibernate] 2004-04-18 01:13:48: PMU Shutdown Timer: 59.62 seconds (3577 sysTicks) Remaining
+[tHibernate] 2004-04-18 01:13:48: HIB: hibernate header is marked CLEAN 
+Writing diagnostics to flash file /bd0/Crashlogs/crashlog-20040418-0113, please wait.
+
+Log Generated: SUN APR 18 01:13:48 2004
+-------------------- CRASH LOG FLASH FILE END ----------------------

@@ -1,0 +1,2 @@
+# treat all files as binary to preserve line endings; required as some script files are hashed for integrity checks
+* binary

@@ -1,0 +1,1733 @@
+13:53:41.947:
+Uncompressing Linux...
+13:53:42.128:
+ done, booting the kernel.
+
+13:53:42.132:
+[    0.000000] Booting Linux on 
+13:53:42.135:
+physical CPU 1
+[    0.000000] 
+13:53:42.138:
+Linux version 3.2.96-3 (drobo@80
+13:53:42.140:
+b6fdb6c46c) (gcc version 6.4.0 (
+13:53:42.143:
+GCC) ) #1 SMP Tue May 21 21:58:0
+13:53:42.146:
+6 UTC 2019
+[    0.000000] CPU:
+13:53:42.149:
+ Marvell PJ4Bv7 Processor [562f5
+13:53:42.152:
+842] revision 2 (ARMv7), cr=10c5
+13:53:42.154:
+3c7d
+[    0.000000] CPU: PIPT 
+13:53:42.157:
+/ VIPT nonaliasing data cache, P
+13:53:42.160:
+IPT instruction cache
+[    0.0
+13:53:42.163:
+00000] Machine: Marvell Armada X
+13:53:42.165:
+P Development Board
+[    0.000
+13:53:42.168:
+000] Using UBoot passing paramet
+13:53:42.171:
+ers structure
+[    0.000000] b
+13:53:42.174:
+ootconsole [earlycon0] enabled
+
+13:53:42.177:
+[    0.000000] memblock_add_reg
+13:53:42.179:
+ion memory start 0x20000000  siz
+13:53:42.182:
+e 0x58200000 
+[    0.000000] m
+13:53:42.185:
+emblock_add_region memory start 
+13:53:42.188:
+0x78200000  size 0x7e00000 
+[ 
+13:53:42.190:
+   0.000000] memblock_add_region
+13:53:42.193:
+ reserved start 0x53000000  size
+13:53:42.196:
+ 0x29000000 
+[    0.000000] me
+13:53:42.199:
+mblock_add_region reserved start
+13:53:42.202:
+ 0x200081c0  size 0x6f2bf4 
+[ 
+13:53:42.204:
+   0.000000] memblock_add_region
+13:53:42.207:
+ reserved start 0x20004000  size
+13:53:42.210:
+ 0x4000 
+[    0.000000] Memory
+13:53:42.213:
+ policy: ECC disabled, Data cach
+13:53:42.216:
+e writealloc
+[    0.000000] me
+13:53:42.218:
+mblock_add_region reserved start
+13:53:42.221:
+ 0x52ffc000  size 0x4000 
+[   
+13:53:42.224:
+ 0.000000] memblock_add_region r
+13:53:42.227:
+eserved start 0x52ff8000  size 0
+13:53:42.230:
+x4000 
+[    0.000000] memblock
+13:53:42.232:
+_add_region reserved start 0x52f
+13:53:42.235:
+f4000  size 0x4000 
+[    0.000
+13:53:42.238:
+000] memblock_add_region reserve
+13:53:42.241:
+d start 0x52ff0000  size 0x4000 
+13:53:42.244:
+
+[    0.000000] memblock_add_r
+13:53:42.247:
+egion reserved start 0x52fec000 
+13:53:42.249:
+ size 0x4000 
+[    0.000000] m
+13:53:42.252:
+emblock_add_region reserved star
+13:53:42.255:
+t 0x52fe8000  size 0x4000 
+[  
+13:53:42.258:
+  0.000000] memblock_add_region 
+13:53:42.260:
+reserved start 0x52fe4000  size 
+13:53:42.262:
+0x4000 
+
+13:53:42.284:
+[    0.000000] SMP: init cpus
+
+13:53:42.289:
+[    0.000000] PERCPU: Embedded 
+13:53:42.291:
+3 pages/cpu @80a08000 s22144 r81
+13:53:42.294:
+92 d18816 u49152
+[    0.000000
+13:53:42.297:
+] Built 1 zonelists in Zone orde
+13:53:42.300:
+r, mobility grouping on.  Total 
+13:53:42.303:
+pages: 98111
+[    0.000000] Ke
+13:53:42.305:
+rnel command line: rootfstype=jf
+13:53:42.308:
+fs2 root=/dev/mtdblock3 rw mtdpa
+13:53:42.311:
+rts=cfi_flash_0:1m@0m(nor_hdr),3
+13:53:42.314:
+m@1m(var),30m@4m(rfs0),30m@34m(r
+13:53:42.316:
+fs1) ip=169.254.1.12:169.254.189
+13:53:42.319:
+.174:169.254.1.1:255.255.0.0:sho
+13:53:42.322:
+ckwave:eth0:none mv_cpu_count=3 
+13:53:42.325:
+mv_rsrc=uart1:eth0:spi:mstr mv_s
+13:53:42.327:
+h_mem=0x80000000:0x100000 mv_ipc
+13:53:42.330:
+=0 vmalloc=550M console=ttyS0,11
+13:53:42.333:
+5200 earlyprintk=ttyS0,1152000 p
+13:53:42.336:
+m_level=off
+[    0.000000] PID
+13:53:42.339:
+ hash table entries: 4096 (order
+13:53:42.342:
+: 0, 16384 bytes)
+[    0.00000
+13:53:42.345:
+0] Dentry cache hash table entri
+13:53:42.347:
+es: 262144 (order: 6, 1048576 by
+13:53:42.349:
+tes)
+
+13:53:42.352:
+[    0.000000] Inode-cache hash 
+13:53:42.355:
+table entries: 131072 (order: 5,
+13:53:42.357:
+ 524288 bytes)
+
+13:53:42.377:
+[    0.000000] Memory: 1536MB = 
+13:53:42.379:
+1536MB total
+[    0.000000] Me
+13:53:42.382:
+mory: 889008k/889008k available,
+13:53:42.385:
+ 683856k reserved, 65536K highme
+13:53:42.388:
+m
+[    0.000000] Virtual kerne
+13:53:42.390:
+l memory layout:
+[    0.000000
+13:53:42.393:
+]     vector  : 0xffff0000 - 0xf
+13:53:42.396:
+fff4000   (  16 kB)
+[    0.000
+13:53:42.399:
+000]     fixmap  : 0xffc00000 - 
+13:53:42.402:
+0xfff00000   (3072 kB)
+[    0.
+13:53:42.404:
+000000]     vmalloc : 0xd8800000
+13:53:42.407:
+ - 0xfa800000   ( 544 MB)
+[   
+13:53:42.410:
+ 0.000000]     lowmem  : 0x80000
+13:53:42.413:
+000 - 0xd8200000   (1410 MB)
+[
+13:53:42.415:
+    0.000000]     pkmap   : 0x7f
+13:53:42.418:
+e00000 - 0x80000000   (   2 MB)
+13:53:42.421:
+
+[    0.000000]     modules : 0
+13:53:42.424:
+x7f000000 - 0x7fe00000   (  14 M
+13:53:42.426:
+B)
+[    0.000000]       .text 
+13:53:42.429:
+: 0x80008000 - 0x805f4000   (606
+13:53:42.432:
+4 kB)
+[    0.000000]       .in
+13:53:42.435:
+it : 0x805f4000 - 0x80629680   (
+13:53:42.438:
+ 214 kB)
+[    0.000000]       
+13:53:42.440:
+.data : 0x8062a000 - 0x806620a8 
+13:53:42.443:
+  ( 225 kB)
+[    0.000000]    
+13:53:42.446:
+    .bss : 0x806620cc - 0x806fad
+13:53:42.449:
+b4   ( 612 kB)
+[    0.000000] 
+13:53:42.452:
+Hierarchical RCU implementation.
+13:53:42.454:
+
+[    0.000000] NR_IRQS:211
+
+13:53:42.458:
+[    0.000000] Initializing Arma
+13:53:42.461:
+daXP SOC Timer 3
+[    0.000000
+13:53:42.464:
+] sched_clock: 32 bits at 25MHz,
+13:53:42.467:
+ resolution 40ns, wraps every 17
+13:53:42.470:
+1798ms
+[    0.000200] Calibrat
+13:53:42.472:
+ing delay loop... 
+13:53:42.561:
+1196.85 BogoMIPS (lpj=5984256)
+
+13:53:42.563:
+[    0.092935] pid_max: default
+13:53:42.566:
+: 32768 minimum: 301
+[    0.09
+13:53:42.569:
+7768] Security Framework initial
+13:53:42.572:
+ized
+[    0.101965] SELinux:  
+13:53:42.574:
+Initializing.
+[    0.105629] M
+13:53:42.577:
+ount-cache hash table entries: 2
+13:53:42.581:
+048
+[    0.111033] CPU: Testin
+13:53:42.584:
+g write buffer coherency: ok
+[
+13:53:42.587:
+    0.116202] CPU0: thread -1, c
+13:53:42.589:
+pu 1, socket 0, mpidr 80000001
+
+13:53:42.592:
+[    0.121964] SMP: prepare CPU
+13:53:42.595:
+s (3 cores)
+[    0.126229] Set
+13:53:42.598:
+ting Clocks for secondary CPUs
+
+13:53:42.599:
+
+13:53:42.602:
+[    0.132094] SMP: CPU 1 Waking
+13:53:42.604:
+ up CPU 2
+
+13:53:42.661:
+[    0.156150] CPU1: Booted seco
+13:53:42.664:
+ndary processor
+[    0.190063]
+13:53:42.667:
+ CPU1: thread -1, cpu 2, socket 
+13:53:42.669:
+0, mpidr 80000002
+[    0.19078
+13:53:42.672:
+6] SMP: CPU 1 Waking up CPU 3
+
+13:53:42.731:
+[    0.224649] CPU2: Booted seco
+13:53:42.734:
+ndary processor
+[    0.260067]
+13:53:42.736:
+ CPU2: thread -1, cpu 3, socket 
+13:53:42.739:
+0, mpidr 80000003
+[    0.26027
+13:53:42.742:
+3] Brought up 3 CPUs
+[    0.27
+13:53:42.745:
+3391] SMP: Total of 3 processors
+13:53:42.747:
+ activated (3590.55 BogoMIPS).
+
+13:53:42.749:
+
+13:53:42.751:
+[    0.280922] devtmpfs: initial
+13:53:42.753:
+ized
+
+13:53:42.759:
+[    0.289034] xor: measuring so
+13:53:42.763:
+ftware checksum speed
+
+13:53:42.811:
+[    0.340062]    arm4regs  :  1
+13:53:42.813:
+017.600 MB/sec
+
+13:53:42.861:
+[    0.390128]    8regs     :   
+13:53:42.863:
+641.600 MB/sec
+
+13:53:42.911:
+[    0.440055]    32regs    :   
+13:53:42.913:
+795.200 MB/sec
+[    0.444307] 
+13:53:42.916:
+xor: using function: arm4regs (1
+13:53:42.919:
+017.600 MB/sec)
+[    0.450204]
+13:53:42.922:
+ NET: Registered protocol family
+13:53:42.923:
+ 16
+
+13:53:42.926:
+[    0.456033] Aurora: Working i
+13:53:42.929:
+n ARMv7 mode
+[    0.460153] L0
+13:53:42.932:
+ cache Enabled
+[    0.463107] 
+13:53:42.935:
+Speculative Prefetch Disabled
+
+13:53:42.937:
+[    0.467201] Support IO cohere
+13:53:42.939:
+ncy.
+
+13:53:42.946:
+[    0.475609] Skipping MPP conf
+13:53:42.949:
+iguration and GPIO interrupt ena
+13:53:42.950:
+bling.
+
+13:53:43.080:
+[    0.610005] Warning: AMP Addr
+13:53:43.084:
+ess decode windows reg != 0
+
+13:53:43.088:
+[    0.617377] Initialized Addre
+13:53:43.091:
+ss decode windows
+[    0.62220
+13:53:43.094:
+6] 
+[    0.623782]   Marvell A
+13:53:43.096:
+rmada-XP DB-78460-BP rev 2.0 Boa
+13:53:43.099:
+rd -  Soc: MV88F5570 Rev 8 LE
+
+13:53:43.102:
+[    0.631650]   Detected Tclk 2
+13:53:43.105:
+50000000, SysClk 600000000, Fabr
+13:53:43.108:
+icClk 600000000, PClk 1200000000
+13:53:43.110:
+
+[    0.640237]   LSP version:
+13:53:43.113:
+ linux-3.2.58-2014_T2.0p2 (16KB 
+13:53:43.116:
+SW Page Size)
+[    0.646906]  
+13:53:43.119:
+ AMP: Resources - uart1 - eth0 -
+13:53:43.121:
+ xor1 - spi - mstr 
+[    0.653
+13:53:43.125:
+045] 
+[    0.655586] Register 
+13:53:43.128:
+platform device: mv_neta_port_0
+13:53:43.129:
+
+
+13:53:43.152:
+[    0.681260] bio: create slab 
+13:53:43.154:
+<bio-0> at 0
+
+13:53:43.321:
+[    0.850132] raid6: int32x1   
+13:53:43.323:
+ 197 MB/s
+
+13:53:43.491:
+[    1.020067] raid6: int32x2   
+13:53:43.493:
+ 178 MB/s
+
+13:53:43.661:
+[    1.190146] raid6: int32x4   
+13:53:43.662:
+ 162 MB/s
+
+13:53:43.831:
+[    1.360340] raid6: int32x8   
+13:53:43.834:
+ 159 MB/s
+[    1.364160] raid6
+13:53:43.836:
+: using algorithm int32x1 (197 M
+13:53:43.838:
+B/s)
+
+13:53:43.841:
+[    1.370982] SCSI subsystem in
+13:53:43.844:
+itialized
+
+13:53:43.847:
+[    1.376969] Switching to cloc
+13:53:43.851:
+ksource axp_clocksource
+
+13:53:43.871:
+[    1.400330] NET: Registered p
+13:53:43.874:
+rotocol family 2
+
+13:53:43.881:
+[    1.410345] IP route cache ha
+13:53:43.883:
+sh table entries: 16384 (order: 
+13:53:43.887:
+2, 65536 bytes)
+[    1.418016]
+13:53:43.889:
+ TCP established hash table entr
+13:53:43.892:
+ies: 65536 (order: 5, 524288 byt
+13:53:43.896:
+es)
+[    1.425868] TCP bind ha
+13:53:43.898:
+sh table entries: 65536 (order: 
+13:53:43.902:
+5, 524288 bytes)
+[    1.433032
+13:53:43.904:
+] TCP: Hash tables configured (e
+13:53:43.907:
+stablished 65536 bind 65536)
+[
+13:53:43.910:
+    1.439618] TCP reno registere
+13:53:43.913:
+d
+[    1.442865] UDP hash tabl
+13:53:43.916:
+e entries: 1024 (order: 1, 32768
+13:53:43.918:
+ bytes)
+[    1.448983] UDP-Lit
+13:53:43.921:
+e hash table entries: 1024 (orde
+13:53:43.924:
+r: 1, 32768 bytes)
+[    1.4558
+13:53:43.927:
+46] NET: Registered protocol fam
+13:53:43.930:
+ily 1
+[    1.460725] RPC: Regi
+13:53:43.933:
+stered named UNIX socket transpo
+13:53:43.936:
+rt module.
+[    1.466753] RPC:
+13:53:43.939:
+ Registered udp transport module
+13:53:43.941:
+.
+[    1.471525] RPC: Register
+13:53:43.944:
+ed tcp transport module.
+[    
+13:53:43.947:
+1.476311] RPC: Registered tcp NF
+13:53:43.950:
+Sv4.1 backchannel transport modu
+13:53:43.952:
+le.
+
+13:53:43.954:
+[    1.484014]   o 1 Giga ports 
+13:53:43.957:
+supported
+[    1.487837]   o S
+13:53:43.960:
+KB recycle supported (Enabled)
+
+13:53:43.963:
+[    1.492472]   o NETA acceler
+13:53:43.965:
+ation mode 1
+[    1.496465]   
+13:53:43.968:
+o RX Queue support: 8 Queues * 1
+13:53:43.971:
+28 Descriptors
+[    1.502203] 
+13:53:43.974:
+  o TX Queue support: 8 Queues *
+13:53:43.977:
+ 532 Descriptors
+[    1.507922
+13:53:43.979:
+]   o GSO supported
+[    1.510
+13:53:43.982:
+960]   o GRO supported
+[    1.
+13:53:43.985:
+514010]   o Receive checksum off
+13:53:43.988:
+load supported
+[    1.518865] 
+13:53:43.990:
+  o Transmit checksum offload su
+13:53:43.993:
+pported
+[    1.523815]   o Dri
+13:53:43.996:
+ver ERROR statistics enabled
+[
+13:53:43.999:
+    1.528410] 
+[    1.530021] 
+13:53:44.002:
+port #0: is_sgmii=0, is_rgmii=1,
+13:53:44.005:
+ phy_addr=0
+[    1.535560]   o
+13:53:44.007:
+ Loading network interface(s) fo
+13:53:44.010:
+r port #0: cpu_mask=0xf, tx_csum
+13:53:44.013:
+_limit=9800
+[    1.543934] 
+
+13:53:44.016:
+[    1.545507]   o Port 0 is con
+13:53:44.019:
+nected to Linux netdevice
+
+13:53:44.025:
+[    1.554638]     o eth0, ifind
+13:53:44.028:
+ex = 2, GbE port = 0
+
+13:53:44.033:
+[    1.562874] 	giga p=0: mtu=15
+13:53:44.036:
+00, mac=00:1a:62:04:8f:a8 (platf
+13:53:44.040:
+orm)
+[    1.569030] 
+[    1.
+13:53:44.042:
+571612] audit: initializing netl
+13:53:44.045:
+ink socket (disabled)
+[    1.5
+13:53:44.048:
+77109] type=2000 audit(1.570:1):
+13:53:44.051:
+ initialized
+
+13:53:44.110:
+[    1.639920] highmem bounce po
+13:53:44.114:
+ol size: 64 pages
+[    1.64512
+13:53:44.116:
+8] Loading notifyfs 0.11
+[    
+13:53:44.119:
+1.648562] notifyfs loaded with s
+13:53:44.122:
+izeof(ino_t)=4.
+[    1.653644]
+13:53:44.125:
+ JFFS2 version 2.2. (NAND) © 20
+13:53:44.128:
+01-2006 Red Hat, Inc.
+[    1.6
+13:53:44.131:
+60089] aufs 3.2-20131104
+[    
+13:53:44.134:
+1.663152] msgmni has been set to
+13:53:44.137:
+ 1608
+[    1.668016] async_tx:
+13:53:44.140:
+ api initialized (async)
+[    
+13:53:44.143:
+1.672469] io scheduler noop regi
+13:53:44.146:
+stered
+[    1.676460] io sched
+13:53:44.149:
+uler deadline registered (defaul
+13:53:44.152:
+t)
+[    1.681710] io scheduler
+13:53:44.154:
+ cfq registered
+
+13:53:44.161:
+[    1.690551] Serial: 8250/1655
+13:53:44.164:
+0 driver, 2 ports, IRQ sharing d
+13:53:44.167:
+isabled
+[    1.697594] serial8
+13:53:44.170:
+250.0: ttyS0 at MMIO 0xd0012100 
+13:53:44.173:
+(irq = 42) is a 16550A
+[    1.
+13:53:44.175:
+704468] console [ttyS0] enabled,
+13:53:44.178:
+ bootconsole disabled
+[    1.70
+13:53:44.181:
+4468] console [ttyS0] enabled, b
+13:53:44.184:
+ootconsole disabled
+[    1.715
+13:53:44.187:
+763] shared_mem: kernel panic no
+13:53:44.190:
+tifier registered
+[    1.721092
+13:53:44.192:
+] shared_mem: kernel panic dumpe
+13:53:44.195:
+r registered
+[    1.726265] SHA
+13:53:44.198:
+RED_MEM: mapping shared memory H
+13:53:44.201:
+eader physical addr 7bffc000 vir
+13:53:44.204:
+tual addr 0xd8868000
+[    1.735
+13:53:44.206:
+347] SHARED_MEM: INIT: Shared Me
+13:53:44.209:
+mory Header in Kernel space at A
+13:53:44.212:
+ddr: 0xd8868000
+[    1.743307] 
+13:53:44.215:
+shared_mem: shm_doorbell_init: I
+13:53:44.218:
+RQ 0x1 requested, doorbell mask 
+13:53:44.220:
+2197c queue_os_info b16ae1e0
+[ 
+13:53:44.223:
+   1.752837] shared_mem: shared_
+13:53:44.226:
+mem_module_init: Location of shm
+13:53:44.229:
+_dev: b16ae1c0
+[    1.759993] s
+13:53:44.232:
+hared_mem: shared_mem_module_ini
+13:53:44.234:
+t: Intercore message checksum is
+13:53:44.238:
+ enabled
+[    1.768182] brd: mo
+13:53:44.241:
+dule loaded
+[    1.772029] loop
+13:53:44.244:
+: module loaded
+[    1.775195] 
+13:53:44.247:
+dri_dnas_scsi_init: init... dri_
+13:53:44.249:
+dnas_dev at line 5526 (16KB SW P
+13:53:44.253:
+age Size)
+[    1.783402] shared
+13:53:44.255:
+_mem: wait_for_init_shared_mem: 
+13:53:44.258:
+Entering mutex for shm_dev at b1
+13:53:44.261:
+6ae1c0
+[    1.791521] SHARED_ME
+13:53:44.264:
+M: CPU1: READY TO WAIT FOR INITI
+13:53:44.267:
+ALIZATION OF SHARED MEMORY
+[   
+13:53:44.269:
+ 1.792547] 
+[    1.792550] INFO
+13:53:44.272:
+: Found cfi_flash_0 0 - base 0xd
+13:53:44.275:
+8000000, size 0x4000000, bus 2
+
+13:53:44.278:
+[    1.792571] INFO: Found cfi_f
+13:53:44.281:
+lash_1 1 - base 0xdc000000, size
+13:53:44.283:
+ 0x4000000, bus 2
+[    1.792579
+13:53:44.286:
+] INFO: flashInfoFill - Found 2 
+13:53:44.289:
+Flash Devices
+[    1.792585] IN
+13:53:44.292:
+FO: flash_map_init - detected 2 
+13:53:44.295:
+devices
+[    1.792591] MTD: Ini
+13:53:44.297:
+tialize the cfi_flash_0 device a
+13:53:44.300:
+t address 0xd8000000
+[    1.793
+13:53:44.303:
+303] 
+[    1.793305] INFO: Io r
+13:53:44.306:
+emapped successfully - phy addr 
+13:53:44.308:
+= 0xd8000000, virt addr = 0xd900
+13:53:44.311:
+0000
+[    1.793316] INFO: Using
+13:53:44.314:
+ cfi_probe to probe cfi_flash_0 
+13:53:44.317:
+at address 0xd8000000, size 0x40
+13:53:44.320:
+00000, width 2m
+[    1.793395] 
+13:53:44.322:
+cfi_flash_0: Found 1 x16 devices
+13:53:44.325:
+ at 0x0 in 16-bit bank. Manufact
+13:53:44.328:
+urer ID 0x0000c2 Chip ID 0x00227
+13:53:44.331:
+e
+[    1.793409] Amd/Fujitsu Ex
+13:53:44.334:
+tended Query Table at 0x0040
+[ 
+13:53:44.336:
+   1.793424]   Amd/Fujitsu Exten
+13:53:44.339:
+ded Query version 1.3.
+[    1.7
+13:53:44.342:
+93433] number of CFI chips: 1
+[
+13:53:44.345:
+    1.793439]  - detected OK
+[ 
+13:53:44.348:
+   1.793458] 4 cmdlinepart parti
+13:53:44.350:
+tions found on MTD device cfi_fl
+13:53:44.353:
+ash_0
+[    1.793465] Creating 4
+13:53:44.356:
+ MTD partitions on "cfi_flash_0"
+13:53:44.359:
+:
+[    1.793479] 0x000000000000
+13:53:44.362:
+-0x000000100000 : "nor_hdr"
+[  
+13:53:44.364:
+  1.794389] 0x000000100000-0x000
+13:53:44.367:
+000400000 : "var"
+[    1.795247
+13:53:44.370:
+] 0x000000400000-0x000002200000 
+13:53:44.373:
+: "rfs0"
+[    1.796128] 0x00000
+13:53:44.375:
+2200000-0x000004000000 : "rfs1"
+13:53:44.378:
+
+[    1.796977]  - OK.
+[    1.7
+13:53:44.381:
+96983] MTD: Initialize the cfi_f
+13:53:44.384:
+lash_1 device at address 0xdc000
+13:53:44.387:
+000
+[    1.797691] 
+[    1.797
+13:53:44.389:
+694] INFO: Io remapped successfu
+13:53:44.392:
+lly - phy addr = 0xdc000000, vir
+13:53:44.395:
+t addr = 0xde000000
+[    1.7977
+13:53:44.398:
+04] INFO: Using cfi_probe to pro
+13:53:44.401:
+be cfi_flash_1 at address 0xdc00
+13:53:44.403:
+0000, size 0x4000000, width 2m
+
+13:53:44.406:
+[    1.797767] cfi_flash_1: Foun
+13:53:44.409:
+d 1 x16 devices at 0x0 in 16-bit
+13:53:44.412:
+ bank. Manufacturer ID 0x0000c2 
+13:53:44.415:
+Chip ID 0x00227e
+[    1.797779]
+13:53:44.417:
+ Amd/Fujitsu Extended Query Tabl
+13:53:44.420:
+e at 0x0040
+[    1.797793]   Am
+13:53:44.423:
+d/Fujitsu Extended Query version
+13:53:44.426:
+ 1.3.
+[    1.797800] number of 
+13:53:44.428:
+CFI chips: 1
+[    1.797805]  - 
+13:53:44.431:
+detected OK - OK.
+[    1.962713
+13:53:44.434:
+] bonding: Ethernet Channel Bond
+13:53:44.437:
+ing Driver: v3.7.1 (April 27, 20
+13:53:44.439:
+11)
+
+13:53:44.443:
+[    1.972861] md: raid6 persona
+13:53:44.446:
+lity registered for level 6
+[  
+13:53:44.449:
+  1.978190] md: raid5 personalit
+13:53:44.452:
+y registered for level 5
+[    1
+13:53:44.454:
+.983530] md: raid4 personality r
+13:53:44.457:
+egistered for level 4
+[    1.98
+13:53:44.460:
+8856] oprofile: hardware counter
+13:53:44.463:
+s not available
+[    1.993941] 
+13:53:44.465:
+oprofile: using timer interrupt.
+13:53:44.468:
+
+[    1.998300] nf_conntrack ve
+13:53:44.471:
+rsion 0.5.0 (13890 buckets, 5556
+13:53:44.474:
+0 max)
+[    2.004769] ip_tables
+13:53:44.477:
+: (C) 2000-2006 Netfilter Core T
+13:53:44.480:
+eam
+[    2.010184] TCP cubic re
+13:53:44.483:
+gistered
+[    2.013586] NET: Re
+13:53:44.486:
+gistered protocol family 10
+[  
+13:53:44.489:
+  2.018649] ip6_tables: (C) 2000
+13:53:44.492:
+-2006 Netfilter Core Team
+[    
+13:53:44.495:
+2.024134] IPv6 over IPv4 tunneli
+13:53:44.498:
+ng driver
+[    2.028884] NET: R
+13:53:44.501:
+egistered protocol family 17
+[ 
+13:53:44.504:
+   2.033413] 8021q: 802.1Q VLAN 
+13:53:44.507:
+Support v1.8
+[    2.037626] VFP
+13:53:44.509:
+ support v0.3: implementor 56 ar
+13:53:44.512:
+chitecture 2 part 20 variant 9 r
+13:53:44.515:
+ev 6
+[    2.045390] registered 
+13:53:44.518:
+taskstats version 1
+
+13:53:44.523:
+[    2.052388] pool #0: pkt_size
+13:53:44.525:
+=1536, buf_size=1632 - 2048 of 2
+13:53:44.529:
+048 buffers added
+[    2.060099
+13:53:44.532:
+] eth0: started
+[    2.063161] 
+13:53:44.535:
+ADDRCONF(NETDEV_UP): eth0: link 
+13:53:44.537:
+is not ready
+
+13:55:44.551:
+[  122.082262] IP-Config: Comple
+13:55:44.553:
+te:
+[  122.085501]      device=
+13:55:44.573:
+eth0, addr=169.254.1.12, mask=25
+13:55:44.573:
+5.255.0.0, gw=169.254.1.1,
+[  122.092887]      host=shockwave, domain=, nis-domain=(none),
+[  122.098572]      bootserver=169.254.189.174, rootserver=169.254.189.174, rootpath=
+[  122.10668
+13:55:44.576:
+9] md: Skipping autodetection of
+13:55:44.578:
+ RAID arrays. (raid=autodetect w
+13:55:44.581:
+ill force)
+
+13:55:54.450:
+[  131.982101] SHARED_MEM: CPU1:
+13:55:54.452:
+ INITIALIZATION STARTED BY CPU0.
+13:55:54.456:
+ WAITING ON INIT DONE
+
+13:55:54.670:
+[  132.202099] SHARED_MEM: CPU1:
+13:55:54.672:
+ INITIALIZATION OF SHARED MEMORY
+13:55:54.675:
+ BY CPU0 DONE DETECTED
+[  132.2
+13:55:54.678:
+09784] wait_for_init_shared_mem:
+13:55:54.681:
+ Exiting Mutex for shared memory
+13:55:54.683:
+ init
+[  132.216689] SHARED_MEM
+13:55:54.686:
+: shared_mem_open: About to take
+13:55:54.689:
+ semaphore.
+[  132.222809] SHAR
+13:55:54.692:
+ED_MEM: shared_mem_open: Got Sem
+13:55:54.695:
+aphore.
+[  132.228052] shared_m
+13:55:54.697:
+em: wait_for_init_shared_mem: En
+13:55:54.700:
+tering mutex for shm_dev at b16a
+13:55:54.703:
+e1c0
+[  132.236174] wait_for_in
+13:55:54.706:
+it_shared_mem: Exiting Mutex for
+13:55:54.709:
+ shared memory init
+
+13:55:54.713:
+[  132.245480] SHARED_MEM: regio
+13:55:54.716:
+n name SHJ1  phy_addr 6e7f8000 v
+13:55:54.718:
+irt_addr e3000000 size ce00000
+
+13:55:54.723:
+[  132.255744] SHARED_MEM: regio
+13:55:54.726:
+n name read  phy_addr 637d8000 v
+13:55:54.729:
+irt_addr f0000000 size a100000
+
+13:55:54.732:
+[  132.264163] SHARED_MEM: regio
+13:55:54.734:
+n name SGLD  phy_addr 544c8000 v
+13:55:54.737:
+irt_addr d8a00000 size 100000
+[
+13:55:54.740:
+  132.272490] SHARED_MEM: region
+13:55:54.743:
+ name SHMQ  phy_addr 53ac8000 vi
+13:55:54.746:
+rt_addr d8c00000 size 200000
+[ 
+13:55:54.748:
+ 132.280810] SHARED_MEM: region 
+13:55:54.751:
+name SHLX  phy_addr 538c8000 vir
+13:55:54.754:
+t_addr dd400000 size 200000
+[  
+13:55:54.757:
+132.289137] SHARED_MEM: region n
+13:55:54.760:
+am
+13:55:54.760:
+e SHVX  phy_addr 536c8000 virt
+13:55:54.763:
+_addr dd800000 size 200000
+[  1
+13:55:54.765:
+32.297482] SHARED_MEM: region na
+13:55:54.768:
+me LXPM  phy_addr 533c8000 virt_
+13:55:54.771:
+addr ddc00000 size 300000
+[  13
+13:55:54.774:
+2.305789] shared_mem_panic_dump_
+13:55:54.776:
+init: kernel panic dump initiali
+13:55:54.779:
+zed: phys=533c8000 virt=ddc00000
+13:55:54.782:
+ size=3145728 rec_size=4096 max_
+13:55:54.785:
+count=767
+[  132.318353] SHARED
+13:55:54.788:
+_MEM: shared_mem_open: Increment
+13:55:54.790:
+ed open count: 0x1
+[  132.32473
+13:55:54.793:
+5] Shared Memory Partition Map A
+13:55:54.796:
+ddresses:
+[  132.329541] ------
+13:55:54.799:
+--------------------------------
+13:55:54.802:
+--------------------------------
+13:55:54.804:
+-------
+[  132.337751] SHJ1: St
+13:55:54.807:
+art:	 0xe3000000, End:	 0xefe000
+13:55:54.810:
+00, Phys:	 0x6e7f8000
+[  132.34
+13:55:54.813:
+4567] HLRC: Start:	 0xf0000000, 
+13:55:54.816:
+End:	 0xfa100000, Phys:	 0x637d8
+13:55:54.818:
+000
+[  132.351377] SGLD: Start:
+13:55:54.821:
+	 0xd8a00000, End:	 0xd8b00000, 
+13:55:54.824:
+Phys:	 0x544c8000
+[  132.358193
+13:55:54.827:
+] SHLX: Start:	 0xdd400000, End:
+13:55:54.830:
+	 0xdd600000, Phys:	 0x538c8000
+13:55:54.832:
+
+[  132.365009] SHVX: Start:	 0x
+13:55:54.835:
+dd800000, End:	 0xdda00000, Phys
+13:55:54.838:
+:	 0x536c8000
+[  132.371818] --
+13:55:54.841:
+--------------------------------
+13:55:54.844:
+--------------------------------
+13:55:54.846:
+-----------
+[  132.380029] SHAR
+13:55:54.849:
+ED_MEM: shm_queue_sync_cores: Ma
+13:55:54.852:
+pped SHMQ partition at phys addr
+13:55:54.855:
+: 0x7bffc000 in kernel mem for s
+13:55:54.857:
+ize 0x200000
+[  132.391285] SHA
+13:55:54.860:
+RED_MEM: CPU1: shm_queue_sync_co
+13:55:54.863:
+res: Ready to wait for init of S
+13:55:54.865:
+HMQ
+
+13:55:55.190:
+[  132.722095] SHARED_MEM: CPU1:
+13:55:55.192:
+ shm_queue_sync_cores: Queue Ini
+13:55:55.195:
+t Started CPU0. Waiting on Init 
+13:55:55.198:
+Done
+[  132.730996] SHARED_MEM:
+13:55:55.201:
+ CPU1: shm_queue_sync_cores: Ini
+13:55:55.203:
+t of SHMQ done
+
+13:55:56.103:
+[  133.634554] JFFS2 notice: (1)
+13:55:56.106:
+ jffs2_build_xattr_subsystem: co
+13:55:56.110:
+mplete building xattr subsystem,
+13:55:56.111:
+ 0 of xdatum (0 unchecked, 0 orp
+13:55:56.113:
+han) and 0 of xref (0 dead, 0 or
+13:55:56.116:
+phan) found.
+[  133.650188] VFS
+13:55:56.119:
+: Mounted root (jffs2 filesystem
+13:55:56.122:
+) on device 31:3.
+[  133.656431
+13:55:56.126:
+] Freeing init memory: 208K
+
+13:55:56.210:
+[  133.742207] handle_intercore_
+13:55:56.214:
+msg: Got a NET_INFO request
+
+13:55:56.216:
+[  133.748571] handle_intercore_
+13:55:56.219:
+msg: Got UNEXPECTED_REBOOT messa
+13:55:56.221:
+ge
+
+13:56:00.846:
+[  138.378521] type=1403 audit(1
+13:56:00.849:
+38.370:2): policy loaded auid=42
+13:56:00.852:
+94967295 ses=4294967295
+
+13:56:01.091:
+[1969-12-31,16:02:18.620031442] 
+13:56:01.093:
+rcS: INFO: started.
+
+13:56:01.319:
+[1969-12-31,16:02:18.848580002] 
+13:56:01.323:
+10: INFO: Mounting /proc
+
+13:56:01.354:
+[1969-12-31,16:02:18.883508042] 
+13:56:01.357:
+10: INFO: Mounting binfmt_misc
+
+13:56:01.373:
+[1969-12-31,16:02:18.902436602] 
+13:56:01.376:
+10: INFO: Mounting debugfs
+
+13:56:01.387:
+[1969-12-31,16:02:18.916727282] 
+13:56:01.390:
+10: INFO: Mounting /dev
+
+13:56:01.401:
+[1969-12-31,16:02:18.931226802] 
+13:56:01.405:
+10: INFO: Mounting /dev/pts
+
+13:56:01.421:
+[1969-12-31,16:02:18.950545842] 
+13:56:01.424:
+10: INFO: Mounting /dev/shm
+
+13:56:01.445:
+[1969-12-31,16:02:18.974130002] 
+13:56:01.447:
+10: INFO: Remounting rootfs as r
+13:56:01.449:
+ead-only
+
+13:56:01.460:
+[1969-12-31,16:02:18.989623722] 
+13:56:01.463:
+10: INFO: Mounting /tmp
+
+13:56:01.474:
+[1969-12-31,16:02:19.004016722] 
+13:56:01.477:
+10: INFO: Mounting /lib/modules
+13:56:01.478:
+
+
+13:56:01.488:
+[1969-12-31,16:02:19.018336842] 
+13:56:01.492:
+10: INFO: Mounting /bin as rw
+
+13:56:01.510:
+[1969-12-31,16:02:19.039706402] 
+13:56:01.514:
+10: INFO: Mounting /etc as rw
+
+13:56:01.531:
+[1969-12-31,16:02:19.060370722] 
+13:56:01.533:
+10: INFO: Mounting tmpfs /mnt/Dr
+13:56:01.535:
+oboFS
+
+13:56:01.546:
+[1969-12-31,16:02:19.075404162] 
+13:56:01.549:
+10: INFO: Mounting tmpfs /var
+
+13:56:01.556:
+[1969-12-31,16:02:19.085589562] 
+13:56:01.558:
+10: mount_filesystems finished.
+13:56:01.560:
+
+
+13:56:01.567:
+[1969-12-31,16:02:19.096470882] 
+13:56:01.570:
+20: INFO: Setting up mdev
+
+13:56:01.634:
+[1969-12-31,16:02:19.164352882] 
+13:56:01.639:
+20: INFO: Creating /dev/shared_m
+13:56:01.639:
+em
+
+13:56:01.650:
+[1969-12-31,16:02:19.180361322] 
+13:56:01.653:
+20: INFO: Applying SELinux label
+13:56:01.655:
+s in /dev
+
+13:56:01.811:
+[1969-12-31,16:02:19.341024882] 
+13:56:01.815:
+20: create_devices finished.
+
+13:56:02.843:
+[  140.375614] JFFS2 notice: (39
+13:56:02.846:
+2) jffs2_build_xattr_subsystem: 
+13:56:02.848:
+complete building xattr subsyste
+13:56:02.851:
+m, 9 of xdatum (0 unchecked, 0 o
+13:56:02.854:
+rphan) and 75 of xref (0 dead, 1
+13:56:02.857:
+4 orphan) found.
+
+13:56:02.865:
+[1969-12-31,16:02:20.395073282] 
+13:56:02.868:
+30: INFO: Fixing file permission
+13:56:02.870:
+s in /var...
+
+13:56:03.058:
+[1969-12-31,16:02:20.586764002] 
+13:56:03.060:
+30: INFO: File permission check 
+13:56:03.063:
+completed.
+[1969-12-31,16:02:20
+13:56:03.065:
+.592087602] 30: INFO: Starting S
+13:56:03.069:
+ELinux relabel in /var...
+
+13:56:03.183:
+[1969-12-31,16:02:20.713241282] 
+13:56:03.186:
+30: INFO: SELinux relabeling of 
+13:56:03.189:
+/var successful.
+[1969-12-31,16
+13:56:03.193:
+:02:20.718720522] 30: INFO: Dele
+13:56:03.194:
+ting files under directory /var/
+13:56:03.196:
+lock...
+
+13:56:03.199:
+[1969-12-31,16:02:20.729012762] 
+13:56:03.202:
+30: INFO: Deleting files under d
+13:56:03.205:
+irectory /var/run...
+
+13:56:03.210:
+removed '/var/run/utmp'
+
+13:56:03.220:
+[1969-12-31,16:02:20.750158042] 
+13:56:03.223:
+30: mount_var finished. /dev/mtd
+13:56:03.226:
+block1 mounted as /var.
+
+13:56:03.231:
+[1969-12-31,16:02:20.761281162] 
+13:56:03.234:
+40: INFO: calling sysctl /etc/sy
+13:56:03.236:
+sctl.conf
+
+13:56:03.269:
+kernel.panic_on_oops = 1
+vm.pan
+13:56:03.272:
+ic_on_oom = 1
+vm.dirty_backgrou
+13:56:03.275:
+nd_ratio = 5
+
+13:56:03.309:
+vm.dirty_ratio = 10
+vm.dirty_ex
+13:56:03.312:
+pire_centisecs = 100
+vm.dirty_w
+13:56:03.315:
+riteback_centisecs = 100
+net.ip
+13:56:03.318:
+v4.tcp_rmem = 16384 65536 838860
+13:56:03.321:
+8
+net.ipv4.tcp_wmem = 16384 655
+13:56:03.323:
+36 8388608
+net.ipv4.neigh.defau
+13:56:03.326:
+lt.gc_thresh1 = 1024
+net.ipv4.n
+13:56:03.329:
+eigh.default.gc_thresh2 = 2048
+
+13:56:03.332:
+net.ipv4.neigh.default.gc_thresh
+13:56:03.334:
+3 = 4096
+net.ipv4.neigh.default
+13:56:03.337:
+.gc_stale_time = 3600
+net.ipv4.
+13:56:03.340:
+neigh.default.gc_interval = 3600
+13:56:03.343:
+
+net.ipv4.conf.all.arp_announce
+13:56:03.346:
+ = 2
+net.ipv4.conf.all.arp_igno
+13:56:03.348:
+re = 1
+[1969-12-31,16:02:20.849
+13:56:03.351:
+016762] 40: INFO: calling sysctl
+13:56:03.354:
+ /etc/sysctl_dev.conf
+[1969-12-
+13:56:03.357:
+31,16:02:20.859337082] 40: INFO:
+13:56:03.360:
+ calling set_proc.sh
+
+13:56:03.474:
+[1969-12-31,16:02:21.004018482] 
+13:56:03.477:
+40: INFO: calling set_proc_dev.s
+13:56:03.478:
+h
+
+13:56:03.484:
+[1969-12-31,16:02:21.014201402] 
+13:56:03.488:
+40: set_sysconf finished.
+
+13:56:03.500:
+[1969-12-31,16:02:21.028635522] 
+13:56:03.502:
+rcS: INFO: finished.
+
+13:56:03.512:
+[1969-12-31,16:02:21.041341482] 
+13:56:03.514:
+rcS.2: INFO: started.
+shockwave
+13:56:03.516:
+:/ # 
+13:56:04.534:
+[1969-12-31,16:02:22.063712562] 
+13:56:04.538:
+50: INFO: Updating hostname
+
+13:56:05.611:
+Reinitializing monit daemon
+
+13:56:05.618:
+[1969-12-31,16:02:23.147911042] 
+13:56:05.622:
+50: INFO: Merging hosts files
+
+13:56:05.646:
+[1969-12-31,16:02:23.175606282] 
+13:56:05.649:
+50: INFO: Bringing up lo
+
+13:56:05.662:
+[1969-12-31,16:02:23.191814802] 
+13:56:05.666:
+50: INFO: Bringing up network
+
+13:56:08.824:
+[  146.354614] eth0: stopped
+
+13:56:08.877:
+[  146.409191] eth0: started
+[ 
+13:56:08.880:
+ 146.412304] ADDRCONF(NETDEV_UP)
+13:56:08.883:
+: eth0: link is not ready
+
+13:56:08.918:
+[1969-12-31,16:02:26.448066322] 
+13:56:08.922:
+50: start_network finished.
+[19
+13:56:08.925:
+69-12-31,16:02:26.454296002] rcS
+13:56:08.928:
+.2: INFO: Starting avahi
+
+13:56:10.024:
+[1969-12-31,16:02:27.553406562] 
+13:56:10.026:
+rcS.2: INFO: Starting logrotate
+13:56:10.028:
+
+
+13:56:10.204:
+[1969-12-31,16:02:27.733814522] 
+13:56:10.208:
+rcS.2: INFO: Starting syslog
+
+13:56:10.600:
+[1969-12-31,16:02:28.128340482] 
+13:56:10.603:
+rcS.2: INFO: Starting incron
+
+13:56:12.105:
+[1969-12-31,16:02:29.634542922] 
+13:56:12.108:
+rcS.2: INFO: Starting sudo
+
+13:56:12.295:
+[1969-12-31,16:02:29.824712042] 
+13:56:12.298:
+rcS.2: INFO: Starting LXcpuHisto
+13:56:12.299:
+ry
+
+13:56:12.395:
+[1969-12-31,16:02:29.914841002] 
+13:56:12.398:
+rcS.2: INFO: Starting LXmemHisto
+13:56:12.399:
+ry
+
+13:56:12.676:
+[1969-12-31,16:02:30.204456242] 
+13:56:12.679:
+rcS.2: INFO: Starting LXnetHisto
+13:56:12.681:
+ry
+
+13:56:12.785:
+[1969-12-31,16:02:30.314442082] 
+13:56:12.788:
+rcS.2: INFO: Starting ntpd
+
+13:56:12.877:
+[1969-12-31,16:02:30.406693242] 
+13:56:12.880:
+rcS.2: INFO: Starting recovery s
+13:56:12.881:
+erver
+
+13:56:12.905:
+[1969-12-31,16:02:30.434022002] 
+13:56:12.907:
+rcS.2: INFO: Updating diags conf
+13:56:12.910:
+iguration
+listening on [::]:499
+13:56:12.911:
+9 ...
+
+13:56:13.148:
+[1969-12-31,16:02:30.677303802] 
+13:56:13.151:
+rcS.2: INFO: Starting nasd
+
+13:56:15.340:
+[1969-12-31,16:02:32.870277402] 
+13:56:15.344:
+rcS.2: INFO: finished.
+
+13:56:15.464:
+[  152.997155] handle_intercore_
+13:56:15.468:
+msg: Got ISCSI_ENABLE message
+
+13:56:15.473:
+[  153.006086] handle_intercore_
+13:56:15.476:
+msg: QUEUING ISCSI_ENABLE to sys
+13:56:15.477:
+fs
+
+13:56:18.480:
+[  156.012579] scsi0 : dri_dnas,
+13:56:18.483:
+ version 2.1.0 [20170725], Comma
+13:56:18.486:
+nds: 0, Aborts: 0, Device Resets
+13:56:18.487:
+: 0
+
+13:56:18.493:
+[  156.025516] scsi 0:0:0:0: Dir
+13:56:18.495:
+ect-Access     Drobo    5N      
+13:56:18.499:
+         1.00 PQ: 0 ANSI: 5
+
+13:56:18.506:
+[  156.039028] sd 0:0:0:0: [sda]
+13:56:18.509:
+ physical block alignment offset
+13:56:18.512:
+: 3584
+[  156.045350] sd 0:0:0:
+13:56:18.514:
+0: [sda] 1 512-byte logical bloc
+13:56:18.517:
+ks: (512 B/512 B)
+[  156.047619
+13:56:18.520:
+] sd 0:0:0:0: Attached scsi gene
+13:56:18.523:
+ric sg0 type 0
+[  156.057260] s
+13:56:18.526:
+d 0:0:0:0: [sda] 4096-byte physi
+13:56:18.528:
+cal blocks
+
+13:56:18.535:
+[  156.067804] sd 0:0:0:0: [sda]
+13:56:18.538:
+ Write Protect is off
+
+13:56:18.541:
+[  156.073890] sd 0:0:0:0: [sda]
+13:56:18.544:
+ Write cache: disabled, read cac
+13:56:18.546:
+he: enabled, supports DPO and FU
+13:56:18.548:
+A
+
+13:56:18.561:
+[  156.093852]  sda: unknown par
+13:56:18.563:
+tition table
+
+13:56:18.575:
+[  156.108189] sd 0:0:0:0: [sda]
+13:56:18.578:
+ Attached SCSI disk
+
+13:56:22.908:
+nc: timeout
+
+13:56:27.946:
+[  165.478005] dri_dnas_ioctl: s
+13:56:27.948:
+etting sdev for dnas_dev b16addc
+13:56:27.950:
+0
+13:56:27.951:
+ to b1768680
+
+13:57:13.623:
+ 

@@ -1,0 +1,1997 @@
+-------------------- CRASH LOG FLASH FILE START --------------------
+Log Generated: SUN JAN 08 23:48:42 2017
+
+Host Name: bootHost 
+Target Name: vxTarget 
+User: target 
+Ethernet port #1 initialized
+neta1 Interface Loaded; MAC: 00:50:43:F8:1F:19
+neta1 Interface Started
+neta1 Interface - Link Up, 1000 Full
+Attempting to register custom syscalls group
+ipAttached to interface neta1 ip=
+Can't Set IP address to <neta1> interface..bootline does not have ethernet ipAddress
+
+Adding 10516 symbols for standalone.
+wdbConfig: error configuring WDB communication interface
+Detected Marvell USB. Setting MV_USB_MODE_REG = 0x 
+
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+      ]]]]]]]]]]]  ]]]]     ]]]]]]]]]]       ]]              ]]]]         (R)
+ ]     ]]]]]]]]]  ]]]]]]     ]]]]]]]]       ]]               ]]]]            
+ ]]     ]]]]]]]  ]]]]]]]]     ]]]]]] ]     ]]                ]]]]            
+ ]]]     ]]]]] ]    ]]]  ]     ]]]] ]]]   ]]]]]]]]]  ]]]] ]] ]]]]  ]]   ]]]]]
+ ]]]]     ]]]  ]]    ]  ]]]     ]] ]]]]] ]]]]]]   ]] ]]]]]]] ]]]] ]]   ]]]]  
+ ]]]]]     ]  ]]]]     ]]]]]      ]]]]]]]] ]]]]   ]] ]]]]    ]]]]]]]    ]]]] 
+ ]]]]]]      ]]]]]     ]]]]]]    ]  ]]]]]  ]]]]   ]] ]]]]    ]]]]]]]]    ]]]]
+ ]]]]]]]    ]]]]]  ]    ]]]]]]  ]    ]]]   ]]]]   ]] ]]]]    ]]]] ]]]]    ]]]]
+ ]]]]]]]]  ]]]]]  ]]]    ]]]]]]]      ]     ]]]]]]]  ]]]]    ]]]]  ]]]] ]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]       Development System
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]]       VxWorks 6.8
+ ]]]]]]]]]]]]]]]]]]]]]]]]]]       KERNEL: WIND version 2.13
+ ]]]]]]]]]]]]]]]]]]]]]]]]]       Copyright Wind River Systems, Inc., 1984-2012
+
+ CPU: Marvell Sheeva 88SV584x, Board= Shockwave 1.0 ARMARCHV7 LE core.  Processor #0.
+ Memory Size: 0x1fe70000.  BSP version 2.3.1.
+ Created: Apr  1 2016, 12:32:17
+ ED&R Policy Mode: Deployed
+ WDB Comm Type: WDB_COMM_END
+ WDB: Agent configuration failed.
+[tRootTask] 1970-01-01 00:00:00: kCmdInit: Initialising kernel command line 'k' Command handler
+[tRootTask] 1970-01-01 00:00:00: diskCmdRegister: Installing k disk Commands
+
+ESA Register Driver Found Board version [2, stuffing option 1
+Initialising boot SEEPROM handler
+vxWorksChecking boot register values in serialEEPROM ...
+<<<<Flash Upgrade Driver - version 1.0 - installed.
+ *IsFlashForDroboPro: We are NOT running on Drobo Pro deal with flash accordingly
+Failed to get flash layout...this is expected for Optimus Prime, which does not have NOR Flash.
+
+System Configuration
+
+CHIP   : MV88F7846 Rev 2
+CPU    : Marvell PJ4B (584) v7 (Rev 2)
+BOARD  : Shockwave 1.0 (0x0)
+CLOCKs : tClk  =  250MHz, sysClk =  600MHz
+         L2Clk =  600MHz  pClk   = 1200MHz
+
+ETH_JUMBO_SUPPORT   = Disabled
+BRIDGING_SUPPORT    = Enabled
+MULTI_Q_SUPPORT     = Disabled
+NAT_SUPPORT         = Disabled
+VFP_SUPPORT         = Enabled
+L2 Cache            = Enabled
+IO coherency        = Enabled
+Get DATE: 2017-01-08 (Sunday)  TIME: 23:35:18
+]# 3
+
+
+=======================> HW Revision Register == 0x00000491
+
+Board Type 2, Rev 2 (Shockwave MVT), Spin = 2
+Stuffing Opt = 1 (No EthDebug), DevDebugBitz = 0x0
+
+
+	Drobo 5N
+	Shockwave
+	I Serve only Files!
+
+==============================================================================
+Initializing PMU...
+Reading PMU Version...
+PMU Version: 1.0.0x0078, Download Version 120 (Variant 0) [Failsafe Ver 3]
+Considering an Update to the PMU ... 
+PMU is up to date for this MVT board.
+
+    Reading 0xa8 from PMU GPIO Port 1 [ @0x0020 ]
+
+    Reading 0x2f from PMU GPIO Port 2 [ @0x0028 ]
+
+    Reading 0x71 from PMU GPIO Port 3 [ @0x0018 ]
+
+    Reading 0x11 from PMU GPIO Port 4 [ @0x001c ]
+==============================================================================
+	PMU is Running on AC Power :-)
+==============================================================================
+==============================================================================
+This Optimus Prime PMU is configured for Early-Follow of DDR3 Reset
+This Optimus Prime Board Supports Self-Refresh only with VRM_EN
+0x49c3600 (BusM A): INFO: usb2Msc - Storage driver got a device attach notification.
+	...PMU will ENABLE VRM_EN during a reboot/shutdown cycle.
+	PMU BootOnBatt Counter DEFAULT is now 3
+0x49c3600 (BusM A): INFO: usb2Msc - Mounting device (PDT 0x0 PQ 0x0 RMB 0x0) VID =          : PID = USB DISK MODULE  : REV = PMAP
+0x49c3600 (BusM A): INFO: usb2Msc - Device 0x2 LUN 0 of 1005568 (KB) will be mounted with base name /bd0
+	PMU BootOnBatt Counter ACTUAL is now 3
+==============================================================================
+PMU Disk Temp Deltas:  /bd0/  - disk check in progress ...
+/bd0/vxWorks/bd0/LxImage /bd0/bootCount/bd0/Crashlogs /bd0/Crashlogs/crashlog-20151209-1631/bd0/Crashlogs/crashlog-20161024-2304 /bd0/Crashlogs/crashlog-20161230-0208 /bd0/Crashlogs/crashlog-20170105-0511 /bd0/Crashlogs/crashlog-20170108-2328 /bd0/NoCrashMsg                       /bd0/hibLog     /bd0/hibHdr /bd0/amitLog/bd0/FlashConfigData/bd0/J1              /bd0/J1TAGS/bd0/AMIT   /bd0/vxWorks_prev  4, /bd0/hdr          /bd0/LxHdr/bd0/eventLog/bd0/J2       /bd0/hdr_prev/bd0/LxImage_prev/bd0/LxHdr_prev   /bd0/RebootReason                                                                      4,   4, /bd0/  - Volume is OK 
+
+          total # of clusters:  62,580
+         # of free clusters:  45,269
+          # of bad clusters:  0
+           total free space:  724,304 Kb
+  1,   0,     max contiguous free space:  714,850,304 bytes
+                 # of files:  25
+               # of folders:  1
+       total bytes in files:  276,711 Kb
+           # of lost chains:  0
+   total bytes in lost chains:  0
+
+PMU Skip-OverTemp Setting: 0x0000
+PMU Shutdown Status: 0x00
+	PMU Shutdown IS NOT Pending!
+	PMU Shutdown Reasons are Fully Enabled
+	Disk Array Temp is Within Tolerances
+	CPU Core Temp   is Within Tolerances
+	PMU Core Temp   is Within Tolerances
+PMU Shutdown Reason: 0x00
+PMUCmd: "A" --> "a"
+"Y" --> "0x06F0,35915:18.54,729,0,0"
+"B" --> "14,2,2,0,0,12"
+ Total = 0:0 in 2 cycles
+
+PMU reports AC Power Failure
+PMU state machine current state is 'NORMAL' [0x06]
+PMU reports the DRAM data was INVALID at bootup [0xf0]
+Accumulated Up-time = 24 days: 22 hours: 35 minutes: 18.064 seconds
+  (14 Active cycles, 12 Power cycles)
+  Latest battery backup time      = 01:12:54 (hh:mm:ss)
+  Longest battery backup time     = 00:00:00 (hh:mm:ss)
+  Accumulated battery backup time = 00:00:00 (hh:mm:ss)
+  (2 Backup cycles, 2 Completed cycles, 0 Failed cycles, 0 Backup flags)
+PMU Reports Voltages:  (AC == 12.157V)    (Batt ==  4.164V)
+PMU LED Dimming: Default==25, Current==25
+PMU Fan Speed AutoAdjust has been ENABLED
+0x3ffd010 (tErfTask): INFO: usb2Msc - Device /bd0 has been claimed by filesystem
+NOTIFY: hDevice 0x2 lun 0 medium changed (mediumInsert = 1)
+PMU Fan Speed: Default== 1, Current== 1
+PMU Init Done
+==============================================================================
+****	ArmadaXP is Type B0
+Launching LED Sequencer...
+LED Sequencer...Launched
+LED Sequencer...Testing...
+Setup Kernel/RTP Messaging Interface
+Initialising kernel<->RTP queues with 80 entries
+USB command/response Q's @ 0xf4102000/0xf4103000
+MULTI ISSUE command/response Q's @ 0x0/0xf4105000
+FAST PATH QUEUING RTP INTERFACE ENABLED
+64-BIT HOST LBAs ENABLED
+Setup Kernel/RTP Resource Release Messaging Interface
+Initialising kernel<->RTP resource release queues with 80 entries
+MULTI ISSUE RESOURCE RELEASE Q @ 0xf4107000
+FAST PATH QUEUING RTP RESOURCE RELEASE INTERFACE ENABLED
+IntConnect pISR==0x01076804 was Successful for Cause==32 ("PMU Panic")
+IntConnect pISR==0x0107689c was Successful for Cause==40 ("PMU PowerDownReq")
+IntConnect pISR==0x01076788 was Successful for Cause==57 ("PMU OverTemp")
+IntConnect pISR==0x010769b0 was Successful for Cause==29 ("Disk Detected")
+IntDisable for Cause==65 ("Clear Disk Button")
+
+
+  ***** Initializing the Kernel's Thermal Monitor *****
+   ***** Spawning the Kernel's Thermal Monitor *****
+   ***** Executing Auxilliary Task for the Kernel's Thermal Monitor *****
+
+KERNEL BOOTUP: usrAppInit: INFO: bootup with backup battery OFF
+
+Not Turning the battery ON ye 
+PMUCmd: "~45" --> "~45!"
+PMUCmd: "K" --> "k"
+Intercore Access Device Driver - Version 1.0 - Installed.
+
+
+	Shockwave MVT Init Compleat!
+
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Starting Disk Driver(s) Initialisation.
+[tRootTask] 2017-01-08 23:35:21: bspDiskConfigureDiskTable: Configuring drive tables for 5-Slot (BumbleBee or Shockwave)
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: System has 6 slots
+[tRootTask] 2017-01-08 23:35:21: diskDriverInstall:
+[tRootTask] 2017-01-08 23:35:21: showDiskTbs: Dumping Disk Driver Config Tables:
+[New Disk Thread] 2017-01-08 23:35:21: diskConfigureNewDiskThread: Starting thread
+[tRootTask] 2017-01-08 23:35:21: 
+[tRootTask] 2017-01-08 23:35:21:   Dumping Disk Adapter Table
+[tRootTask] 2017-01-08 23:35:21:     Adapter Instance   Adapter Address   Adapter Data Address
+[tRootTask] 2017-01-08 23:35:21:            0            0x01E42678            0x00000000
+[tRootTask] 2017-01-08 23:35:21:            1            0x01E42678            0x00000000
+[tRootTask] 2017-01-08 23:35:21:            2            0x01E42688            0x00000000
+Max Disk Temp: [tRootTask] 2017-01-08 23:35:21: 
+[tRootTask] 2017-01-08 23:35:21:    Dumping Disk Slot Config Table:
+[tRootTask] 2017-01-08 23:35:21:     Adapter Instance   Connection    Physical Slot   Adapter Channel    Initialised    Device Pointer
+[tRootTask] 2017-01-08 23:35:21:         2                DRIVE             0              0                 No           0x04BDF988
+[tRootTask] 2017-01-08 23:35:21:         1                DRIVE             1              0                 No           0x04BE022C
+[tRootTask] 2017-01-08 23:35:21:         1                DRIVE             2              1                 No           0x04BE0AD0
+[tRootTask] 2017-01-08 23:35:21:         0                DRIVE             3              0                 No           0x04BE1374
+[tRootTask] 2017-01-08 23:35:21:         0                DRIVE             4              1                 No           0x04BE1C18
+[tRootTask] 2017-01-08 23:35:21:         2                DRIVE             5              1                 No           0x04BE24BC
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Calling init with adapter 2 (0x01FA08C0) and slot 0 (0x01F9F540)
+[tRootTask] 2017-01-08 23:35:21: mvSataControllerRegister: Initialising Marvell Embedded SATA adapter
+[tRootTask] 2017-01-08 23:35:21: mvSataInterfaceGetAdapaterData:
+[tRootTask] 2017-01-08 23:35:21: mvEmbSataInitItegratedSata: Integrated Sata device found as legacy SATA adapter 0; system adapter 2
+[tRootTask] 2017-01-08 23:35:21: sysMvEmbSataDeviceInit: unit  = 0; mvSataUnits = 1
+[tRootTask] 2017-01-08 23:35:21: sysMvEmbSataDeviceInit: INTEGRATED_SATA
+[tRootTask] 2017-01-08 23:35:21: sysMvEmbSataDeviceInit: Connecting SATA interrupt 55
+[tRootTask] 2017-01-08 23:35:21: 
+[tRootTask] 2017-01-08 23:35:21: requestQAlignment 0x1000 responseQAlignment 0x400
+[tRootTask] 2017-01-08 23:35:21:  channel 0 request q phy addr 4bf7000
+[tRootTask] 2017-01-08 23:35:21:  channel 0 response q phy addr 4bf8c00
+[tRootTask] 2017-01-08 23:35:21:  channel 1 request q phy addr 4bfa000
+[tRootTask] 2017-01-08 23:35:21:  channel 1 response q phy addr 4bfb800
+[tRootTask] 2017-01-08 23:35:21: 
+[tRootTask] 2017-01-08 23:35:21: mvSataControllerRegister: Initialising Embedded adapter 0 (system adapter 2), channel 0 of 2
+[tRootTask] 2017-01-08 23:35:21: mvSataControllerRegister: data @ 0x04BF6B38, adapter @ 0x01FC07F8, channels @ 2
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Creating Slot 0
+[Sata Evnt] 2017-01-08 23:35:21: mvEmbSataEventThread: Starting thread
+[tRootTask] 2017-01-08 23:35:21: diskVxDeviceCreate: Driver 19 for slot 0
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Calling init with adapter 1 (0x01FA08B8) and slot 1 (0x01F9F554)
+[tRootTask] 2017-01-08 23:35:21: ahciPerformPhyConfig: Loading phy regs for 9122-B2 (rev: 0x12)
+[0x69b9de4 (tRootTask): diskDriAhciStorageRegister: 
+0x69b9de4 (tRootTask): diskDriAhciInstInit: 
+0x69b9de4 (tRootTask): diskDriAhciInstInit2: 
+0x69b9de4 (tRootTask): diskDriAhciInstInit2: Storing 0x04C152B0 to adapter table entry 0
+0x69b9de4 (tRootTask): diskDriAhciInstConnect: 
+0x69b9de4 (tRootTask): diskDriAhciInstConnect: Initialising channel 0 of 2 on adapter 0 as slot 3
+0x69b9de4 (tRootTask): diskDriAhciInstConnect: Initialising channel 1 of 2 on adapter 0 as slot 4
+0x69b9de4 (tRootTask): diskDriAhciInstInit: 
+0x69b9de4 (tRootTask): diskDriAhciInstInit2: 
+0x69b9de4 (tRootTask): diskDriAhciInstInit2: Storing 0x04C9EE48 to adapter table entry 1
+0x69b9de4 (tRootTask): diskDriAhciInstConnect: 
+tRootTask] 2017-01-08 23:35:21: ahciPerformPhyConfig: Loading phy regs for 9122-B2 (rev: 0x12)
+34 C, Ave Disk Temp: [tRootTask] 2017-01-08 23:35:21: showDiskTbs: Dumping Disk Driver Config Tables:
+[tRootTask] 2017-01-08 23:35:21: 
+[tRootTask] 2017-01-08 23:35:21:   Dumping Disk Adapter Table
+[tRootTask] 2017-01-08 23:35:21:     Adapter Instance   Adapter Address   Adapter Data Address
+[tRootTask] 2017-01-08 23:35:21:            0            0x01E42678            0x04C152B0
+[tRootTask] 2017-01-08 23:35:21:            1            0x01E42678            0x04C9EE48
+[tRootTask] 2017-01-08 23:35:21:            2            0x01E42688            0x04BF6B38
+[tRootTask] 2017-01-08 23:35:21: 
+[tRootTask] 2017-01-08 23:35:21:    Dumping Disk Slot Config Table:
+[tRootTask] 2017-01-08 23:35:21:     Adapter Instance   Connection    Physical Slot   Adapter Channel    Initialised    Device Pointer
+[tRootTask] 2017-01-08 23:35:21:         2                DRIVE             0              0                Yes           0x04BDF988
+[tRootTask] 2017-01-08 23:35:21:         1                DRIVE             1              0                 No           0x04BE022C
+[tRootTask] 2017-01-08 23:35:21:         1                DRIVE             2              1                 No           0x04BE0AD0
+[tRootTask] 2017-01-08 23:35:21:         0                DRIVE             3              0                 No           0x04BE1374
+[tRootTask] 2017-01-08 23:35:21:         0                DRIVE             4              1                 No           0x04BE1C18
+[tRootTask] 2017-01-08 23:35:21:         2                DRIVE             5              1                 No           0x04BE24BC
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Creating Slot 1
+[tRootTask] 2017-01-08 23:35:21: diskVxDeviceCreate: Driver 19 for slot 1
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Calling init with adapter 1 (0x01FA08B8) and slot 2 (0x01F9F568)
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Creating Slot 2
+[tRootTask] 2017-01-08 23:35:21: diskVxDeviceCreate: Driver 19 for slot 2
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Calling init with adapter 0 (0x01FA08B0) and slot 3 (0x01F9F57C)
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Creating Slot 3
+[tRootTask] 2017-01-08 23:35:21: diskVxDeviceCreate: Driver 19 for slot 3
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Calling init with adapter 0 (0x01FA08B0) and slot 4 (0x01F9F590)
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Creating Slot 4
+[tRootTask] 2017-01-08 23:35:21: diskVxDeviceCreate: Driver 19 for slot 4
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Calling init with adapter 2 (0x01FA08C0) and slot 5 (0x01F9F5A4)
+[tRootTask] 2017-01-08 23:35:21: mvSataControllerRegister: Initialising Marvell Embedded SATA adapter
+[tRootTask] 2017-01-08 23:35:21: mvSataControllerRegister: Initialising Embedded adapter 0 (system adapter 2), channel 1 of 2
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Creating Slot 5
+[tRootTask] 2017-01-08 23:35:21: diskVxDeviceCreate: Driver 19 for slot 5
+[tRootTask] 2017-01-08 23:35:21: showDiskTbs: Dumping Disk Driver Config Tables:
+[tRootTask] 2017-01-08 23:35:21: 
+[tRootTask] 2017-01-08 23:35:21:   Dumping Disk Adapter Table
+[tRootTask] 2017-01-08 23:35:21:     Adapter Instance   Adapter Address   Adapter Data Address
+[tRootTask] 2017-01-08 23:35:21:            0            0x01E42678            0x04C152B0
+[tRootTask] 2017-01-08 23:35:21:            1            0x01E42678            0x04C9EE48
+[tRootTask] 2017-01-08 23:35:21:            2            0x01E42688            0x04BF6B38
+[tRootTask] 2017-01-08 23:35:21: 
+[tRootTask] 2017-01-08 23:35:21:    Dumping Disk Slot Config Table:
+[tRootTask] 2017-01-08 23:35:21:     Adapter Instance   Connection    Physical Slot   Adapter Channel    Initialised    Device Pointer
+[tRootTask] 2017-01-08 23:35:21:         2                DRIVE             0              0                Yes           0x04BDF988
+[tRootTask] 2017-01-08 23:35:21:         1                DRIVE             1              0                Yes           0x04BE022C
+[tRootTask] 2017-01-08 23:35:21:         1                DRIVE             2              1                Yes           0x04BE0AD0
+[tRootTask] 2017-01-08 23:35:21:         0                DRIVE             3              0                Yes           0x04BE1374
+[tRootTask] 2017-01-08 23:35:21:         0                DRIVE             4              1                Yes           0x04BE1C18
+[tRootTask] 2017-01-08 23:35:21:         2                DRIVE             5              1                Yes           0x04BE24BC
+[tRootTask] 2017-01-08 23:35:21: diskInterfaceInitialise: Completed Disk Driver Initialisation: SUCCESS
+[tRootTask] 2017-01-08 23:35:21: diskVx2InterfaceInitialise: Starting Disk Driver Vx2 Initialisation
+[tRootTask] 2017-01-08 23:35:21: diskVx2InterfaceInitialise: Allocated DiskVx2DeviceStructure for '/disk' at 0x04D25968
+[tRootTask] 2017-01-08 23:35:21: diskDriverInstall:
+[tRootTask] 2017-01-08 23:35:21: diskVx2InterfaceInitialise: Completed Disk Driver Initialisation: SUCCESS
+[tRootTask] 2017-01-08 23:35:21: rtpEventInit: Created message queue /PNPMQ0 with addr 0x3fef010, size 16
+[tRootTask] 2017-01-08 23:35:22: 
+diskEnumerateDrives:79: >>>>	Patiently Waiting for Drives to come up . . .
+[0x69b9de4 (tRootTask): diskDriAhciInstConnect: Initialising channel 0 of 2 on adapter 1 as slot 1
+0x69b9de4 (tRootTask): diskDriAhciInstConnect: Initialising channel 1 of 2 on adapter 1 as slot 2
+tRootTask] 2017-01-08 23:35:22: diskSetDrivePowerModeBySlot: Setting power mode to DISK_POWER_STATE_ON for slot 0
+[tRootTask] 2017-01-08 23:35:22: bspDiskSetDrivePowerModeBySlot: slot: 0  mode: DISK_POWER_STATE_ON
+[tRootTask] 2017-01-08 23:35:22: bspSetDrivePower: Set power ON for slot 0  drivesPowered: 0x0
+33[tRootTask] 2017-01-08 23:35:22: diskSetDrivePowerModeBySlot: Leaving with status of DISK_OK(0x0000)
+[tRootTask] 2017-01-08 23:35:22: diskEnumerateDrives: Powering on Slot 0
+[tRootTask] 2017-01-08 23:35:22: Wait 60 ticks after spinning up disk 0[Sata Evnt] 2017-01-08 23:35:22: Device not identified on channel 0
+ C, Fan Speed =  1, Sampling Period = 60 sec
+  Slot 0: 33 C, Slot 1: 34 C, Slot 2: 34 C, Slot 3: 32 C, 
+  Slot 4: 33 C, Slot 5:  0 C, Slot 6:  0 C, Slot 7:  0 C, 
+  CPU Core Temp: 45 C, PMU Core Temp = 36 C
+Temperature Thresholds for Disk:  Interest== 52, Warning== 55, Critical== 56 -- Override==OFF
+Temperature Thresholds for CPU :  Interest== 95, Warning==101, Critical==104 -- Override==OFF
+Temperature Thresholds for PMU :  Interest== 78, Warning== 82, Critical== 84 -- Override==OFF
+[tRootTask] 2017-01-08 23:35:23: diskSetDrivePowerModeBySlot: Setting power mode to DISK_POWER_STATE_ON for slot 1
+[tRootTask] 2017-01-08 23:35:23: bspDiskSetDrivePowerModeBySlot: slot: 1  mode: DISK_POWER_STATE_ON
+[tRootTask] 2017-01-08 23:35:23: bspSetDrivePower: Set power ON for slot 1  drivesPowered: 0x1
+[tRootTask] 2017-01-08 23:35:23: diskSetDrivePowerModeBySlot: Leaving with status of DISK_OK(0x0000)
+[tRootTask] 2017-01-08 23:35:23: diskEnumerateDrives: Powering on Slot 1
+[tRootTask] 2017-01-08 23:35:23: Wait 60 ticks after spinning up disk 1interrupt: AHCI Drive Inserted unit: 1  drive: 0 portIntr: 0x400000 sataStatus: 0x133
+[Sata Evnt] 2017-01-08 23:35:23: Device not identified on channel 0
+[tRootTask] 2017-01-08 23:35:24: diskSetDrivePowerModeBySlot: Setting power mode to DISK_POWER_STATE_ON for slot 2
+[tRootTask] 2017-01-08 23:35:24: bspDiskSetDrivePowerModeBySlot: slot: 2  mode: DISK_POWER_STATE_ON
+[tRootTask] 2017-01-08 23:35:24: bspSetDrivePower: Set power ON for slot 2  drivesPowered: 0x3
+[tRootTask] 2017-01-08 23:35:24: diskSetDrivePowerModeBySlot: Leaving with status of DISK_OK(0x0000)
+[tRootTask] 2017-01-08 23:35:24: diskEnumerateDrives: Powering on Slot 2
+[tRootTask] 2017-01-08 23:35:24: Wait 60 ticks after spinning up disk 2interrupt: AHCI Drive Inserted unit: 1  drive: 1 portIntr: 0x400000 sataStatus: 0x133
+[Sata Evnt] 2017-01-08 23:35:24: Device not identified on channel 0
+[tRootTask] 2017-01-08 23:35:25: diskSetDrivePowerModeBySlot: Setting power mode to DISK_POWER_STATE_ON for slot 3
+[tRootTask] 2017-01-08 23:35:25: bspDiskSetDrivePowerModeBySlot: slot: 3  mode: DISK_POWER_STATE_ON
+[tRootTask] 2017-01-08 23:35:26: bspSetDrivePower: Set power ON for slot 3  drivesPowered: 0x7
+[tRootTask] 2017-01-08 23:35:26: diskSetDrivePowerModeBySlot: Leaving with status of DISK_OK(0x0000)
+[tRootTask] 2017-01-08 23:35:26: diskEnumerateDrives: Powering on Slot 3
+[tRootTask] 2017-01-08 23:35:26: Wait 60 ticks after spinning up disk 3[Sata Evnt] 2017-01-08 23:35:26: Device not identified on channel 0
+interrupt: AHCI Drive Inserted unit: 0  drive: 0 portIntr: 0x400000 sataStatus: 0x133
+[Sata Evnt] 2017-01-08 23:35:27: Device not identified on channel 0
+![Sata Evnt] 2017-01-08 23:35:28: Device not identified on channel 0
+![Sata Evnt] 2017-01-08 23:35:30: Device not identified on channel 0
+![Sata Evnt] 2017-01-08 23:35:31: Device not identified on channel 0
+[tAhciMon] 2017-01-08 23:35:31: 
+
+SETTING SATA LINK SPEEDS
+
+0x4c15a48 (tAhciMon): Limit SATA speed to GEN2
+!0x4c15a48 (tAhciMon): Limit SATA speed to GEN2
+0x4c15a48 (tAhciMon): Restarting Port unit: 1  drive: 0 portIntr: 0x0 sataStatus: 0x0
+[New Disk Thread] 2017-01-08 23:35:33: Set slot 0's last insertion sequence number to 1
+[New Disk Thread] 2017-01-08 23:35:33: mvSataSendCommand: Created single access mutex for slot 0, chan 0
+[New Disk Thread] 2017-01-08 23:35:33: slot 0 : Emulated 4K disk
+[tAhciMon] 2017-01-08 23:35:33: 
+
+SETTING SATA LINK SPEEDS
+
+0x4c15a48 (tAhciMon): Limit SATA speed to GEN2
+[New Disk Thread] 2017-01-08 23:35:33: diskConfigureNewDiskThread: diskConfigureNewDiskReally() for slot 0 returned 0
+[New Disk Thread] 2017-01-08 23:35:33: 
+**************************
+rtpEventNotifyDiskInsert: Device connection event received. Adapter 0, Slot 0
+Total inserts: 1, Total removes: 0, Sequence number: 1
+**************************
+[New Disk Thread] 2017-01-08 23:35:33: rtpEventNotifyDiskInsert: new eventOrder 0x1
+[New Disk Thread] 2017-01-08 23:35:33: Set slot 1's last insertion sequence number to 2
+[New Disk Thread] 2017-01-08 23:35:33: slot 1 : Emulated 4K disk
+[New Disk Thread] 2017-01-08 23:35:33: diskConfigureNewDiskThread: diskConfigureNewDiskReally() for slot 1 returned 0
+[New Disk Thread] 2017-01-08 23:35:33: 
+**************************
+rtpEventNotifyDiskInsert: Device connection event received. Adapter 0, Slot 1
+Total inserts: 2, Total removes: 0, Sequence number: 2
+**************************
+[New Disk Thread] 2017-01-08 23:35:33: rtpEventNotifyDiskInsert: new eventOrder 0x3
+![tRootTask] 2017-01-08 23:35:34: diskEnumerateDrives: Drive in slot 0 enumerated after 12 seconds
+[tRootTask] 2017-01-08 23:35:34: diskEnumerateDrives: Drive in slot 1 enumerated after 12 seconds
+0x4c15a48 (tAhciMon): Limit SATA speed to GEN2
+0x4c15a48 (tAhciMon): Restarting Port unit: 1  drive: 1 portIntr: 0x0 sataStatus: 0x0
+[tAhciMon] 2017-01-08 23:35:34: 
+
+SETTING SATA LINK SPEEDS
+
+0x4c15a48 (tAhciMon): Limit SATA speed to GEN2
+[New Disk Thread] 2017-01-08 23:35:34: Set slot 2's last insertion sequence number to 3
+[New Disk Thread] 2017-01-08 23:35:34: slot 2 : Emulated 4K disk
+[New Disk Thread] 2017-01-08 23:35:35: diskConfigureNewDiskThread: diskConfigureNewDiskReally() for slot 2 returned 0
+[New Disk Thread] 2017-01-08 23:35:35: 
+**************************
+rtpEventNotifyDiskInsert: Device connection event received. Adapter 0, Slot 2
+Total inserts: 3, Total removes: 0, Sequence number: 3
+**************************
+[New Disk Thread] 2017-01-08 23:35:35: rtpEventNotifyDiskInsert: new eventOrder 0x7
+![tRootTask] 2017-01-08 23:35:36: diskEnumerateDrives: Drive in slot 2 enumerated after 14 seconds
+0x4c15a48 (tAhciMon): Limit SATA speed to GEN2
+0x4c15a48 (tAhciMon): Restarting Port unit: 0  drive: 0 portIntr: 0x0 sataStatus: 0x0
+[New Disk Thread] 2017-01-08 23:35:36: Set slot 3's last insertion sequence number to 4
+[New Disk Thread] 2017-01-08 23:35:36: slot 3 : Emulated 4K disk
+[New Disk Thread] 2017-01-08 23:35:36: diskConfigureNewDiskThread: diskConfigureNewDiskReally() for slot 3 returned 0
+[New Disk Thread] 2017-01-08 23:35:36: 
+**************************
+rtpEventNotifyDiskInsert: Device connection event received. Adapter 0, Slot 3
+Total inserts: 4, Total removes: 0, Sequence number: 4
+**************************
+[New Disk Thread] 2017-01-08 23:35:36: rtpEventNotifyDiskInsert: new eventOrder 0xf
+![tRootTask] 2017-01-08 23:35:37: diskEnumerateDrives: Drive in slot 3 enumerated after 15 seconds
+![tRootTask] 2017-01-08 23:35:39: diskEnumerateDrives: Enumeration Complete after 17 seconds.  Found and enumerated 4 drives.
+[tRootTask] 2017-01-08 23:35:39: Hardware watchdog enabled : expiry time = 5 seconds
+[tRootTask] 2017-01-08 23:35:39: 
+
+[tRootTask] 2017-01-08 23:35:39: Id                    Absolute    Size In Bytes  Virtual Address  Physical Address   Alignment     Zeroed
+[tRootTask] 2017-01-08 23:35:39: SM_ID_HEADER          Yes           0x00002000     0xF4108000       0x7BFFC000      0x00001000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_J2              Yes           0x00A00000     0xD0100000       0x7B5FC000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_J1              Yes           0x0CE00000     0xB6000000       0x6E7FC000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_NV_DRAM_SIM     Yes           0x00100000     0xF410A000       0x6E6FC000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_UNCACHED        Yes           0x00E1F000     0xD0B00000       0x6D8DC000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_HLBAT           Yes           0x0A100000     0xF4600000       0x637DC000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_CRO             Yes           0x03200000     0xC2E00000       0x605DC000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_ALLOC           Yes           0x00001000     0xF420A000       0x605D8000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_ZMDT            Yes           0x08000000     0xC6000000       0x585D8000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_SBFC            Yes           0x04000000     0xD4800000       0x545D8000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_MGMTPOOL        Yes           0x00008000     0xF420B000       0x545D0000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_IC_SGL          Yes           0x00100000     0xF4213000       0x544D0000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_AMIT            Yes           0x00800000     0xFE700000       0x53CD0000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_SHMQ            Yes           0x00200000     0xFEF00000       0x53AD0000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_SHLX            Yes           0x00200000     0xFF100000       0x538D0000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: SM_ID_SHVX            Yes           0x00200000     0xFF300000       0x536D0000      0x00004000       No 
+[tRootTask] 2017-01-08 23:35:39: drStartPersistentLogging
+[tRootTask] 2017-01-08 23:35:39: found directory entry .
+[tRootTask] 2017-01-08 23:35:39: found directory entry ..
+[tRootTask] 2017-01-08 23:35:39: found directory entry crashlog-20151209-1631
+[tRootTask] 2017-01-08 23:35:39: found directory entry crashlog-20161024-2304
+[tRootTask] 2017-01-08 23:35:39: found directory entry crashlog-20161230-0208
+[tRootTask] 2017-01-08 23:35:39: found directory entry crashlog-20170105-0511
+[tRootTask] 2017-01-08 23:35:39: found directory entry crashlog-20170108-2328
+[tRootTask] 2017-01-08 23:35:39: Found 5 crash log files with total size 3683124 bytes[tRootTask] 2017-01-08 23:35:40: Preparing to Analyze Hibernation Status
+[tRootTask] 2017-01-08 23:35:40: Starting Analysis of Hibernation Status
+[tRootTask] 2017-01-08 23:35:40: Creating new log file
+[tRootTask] 2017-01-08 23:35:40: HIB: Flags for J2 are isComplete: 1, isDirty: 1
+[tRootTask] 2017-01-08 23:35:40: HIB: Copy Back - 0 [tRootTask] 2017-01-08 23:35:40: HIB: Copy Back - 10 [tRootTask] 2017-01-08 23:35:40: HIB: Copy Back - 20 [tRootTask] 2017-01-08 23:35:40: HIB: Copy Back - 30 [tRootTask] 2017-01-08 23:35:41: HIB: Copy Back - DONE 
+[tRootTask] 2017-01-08 23:35:41: HIB: Flags for J1 are isComplete: 1, isDirty: 1
+[tRootTask] 2017-01-08 23:35:41: HIB: Copy Back - 0 [tRootTask] 2017-01-08 23:35:41: HIB: Copy Back - 10 [tRootTask] 2017-01-08 23:35:41: HIB: Copy Back - 20 [tRootTask] 2017-01-08 23:35:42: HIB: Copy Back - 30 [tRootTask] 2017-01-08 23:35:42: HIB: Copy Back - 40 [tRootTask] 2017-01-08 23:35:42: HIB: Copy Back - 50 [tRootTask] 2017-01-08 23:35:42: HIB: Copy Back - 60 [tRootTask] 2017-01-08 23:35:43: HIB: Copy Back - 70 [tRootTask] 2017-01-08 23:35:43: HIB: Copy Back - 80 [tRootTask] 2017-01-08 23:35:43: HIB: Copy Back - 90 [tRootTask] 2017-01-08 23:35:43: HIB: Copy Back - 100 [tRootTask] 2017-01-08 23:35:44: HIB: Copy Back - 110 [tRootTask] 2017-01-08 23:35:44: HIB: Copy Back - 120 [tRootTask] 2017-01-08 23:35:44: HIB: Copy Back - 130 [tRootTask] 2017-01-08 23:35:45: HIB: Copy Back - 140 [tRootTask] 2017-01-08 23:35:45: HIB: Copy Back - 150 [tRootTask] 2017-01-08 23:35:45: HIB: Copy Back - 160 [tRootTask] 2017-01-08 23:35:45: HIB: Copy Back - 170 [tRootTask] 2017-01-08 23:35:46: HIB: Copy Back - 180 [tRootTask] 2017-01-08 23:35:46: HIB: Copy Back - 190 [tRootTask] 2017-01-08 23:35:46: HIB: Copy Back - 200 [tRootTask] 2017-01-08 23:35:46: HIB: Copy Back - 210 [tRootTask] 2017-01-08 23:35:47: HIB: Copy Back - 220 [tRootTask] 2017-01-08 23:35:47: HIB: Copy Back - 230 [tRootTask] 2017-01-08 23:35:47: HIB: Copy Back - 240 [tRootTask] 2017-01-08 23:35:47: HIB: Copy Back - 250 [tRootTask] 2017-01-08 23:35:48: HIB: Copy Back - 260 [tRootTask] 2017-01-08 23:35:48: HIB: Copy Back - 270 [tRootTask] 2017-01-08 23:35:48: HIB: Copy Back - 280 [tRootTask] 2017-01-08 23:35:49: HIB: Copy Back - 290 [tRootTask] 2017-01-08 23:35:49: HIB: Copy Back - 300 [tRootTask] 2017-01-08 23:35:49: HIB: Copy Back - 310 [tRootTask] 2017-01-08 23:35:49: HIB: Copy Back - 320 [tRootTask] 2017-01-08 23:35:50: HIB: Copy Back - 330 [tRootTask] 2017-01-08 23:35:50: HIB: Copy Back - 340 [tRootTask] 2017-01-08 23:35:50: HIB: Copy Back - 350 [tRootTask] 2017-01-08 23:35:50: HIB: Copy Back - 360 [tRootTask] 2017-01-08 23:35:51: HIB: Copy Back - 370 [tRootTask] 2017-01-08 23:35:51: HIB: Copy Back - 380 [tRootTask] 2017-01-08 23:35:51: HIB: Copy Back - 390 [tRootTask] 2017-01-08 23:35:52: HIB: Copy Back - 400 [tRootTask] 2017-01-08 23:35:52: HIB: Copy Back - 410 [tRootTask] 2017-01-08 23:35:52: HIB: Copy Back - 420 [tRootTask] 2017-01-08 23:35:52: HIB: Copy Back - 430 [tRootTask] 2017-01-08 23:35:53: HIB: Copy Back - 440 [tRootTask] 2017-01-08 23:35:53: HIB: Copy Back - 450 [tRootTask] 2017-01-08 23:35:53: HIB: Copy Back - 460 [tRootTask] 2017-01-08 23:35:53: HIB: Copy Back - 470 [tRootTask] 2017-01-08 23:35:54: HIB: Copy Back - 480 [tRootTask] 2017-01-08 23:35:54: HIB: Copy Back - 490 [tRootTask] 2017-01-08 23:35:54: HIB: Copy Back - 500 [tRootTask] 2017-01-08 23:35:54: HIB: Copy Back - 510 [tRootTask] 2017-01-08 23:35:55: HIB: Copy Back - 520 [tRootTask] 2017-01-08 23:35:55: HIB: Copy Back - 530 [tRootTask] 2017-01-08 23:35:55: HIB: Copy Back - 540 [tRootTask] 2017-01-08 23:35:55: HIB: Copy Back - 550 [tRootTask] 2017-01-08 23:35:56: HIB: Copy Back - 560 [tRootTask] 2017-01-08 23:35:56: HIB: Copy Back - 570 [tRootTask] 2017-01-08 23:35:56: HIB: Copy Back - 580 [tRootTask] 2017-01-08 23:35:56: HIB: Copy Back - 590 [tRootTask] 2017-01-08 23:35:57: HIB: Copy Back - 600 [tRootTask] 2017-01-08 23:35:57: HIB: Copy Back - 610 [tRootTask] 2017-01-08 23:35:57: HIB: Copy Back - 620 [tRootTask] 2017-01-08 23:35:58: HIB: Copy Back - 630 [tRootTask] 2017-01-08 23:35:58: HIB: Copy Back - 640 [tRootTask] 2017-01-08 23:35:58: HIB: Copy Back - 650 [tRootTask] 2017-01-08 23:35:58: HIB: Copy Back - 660 [tRootTask] 2017-01-08 23:35:59: HIB: Copy Back - 670 [tRootTask] 2017-01-08 23:35:59: HIB: Copy Back - 680 [tRootTask] 2017-01-08 23:35:59: HIB: Copy Back - 690 [tRootTask] 2017-01-08 23:35:59: HIB: Copy Back - 700 [tRootTask] 2017-01-08 23:36:00: HIB: Copy Back - 710 [tRootTask] 2017-01-08 23:36:00: HIB: Copy Back - 720 [tRootTask] 2017-01-08 23:36:00: HIB: Copy Back - 730 [tRootTask] 2017-01-08 23:36:00: HIB: Copy Back - 740 [tRootTask] 2017-01-08 23:36:01: HIB: Copy Back - 750 [tRootTask] 2017-01-08 23:36:01: HIB: Copy Back - 760 [tRootTask] 2017-01-08 23:36:01: HIB: Copy Back - 770 [tRootTask] 2017-01-08 23:36:01: HIB: Copy Back - 780 [tRootTask] 2017-01-08 23:36:02: HIB: Copy Back - 790 [tRootTask] 2017-01-08 23:36:02: HIB: Copy Back - 800 [tRootTask] 2017-01-08 23:36:02: HIB: Copy Back - 810 [tRootTask] 2017-01-08 23:36:02: HIB: Copy Back - 820 [tRootTask] 2017-01-08 23:36:03: HIB: Copy Back - DONE 
+[tRootTask] 2017-01-08 23:36:03: HIB: Flags for J1TAGS are isComplete: 1, isDirty: 1
+[tRootTask] 2017-01-08 23:36:03: HIB: Copy Back - 0 [tRootTask] 2017-01-08 23:36:03: HIB: Copy Back - DONE 
+[tRootTask] 2017-01-08 23:36:03: HIB: Flags for AMIT are isComplete: 1, isDirty: 1
+[tRootTask] 2017-01-08 23:36:03: HIB: Copy Back - 0 [tRootTask] 2017-01-08 23:36:03: HIB: Copy Back - 10 [tRootTask] 2017-01-08 23:36:03: HIB: Copy Back - 20 [tRootTask] 2017-01-08 23:36:03: HIB: Copy Back - 30 [tRootTask] 2017-01-08 23:36:03: HIB: Copy Back - DONE 
+[tRootTask] 2017-01-08 23:36:03: Hibernation Status is now Nominal
+[tRootTask] 2017-01-08 23:36:03: Hibernation Status is not Clean, so turning Battery ON
+[tRootTask] 2017-01-08 23:36:03: Hibernation Status will be written to eUSB
+==============================================================================
+Vx Kernel (A)utomated (M)emory (I)ntegrity (T)est ...
+==============================================================================
+NVS Data:
+	@ 0	0xab1efeed
+	@ 1	0xfff7ffff
+	@ 2	0xffffffff
+	@ 3	0xffffffff
+pHdr1==0xfe700010, pHdr2==0xfe700020, pPattern==0xfe700030, Pattern Size==0x007fffd0
+AMIT Found DRAM Battery OFF and a Valid Hibernation Record: Valid AMIT Pattern should be in Memory
+AMIT Found that PMU Says PowerBounceDelay was: [  3000 ms ]
+AMIT Found that Both Headers Match and Appear to be Valid
+AMIT Hdr-Mirror is Valid!!
+HDR: (@0xfe700010) MAGIC==0x4afacade, Start==0xb4ad0b5d, Step==0x3f07031f, ChkSum==0x3eaed95a
+AMIT Pattern Comparison for 0x007fffd0 Bytes...
+Num of Mismatches:     0
+AMIT Pattern Comparison PASSED
+AMIT History Updated with "."
+AMIT Found Both Headers Match and the Memory Pattern is Valid
+AMIT Pattern is Ready for the Next Iteration
+==============================================================================
+==============================================================================
+AMIT HISTORY:
+o..oo....
+==============================================================================
+[tRootTask] 2017-01-08 23:36:04: j1Init: J1 [virt 0xB6000000 for 0x0CE00000]
+j1DualPoolInit: 
+J1 region size is 216006656 bytes, totalBuffers = 2742
+J1 transBufCount is 2048, bulkBufCount is [694
+J1 Bulk buf size is 262144 bytes, trans buf size is 16384 bytes
+J1 sizeof (WriteBufferDescriptor) is 128
+J1 TransBufferAreaSize is 33816576, BulkBufferAreaSize is 182190080
+wbJ1PoolInit: 100 - Init J1 Transactional Pool
+wbJ1PoolInit: 100 - Init J1 tHibernateBulk Pool
+--------Buffer Pool: Trans
+Buffer start address: 0xb6000200 (0)
+Descriptor start address: 0xc2d80200 (cd80000)
+NumBuffers: 2048
+Free singles: 0
+	Single head: 0x00000000
+Free doubles: 1024
+	Double head: 0xC2D80200
+Free total: 2048
+--------Buffer Pool: Bulk
+Buffer start address: 0xb8000200 (2000000)
+Descriptor start address: 0xc2dc0200 (cdc0000)
+NumBuffers: 694
+Free singles: 0
+	Single head: 0x00000000
+Free doubles: 347
+	Double head: 0xC2DC0200
+Free total: 694
+SHARED_MEM TABLE
+id 1 abs 1 size 0x2000 virtAddr f4108000 phyAddr 7bffc000 alignment 1000 attr db options 1 zero 0 
+id 6 abs 1 size 0xa00000 virtAddr d0100000 phyAddr 7b5fc000 alignment 4000 attr db options 1 zero 0 
+id 5 abs 1 size 0xce00000 virtAddr b6000000 phyAddr 6e7fc000 alignment 4000 attr db options 1 zero 0 
+id 3 abs 1 size 0x100000 virtAddr f410a000 phyAddr 6e6fc000 alignment 4000 attr db options 1 zero 0 
+id 11 abs 1 size 0xe1f000 virtAddr d0b00000 phyAddr 6d8dc000 alignment 4000 attr db options 1 zero 0 
+id 7 abs 1 size 0xa100000 virtAddr f4600000 phyAddr 637dc000 alignment 4000 attr db options 1 zero 0 
+id 16 abs 1 size 0x3200000 virtAddr c2e00000 phyAddr 605dc000 alignment 4000 attr 15b options 1 zero 0 
+id 8 abs 1 size 0x1000 virtAddr f420a000 phyAddr 605d8000 alignment 4000 attr 15b options 1 zero 0 
+id 9 abs 1 size 0x8000000 virtAddr c6000000 phyAddr 585d8000 alignment 4000 attr 15b options 1 zero 0 
+id 10 abs 1 size 0x4000000 virtAddr d4800000 phyAddr 545d8000 alignment 4000 attr 15b options 1 zero 0 
+id 2 abs 1 size 0x8000 virtAddr f420b000 phyAddr 545d0000 alignment 4000 attr 1db options 0 zero 0 
+id 4 abs 1 size 0x100000 virtAddr f4213000 phyAddr 544d0000 alignment 4000 attr db options 1 zero 0 
+id 12 abs 1 size 0x800000 virtAddr fe700000 phyAddr 53cd0000 alignment 4000 attr db options 1 zero 0 
+id 13 abs 1 size 0x200000 virtAddr fef00000 phyAddr 53ad0000 alignment 4000 attr db options 1 zero 0 
+id 14 abs 1 size 0x200000 virtAddr ff100000 phyAddr 538d0000 alignment 4000 attr db options 1 zero 0 
+id 15 abs 1 size 0x200000 virtAddr ff300000 phyAddr 536d0000 alignment 4000 attr db options 1 zero 0 
+id 16 abs 29911348 size 0xd0012000 virtAddr d0012000 phyAddr d0012000 alignment d0012004 attr d0012008 options d001200c zero d0012010 
+SHARED_MEM: CPU0: READY TO WAIT FOR CPU1 TO COME ONLINE
+] 2017-01-08 23:36:04: Hibernate task starting
+[tHibernate] 2017-01-08 23:36:04:  ******* BOOT COUNT: 9 *******
+[tHibernate] 2017-01-08 23:36:04: restoreRebootReason: Creating RBRES PM region
+SHARED_MEM: CPU0: CPU1 ONLINE. STARTING INIT AND REPLAY
+CopySDRegionFromPartitionScheme: INFO: Copy /HEAD to HEAD id=0 Shared Data Region at phy addr: 0x7bffc000 virt addr: 0xf4108000 size 0x2000
+CopySDRegionFromPartitionScheme: INFO: Copy /nvramPSRAM to nvra id=1 Shared Data Region at phy addr: 0x7b5fc000 virt addr: 0xd0100000 size 0xa00000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHJ1 to SHJ1 id=2 Shared Data Region at phy addr: 0x6e7fc000 virt addr: 0xb6000000 size 0xce00000
+CopySDRegionFromPartitionScheme: INFO: Copy /nvramDRAMSim to nvra id=3 Shared Data Region at phy addr: 0x6e6fc000 virt addr: 0xf410a000 size 0x100000
+CopySDRegionFromPartitionScheme: INFO: Copy /UncachedPool to Unca id=4 Shared Data Region at phy addr: 0x6d8dc000 virt addr: 0xd0b00000 size 0xe1f000
+CopySDRegionFromPartitionScheme: INFO: Copy /readbuffer to read id=5 Shared Data Region at phy addr: 0x637dc000 virt addr: 0xf4600000 size 0xa100000
+CopySDRegionFromPartitionScheme: INFO: Copy /crobuffer to crob id=6 Shared Data Region at phy addr: 0x605dc000 virt addr: 0xc2e00000 size 0x3200000
+CopySDRegionFromPartitionScheme: INFO: Copy /allocator to allo id=7 Shared Data Region at phy addr: 0x605d8000 virt addr: 0xf420a000 size 0x1000
+CopySDRegionFromPartitionScheme: INFO: Copy /ZMDT to ZMDT id=8 Shared Data Region at phy addr: 0x585d8000 virt addr: 0xc6000000 size 0x8000000
+CopySDRegionFromPartitionScheme: INFO: Copy /SBFC to SBFC id=9 Shared Data Region at phy addr: 0x545d8000 virt addr: 0xd4800000 size 0x4000000
+CopySDRegionFromPartitionScheme: INFO: Copy /mgmtpool to mgmt id=10 Shared Data Region at phy addr: 0x545d0000 virt addr: 0xf420b000 size 0x8000
+CopySDRegionFromPartitionScheme: INFO: Copy /SGLD to SGLD id=11 Shared Data Region at phy addr: 0x544d0000 virt addr: 0xf4213000 size 0x100000
+CopySDRegionFromPartitionScheme: INFO: Copy /AMIT to AMIT id=12 Shared Data Region at phy addr: 0x53cd0000 virt addr: 0xfe700000 size 0x800000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHMQ to SHMQ id=13 Shared Data Region at phy addr: 0x53ad0000 virt addr: 0xfef00000 size 0x200000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHLX to SHLX id=14 Shared Data Region at phy addr: 0x538d0000 virt addr: 0xff100000 size 0x200000
+CopySDRegionFromPartitionScheme: INFO: Copy /SHVX to SHVX id=15 Shared Data Region at phy addr: 0x536d0000 virt addr: 0xff300000 size 0x200000
+FindSharedMemPartition: tag. SHMQ regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xfef00000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xfef00000
+SHARED_MEM: INITIALIZED SHARED MEMORY @addr 0x0xf4108000
+SHARED_MEM: CPU0: INITIALIZATION OF SHARED MEMORY BY CPU0 DONE
+icLinuxPanic: Starting Linux Panic Thread
+FindSharedMemPartition: tag. SHMQ regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xfef00000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xfef00000
+[iscsiCmd] 2017-01-08 23:36:04: SHMQueueInit: CPU0: Ready to wait for CPU1 to come online for queue init wait
+[iscsiCmd] 2017-01-08 23:36:05: SHMQueueInit: CPU0: CPU1 online. It is now waiting for queue init
+[iscsiCmd] 2017-01-08 23:36:05: SHMQueueInit: CPU0: Starting queue init.
+[iscsiCmd] 2017-01-08 23:36:05: SHARED_MEM: CPU0: Queue Init done by CPU0
+FindSharedMemPartition: tag. SGLD regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xf4213000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xf4213000
+FindSharedMemPartition: tag. read regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xf4600000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xf4600000
+FindSharedMemPartition: tag. SHJ1 regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xb6000000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xb6000000
+FindSharedMemPartition: tag. SHLX regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xff100000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xff100000
+FindSharedMemPartition: tag. SHVX regions# 16 
+FindSharedMemPartition: Found tag. Virt Addr: 0xff300000
+FindSharedMemPartition: Found tag. Copied Virt Addr: 0xff300000
+vxDynFreeListInit: Vx dyn free list has 56 entries.
+Waiting on SHMQueue
+[iscsiCmd] iscsiResourceReleaseThread: Starting
+iscsiResponseThread: Starting
+interCoreGeneralCommThread: Starting
+mgmtCmdThread: Starting
+2017-01-08 23:36:05: icNetworkIoctl: SET_LX_COMMON_INFO: Setting values: serial number: DRB154901A00995
+[tMgmtCmd] 2017-01-08 23:36:05: Bound mgmtCmdThread to cpu 0
+usrRtpAppInit: Setting nvram allocator base address to 0xF420A000
+Spawning RTP: /romfs/runesa.vxe 
+0x69b9de4 (tRootTask): 
+KERNEL FULLY INITIALIZED: IT IS SAFE TO RUN RTPs NOW
+Waiting for i/f enable
+Trace created enabled: zonemanager:info:flow
+Trace created enabled: zonemanager:error:flow
+RTP getting ED&R state - currently set to Deployed mode
+Trace created enabled: layoutmanager:error:flow
+Trace created enabled: layoutmanager:info:flow
+Trace created enabled: rmdtracker:error:flow
+Trace created enabled: ledman:error:flow
+Trace created enabled: dlbamdtracker:error:flow
+Trace created enabled: diskhotplug:vrbl:flow
+Trace created enabled: deadlockwd:error:flow
+Trace created enabled: scrub:error:flow
+Trace created enabled: scrub:info:flow
+Trace created enabled: databuf:all:flow
+Trace created enabled: scavenger:error:flow
+Trace created enabled: scavenger:info:flow
+Trace created enabled: scavenger:debug:flow
+Trace created enabled: cpmanager:vrbl:flow
+Trace created enabled: cpmanager:vrbm:flow
+Trace created enabled: cpmanager:error:flow
+Trace created enabled: cmzone:error:flow
+Trace created enabled: clustermanager:error:flow
+Trace created enabled: clustermanager:info:flow
+Trace created enabled: catmanager:error:flow
+Trace created enabled: catmanager:info:flow
+Trace created enabled: cal:error:flow
+Trace created enabled: cal:info:flow
+Trace created enabled: cachemanager:error:flow
+Trace created enabled: catmscanner:info:target
+Trace created enabled: catmscanner:error:flow
+Trace created enabled: catmscanner:corrupt:flow
+Trace created enabled: clt:error:flow
+Trace created enabled: clt:info:flow
+Trace created enabled: bfc:metaIO:error
+Trace created enabled: bfc:startup:flow
+Trace created enabled: bfc:corruption:error
+Trace created enabled: bfc:vsmap:flow
+Trace created enabled: bfc:disk:flow
+Trace created enabled: bfc:esa:lookup
+Trace created enabled: hrm:flush:flow
+Trace created enabled: hrm:warn:flow
+Trace created enabled: hrm:error:flow
+Trace created enabled: hrm:info:flow
+Trace created enabled: Sched:warn:flow
+Trace created enabled: Sched:error:flow
+Trace created enabled: nvram:info:flow
+Trace created enabled: nvram:error:flow
+Trace created enabled: hrm:vrbl:flow
+Trace created enabled: hrm:warn:flow
+Trace created enabled: hrm:error:flow
+Trace created enabled: hrm:info:flow
+Trace created enabled: J2Manager:vrbl:flow
+Trace created enabled: J2Manager:error:flow
+Trace created enabled: J2Manager:info:flow
+Trace created enabled: J2Manager:test:atomicity
+Trace created enabled: hlbatracker:error:flow
+Trace created enabled: Firmwareupg:error:flow
+Trace created enabled: bgsched:info:default
+Trace created enabled: bgsched:warn:default
+Trace created enabled: bgsched:error:default
+Trace created enabled: zmdtracker:info:flow
+Trace created enabled: zmdtracker:error:flow
+Trace created enabled: z0it:error:flow
+Trace created enabled: j1:vrbl:journal
+Trace created enabled: j1:vrbl:info
+Trace created enabled: j1:error:flow
+Trace created enabled: std:cout:data
+Trace created enabled: ssp:error:flow
+Trace created enabled: systemmanager:vrbl:flow
+Trace created enabled: systemmanager:info:flow
+Trace created enabled: systemmanager:error:flow
+Trace created enabled: systemmanager:vrbl:dpm
+Trace created enabled: spmm:vrbl:flow
+Trace created enabled: spmm:error:flow
+Trace created enabled: rm:warn:flow
+Trace created enabled: rm:error:flow
+Trace created enabled: rm:info:flow
+Trace created enabled: pauser:info:flow
+Trace created enabled: pauser:warn:flow
+Trace created enabled: pauser:error:flow
+Trace created enabled: memorypool:info:flow
+Trace created enabled: memorypool:error:flow
+Trace created enabled: mlfq:info:default
+Trace created enabled: mlfq:warn:default
+Trace created enabled: mlfq:error:default
+Trace created enabled: luninfo:error:flow
+Trace created enabled: j1:error:flow
+Trace created enabled: j1r:vrbl:flow
+Trace created enabled: j1r:warn:flow
+Trace created enabled: j1r:error:flow
+Trace created enabled: j1r:info:flow
+Trace created enabled: j1r:info2:flow
+Trace created enabled: idlemonitor:error:flow
+Trace created enabled: hostappmanager:vrbh:dload
+Trace created enabled: hostappmanager:info:flow
+Trace created enabled: hostappmanager:error:flow
+Trace created enabled: hostappmanager:error:reply
+Trace created enabled: event:vrbl:flow
+Trace created enabled: eventlog:error:flow
+Trace created enabled: epm:error:flow
+Trace created enabled: epm:info:flow
+Trace created enabled: ErrorInjection:error:flow
+Trace created enabled: dud:vrbl:flow
+Trace created enabled: dud:error:flow
+Trace created enabled: powermanager:error:flow
+Trace created enabled: dpm:vrbl:flow
+Trace created enabled: dpm:warn:flow
+Trace created enabled: dpm:error:flow
+Trace created enabled: dpm:info:flow
+Trace created enabled: dm:error:flow
+Trace created enabled: dm:info:all
+Trace created enabled: diaginfo:error:flow
+Trace created enabled: defragmenter:info:target
+Trace created enabled: defragmenter:error:flow
+Trace created enabled: default:error:flow
+Trace created enabled: diags:vrbl:flow
+FlashConfigData: DemoMode = 0
+DISK_CLEAR button: 0
+FlashConfigData: ClearDisk = 0
+2017-01-08,23:36:06.51: Binaries built with ENABLE_BRICK = 0
+2017-01-08,23:36:06.51: Kernel diag handlers : 
+2017-01-08,23:36:06.51: /proc/drobo/disk/show
+2017-01-08,23:36:06.51: /proc/drobo/disk/smart
+2017-01-08,23:36:06.51: /proc/drobo/disk/log
+2017-01-08,23:36:06.51: /proc/drobo/perf/j1
+2017-01-08,23:36:06.51: /proc/drobo/../kernel/meminfo
+2017-01-08,23:36:06.51: /proc/drobo/../kernel/version
+2017-01-08,23:36:06.51: /proc/drobo/../kernel/bootline
+2017-01-08,23:36:06.51: Kernel diags buffer size = 65536
+2017-01-08,23:36:06.51: Initializing object pools and slabs
+2017-01-08,23:36:06.51: Slab pool <7STLSlabILj12EE> created empty (perCore[0] = 0xffb3b540; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.53: Slab pool <7STLSlabILj16EE> created empty (perCore[0] = 0xffb3b580; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.53: Slab pool <7STLSlabILj20EE> created empty (perCore[0] = 0xffb3b5c0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.54: Slab pool <7STLSlabILj24EE> created empty (perCore[0] = 0xffb3b600; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.56: Slab pool <7STLSlabILj28EE> created empty (perCore[0] = 0xffb3b640; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.56: Slab pool <7STLSlabILj36EE> created empty (perCore[0] = 0xffb3b680; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.58: Slab pool <7STLSlabILj40EE> created empty (perCore[0] = 0xffb3b6c0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.59: Slab pool <7STLSlabILj44EE> created empty (perCore[0] = 0xffb3b700; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.59: Slab pool <7STLSlabILj48EE> created empty (perCore[0] = 0xffb3b740; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.61: Slab pool <7STLSlabILj56EE> created empty (perCore[0] = 0xffb3b780; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.61: Slab pool <7STLSlabILj68EE> created empty (perCore[0] = 0xffb3b7c0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.63: Slab pool <7STLSlabILj72EE> created empty (perCore[0] = 0xffb3b800; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.64: Slab pool <7STLSlabILj100EE> created empty (perCore[0] = 0xffb3b840; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.64: Slab pool <7STLSlabILj272EE> created empty (perCore[0] = 0xffb3b880; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.66: Slab pool <7STLSlabILj284EE> created empty (perCore[0] = 0xffb3b8c0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.68: Slab pool <7STLSlabILj288EE> created empty (perCore[0] = 0xffb3b900; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.68: Slab pool <7STLSlabILj296EE> created empty (perCore[0] = 0xffb3b940; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.69: Slab pool <7STLSlabILj304EE> created empty (perCore[0] = 0xffb3b980; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.71: Slab pool <24SlabLightweightSemaphore> created empty (perCore[0] = 0xffb3cee0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.71: obj pool <12VxWorksMutexIXadL_Z18vxworks_mutex_initEEXadL_Z15vxworks_destroyEEXadL_Z12vxworks_lockEEXadL_Z16vxworks_try_lockEEXadL_Z14vxworks_unlockEEXadL_Z22vxworks_mutex_getownerEEXadL_Z26vxworks_getnumblockedtasksEEE> entries = 3000, baseAddress = 0x00000000
+2017-01-08,23:36:06.79: Slab pool <N14LockObjectBase17PendingLockObjectE> created empty (perCore[0] = 0xffb3b420; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.79: Slab pool <N10LockObject11SharedOwnerE> created empty (perCore[0] = 0xffb3b460; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.79: Slab pool <N19ExtendingLockObject11SharedOwnerE> created empty (perCore[0] = 0xffb3b4a0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.79: Slab pool <N8SlabListIN12SlabListPtrsIN17CacheRangeTracker16CacheRangeObjectEE10PtrWrapperEE9node_typeE> created empty (perCore[0] = 0xffb3d220; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.81: Slab pool <N8SlabListIN12SlabListPtrsI18CacheTrackerObjectE10PtrWrapperEE9node_typeE> created empty (perCore[0] = 0xffb3d260; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.83: Slab pool <18CacheTrackerObject> created empty (perCore[0] = 0xffb3cf20; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.83: obj pool <14USBHostRequest> entries = 4000, baseAddress = 0x00000000
+2017-01-08,23:36:06.84: obj pool <16MultiHostRequest> entries = 5000, baseAddress = 0x00000000
+2017-01-08,23:36:06.84: Slab pool <N9DataBlock14DataBlockValueE> created empty (perCore[0] = 0xffb3b3e0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.86: Slab pool <9DataStore> created empty (perCore[0] = 0xffb3cf60; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.86: Slab pool <N8SlabListI9DataBlockE9node_typeE> created empty (perCore[0] = 0xffb3ba20; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.88: obj pool <7DiskSGL> entries = 144, baseAddress = 0x00000000
+2017-01-08,23:36:06.89: Slab pool <N11clidTracker4elemE> created empty (perCore[0] = 0xffb3cfa0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.89: Slab pool <9J2subTran> created empty (perCore[0] = 0xffb3ce60; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.91: Slab pool <5J2set> created empty (perCore[0] = 0xffb3cea0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.91: Slab pool <N4J2io4elemE> created empty (perCore[0] = 0xffb3cfe0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.93: Slab pool <N10DataWindow8DataPaneE> created empty (perCore[0] = 0xffb3b9e0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.94: obj pool <11MemoryBlock> entries = 300, baseAddress = 0x00000000
+2017-01-08,23:36:06.96: obj pool <15WriteCATEntries> entries = 36, baseAddress = 0x00000000
+2017-01-08,23:36:06.96: Slab pool <11BitmapRange> created empty (perCore[0] = 0xffb3d060; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.96: Slab pool <15ClusterRunIndex> created empty (perCore[0] = 0xffb3d020; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:06.98: Slab pool <N8SlabListIN10Dispatcher16PerCpuWorkerList12THREAD_STATEEE9node_typeE> created empty (perCore[0] = 0xffb3d1e0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:07.00: Slab pool <N9IOTracker12ExtendedLockE> created empty (perCore[0] = 0xffb3b4e0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:07.01: Slab pool <N9IOTracker20ExtendingLockObjectsE> created empty (perCore[0] = 0xffb3d0a0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:07.01: Slab pool <N9IOTracker15ioTrackerPoliceE> created empty (perCore[0] = 0xffb3d0e0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:07.03: Slab pool <N9IOTracker20TransactionIDWrapperE> created empty (perCore[0] = 0xffb3d120; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:07.04: Slab pool <16IOTrackerWrapper> created empty (perCore[0] = 0xffb3d160; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:07.06: Slab pool <9SlabArrayIP18CacheTrackerObjectLj6EE> created empty (perCore[0] = 0xffb3d1a0; sizeof(perCore) = 0x00000040
+ClearDisk(final) = 0
+
+fast ticks per us = 25
+2017-01-08,23:36:07.06: Output redirected to stdout & log
+2017-01-08,23:36:07.08: *** Someone is setting 'Blade' to '0' ***
+2017-01-08,23:36:07.08: *** Someone is setting 'Node' to '0' ***
+2017-01-08,23:36:07.41: Console configured	[*.........]
+2017-01-08,23:36:07.43: 
+2017-01-08,23:36:07.43: SHOCKWAVE PLATFORM SOFTWARE BUILD
+2017-01-08,23:36:07.43: 
+2017-01-08,23:36:07.43: Build Date/Time: Apr  1 2016,12:24:23
+2017-01-08,23:36:07.43: Version Number: 8.89.80777(3.5.10)(3.5.10) NODEBUG BUILD (GCC) (Marvell Sheeva 88SV584x, Board= Shockwave 1.0 ARMARCHV7 LE core)
+2017-01-08,23:36:07.43: 
+2017-01-08,23:36:07.43: LABMODE is DISABLED
+2017-01-08,23:36:07.43: 
+2017-01-08,23:36:07.43: Enabled board features:
+2017-01-08,23:36:07.43: -----------------------
+2017-01-08,23:36:07.43: Transport fathpath code ENABLED
+2017-01-08,23:36:07.43: Diagnostics log code ENABLED
+2017-01-08,23:36:07.43: TDFeaturelib code ENABLED
+2017-01-08,23:36:07.43: Flash image code ENABLED
+2017-01-08,23:36:07.44: Disk presence detect ENABLED
+2017-01-08,23:36:07.44: PMU ENABLED
+2017-01-08,23:36:07.44: LX Core ENABLED
+2017-01-08,23:36:07.44: RealTimeClock ENABLED
+2017-01-08,23:36:07.46: MV78X00 CPU ENABLED
+2017-01-08,23:36:07.46: Number of vxWorks cores is 1
+2017-01-08,23:36:07.46: Shutdown LED ENABLED
+2017-01-08,23:36:07.46: LED dimming ENABLED
+2017-01-08,23:36:07.48: Max drives supported : 6
+2017-01-08,23:36:07.48: 
+2017-01-08,23:36:07.48: Features enabled in this build:
+2017-01-08,23:36:07.48: -------------------------------
+2017-01-08,23:36:07.49: Clear disk on reboot in demomode is ENABLED
+2017-01-08,23:36:07.49: Cluster Scavenger feature ENABLED
+2017-01-08,23:36:07.49: Striping feature ENABLED
+2017-01-08,23:36:07.51: Async ClusterManager bitmap parsing feature ENABLED
+2017-01-08,23:36:07.51: Extending lock support feature ENABLED
+2017-01-08,23:36:07.51: Diags bypass locks feature is ENABLED
+2017-01-08,23:36:07.53: J2 dual buffer feature ENABLED
+2017-01-08,23:36:07.53: J2 parallel spill feature is ENABLED
+2017-01-08,23:36:07.53: J1 replay tagging is ENABLED
+2017-01-08,23:36:07.53: HRM dropping of HLBAT locks is ENABLED
+2017-01-08,23:36:07.54: ErrorInjection is ENABLED
+2017-01-08,23:36:07.54: RTP Heap usage tripwire set at 0x08000000 bytes
+2017-01-08,23:36:07.54: Write journal support ENABLED with 16 writer threads and 16 reader threads
+2017-01-08,23:36:07.56: WRITESAME0/UNMAP support is ENABLED
+2017-01-08,23:36:07.56: Readahead support enabled with support for 10 streams
+2017-01-08,23:36:07.58: Exclusive reliance on uber-readahead is ENABLED
+2017-01-08,23:36:07.58: System standby is ENABLED
+2017-01-08,23:36:07.58: Event log recording ENABLED
+2017-01-08,23:36:07.59: SMART monitoring ENABLED
+2017-01-08,23:36:07.59: Data Scrubber scrubbing METADATA and USERDATA
+2017-01-08,23:36:07.59: Calendar Server ENABLED
+2017-01-08,23:36:07.61: PSRAM battery power off in standby is ENABLED
+2017-01-08,23:36:07.61: On-Proc monitor is ENABLED
+2017-01-08,23:36:07.61: Read Prioritization queuing is ENABLED
+2017-01-08,23:36:07.63: Multi I/O issue transport is ENABLED
+2017-01-08,23:36:07.63: Use of Zone Patching is ENABLED
+2017-01-08,23:36:07.63: Use of DRStripe relayout readahead is ENABLED
+2017-01-08,23:36:07.63: Use of fast Mirrored Zone reads is ENABLED
+2017-01-08,23:36:07.64: Write coalescing min request set to 2304KiB
+2017-01-08,23:36:07.64: Reboot after LUN change is ENABLED
+2017-01-08,23:36:07.66: ClusterManager multiple bitmap segments are ENABLED
+2017-01-08,23:36:07.66: Defragmenter is ENABLED
+2017-01-08,23:36:07.66: CATM Scanner is ENABLED
+2017-01-08,23:36:07.68: Use of MStripeX and M3StripeX Zones is ENABLED
+2017-01-08,23:36:07.68: Ordered lock pending queues are ENABLED
+2017-01-08,23:36:07.68: Dynamic WorkerThread priorities are ENABLED
+2017-01-08,23:36:07.69: LockObject based priority inheritance is ENABLED
+2017-01-08,23:36:07.69: CRO splitting is ENABLED
+2017-01-08,23:36:07.69: Bypass of CATM lock is ENABLED
+2017-01-08,23:36:07.71: Hold lock on SyncOnCRO is ENABLED
+2017-01-08,23:36:07.71: Stripe alignment of writes is ENABLED
+2017-01-08,23:36:07.71: Aggressive background threads ENABLED
+2017-01-08,23:36:07.73: Tiering is ENABLED
+2017-01-08,23:36:07.73: Physical tiering is ENABLED
+2017-01-08,23:36:07.73: ZMDT snapshotting is ENABLED
+2017-01-08,23:36:07.73: BFC is ENABLED
+2017-01-08,23:36:07.74: Aggressive BFC population is ENABLED
+2017-01-08,23:36:07.74: CONSUMER platform build
+2017-01-08,23:36:07.74: Write-worker interlock is ENABLED
+2017-01-08,23:36:07.74: 4KiB alignment is ENABLED without assertions
+2017-01-08,23:36:07.76: 
+2017-01-08,23:36:07.76: Features disabled in this build:
+2017-01-08,23:36:07.76: --------------------------------
+2017-01-08,23:36:07.78: Checked features are disabled
+2017-01-08,23:36:07.78: Custom Windview events disabled
+2017-01-08,23:36:07.78: Reduced Region Size feature disabled
+2017-01-08,23:36:07.78: J1 disk flushing feature disabled
+2017-01-08,23:36:07.79: Reduced Thresholds feature disabled
+2017-01-08,23:36:07.79: Stats Gathering feature disabled
+2017-01-08,23:36:07.79: Capacity Console Display feature disabled
+2017-01-08,23:36:07.81: Read-after-write verify feature disabled
+2017-01-08,23:36:07.81: Verify redundancy after writes feature disabled
+2017-01-08,23:36:07.81: Always Zero Init new Zones feature disabled
+2017-01-08,23:36:07.83: Lock heirarchy enforcement feature disabled
+2017-01-08,23:36:07.83: One I/O at a time feature is disabled
+2017-01-08,23:36:07.84: J2 journal pass through mode is disabled
+2017-01-08,23:36:07.84: J2 journal copy to DRAM is disabled
+2017-01-08,23:36:07.84: J2 journal mirroring to DRAM is disabled
+2017-01-08,23:36:07.86: ZoneManager MirrorOnly Zone pool is disabled
+2017-01-08,23:36:07.86: ZoneManager prefer Mirrored Zones is disabled
+2017-01-08,23:36:07.86: SMART testing disabled
+2017-01-08,23:36:07.86: Auto format LUNs as FAT32 disabled
+2017-01-08,23:36:07.88: Spin on bad J2 signature is disabled
+2017-01-08,23:36:07.88: Scheduler watchdog is disabled
+2017-01-08,23:36:07.88: Scheduler watchdog monitor is disabled
+2017-01-08,23:36:07.89: Lock duration monitor is disabled
+2017-01-08,23:36:07.89: ReadAhead ZM queuing is disabled
+2017-01-08,23:36:07.89: ClientRequest diags contexts are disabled
+2017-01-08,23:36:07.91: Use of Dual Disk Redundancy by default is disabled
+2017-01-08,23:36:07.91: Prefer diagonal parity for recovery is disabled
+2017-01-08,23:36:07.91: Use of small Regions for Demo Mode is disabled
+2017-01-08,23:36:07.93: Automatic LUN management is disabled
+2017-01-08,23:36:07.93: Backup LUN management is disabled
+2017-01-08,23:36:07.94: Buffer marking is disabled
+2017-01-08,23:36:07.94: Buffer mark checking is disabled
+2017-01-08,23:36:07.94: 
+2017-01-08,23:36:07.94: After signals	[.*........]
+Flash Configuration Values
+
+leddimminglevel: 59
+
+2017-01-08,23:36:07.98:  ====%%%%==== FW-Download: Helper Thread Created!!  Asking it to check CRC & fixup System Images ... 
+2017-01-08,23:36:08.28: Debug init	[..*.......]
+2017-01-08,23:36:08.31: Added shared data region /UncachedPool to core dump mem filter : 0xd0b00000 length 0x00e1f000
+2017-01-08,23:36:08.31: obj pool <19MemoryBlockUncached> entries = 450, baseAddress = 0xd0b00000
+Creating MemoryBlockUncached pool at baseAddress d0b00000 to d191e100
+2017-01-08,23:36:08.66: Number of CRO's:204800
+2017-01-08,23:36:08.68: Added shared data region /crobuffer to core dump mem filter : 0xc2e00000 length 0x03200000
+2017-01-08,23:36:08.68: obj pool <N17CacheRangeTracker16CacheRangeObjectE> entries = 204800, baseAddress = 0xc2e00000
+2017-01-08,23:36:09.04: Added shared data region /SHJ1 to core dump mem filter : 0xb6000000 length 0x0ce00000
+SHJ1 @ 0xb6000000
+2017-01-08,23:36:09.04: Added shared data region /SHMQ to core dump mem filter : 0xfef00000 length 0x00200000
+SHMQ @ 0xfef00000
+2017-01-08,23:36:09.06: Added shared data region /SHLX to core dump mem filter : 0xff100000 length 0x00200000
+SHLX @ 0xff100000
+2017-01-08,23:36:09.06: Added shared data region /SHVX to core dump mem filter : 0xff300000 length 0x00200000
+SHVX @ 0xff300000
+2017-01-08,23:36:09.06: Idle loop for core 0 bound; physical CPU ID 0
+2017-01-08,23:36:12.23: Could not Open File "/bd0/LXFS.hdr".  May be missing?
+2017-01-08,23:36:16.06: CPU 0 reports a loop rate of 580450000
+2017-01-08,23:36:16.06: IdleMonitor reports a total loop rate of 580450000 loops per second
+2017-01-08,23:36:16.08: IdleMonitor Initialize passed	[...*......]
+2017-01-08,23:36:16.09: Added shared data region /usbSgList to core dump mem filter : 0xf4100000 length 0x00002000
+2017-01-08,23:36:16.09: Added shared data region /usbCmdResp to core dump mem filter : 0xf4102000 length 0x00004000
+HibernateSc called ...with 3 
+2017-01-08,23:36:16.19: ELM: Sun Jan 08 23:36:16 2017: 
+2017-01-08,23:36:16.19: SYSTEM BOOTING:
+2017-01-08,23:36:16.19: ELM: Sun Jan 08 23:36:16 2017: ELM: Boot 5N DRB154901A00995 Flags: 0xf0 bat OFF HIB ON AMIT '.' ver: 8.89.80777(3.5.10)
+2017-01-08,23:36:16.41: EventLogManager Initialize passed	[....*.....]
+2017-01-08,23:36:16.43: ELM: Sun Jan 08 23:36:16 2017: RebootReason: Shutdown because of loss of AC power
+2017-01-08,23:36:16.58: SM: PMU current version = 1.000.00078 desired version = 1.000.00078
+2017-01-08,23:36:16.78: SystemStatusPool.cpp:89 SystemStatusPool: Init compleat
+2017-01-08,23:36:16.91: Added shared data region /nvramDRAMSim to core dump mem filter : 0xf410a000 length 0x00100000
+2017-01-08,23:36:16.93: Added shared data region /nvramPSRAM to core dump mem filter : 0xd0100000 length 0x00a00000
+2017-01-08,23:36:16.93: NVRAM Initialize passed	[.....*....]
+2017-01-08,23:36:17.00: Added shared data region /ZMDT to core dump mem filter : 0xc6000000 length 0x08000000
+2017-01-08,23:36:17.26: Added shared data region /readbuffer to core dump mem filter : 0xf4600000 length 0x0a100000
+2017-01-08,23:36:17.29: Added shared data region /readbuffer to core dump mem filter : 0xf4600000 length 0x0a100000
+2017-01-08,23:36:17.31: Cache init complete	[......*...]
+2017-01-08,23:36:17.33: Added shared data region /usbCmdResp to core dump mem filter : 0xf4102000 length 0x00004000
+2017-01-08,23:36:17.33: Added shared data region /resRel to core dump mem filter : 0xf4106000 length 0x00002000
+2017-01-08,23:36:17.33: Added shared data region /SGLD to core dump mem filter : 0xf4213000 length 0x00100000
+2017-01-08,23:36:17.33: HRM:Multi: found 167 icore SGLs
+2017-01-08,23:36:17.38: Added shared data region /SHJ1 to core dump mem filter : 0xb6000000 length 0x0ce00000
+2017-01-08,23:36:17.41: Added shared data region /readbuffer to core dump mem filter : 0xf4600000 length 0x0a100000
+2017-01-08,23:36:17.43: SPMM: Timer id = -636725624
+2017-01-08,23:36:17.64: HRManager Initialize passed	[.......*..]
+2017-01-08,23:36:17.98: TopEnd Initialize passed	[........*.]
+2017-01-08,23:36:18.31: Dispatcher Initialize passed	[.........*]
+GetBuffer for 0x10011001
+GetBuffer: base region address 0xd0100000 offset of partition 0x00000040
+GetBuffer 0xd0100040
+2017-01-08,23:36:18.33: J2Manager::initialize: locating j2soft at 0xd0100040
+2017-01-08,23:36:18.33: J2Manager::initialize: J2 soft journal signature GOOD! 0x4a323130, number of disks = 6
+2017-01-08,23:36:18.33: J2Manager::initialize: CURRENT journal location pointers in use
+2017-01-08,23:36:18.64: J2 Initialize passed	[*........*]
+2017-01-08,23:36:18.66: EPM Initialize passed	[.*.......*]
+2017-01-08,23:36:18.68: Driver "/disk" opened OK with handle 8
+2017-01-08,23:36:18.68: Disk Interface Capabilities:
+2017-01-08,23:36:18.68: 	Number of Slots: 6
+2017-01-08,23:36:18.68: 	Capabilities bitmap: 0x0000000000000000
+2017-01-08,23:36:18.68: 	Max SGL length: 128
+2017-01-08,23:36:18.68: 	Default timeout in seconds: 20
+SetupHotPlug
+mvCheckHotPlug: Dropping pre-enumeration disk insert event for drive 0
+mvCheckHotPlug: Dropping pre-enumeration disk insert event for drive 1
+mvCheckHotPlug: Dropping pre-enumeration disk insert event for drive 2
+mvCheckHotPlug: Dropping pre-enumeration disk insert event for drive 3
+mvCheckHotPlug: Msg Rcvd; Adapter 30350596 Drive 30350399 Event 9 
+2017-01-08,23:36:18.88: [tHotPlug] MainLoop: mvCheckHotPlug() returned; eventID=9; adapterID=30350596; driveID=30350399
+2017-01-08,23:36:18.88: DiskManager Initialize passed	[..*......*]
+2017-01-08,23:36:18.89: DiskPackManager Initialize passed	[...*.....*]
+2017-01-08,23:36:18.91: RegionManager Initialize passed	[....*....*]
+2017-01-08,23:36:18.94: ZoneManager Initialize passed	[.....*...*]
+2017-01-08,23:36:18.96: LayoutManager Initialize passed	[......*..*]
+2017-01-08,23:36:18.98: Zone0InfoTable Initialize passed	[.......*.*]
+2017-01-08,23:36:19.00: CAL::Initialize: read wall clock of Sun Jan  8 23:36:19 2017
+2017-01-08,23:36:19.00: Calendar Server Initialize passed	[........**]
+2017-01-08,23:36:19.01: Reset state for ClusterPool BULK
+2017-01-08,23:36:19.01: Reset state for ClusterPool TRANS
+2017-01-08,23:36:19.01: ClusterManager Initialize passed	[*.......**]
+2017-01-08,23:36:19.03: CatManager Initialize passed	[.*......**]
+2017-01-08,23:36:19.06: DiskUtilizationDaemon Initialize passed	[..*.....**]
+2017-01-08,23:36:19.08: J1tag Initialize passed	[...*....**]
+GetBuffer for 0x10012001
+GetBuffer: base region address 0xf410a000 offset of partition 0x00000040
+GetBuffer 0xf410a040
+2017-01-08,23:36:19.09: Writejournal Initialize passed	[....*...**]
+2017-01-08,23:36:19.11: Added shared data region /mgmtpool to core dump mem filter : 0xf420b000 length 0x00008000
+2017-01-08,23:36:19.11: Host App Manager Initialize passed	[.....*..**]
+2017-01-08,23:36:19.13: DeadlockWatchdog Initialize passed	[......*.**]
+2017-01-08,23:36:19.16: DataScrubber Initialize passed	[.......***]
+2017-01-08,23:36:19.18: tDefrag thread created
+2017-01-08,23:36:19.18: tCATMScan thread created
+2017-01-08,23:36:19.18: HLBAT::cachePrefillThread: started
+2017-01-08,23:36:19.18: HLBAT::cachePrefillThread: started
+2017-01-08,23:36:19.18: HLBAT::cachePrefillThread: started
+2017-01-08,23:36:19.18: HLBAT::cachePrefillThread: started
+2017-01-08,23:36:19.18: HLBAT::cachePrefillThread: started
+2017-01-08,23:36:19.18: HLBAT::cachePrefillThread: started
+2017-01-08,23:36:19.18: HLBAT::cachePrefillThread: started
+2017-01-08,23:36:19.18: HLBAT::cachePrefillThread: started
+2017-01-08,23:36:19.18: Slab pool <N3BFCI19BFCProductionParamsE14RangeListEntryINS1_11VirtualAddrEEE> created empty (perCore[0] = 0xffb6a5a0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:19.19: Created relayout thread number Created relayout thread number Created relayout thread number Created relayout thread number Slab pool <0123N3BFCI19BFCProductionParamsE14RangeListEntryINS1_12PhysicalAddrEEE
+2017-01-08,23:36:19.21: 
+2017-01-08,23:36:19.23: 
+2017-01-08,23:36:19.23: 
+2017-01-08,23:36:19.23: > created empty (perCore[0] = 0xffb6a5e0; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:19.23: Slab pool <N3BFCI19BFCProductionParamsE14RangeListEntryINS1_10RegionAddrEEE> created empty (perCore[0] = 0xffb6a620; sizeof(perCore) = 0x00000040
+2017-01-08,23:36:19.24: disabling event handling	[*......***]
+2017-01-08,23:36:19.28: DiskManager LoadDiskPack called
+Number of adapters 3
+Number of drives 6
+Adapter 0 has 2 channels
+Adapter 0 channel 0 = /sata00
+Adapter 0 channel 1 = /sata01
+Adapter 1 has 2 channels
+Adapter 1 channel 0 = /sata02
+Adapter 1 channel 1 = /sata03
+Adapter 2 has 2 channels
+Adapter 2 channel 0 = /sata04
+Adapter 2 channel 1 = /sata05
+2017-01-08,23:36:19.28: DM::UpdateMap
+getDrivesPresentBitmap() drivemap = 0xf number_of_drives = 4
+2017-01-08,23:36:19.29: [iRunesa] DM::UpdateMap phys drive map now 0xf (4 disks)
+2017-01-08,23:36:19.29: [iRunesa] LoadDiskPack: slot 0's initial insertion sequence number is 1
+2017-01-08,23:36:19.31: [iRunesa] SetLastInsertSeqno: setting slot 0's last insertion sequence number to 1
+DO::Initialize 0
+DO::SetupDiskQueue
+targetDrive: OpenDrive 0: devname = /sata00
+Opened drive 0, devname = '/sata00', Handle = 11
+2017-01-08,23:36:19.33: [iRunesa] Acknowledging slot 0's insertion sequence number of 1
+[iRunesa] 2017-01-08 23:36:19: diskSetInsertionResponse: RTP updated insertion response number to 1 on slot 0 (last device insertion sequence number 1)
+ResetDrive 0
+Drive 0 features: setSupported=0x0000, setsSupported=0x0000, featureExtension=0x0000
+  featureEnabled85=0x0000, featureEnabled86=0x0000, featureDefault=0x0000
+  AAM is disabled
+2017-01-08,23:36:19.36: Drive '0' Model '        ST2000VN000-1HJ1SATA            ' Rev 'SC60    ' Serial '            W520VEQA'
+2017-01-08,23:36:19.38: Number bytes per sector = 512
+2017-01-08,23:36:19.38: [iRunesa] LoadDiskPack: slot 1's initial insertion sequence number is 2
+2017-01-08,23:36:19.39: [iRunesa] SetLastInsertSeqno: setting slot 1's last insertion sequence number to 2
+DO::Initialize 1
+DO::SetupDiskQueue
+targetDrive: OpenDrive 1: devname = /sata01
+Opened drive 1, devname = '/sata01', Handle = 12
+2017-01-08,23:36:19.41: [iRunesa] Acknowledging slot 1's insertion sequence number of 2
+[iRunesa] 2017-01-08 23:36:19: diskSetInsertionResponse: RTP updated insertion response number to 2 on slot 1 (last device insertion sequence number 2)
+ResetDrive 1
+Drive 1 features: setSupported=0x0000, setsSupported=0x0000, featureExtension=0x0000
+  featureEnabled85=0x0000, featureEnabled86=0x0000, featureDefault=0x0000
+  AAM is disabled
+2017-01-08,23:36:19.44: Drive '1' Model '        ST2000VN000-1HJ1SATA            ' Rev 'SC60    ' Serial '            W520VF5G'
+2017-01-08,23:36:19.46: Number bytes per sector = 512
+2017-01-08,23:36:19.46: [iRunesa] LoadDiskPack: slot 2's initial insertion sequence number is 3
+2017-01-08,23:36:19.48: [iRunesa] SetLastInsertSeqno: setting slot 2's last insertion sequence number to 3
+DO::Initialize 2
+DO::SetupDiskQueue
+targetDrive: OpenDrive 2: devname = /sata02
+Opened drive 2, devname = '/sata02', Handle = 13
+2017-01-08,23:36:19.49: [iRunesa] Acknowledging slot 2's insertion sequence number of 3
+[iRunesa] 2017-01-08 23:36:19: diskSetInsertionResponse: RTP updated insertion response number to 3 on slot 2 (last device insertion sequence number 3)
+ResetDrive 2
+Drive 2 features: setSupported=0x0000, setsSupported=0x0000, featureExtension=0x0000
+  featureEnabled85=0x0000, featureEnabled86=0x0000, featureDefault=0x0000
+  AAM is disabled
+2017-01-08,23:36:19.53: Drive '2' Model '        ST2000VN000-1HJ1SATA            ' Rev 'SC60    ' Serial '            W522QRP5'
+2017-01-08,23:36:19.54: Number bytes per sector = 512
+2017-01-08,23:36:19.54: [iRunesa] LoadDiskPack: slot 3's initial insertion sequence number is 4
+2017-01-08,23:36:19.56: [iRunesa] SetLastInsertSeqno: setting slot 3's last insertion sequence number to 4
+DO::Initialize 3
+DO::SetupDiskQueue
+targetDrive: OpenDrive 3: devname = /sata03
+Opened drive 3, devname = '/sata03', Handle = 14
+2017-01-08,23:36:19.58: [iRunesa] Acknowledging slot 3's insertion sequence number of 4
+[iRunesa] 2017-01-08 23:36:19: diskSetInsertionResponse: RTP updated insertion response number to 4 on slot 3 (last device insertion sequence number 4)
+ResetDrive 3
+Drive 3 features: setSupported=0x0000, setsSupported=0x0000, featureExtension=0x0000
+  featureEnabled85=0x0000, featureEnabled86=0x0000, featureDefault=0x0000
+  AAM is disabled
+2017-01-08,23:36:19.61: Drive '3' Model '        ST2000VN000-1HJ1SATA            ' Rev 'SC60    ' Serial '            W522QRD5'
+2017-01-08,23:36:19.63: Number bytes per sector = 512
+2017-01-08,23:36:19.88: J2Manager::startSoft: disk 0=>[W520VEQA ST2000VN000-1HJ1SATA SC60]
+2017-01-08,23:36:19.89: J2Manager::startSoft: disk 0=>[W520VEQA ST2000VN000-1HJ1SATA SC60] matches journalette 0
+2017-01-08,23:36:19.89: J2::startSoft: journalette 0/0 CLEAN
+2017-01-08,23:36:19.91: ELM: Sun Jan 08 23:36:19 2017: J2::startSoft: journalette [0] DIRTY, replaying to disk 0 from journalette 0/1
+2017-01-08,23:36:20.03: J2Manager::startSoft: disk 1=>[W520VF5G ST2000VN000-1HJ1SATA SC60]
+2017-01-08,23:36:20.04: J2Manager::startSoft: disk 1=>[W520VF5G ST2000VN000-1HJ1SATA SC60] matches journalette 1
+2017-01-08,23:36:20.04: J2::startSoft: journalette 1/0 CLEAN
+2017-01-08,23:36:20.04: ELM: Sun Jan 08 23:36:20 2017: J2::startSoft: journalette [1] DIRTY, replaying to disk 1 from journalette 1/1
+2017-01-08,23:36:20.16: J2Manager::startSoft: disk 2=>[W522QRP5 ST2000VN000-1HJ1SATA SC60]
+2017-01-08,23:36:20.18: J2Manager::startSoft: disk 2=>[W522QRP5 ST2000VN000-1HJ1SATA SC60] matches journalette 2
+2017-01-08,23:36:20.18: J2::startSoft: journalette 2/0 CLEAN
+2017-01-08,23:36:20.18: ELM: Sun Jan 08 23:36:20 2017: J2::startSoft: journalette [2] DIRTY, replaying to disk 2 from journalette 2/1
+2017-01-08,23:36:20.29: J2Manager::startSoft: disk 3=>[W522QRD5 ST2000VN000-1HJ1SATA SC60]
+2017-01-08,23:36:20.31: J2Manager::startSoft: disk 3=>[W522QRD5 ST2000VN000-1HJ1SATA SC60] matches journalette 3
+2017-01-08,23:36:20.31: J2::startSoft: journalette 3/0 CLEAN
+2017-01-08,23:36:20.31: ELM: Sun Jan 08 23:36:20 2017: J2::startSoft: journalette [3] DIRTY, replaying to disk 3 from journalette 3/1
+2017-01-08,23:36:20.43: DiskManager LoadDiskPack passed
+2017-01-08,23:36:20.43: enabling event handling	[.*.....***]
+2017-01-08,23:36:20.44: CAL::registerAlarm: added
+2017-01-08,23:36:20.44: 	startTime	:Sun Jan  8 23:36:20 2017
+2017-01-08,23:36:20.44: 	expiryTime	:Sun Jan  8 23:46:20 2017
+2017-01-08,23:36:20.44: 	deliveryTime	:Thu Jan  1 00:00:00 1970
+2017-01-08,23:36:20.44: 	duration	:10Mins
+2017-01-08,23:36:20.44: 	remaining	:10Mins
+2017-01-08,23:36:20.44: 	source		:0x534d4c44 [DLMS]
+2017-01-08,23:36:20.44: 	type		:ONE SHOT SINGLE BOOT
+2017-01-08,23:36:20.44: CAL::registerAlarm: added
+2017-01-08,23:36:20.44: 	startTime	:Sun Jan  8 23:36:20 2017
+2017-01-08,23:36:20.44: 	expiryTime	:Sun Jan  8 23:46:20 2017
+2017-01-08,23:36:20.44: 	deliveryTime	:Thu Jan  1 00:00:00 1970
+2017-01-08,23:36:20.46: 	duration	:10Mins
+2017-01-08,23:36:20.46: 	remaining	:10Mins
+2017-01-08,23:36:20.46: 	source		:0x50494e48 [HNIP]
+2017-01-08,23:36:20.46: 	type		:ONE SHOT SINGLE BOOT
+2017-01-08,23:36:20.48: DLBAT flushed	[..*....***]
+2017-01-08,23:36:20.84: DPM: Disk 0 seek time average = 19ms:620us
+2017-01-08,23:36:20.84: DPM::isDiskTransactional: seekTime = 19620, threshold = 1000
+2017-01-08,23:36:20.84: DPM::discoverDis: slot 0 is 0xe8e088b0 sectors (1.81TiB)
+2017-01-08,23:36:20.84: 	=> Setting DIS LBAs to 0x0/0x74701b00/0xe8e08830
+2017-01-08,23:36:20.84: 	=> PackId = 0x62fe046a62fe04e2/0x5 [LD #3] layout = 2/14
+2017-01-08,23:36:21.26: DPM: Disk 1 seek time average = 19ms:85us
+2017-01-08,23:36:21.26: DPM::isDiskTransactional: seekTime = 19085, threshold = 1000
+2017-01-08,23:36:21.26: DPM::discoverDis: slot 1 is 0xe8e088b0 sectors (1.81TiB)
+2017-01-08,23:36:21.26: 	=> Setting DIS LBAs to 0x0/0x74701b00/0xe8e08830
+2017-01-08,23:36:21.26: 	=> PackId = 0x62fe046a62fe04e2/0x5 [LD #2] layout = 2/14
+2017-01-08,23:36:21.66: DPM: Disk 2 seek time average = 17ms:155us
+2017-01-08,23:36:21.66: DPM::isDiskTransactional: seekTime = 17155, threshold = 1000
+2017-01-08,23:36:21.66: DPM::discoverDis: slot 2 is 0xe8e088b0 sectors (1.81TiB)
+2017-01-08,23:36:21.66: 	=> Setting DIS LBAs to 0x0/0x74701b00/0xe8e08830
+2017-01-08,23:36:21.66: 	=> PackId = 0x62fe046a62fe04e2/0x5 [LD #1] layout = 2/14
+2017-01-08,23:36:22.06: DPM: Disk 3 seek time average = 18ms:786us
+2017-01-08,23:36:22.06: DPM::isDiskTransactional: seekTime = 18786, threshold = 1000
+2017-01-08,23:36:22.06: DPM::discoverDis: slot 3 is 0xe8e088b0 sectors (1.81TiB)
+2017-01-08,23:36:22.06: 	=> Setting DIS LBAs to 0x0/0x74701b00/0xe8e08830
+2017-01-08,23:36:22.06: 	=> PackId = 0x62fe046a62fe04e2/0x5 [LD #0] layout = 2/14
+2017-01-08,23:36:22.13: DIS discovery complete	[...*...***]
+2017-01-08,23:36:22.23: Candidate pack chosen for load	[....*..***]
+2017-01-08,23:36:22.24: DPM::understandLayout: disk pack layout 2/14 is UNDERSTOOD
+2017-01-08,23:36:22.24: RegionManager LoadDiskPackReadOnly called
+2017-01-08,23:36:22.24: *** Someone is setting 'RegionSize' to '44728320' ***
+2017-01-08,23:36:22.24: RM::LoadDiskPack: Logical Disk: 0 Total Regions: 44720 Free Regions: 41700 Padding: 8 Version: 8
+2017-01-08,23:36:22.24: RM::LoadDiskPack: Logical Disk: 1 Total Regions: 44720 Free Regions: 41700 Padding: 8 Version: 8
+2017-01-08,23:36:22.24: RM::LoadDiskPack: Logical Disk: 2 Total Regions: 44720 Free Regions: 41701 Padding: 8 Version: 8
+2017-01-08,23:36:22.24: RM::LoadDiskPack: Logical Disk: 3 Total Regions: 44720 Free Regions: 41700 Padding: 8 Version: 8
+2017-01-08,23:36:22.26: RM::LoadDiskPack: DiskPack has inter-Region recovery space ENABLED; generation number: 16
+2017-01-08,23:36:22.28: RegionManager LoadDiskPackReadOnly passed
+2017-01-08,23:36:22.28: ZoneManager LoadDiskPackReadOnly called
+2017-01-08,23:36:22.28: ZoneTable read-only status is true
+2017-01-08,23:36:22.29: LoadZoneTable: got Primary location (3:16611)
+2017-01-08,23:36:22.29: LoadZoneTable: got Secondary location (1:21041)
+2017-01-08,23:36:22.29: LoadZoneTable: got Tertiary location (0:17470)
+2017-01-08,23:36:22.33: LoadZoneTable: Primary generation number is 1024
+2017-01-08,23:36:22.34: LoadZoneTable: Secondary generation number is 1024
+2017-01-08,23:36:22.34: LoadZoneTable: Tertiary generation number is 1024
+2017-01-08,23:36:22.34: LoadZoneTable: all generation numbers match
+2017-01-08,23:36:22.34: PrimaryZIS: Disk=3, Region=16611, Offset=0
+2017-01-08,23:36:22.34: Found ZIS layout version 9
+2017-01-08,23:36:22.34: *** Someone is setting 'ZoneSize' to '1073479680' ***
+2017-01-08,23:36:22.34: Loading ZoneTable from disk
+2017-01-08,23:36:22.38: ZoneTable load from disk complete
+2017-01-08,23:36:22.38: ZoneManager LoadDiskPackReadOnly passed
+2017-01-08,23:36:22.38: READ-ONLY load complete	[.....*.***]
+2017-01-08,23:36:22.39: LD critical check complete	[......****]
+2017-01-08,23:36:22.43: ZoneManager UnloadDiskPackReadOnly called
+2017-01-08,23:36:22.43: ZoneManager UnloadDiskPackReadOnly passed
+2017-01-08,23:36:22.43: RegionManager UnloadDiskPackReadOnly called
+2017-01-08,23:36:22.43: RegionManager UnloadDiskPackReadOnly passed
+2017-01-08,23:36:22.43: ZoneManager UnloadDiskPackReadOnly passed
+2017-01-08,23:36:22.43: ELM: Sun Jan 08 23:36:22 2017: DPM::packViable: numDisks=4, missing=0, critMissing=0, hard-cache=0, update NOT NEEDED
+2017-01-08,23:36:22.43: DPM::packViable: logicalDiskBm = 0xf criticalDiskBm = 0x0
+2017-01-08,23:36:22.43: DPM::packViable: PACK IS VIABLE
+2017-01-08,23:36:22.43: ELM: Sun Jan 08 23:36:22 2017: DPM::doColdStart: COMMITTING TO LOAD disk pack 0x62fe046a62fe04e2/0x5
+HibernateSc called ...with 0 
+2017-01-08,23:36:22.46: J2Manager::LoadDiskPack: making soft journalette 0 match disk 0=>[W520VEQA ST2000VN000-1HJ1SATA SC60]
+2017-01-08,23:36:22.46: J2Manager::LoadDiskPack: making soft journalette 1 match disk 1=>[W520VF5G ST2000VN000-1HJ1SATA SC60]
+2017-01-08,23:36:22.48: J2Manager::LoadDiskPack: making soft journalette 2 match disk 2=>[W522QRP5 ST2000VN000-1HJ1SATA SC60]
+2017-01-08,23:36:22.48: J2Manager::LoadDiskPack: making soft journalette 3 match disk 3=>[W522QRD5 ST2000VN000-1HJ1SATA SC60]
+2017-01-08,23:36:22.49: ELM: Sun Jan 08 23:36:22 2017: DPM: slot 3 contains LD #0 (1.81TiB) WWN=>W522QRD5 ST2000VN000-1HJ1SATA SC60
+2017-01-08,23:36:22.51: ELM: Sun Jan 08 23:36:22 2017: DPM: slot 2 contains LD #1 (1.81TiB) WWN=>W522QRP5 ST2000VN000-1HJ1SATA SC60
+2017-01-08,23:36:22.51: ELM: Sun Jan 08 23:36:22 2017: DPM: slot 1 contains LD #2 (1.81TiB) WWN=>W520VF5G ST2000VN000-1HJ1SATA SC60
+2017-01-08,23:36:22.53: ELM: Sun Jan 08 23:36:22 2017: DPM: slot 0 contains LD #3 (1.81TiB) WWN=>W520VEQA ST2000VN000-1HJ1SATA SC60
+2017-01-08,23:36:22.54: RegionManager LoadDiskPack called
+2017-01-08,23:36:22.54: *** Someone is setting 'RegionSize' to '44728320' ***
+2017-01-08,23:36:22.54: RM::LoadDiskPack: Logical Disk: 0 Total Regions: 44720 Free Regions: 41700 Padding: 8 Version: 8
+2017-01-08,23:36:22.56: RM::LoadDiskPack: Logical Disk: 1 Total Regions: 44720 Free Regions: 41700 Padding: 8 Version: 8
+2017-01-08,23:36:22.58: RM::LoadDiskPack: Logical Disk: 2 Total Regions: 44720 Free Regions: 41701 Padding: 8 Version: 8
+2017-01-08,23:36:22.58: RM::LoadDiskPack: Logical Disk: 3 Total Regions: 44720 Free Regions: 41700 Padding: 8 Version: 8
+2017-01-08,23:36:22.59: RM::LoadDiskPack: DiskPack has inter-Region recovery space ENABLED; generation number: 16
+2017-01-08,23:36:22.59: RegionManager LoadDiskPack passed	[*.....****]
+2017-01-08,23:36:22.63: RMDT flushed	[.*....****]
+2017-01-08,23:36:22.64: ZoneManager LoadDiskPack called
+2017-01-08,23:36:22.64: ZoneTable read-only status is false
+2017-01-08,23:36:22.64: LoadZoneTable: got Primary location (3:16611)
+2017-01-08,23:36:22.64: LoadZoneTable: got Secondary location (1:21041)
+2017-01-08,23:36:22.64: LoadZoneTable: got Tertiary location (0:17470)
+2017-01-08,23:36:22.64: LoadZoneTable: Primary generation number is 1024
+2017-01-08,23:36:22.64: LoadZoneTable: Secondary generation number is 1024
+2017-01-08,23:36:22.66: LoadZoneTable: Tertiary generation number is 1024
+2017-01-08,23:36:22.66: LoadZoneTable: all generation numbers match
+2017-01-08,23:36:22.66: PrimaryZIS: Disk=3, Region=16611, Offset=0
+2017-01-08,23:36:22.68: Found ZIS layout version 9
+2017-01-08,23:36:22.68: *** Someone is setting 'ZoneSize' to '1073479680' ***
+2017-01-08,23:36:22.68: Loading ZoneTable from disk
+2017-01-08,23:36:22.74: ZoneTable load from disk complete
+2017-01-08,23:36:22.74: Regions in use on LogicalDisk 0 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.74: Regions in use on LogicalDisk 1 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.74: Regions in use on LogicalDisk 2 matches at 3016 Regions (44717 available, 41701 free, 0 BFC)
+2017-01-08,23:36:22.74: Regions in use on LogicalDisk 3 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.74: Checking copy #0 ZIS @ location: Disk=3, Region=16611, Offset=0
+2017-01-08,23:36:22.76: Checking ZoneTable copy #0
+2017-01-08,23:36:22.79: All checks passed OK for copy #0 ZIS/ZoneTable
+2017-01-08,23:36:22.79: Regions in use on LogicalDisk 0 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.79: Regions in use on LogicalDisk 1 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.79: Regions in use on LogicalDisk 2 matches at 3016 Regions (44717 available, 41701 free, 0 BFC)
+2017-01-08,23:36:22.79: Regions in use on LogicalDisk 3 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.81: Checking copy #1 ZIS @ location: Disk=1, Region=21041, Offset=0
+2017-01-08,23:36:22.81: Checking ZoneTable copy #1
+2017-01-08,23:36:22.86: All checks passed OK for copy #1 ZIS/ZoneTable
+2017-01-08,23:36:22.86: Regions in use on LogicalDisk 0 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.86: Regions in use on LogicalDisk 1 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.86: Regions in use on LogicalDisk 2 matches at 3016 Regions (44717 available, 41701 free, 0 BFC)
+2017-01-08,23:36:22.88: Regions in use on LogicalDisk 3 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.88: Checking copy #2 ZIS @ location: Disk=0, Region=17470, Offset=0
+2017-01-08,23:36:22.88: Checking ZoneTable copy #2
+2017-01-08,23:36:22.93: All checks passed OK for copy #2 ZIS/ZoneTable
+2017-01-08,23:36:22.93: Regions in use on LogicalDisk 0 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.93: Regions in use on LogicalDisk 1 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.93: Regions in use on LogicalDisk 2 matches at 3016 Regions (44717 available, 41701 free, 0 BFC)
+2017-01-08,23:36:22.93: Regions in use on LogicalDisk 3 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:36:22.93: Cached Zone Counts :
+2017-01-08,23:36:22.94: Allocated Zones = 313, Potential Zones = 5522, PhysicallyFree Zones = 5209
+2017-01-08,23:36:23.01:  Potential FastPool Zone count = 0. Metadata max = 0 (10%) Potential BulkPool Zone count = 5522
+2017-01-08,23:36:23.08:  Degraded Zone count = 0
+2017-01-08,23:36:23.08:  Double-degraded Zone count = 0
+2017-01-08,23:36:23.08:  Self-mirrored Zone count = 0
+2017-01-08,23:36:23.08:  Metadata Zone count = 116
+2017-01-08,23:36:23.08:  Transactional Zone count = 14
+2017-01-08,23:36:23.08:  Fast metadata Zone count = 2
+2017-01-08,23:36:23.08: Parallel IOs are currently allowed
+2017-01-08,23:36:23.08: Stripe write count = 0 (total lines = 0), Read-Modify-Write count = 0 (0%)
+2017-01-08,23:36:23.08: 
+2017-01-08,23:36:23.08: ZoneTable : 
+2017-01-08,23:36:23.09:  Number of Entries created : 314
+2017-01-08,23:36:23.09:  Number of Entries in use  : 314
+2017-01-08,23:36:23.09:  Number of Bulk Ents in use: 300
+2017-01-08,23:36:23.09:  Number of Entries Init'd  : 0
+2017-01-08,23:36:23.11:  Number of Bulk Ents Init'd: 0
+2017-01-08,23:36:23.11:  Zone Table size (deque)   : 314
+2017-01-08,23:36:23.11:  Entry size                : 456
+2017-01-08,23:36:23.13:  Total Table size          : 143184 (139.82KiB)
+2017-01-08,23:36:23.13:  Primary ZIS disk          : 3
+2017-01-08,23:36:23.13:  Primary ZIS region        : 16611
+2017-01-08,23:36:23.14:  Secondary ZIS disk        : 1
+2017-01-08,23:36:23.14:  Secondary ZIS region      : 21041
+2017-01-08,23:36:23.14:  Tertiary ZIS disk         : 0
+2017-01-08,23:36:23.16:  Tertiary ZIS region       : 17470
+2017-01-08,23:36:23.16:  Table offset into region  : 4096
+2017-01-08,23:36:23.16:  Use of self-mirroring     : Off
+2017-01-08,23:36:23.18:  Use of dual-redundancy    : Off
+2017-01-08,23:36:23.18:  Zone Size                 : 1073479680
+2017-01-08,23:36:23.18:  Zone Table version        : 9
+2017-01-08,23:36:23.19:  Zone Table generation     : 1024
+2017-01-08,23:36:23.19: 
+2017-01-08,23:36:23.19: 
+2017-01-08,23:36:23.19: ZoneManager LoadDiskPack passed	[..*...****]
+2017-01-08,23:36:23.21: ZMDT flushed	[...*..****]
+2017-01-08,23:36:23.24: Zone0InfoTable LoadDiskPack called
+2017-01-08,23:36:23.69: Zone0InfoTable LoadDiskPack passed	[....*.****]
+2017-01-08,23:36:23.88: SM::evaluateTieringMode: found the following current BFC allocations:
+2017-01-08,23:36:23.88: SM::evaluateTieringMode: fraction policy recommending the following BFC allocations:
+2017-01-08,23:36:23.88: SM::evaluateTieringMode: transZones = 0, bulkZones = 5522
+2017-01-08,23:36:23.91: [iRunesa] SM: there is a transactional tier in LOGICAL mode with 20 zones 
+2017-01-08,23:36:23.91: ELM: Sun Jan 08 23:36:23 2017: SM: POWER CYCLE WAS NOT DONE FROM STANDBY
+HibernateSc called ...with 3 
+2017-01-08,23:36:24.01: CalServ LoadDiskPack called
+2017-01-08,23:36:24.01: CalServ::loadSavedState: loaded 6 alarms
+2017-01-08,23:36:24.01: ELM: Sun Jan 08 23:36:24 2017: CAL::LoadDiskPack: sys and cal time now in sync at Sun Jan  8 23:36:24 2017 
+2017-01-08,23:36:24.01: CalServ LoadDiskPack passed	[.....*****]
+2017-01-08,23:36:24.03: EventLogManager LoadDiskPack called
+2017-01-08,23:36:24.08: Delayed ELM writes because of > 2 unclean shutdowns (bootloop protection ENABLED)
+2017-01-08,23:36:24.08: CAL::registerAlarm: added
+2017-01-08,23:36:24.08: 	startTime	:Sun Jan  8 23:36:24 2017
+2017-01-08,23:36:24.08: 	expiryTime	:Mon Jan  9 00:36:24 2017
+2017-01-08,23:36:24.08: 	deliveryTime	:Thu Jan  1 00:00:00 1970
+2017-01-08,23:36:24.08: 	duration	:1Hrs
+2017-01-08,23:36:24.08: 	remaining	:1Hrs
+2017-01-08,23:36:24.08: 	source		:0x204d4c45 [ELM ]
+2017-01-08,23:36:24.08: 	type		:ONE SHOT SINGLE BOOT
+2017-01-08,23:36:24.08: ELM: Sun Jan 08 23:36:24 2017: ELM: Unclean shutdown count = 4
+2017-01-08,23:36:24.08: EventLogManager LoadDiskPack passed	[*....*****]
+2017-01-08,23:36:24.11: DiskLog LoadDiskPack called
+2017-01-08,23:36:24.11: DiskLog LoadDiskPack passed
+2017-01-08,23:36:24.11: EPM LoadDiskPack called
+2017-01-08,23:36:24.11: [iRunesa] EPM::loadGlobalErrors: found zone0 global metadata Z0IT entry
+2017-01-08,23:36:24.11: [iRunesa] EPM::load: found zone0 global metadata with expected CRC
+2017-01-08,23:36:24.11: [iRunesa] >>>> EPM::trackAndDispatchGlobalError
+2017-01-08,23:36:24.13: >>>> EPM::saveErrorList: ErrorTracker list is empty!
+2017-01-08,23:36:24.13: EPM LoadDiskPack passed	[.*...*****]
+2017-01-08,23:36:24.16: ZoneManager RestoreZoneTemperaturesFromDisk called
+2017-01-08,23:36:24.16: Zone Temperature Snapshot:
+2017-01-08,23:36:24.16: -------------------------
+2017-01-08,23:36:24.16: Disk CRC: 3462274242, Actual: 3462274242
+2017-01-08,23:36:24.16: version: 2
+2017-01-08,23:36:24.16: maxEntries: 262144
+2017-01-08,23:36:24.16: --
+2017-01-08,23:36:24.16: Copy 0:
+2017-01-08,23:36:24.18: usedEntries: 314
+2017-01-08,23:36:24.18: flags: 1
+2017-01-08,23:36:24.18: baseOffset: 512
+2017-01-08,23:36:24.18: --
+2017-01-08,23:36:24.18: Copy 1:
+2017-01-08,23:36:24.18: usedEntries: 314
+2017-01-08,23:36:24.19: flags: 1
+2017-01-08,23:36:24.19: baseOffset: 2097664
+2017-01-08,23:36:24.19: -------------------------
+2017-01-08,23:36:24.19: ELM: Sun Jan 08 23:36:24 2017: ZoneTable: Restoring temperatures from on-disk copy 0
+2017-01-08,23:36:24.21: ClusterManager LoadDiskPack called
+2017-01-08,23:36:24.21: *** Someone is setting 'ClusterSizeBits' to '12' ***
+2017-01-08,23:36:24.23: ClusterManager loading V2 metadata
+2017-01-08,23:36:24.23: ClusterManager.cpp:2843  CM metadata is available 
+2017-01-08,23:36:24.23: [iRunesa] We now have 2 CM bitmap zones
+2017-01-08,23:36:24.24: ClusterManager.cpp:2855 Loading CMPOOL BULK now 
+2017-01-08,23:36:24.43: ClusterManager.cpp:2855 Loading CMPOOL TRANS now 
+2017-01-08,23:36:24.59: ClusterManager.cpp:2874 LoadState for BULK now
+2017-01-08,23:36:24.59: Running LoadState() for ClusterPool BULK
+2017-01-08,23:36:24.76: m_zonespace_bitmap.Initialize is done for BULK
+2017-01-08,23:36:24.78: Starting CM Bitmap Background Scan for ClusterPool BULK
+2017-01-08,23:36:26.54: Done CM Bitmap Background Scan for ClusterPool BULK
+2017-01-08,23:36:26.54: ClusterManager.cpp:2874 LoadState for TRANS now
+2017-01-08,23:36:26.54: Running LoadState() for ClusterPool TRANS
+2017-01-08,23:36:26.71: m_zonespace_bitmap.Initialize is done for TRANS
+2017-01-08,23:36:26.73: Starting CM Bitmap Background Scan for ClusterPool TRANS
+2017-01-08,23:36:27.73: Done CM Bitmap Background Scan for ClusterPool TRANS
+2017-01-08,23:36:27.73: ClusterManager LoadDiskPack passed	[..*..*****]
+2017-01-08,23:36:27.74: HLBAT flushed	[...*.*****]
+2017-01-08,23:36:27.76: CatManager LoadDiskPack called
+2017-01-08,23:36:27.76: *** Someone is setting 'MaxDefaultLBA' to '137438953471' ***
+2017-01-08,23:36:27.76: ELM: Sun Jan 08 23:36:27 2017: CAT: Default LUN size is 0x0000002000000000 (~64.00TiB)
+2017-01-08,23:36:27.76: ChunksPerZone on disk: 3744
+2017-01-08,23:36:27.76: CLT: GOOD checksum, actual 0x434ef118 stored 0x434ef118
+2017-01-08,23:36:27.76:  pCATZoneInfoHeader->chunksPerZone is 3744
+2017-01-08,23:36:27.76: Info: CLT: allocating 860672 bytes for zone/chunk maps, each LUN uses 53760 bytes on disk;maxCATZones: 113mapSize: 52884
+2017-01-08,23:36:27.76: Info: CLT: reading CLT Zone0 data
+2017-01-08,23:36:27.79: CatManager LoadDiskPack passed	[....******]
+2017-01-08,23:36:27.81: [iRunesa] Reading BFC Z0IT entry...
+2017-01-08,23:36:27.81: [iRunesa] BFC Z0IT read returned StatusCode::Success
+2017-01-08,23:36:27.81: [iRunesa] ValidateZ0ITAndRemoveMissingDisks: SM's recommended allocations:
+2017-01-08,23:36:27.81: [iRunesa] none
+2017-01-08,23:36:27.81: [iRunesa] CreateAndLoadBFCs: SM's recommended allocations:
+2017-01-08,23:36:27.81: [iRunesa] Not attempting to create BFC[0]: SystemManager doesn't want us to
+2017-01-08,23:36:27.83: [iRunesa] Not attempting to create BFC[1]: SystemManager doesn't want us to
+2017-01-08,23:36:27.83: [iRunesa] Not attempting to create BFC[2]: SystemManager doesn't want us to
+2017-01-08,23:36:27.84: [iRunesa] BFC LoadDiskPack returning Success
+GetBuffer for 0x10013001
+GetBuffer: base region address 0xf410a000 offset of partition 0x00040240
+GetBuffer 0xf414a240
+2017-01-08,23:36:27.86: J1Tag LoadDiskPack passed	[*...******]
+2017-01-08,23:36:27.91: Added shared data region /SHJ1 to core dump mem filter : 0xb6000000 length 0x0ce00000
+GetBuffer for 0x10012001
+GetBuffer: base region address 0xf410a000 offset of partition 0x00000040
+GetBuffer 0xf410a040
+2017-01-08,23:36:27.91: Added shared data region /allocator to core dump mem filter : 0xf420a000 length 0x00001000
+2017-01-08,23:36:27.91: WriteJournal LoadDiskPack passed	[.*..******]
+2017-01-08,23:36:27.94: CS OnDiskStore LoadDiskPack called
+2017-01-08,23:36:27.94: CS::ODS::MigrateToV5Meta
+2017-01-08,23:36:27.94: CS OnDiskStore LoadDiskPack passed	[..*.******]
+2017-01-08,23:36:27.96: Scavenger Ticker LoadDiskPack called
+2017-01-08,23:36:27.96: Scavenger tick8 loaded from disk : 0x72
+2017-01-08,23:36:27.96: Scavenger Ticker LoadDiskPack passed	[...*******]
+2017-01-08,23:36:27.98: BitmapBlockUpdatesMonitor LoadDiskPack called
+2017-01-08,23:36:27.98: [iRunesa] LoadDiskPack: initialized adjustmentTableSet
+2017-01-08,23:36:28.00: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.00: done
+2017-01-08,23:36:28.00: 
+2017-01-08,23:36:28.00: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.00: done
+2017-01-08,23:36:28.00: 
+2017-01-08,23:36:28.00: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.00: done
+2017-01-08,23:36:28.00: 
+2017-01-08,23:36:28.00: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.00: done
+2017-01-08,23:36:28.00: 
+2017-01-08,23:36:28.01: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.01: done
+2017-01-08,23:36:28.01: 
+2017-01-08,23:36:28.01: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.03: done
+2017-01-08,23:36:28.03: 
+2017-01-08,23:36:28.03: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.03: done
+2017-01-08,23:36:28.04: 
+2017-01-08,23:36:28.04: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.04: done
+2017-01-08,23:36:28.04: 
+2017-01-08,23:36:28.04: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.06: done
+2017-01-08,23:36:28.06: 
+2017-01-08,23:36:28.06: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.08: done
+2017-01-08,23:36:28.08: 
+2017-01-08,23:36:28.08: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.08: done
+2017-01-08,23:36:28.08: 
+2017-01-08,23:36:28.09: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.09: done
+2017-01-08,23:36:28.09: 
+2017-01-08,23:36:28.09: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.11: done
+2017-01-08,23:36:28.11: 
+2017-01-08,23:36:28.11: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.11: done
+2017-01-08,23:36:28.13: 
+2017-01-08,23:36:28.13: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.13: done
+2017-01-08,23:36:28.13: 
+2017-01-08,23:36:28.13: [iRunesa] AST::ReadFromDisk: new state: displaying AST:
+2017-01-08,23:36:28.14: done
+2017-01-08,23:36:28.14: 
+2017-01-08,23:36:28.14: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:28.16: ; current state: 
+2017-01-08,23:36:28.16: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:28.18: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:28.18: ; current state: 
+2017-01-08,23:36:28.19: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:28.19: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:28.21: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:28.21: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:28.23: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:28.23: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:28.26: ELM: Sun Jan 08 23:36:28 2017: CS: MBR with GPT partition found on LUN 0
+2017-01-08,23:36:28.26: ELM: Sun Jan 08 23:36:28 2017: CS: GPT partitioning scheme found on LUN 0
+2017-01-08,23:36:28.26: [iRunesa] Calling AddGpt() on LUN 0 header signature                                                         EFI PART
+2017-01-08,23:36:28.26: revision                                                               1.0
+2017-01-08,23:36:28.28: size of header                                                        0x5c
+2017-01-08,23:36:28.29: own crc                                                         0x5dca8cd2
+2017-01-08,23:36:28.29: hdr lba                                                                0x1
+2017-01-08,23:36:28.31: alt hdr lba                                                   0x1fffffffff
+2017-01-08,23:36:28.31: start lba                                                             0x22
+2017-01-08,23:36:28.33: end lba                                                       0x1fffffffde
+2017-01-08,23:36:28.33: own guid                              502d5ea8-daed-4a30-b855-305789880a0c
+2017-01-08,23:36:28.34: lba of first record                                                    0x2
+2017-01-08,23:36:28.34: num records                                                            128
+2017-01-08,23:36:28.36: bytes in record                                                        128
+2017-01-08,23:36:28.36: crc of table                                                     0x4583e86
+2017-01-08,23:36:28.38: ; current state: 
+2017-01-08,23:36:28.38: host partition data
+2017-01-08,23:36:28.38: total number of partitions known 0
+2017-01-08,23:36:28.38: [iRunesa] Calling Flt::LockAndModifyApmOrGptRecord() on oldVal 0x0000003f newVal 0x00000020; current state: 
+2017-01-08,23:36:28.39: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:28.41: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:28.41: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:28.43: [iRunesa] looks like GPT record at pos 0, guid ebd0a0a2-b9e5-4433-87c0-68b6b72699c7[iRunesa] 
+2017-01-08,23:36:28.43: [iRunesa] Calling AddGptRecord() on LUN 0 partition 0 record type guid                             ebd0a0a2-b9e5-4433-87c0-68b6b72699c7
+2017-01-08,23:36:28.44:                               partition type is Windows Basic / Linux Data
+2017-01-08,23:36:28.46: unique guid                           8d0aa888-7749-41b8-b1c2-71b0f0a2471a
+2017-01-08,23:36:28.46: start of partition                                                   0x800
+2017-01-08,23:36:28.48: end of partition (last block)                                 0x1fff54cf67
+2017-01-08,23:36:28.48: num blocks in partition                                       0x1fff54c768
+2017-01-08,23:36:28.49: ; current state: 
+2017-01-08,23:36:28.49: host partition data
+2017-01-08,23:36:28.49: total number of partitions known 128
+2017-01-08,23:36:28.51: lun 0
+2017-01-08,23:36:28.51: number of user partitions 0
+2017-01-08,23:36:28.51: partition scheme is GPT ---------------------
+2017-01-08,23:36:28.51: header ---
+2017-01-08,23:36:28.53: signature                                                         EFI PART
+2017-01-08,23:36:28.53: revision                                                               1.0
+2017-01-08,23:36:28.54: size of header                                                        0x5c
+2017-01-08,23:36:28.54: own crc                                                         0x5dca8cd2
+2017-01-08,23:36:28.56: hdr lba                                                                0x1
+2017-01-08,23:36:28.56: alt hdr lba                                                   0x1fffffffff
+2017-01-08,23:36:28.58: start lba                                                             0x22
+2017-01-08,23:36:28.58: end lba                                                       0x1fffffffde
+2017-01-08,23:36:28.59: own guid                              502d5ea8-daed-4a30-b855-305789880a0c
+2017-01-08,23:36:28.59: lba of first record                                                    0x2
+2017-01-08,23:36:28.61: num records                                                            128
+2017-01-08,23:36:28.61: bytes in record                                                        128
+2017-01-08,23:36:28.63: crc of table                                                     0x4583e86
+2017-01-08,23:36:28.63: ELM: Sun Jan 08 23:36:28 2017: CS: Windows Basic / Linux Data partition found: LUN 0 at LBA 0x800 blocks 0x1fff54c768
+2017-01-08,23:36:28.64: [iRunesa] Calling Flt::Add() on LBA        800 blocks            1 partition  0 PartitionBootSectorRole  (meta)
+2017-01-08,23:36:28.66: ; current state: 
+2017-01-08,23:36:28.66: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:28.68: LBA          1 blocks           20 partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:28.68: Highest LBA in table 0x20, highest meta record 0x20, highest alloc record 0x0
+2017-01-08,23:36:28.69: [iRunesa] Calling Flt::Add() on LBA        802 blocks            1 partition  0 VolumeHeaderRole         (meta)
+2017-01-08,23:36:28.69: ; current state: 
+2017-01-08,23:36:28.71: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:28.71: LBA          1 blocks           20 partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:28.73: LBA        800 blocks            1 partition  0 PartitionBootSectorRole  (meta)
+2017-01-08,23:36:28.73: Highest LBA in table 0x800, highest meta record 0x800, highest alloc record 0x0
+2017-01-08,23:36:28.74: [iRunesa] AlignmentManager::LoadLbaRange (AlignmentManager.cpp:107): adding LUN 0 HLBA 0x0000000000000800 numBlocks 0x0000001fff54c768; new adjustmentTable for LUN:
+2017-01-08,23:36:28.76: [iRunesa] contents of adjustment table for LUN 0
+2017-01-08,23:36:28.76:             LBA      Num Blocks         Adjust
+2017-01-08,23:36:28.78: --------------- --------------- --------------- 
+2017-01-08,23:36:28.78:               0     2000000000              0
+2017-01-08,23:36:28.78: [iRunesa] AlignmentManager::LoadLbaRange (AlignmentManager.cpp:121): added LUN 0 HLBA 0x0000000000000800 numBlocks 0x0000001fff54c768; new adjustmentTable for LUN:
+2017-01-08,23:36:28.79: [iRunesa] contents of adjustment table for LUN 0
+2017-01-08,23:36:28.81:             LBA      Num Blocks         Adjust
+2017-01-08,23:36:28.81: --------------- --------------- --------------- 
+2017-01-08,23:36:28.81:               0            800              0
+2017-01-08,23:36:28.83:             800     1ffffff800              0
+2017-01-08,23:36:28.83: [iRunesa] AST::RemoveMismatchingRanges lun 0 lba 0x0000000000000800 numBlocks 0x0000001fff54c768
+2017-01-08,23:36:28.84: [iRunesa] DST::RemoveLbaRange lun 0 start block 800 num blocks 1fff54c768
+2017-01-08,23:36:28.84: 
+2017-01-08,23:36:28.86: [iRunesa] partition begins at 2048 num blocks 137427732328
+2017-01-08,23:36:28.86: [iRunesa] Attempting BitmapBlockUpdatesMonitor::LoadVolume() on LUN 0 partition 0 for a record with PartitionType 6
+2017-01-08,23:36:28.93: ELM: Sun Jan 08 23:36:28 2017: CS: Ext4 volume found: lun 0 lba 0x800
+2017-01-08,23:36:28.93: [iRunesa] looks like GPT record at pos 1, guid ebd0a0a2-b9e5-4433-87c0-68b6b72699c7[iRunesa] 
+2017-01-08,23:36:28.93: [iRunesa] Calling AddGptRecord() on LUN 0 partition 1 record type guid                             ebd0a0a2-b9e5-4433-87c0-68b6b72699c7
+2017-01-08,23:36:28.93:                               partition type is Windows Basic / Linux Data
+2017-01-08,23:36:28.93: unique guid                           eb2734bd-c971-4022-b3a0-ae1251a42a3b
+2017-01-08,23:36:28.93: start of partition                                            0x1fff54cf68
+2017-01-08,23:36:28.93: end of partition (last block)                                 0x1fffcc04fb
+2017-01-08,23:36:28.94: num blocks in partition                                           0x773594
+2017-01-08,23:36:28.96: ; current state: 
+2017-01-08,23:36:28.96: host partition data
+2017-01-08,23:36:28.96: total number of partitions known 128
+2017-01-08,23:36:28.96: lun 0
+2017-01-08,23:36:28.96: number of user partitions 1
+2017-01-08,23:36:28.98: partition scheme is GPT ---------------------
+2017-01-08,23:36:28.98: header ---
+2017-01-08,23:36:28.98: signature                                                         EFI PART
+2017-01-08,23:36:29.00: revision                                                               1.0
+2017-01-08,23:36:29.00: size of header                                                        0x5c
+2017-01-08,23:36:29.01: own crc                                                         0x5dca8cd2
+2017-01-08,23:36:29.01: hdr lba                                                                0x1
+2017-01-08,23:36:29.03: alt hdr lba                                                   0x1fffffffff
+2017-01-08,23:36:29.03: start lba                                                             0x22
+2017-01-08,23:36:29.04: end lba                                                       0x1fffffffde
+2017-01-08,23:36:29.04: own guid                              502d5ea8-daed-4a30-b855-305789880a0c
+2017-01-08,23:36:29.06: lba of first record                                                    0x2
+2017-01-08,23:36:29.08: num records                                                            128
+2017-01-08,23:36:29.08: bytes in record                                                        128
+2017-01-08,23:36:29.09: crc of table                                                     0x4583e86
+2017-01-08,23:36:29.09: partition 0 ---
+2017-01-08,23:36:29.09: type guid                             ebd0a0a2-b9e5-4433-87c0-68b6b72699c7
+2017-01-08,23:36:29.11:                               partition type is Windows Basic / Linux Data
+2017-01-08,23:36:29.11: unique guid                           8d0aa888-7749-41b8-b1c2-71b0f0a2471a
+2017-01-08,23:36:29.13: start of partition                                                   0x800
+2017-01-08,23:36:29.13: end of partition (last block)                                 0x1fff54cf67
+2017-01-08,23:36:29.14: num blocks in partition                                       0x1fff54c768
+2017-01-08,23:36:29.14: ELM: Sun Jan 08 23:36:29 2017: CS: Windows Basic / Linux Data partition found: LUN 0 at LBA 0x1fff54cf68 blocks 0x773594
+2017-01-08,23:36:29.16: [iRunesa] Calling Flt::Add() on LBA 1fff54cf68 blocks            1 partition  1 PartitionBootSectorRole  (meta)
+2017-01-08,23:36:29.18: ; current state: 
+2017-01-08,23:36:29.18: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.19: LBA          1 blocks           20 partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.19: LBA        800 blocks            1 partition  0 PartitionBootSectorRole  (meta)
+2017-01-08,23:36:29.21: LBA        802 blocks            1 partition  0 VolumeHeaderRole         (meta)
+2017-01-08,23:36:29.21: Highest LBA in table 0x802, highest meta record 0x802, highest alloc record 0x0
+2017-01-08,23:36:29.23: [iRunesa] Calling Flt::Add() on LBA 1fff54cf6a blocks            1 partition  1 VolumeHeaderRole         (meta)
+2017-01-08,23:36:29.24: ; current state: 
+2017-01-08,23:36:29.24: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.24: LBA          1 blocks           20 partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.26: LBA        800 blocks            1 partition  0 PartitionBootSectorRole  (meta)
+2017-01-08,23:36:29.26: LBA        802 blocks            1 partition  0 VolumeHeaderRole         (meta)
+2017-01-08,23:36:29.28: LBA 1fff54cf68 blocks            1 partition  1 PartitionBootSectorRole  (meta)
+2017-01-08,23:36:29.29: Highest LBA in table 0x1fff54cf68, highest meta record 0x1fff54cf68, highest alloc record 0x0
+2017-01-08,23:36:29.29: [iRunesa] AlignmentManager::LoadLbaRange (AlignmentManager.cpp:107): adding LUN 0 HLBA 0x0000001fff54cf68 numBlocks 0x0000000000773594; new adjustmentTable for LUN:
+2017-01-08,23:36:29.31: [iRunesa] contents of adjustment table for LUN 0
+2017-01-08,23:36:29.33:             LBA      Num Blocks         Adjust
+2017-01-08,23:36:29.33: --------------- --------------- --------------- 
+2017-01-08,23:36:29.33:               0            800              0
+2017-01-08,23:36:29.34:             800     1ffffff800              0
+2017-01-08,23:36:29.34: [iRunesa] AlignmentManager::LoadLbaRange (AlignmentManager.cpp:121): added LUN 0 HLBA 0x0000001fff54cf68 numBlocks 0x0000000000773594; new adjustmentTable for LUN:
+2017-01-08,23:36:29.36: [iRunesa] contents of adjustment table for LUN 0
+2017-01-08,23:36:29.36:             LBA      Num Blocks         Adjust
+2017-01-08,23:36:29.38: --------------- --------------- --------------- 
+2017-01-08,23:36:29.38:               0            800              0
+2017-01-08,23:36:29.39:             800     1fff54c768              0
+2017-01-08,23:36:29.39:      1fff54cf68         ab3098              0
+2017-01-08,23:36:29.39: [iRunesa] AST::RemoveMismatchingRanges lun 0 lba 0x0000001fff54cf68 numBlocks 0x0000000000773594
+2017-01-08,23:36:29.41: [iRunesa] DST::RemoveLbaRange lun 0 start block 1fff54cf68 num blocks 773594
+2017-01-08,23:36:29.41: 
+2017-01-08,23:36:29.43: [iRunesa] partition begins at 137427734376 num blocks 7812500
+2017-01-08,23:36:29.43: [iRunesa] Attempting BitmapBlockUpdatesMonitor::LoadVolume() on LUN 0 partition 1 for a record with PartitionType 6
+2017-01-08,23:36:29.46: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.46: ; current state: 
+2017-01-08,23:36:29.46: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.46: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.48: ; current state: 
+2017-01-08,23:36:29.48: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.49: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.49: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:29.51: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.51: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.53: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:29.53: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.54: ; current state: 
+2017-01-08,23:36:29.54: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.56: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.58: ; current state: 
+2017-01-08,23:36:29.58: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.58: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.59: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:29.59: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.61: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.61: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:29.63: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.64: ; current state: 
+2017-01-08,23:36:29.64: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.64: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.66: ; current state: 
+2017-01-08,23:36:29.66: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.68: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.68: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:29.69: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.69: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.71: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:29.71: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.73: ; current state: 
+2017-01-08,23:36:29.73: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.74: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.76: ; current state: 
+2017-01-08,23:36:29.76: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.76: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.78: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:29.78: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.79: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.79: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:29.81: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.83: ; current state: 
+2017-01-08,23:36:29.83: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.83: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.84: ; current state: 
+2017-01-08,23:36:29.84: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.86: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.86: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:29.88: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.88: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.89: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:29.89: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.91: ; current state: 
+2017-01-08,23:36:29.91: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.93: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.94: ; current state: 
+2017-01-08,23:36:29.94: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.94: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:29.96: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:29.96: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:29.98: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:29.98: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:30.00: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.01: ; current state: 
+2017-01-08,23:36:30.01: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.01: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.03: ; current state: 
+2017-01-08,23:36:30.03: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.04: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.04: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:30.06: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.06: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.08: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:30.08: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.09: ; current state: 
+2017-01-08,23:36:30.09: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.11: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.13: ; current state: 
+2017-01-08,23:36:30.13: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.13: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.14: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:30.14: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.16: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.16: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:30.18: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.19: ; current state: 
+2017-01-08,23:36:30.19: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.19: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.21: ; current state: 
+2017-01-08,23:36:30.21: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.23: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.23: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:30.24: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.24: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.26: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:30.26: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.28: ; current state: 
+2017-01-08,23:36:30.28: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.29: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.31: ; current state: 
+2017-01-08,23:36:30.31: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.31: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.33: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:30.33: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.34: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.34: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:30.36: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.38: ; current state: 
+2017-01-08,23:36:30.38: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.38: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.39: ; current state: 
+2017-01-08,23:36:30.39: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.41: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.41: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:30.43: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.43: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.44: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:30.44: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.46: ; current state: 
+2017-01-08,23:36:30.46: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.48: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.49: ; current state: 
+2017-01-08,23:36:30.49: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.49: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.51: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:30.51: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.53: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.53: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:30.54: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.56: ; current state: 
+2017-01-08,23:36:30.56: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.56: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.58: ; current state: 
+2017-01-08,23:36:30.58: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.59: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.59: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:30.61: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.61: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.63: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:30.63: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.64: ; current state: 
+2017-01-08,23:36:30.64: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.66: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.68: ; current state: 
+2017-01-08,23:36:30.68: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.68: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.69: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:30.69: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.71: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.71: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:30.73: [iRunesa] Calling Flt::Add() on LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.74: ; current state: 
+2017-01-08,23:36:30.74: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.74: [iRunesa] Calling Flt::Add() on LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.76: ; current state: 
+2017-01-08,23:36:30.76: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.78: Highest LBA in table 0x0, highest meta record 0x0, highest alloc record 0x0
+2017-01-08,23:36:30.78: [iRunesa] Calling Flt::LockAndReset(); new state: 
+2017-01-08,23:36:30.79: LBA          0 blocks            1 partition -1 Block0Role               (meta)
+2017-01-08,23:36:30.79: LBA          1 blocks           3f partition -1 ApmOrGptRole             (meta)
+2017-01-08,23:36:30.81: Highest LBA in table 0x3f, highest meta record 0x3f, highest alloc record 0x0
+2017-01-08,23:36:30.81: BitmapBlockUpdatesMonitor LoadDiskPack passed	[*..*******]
+2017-01-08,23:36:30.84: Cluster Scavenger LoadDiskPack called
+2017-01-08,23:36:30.86: Cluster Scavenger LoadDiskPack passed	[.*.*******]
+2017-01-08,23:36:30.88: [iRunesa] J1: sizeToCreate =129468, j1TagSize = 262656
+2017-01-08,23:36:30.88: J1R:replay: GOOD magic (0x4a315201) scanning for replay ...
+2017-01-08,23:36:30.88: J1R:replay: finish addTagToReplayList() from 2942 tags. Added 48 tags.
+esaInitXORTransfer for channel 1
+---------------- CONNECTING XOR COMPLETE ROUTINE for CHANNEL 1
+2017-01-08,23:36:31.38: J1R:replay: finish replayList. dataWritten=18696 sectors, tags=48 (0 unmapped)
+2017-01-08,23:36:31.44: ELM: Sun Jan 08 23:36:31 2017: J1R:replay GOOD sig 0x4a315201 replayed 48 tags written [18696 sectors (9.12MiB)] unmapped [0 sectors (0B)]
+SharedPartitionDataStart 0xB6000200, SharedpartitionDataRegionSize 0xCDFFE00
+2017-01-08,23:36:31.44: Defragmenter LoadDiskPack called
+2017-01-08,23:36:31.44: Defragmenter: J2 payload size = 856192
+2017-01-08,23:36:31.44: Defragmenter LoadDiskPack passed	[..********]
+2017-01-08,23:36:31.46: CATM Scanner LoadDiskPack called
+2017-01-08,23:36:31.46: CATMScanner: J2 payload size = 856192
+2017-01-08,23:36:31.46: CATM Scanner LoadDiskPack passed	[*.********]
+2017-01-08,23:36:31.48: SystemPolicy LoadDiskPack called
+2017-01-08,23:36:31.48: SystemPolicy LoadDiskPack passed	[.*********]
+2017-01-08,23:36:31.49: HostAppManager LoadDiskPack called
+2017-01-08,23:36:31.49: HostAppManager LoadDiskPack passed	[**********]
+2017-01-08,23:36:31.51: HRManager LoadDiskPack called
+2017-01-08,23:36:31.51: HRM::LDP: There are 0 pending LUN creates
+HAManager::HamCache::setSingleInitiator: lun 0 enforceSingleInitiator = 0
+2017-01-08,23:36:31.51: HRManager LoadDiskPack passed	[**********]
+2017-01-08,23:36:31.53: DiskUtilizationDaemon LoadDiskPack called
+2017-01-08,23:36:31.59: DUD::CalculateCapacity: ZM_PotentialZones changed: 0 -> 5522
+2017-01-08,23:36:31.59: DUD::CalculateCapacity: mUsedClusters = 42103760, mTotalClusters = 1416804480, mTotalClustersProtected = 1416804480, mFreeClusters = 1374700720
+[iRunesa] 2017-01-08 23:36:31: Capacity meter changing from 0% to 2%
+2017-01-08,23:36:31.61: [iRunesa] DUD:Slowdown: sync=0 ioDelay=0 5244GB(2.97%):ReasonNeverSet
+2017-01-08,23:36:31.61: [iRunesa] DUD:Slowdown: (freeClusters=9526000, potentialZones=5522, allocatedZones=299, physicallyFreeZones=5209)
+2017-01-08,23:36:31.61: DiskUtilizationDaemon.cpp:1328 Disk no longer full - Transitioning to asynchronous coalesced I/O mode
+2017-01-08,23:36:31.61: DiskUtilizationDaemon.cpp:1329 DUD: (freeClusters=9526000, potentialZones=5522, allocatedZones=299, physicallyFreeZones=5209)
+2017-01-08,23:36:31.63: DiskUtilizationDaemon LoadDiskPack passed
+2017-01-08,23:36:31.71: Dimming LEDs to level 59
+2017-01-08,23:36:31.78: SPMM: >>>> DiskMounted, SlotStatus[3] = 0x1
+2017-01-08,23:36:31.79: SPMM: >>>> DiskMounted, SlotStatus[2] = 0x1
+2017-01-08,23:36:31.83: SPMM: >>>> DiskMounted, SlotStatus[1] = 0x1
+2017-01-08,23:36:31.84: SPMM: >>>> DiskMounted, SlotStatus[0] = 0x1
+2017-01-08,23:36:31.84: Enabling media access
+IoSc: state = 3, serial = 0x0
+enableNVRAMAllocator: SharedPartition = 0xb6000000, WPartitionSizeBytes = 215482368
+RtpReady = TRUE via syscall
+Interfaces enabled from the RTP ... bringing up No Interface first ...
+iSCSI ENABLED
+2017-01-08,23:36:31.84: Enabling media access passed
+2017-01-08,23:36:31.84: DataScrubber LoadDiskPack called
+[icCmd] 2017-01-08 23:36:31: interCoreGeneralCommThread: NAS stack UP message received
+[icCmd] 2017-01-08 23:36:31: ACTIVATING NAS INTERFACE WITH LUN&INTERFACES
+interfaceMakeActive called with int: iSCSI, active_int = No Interface
+Sending stack UP state up to the RTP.
+2017-01-08,23:36:31.86: DataScrubber LoadDiskPack passed
+
+iSCSI interface is ENABLED
+!!! NO active J1 manager recorded !!!
+rtp_interface_status = 1 rtp_interface_down_sent = 0 first_make_active = 1 reset_count = 0
+takeDownOtherInterfaces:
+Interface iSCSI state is: ENABLED
+[icCmd] 2017-01-08 23:36:31: iSCSIMSChangeState: Called. New State: 2
+iSCSI ACTIVE
+2017-01-08,23:36:31.88: [USBtxShim] rxCmd: interface stack state command: flags 0x00000048; interface number 4; old state 1
+2017-01-08,23:36:31.91: USBHostRequest::rxCmd: iSCSI Stack Connected
+2017-01-08,23:36:31.91: [USBtxShim] transportUpdate: updating stack state for interface 4 from 1 to 0
+2017-01-08,23:36:31.98: SM::evaluateTieringMode: found the following current BFC allocations:
+2017-01-08,23:36:31.98: SM::evaluateTieringMode: fraction policy recommending the following BFC allocations:
+2017-01-08,23:36:31.98: SM::evaluateTieringMode: transZones = 0, bulkZones = 5522
+2017-01-08,23:36:32.01: [iRunesa] SM: there is a transactional tier in LOGICAL mode with 20 zones 
+2017-01-08,23:36:32.01: Requesting restart of relayout due to InitiateBackgroundRepair()
+2017-01-08,23:36:27.81: [iRunesa] [iRunesa] BFC asked to check for a rebuild
+2017-01-08,23:36:32.01: [iRunesa] BFC rebuild scheduled
+IoSc: state = 0, serial = 0x0
+interfaceEnableFromRTP: iSCSI interface is already ACTIVE! Skipping enable
+Interface ENABLED via syscall
+PMUCmd: "K" --> 2017-01-08,23:36:32.01: Performing relayout pass number 1 of 10
+2017-01-08,23:36:32.01: Starting flagged zone scan
+"k"
+2017-01-08,23:36:32.33: Starting efficiency scan for total pool
+2017-01-08,23:36:32.39: Starting disk full relayout scan for total pool
+2017-01-08,23:36:32.39: DiskFull relayout aborted - already at optimal Zone layout allocZ=313 freeZ=5209 potZ=5522
+2017-01-08,23:36:32.39: Logical tiering enabled - calling RebalanceDisks on Total disk pool
+2017-01-08,23:36:32.39: No changes required to reach optimum efficiency
+2017-01-08,23:36:32.39: LM::Rebuild completed
+2017-01-08,23:36:32.46: SM::evaluateTieringMode: found the following current BFC allocations:
+2017-01-08,23:36:32.46: SM::evaluateTieringMode: fraction policy recommending the following BFC allocations:
+2017-01-08,23:36:32.46: SM::evaluateTieringMode: transZones = 0, bulkZones = 5522
+2017-01-08,23:36:32.48: DiskUtilizationDaemon.cpp:1534 75 seconds since DUD last woken
+2017-01-08,23:36:32.51: [tLMRepair] SM: there is a transactional tier in LOGICAL mode with 20 zones 
+2017-01-08,23:36:32.51: [tLMRepair] BFC asked to check for a rebuild
+2017-01-08,23:36:32.51: [tBFC] ValidateZ0ITAndRemoveMissingDisks: SM's recommended allocations:
+2017-01-08,23:36:32.51: [tBFC] [tBFC] BFC background thread continuing rebuild, checking for creation of new BFCs
+2017-01-08,23:36:32.51: [tBFC] CreateAndLoadBFCs: SM's recommended allocations:
+2017-01-08,23:36:32.51: [tBFC] Not attempting to create BFC[0]: SystemManager doesn't want us to
+2017-01-08,23:36:32.51: [tBFC] Not attempting to create BFC[1]: SystemManager doesn't want us to
+2017-01-08,23:36:32.51: [tBFC] Not attempting to create BFC[2]: SystemManager doesn't want us to
+2017-01-08,23:36:32.51: [tBFC] [tBFC] BFC background thread calling ZM to delete any unused disks
+2017-01-08,23:36:32.53: [tBFC] BFC background thread done with rebuild
+2017-01-08,23:36:32.56: ELM: Sun Jan 08 23:36:32 2017: DUD: Array uptime is 1Mins:15Secs, Capacity: Free=5.12TiB(97.03%), Used=160.61GiB(2.97%)
+2017-01-08,23:36:37.94: LoadAbubs lun 0
+2017-01-08,23:38:16.98: ELM: Sun Jan 08 23:38:16 2017: ZMDT Snapshot Restored 16989 CROs with StatusCode::Success
+2017-01-08,23:38:16.98: ************************************
+2017-01-08,23:38:16.98: Running external consistency checks:
+2017-01-08,23:38:16.98: DiskPackManager:
+2017-01-08,23:38:16.98: ----------------
+2017-01-08,23:38:17.29: DPM: Disk 0 seek time average = 18ms:637us
+2017-01-08,23:38:17.29: DPM::isDiskTransactional: seekTime = 18637, threshold = 1000
+2017-01-08,23:38:17.29: DPM::discoverDis: slot 0 is 0xe8e088b0 sectors (1.81TiB)
+2017-01-08,23:38:17.29: 	=> Setting DIS LBAs to 0x0/0x74701b00/0xe8e08830
+2017-01-08,23:38:17.29: 	=> PackId = 0x62fe046a62fe04e2/0x5 [LD #3] layout = 2/14
+2017-01-08,23:38:17.69: DPM: Disk 1 seek time average = 18ms:693us
+2017-01-08,23:38:17.69: DPM::isDiskTransactional: seekTime = 18693, threshold = 1000
+2017-01-08,23:38:17.69: DPM::discoverDis: slot 1 is 0xe8e088b0 sectors (1.81TiB)
+2017-01-08,23:38:17.69: 	=> Setting DIS LBAs to 0x0/0x74701b00/0xe8e08830
+2017-01-08,23:38:17.69: 	=> PackId = 0x62fe046a62fe04e2/0x5 [LD #2] layout = 2/14
+2017-01-08,23:38:18.09: DPM: Disk 2 seek time average = 18ms:72us
+2017-01-08,23:38:18.09: DPM::isDiskTransactional: seekTime = 18072, threshold = 1000
+2017-01-08,23:38:18.09: DPM::discoverDis: slot 2 is 0xe8e088b0 sectors (1.81TiB)
+2017-01-08,23:38:18.09: 	=> Setting DIS LBAs to 0x0/0x74701b00/0xe8e08830
+2017-01-08,23:38:18.09: 	=> PackId = 0x62fe046a62fe04e2/0x5 [LD #1] layout = 2/14
+2017-01-08,23:38:18.44: DPM: Disk 3 seek time average = 14ms:811us
+2017-01-08,23:38:18.44: DPM::isDiskTransactional: seekTime = 14811, threshold = 1000
+2017-01-08,23:38:18.44: DPM::discoverDis: slot 3 is 0xe8e088b0 sectors (1.81TiB)
+2017-01-08,23:38:18.44: 	=> Setting DIS LBAs to 0x0/0x74701b00/0xe8e08830
+2017-01-08,23:38:18.44: 	=> PackId = 0x62fe046a62fe04e2/0x5 [LD #0] layout = 2/14
+2017-01-08,23:38:18.53: Result = StatusCode::Success
+2017-01-08,23:38:18.53: 
+2017-01-08,23:38:18.53: RegionManager:
+2017-01-08,23:38:18.53: ---------------
+2017-01-08,23:38:18.53: Result = StatusCode::Success
+2017-01-08,23:38:18.53: 
+2017-01-08,23:38:18.53: ZoneManager:
+2017-01-08,23:38:18.53: ------------
+2017-01-08,23:38:18.53: Checking copy #0 ZIS @ location: Disk=3, Region=16611, Offset=0
+2017-01-08,23:38:18.53: Checking ZoneTable copy #0
+2017-01-08,23:38:18.56: All checks passed OK for copy #0 ZIS/ZoneTable
+2017-01-08,23:38:18.56: Regions in use on LogicalDisk 0 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:38:18.56: Regions in use on LogicalDisk 1 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:38:18.56: Regions in use on LogicalDisk 2 matches at 3016 Regions (44717 available, 41701 free, 0 BFC)
+2017-01-08,23:38:18.56: Regions in use on LogicalDisk 3 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:38:18.56: Checking copy #1 ZIS @ location: Disk=1, Region=21041, Offset=0
+2017-01-08,23:38:18.58: Checking ZoneTable copy #1
+2017-01-08,23:38:18.61: All checks passed OK for copy #1 ZIS/ZoneTable
+2017-01-08,23:38:18.61: Regions in use on LogicalDisk 0 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:38:18.61: Regions in use on LogicalDisk 1 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:38:18.61: Regions in use on LogicalDisk 2 matches at 3016 Regions (44717 available, 41701 free, 0 BFC)
+2017-01-08,23:38:18.63: Regions in use on LogicalDisk 3 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:38:18.63: Checking copy #2 ZIS @ location: Disk=0, Region=17470, Offset=0
+2017-01-08,23:38:18.64: Checking ZoneTable copy #2
+2017-01-08,23:38:18.68: All checks passed OK for copy #2 ZIS/ZoneTable
+2017-01-08,23:38:18.68: Regions in use on LogicalDisk 0 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:38:18.68: Regions in use on LogicalDisk 1 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:38:18.68: Regions in use on LogicalDisk 2 matches at 3016 Regions (44717 available, 41701 free, 0 BFC)
+2017-01-08,23:38:18.68: Regions in use on LogicalDisk 3 matches at 3016 Regions (44716 available, 41700 free, 0 BFC)
+2017-01-08,23:38:18.69: Result = StatusCode::Success
+2017-01-08,23:38:18.69: 
+2017-01-08,23:38:18.69: Z0IT:
+2017-01-08,23:38:18.69: -----
+2017-01-08,23:38:18.69: extConsistency: Not implemented in this module
+2017-01-08,23:38:18.71: Result = StatusCode::Success
+2017-01-08,23:38:18.71: 
+2017-01-08,23:38:18.71: ClusterManager:
+2017-01-08,23:38:18.71: ---------------
+2017-01-08,23:38:21.96: Unallocated Cluster count = 7211262, bits unset in bitmaps = 7211262
+2017-01-08,23:38:21.96: All checks passed OK for ClusterPool BULK
+2017-01-08,23:38:22.64: Unallocated Cluster count = 2314738, bits unset in bitmaps = 2314738
+2017-01-08,23:38:22.64: All checks passed OK for ClusterPool TRANS
+2017-01-08,23:38:22.64: All checks passed OK.
+2017-01-08,23:38:22.64: Result = StatusCode::Success
+2017-01-08,23:38:22.64: 
+2017-01-08,23:38:22.64: External consistency checks complete
+2017-01-08,23:38:22.64: ************************************
+2017-01-08,23:38:22.64: INFO: Successfully sent readOnlyInfo from Vx To Lx Core
+2017-01-08,23:38:22.64: Resuming DiskPowerManager monitor thread
+2017-01-08,23:38:22.64: Getting remaining drive lifetimes
+2017-01-08,23:38:22.93: Deleting hibernation files
+HibernateSc called ...with 4 
+[iRunesa] 2017-01-08 23:38:22: HIB: Cleaning up /bd0/J2 
+[iRunesa] 2017-01-08 23:38:23: HIB: Cleaning up /bd0/J1 
+[iRunesa] 2017-01-08 23:38:23: HIB: Cleaning up /bd0/J1TAGS 
+[iRunesa] 2017-01-08 23:38:23: HIB: Cleaning up /bd0/AMIT 
+2017-01-08,23:38:23.41: Canceling SM boot alarm
+2017-01-08,23:38:23.41: Notifying SPMM of system initialization
+2017-01-08,23:39:32.64: DiskPowerMgr.cpp:249 No IO Activity for 60 seconds, Setting drives into POWER IDLE MODE
+**** System going into Idle, current drives present are 0x00f
+2017-01-08,23:36:53.00: ELM: Sun Jan 08 23:36:53 2017: HAM: ESA Time set by host at uptime: 11 mins, 12 secs. TimeZone is (GMT -8h0m) 
+2017-01-08,23:46:33.00: CAL::checkAndDispatchAlarms: posting ALARM because of 
+2017-01-08,23:46:33.00: 	startTime	:Sun Jan  8 23:36:20 2017
+2017-01-08,23:46:33.00: 	expiryTime	:Sun Jan  8 23:46:20 2017
+2017-01-08,23:46:33.00: 	deliveryTime	:Sun Jan  8 23:46:33 2017
+2017-01-08,23:46:33.00: 	duration	:10Mins
+2017-01-08,23:46:33.00: 	remaining	:EXPIRED & PENDING DELIVERY
+2017-01-08,23:46:33.00: 	source		:0x50494e48 [HNIP]
+2017-01-08,23:46:33.00: 	type		:ONE SHOT SINGLE BOOT
+2017-01-08,23:46:33.00: checkResetButtonEvent Called
+2017-01-08,23:47:04.13: Used capacity values now under the control of the GUI
+2017-01-08,23:47:14.73: [tDefrag] Defrag: Start scan LUN 0 HLBA 0x90b000000 - maxZone=0 - pol PolicyDefragment (TARGET, pool=BULK, cnt=5, NON-forced)
+2017-01-08,23:47:14.73: ScanCATEntries: Scanning LUN for initialized CATEntries on LUN 0 from HLBA 0x000000090b000000 target pool BULK
+2017-01-08,23:47:14.73: ScanCATEntries: Last SelectPolicy(): physicallyFreeZones=5209; bulkAllocatedZones=299; totalAllocatedZones=313; metadataZones=114
+2017-01-08,23:47:14.73:      potentialTotalZoneCount=5522; potentialBulkZoneCount=5522; ZonesInUse=185; zonesNeeded=161; canBulkZonesBeReclaimed=1
+2017-01-08,23:47:14.73:      canTransZonesBeReclaimed=1; periodicDefrag=0; targetedPresent=1 (Last set 0us ago)
+2017-01-08,23:47:22.96: [tDefrag] Defrag:TARGETED Scanned 264165(1.00GiB,1.00GiB/s) moved 0(0B,0B/s) clusters in 1Secs(8Secs)
+2017-01-08,23:47:31.96: [tDefrag] Defrag: Start scan LUN 0 HLBA 0x90b000000 - maxZone=0 - pol PolicyDefragment (TARGET, pool=TRANS, cnt=1, FORCED)
+2017-01-08,23:47:31.96: ScanCATEntries: Scanning LUN for initialized CATEntries on LUN 0 from HLBA 0x000000090b000000 target pool TRANS
+2017-01-08,23:47:31.96: ScanCATEntries: Last SelectPolicy(): physicallyFreeZones=5209; bulkAllocatedZones=299; totalAllocatedZones=313; metadataZones=114
+2017-01-08,23:47:31.96:      potentialTotalZoneCount=5522; potentialBulkZoneCount=5522; ZonesInUse=185; zonesNeeded=161; canBulkZonesBeReclaimed=1
+2017-01-08,23:47:31.96:      canTransZonesBeReclaimed=1; periodicDefrag=0; targetedPresent=1 (Last set 0us ago)
+mvCheckHotPlug: Msg Rcvd; Adapter 64733080 Drive 64733060 Event 3 
+2017-01-08,23:47:38.16: [tHotPlug] MainLoop: mvCheckHotPlug() returned; eventID=3; adapterID=64733080; driveID=64733060
+DiskHotPlug.cpp: ****++++++ RTP_EVENT_POWER_DOWN_REQUEST Called ++++++****
+2017-01-08,23:47:38.16: ELM: Sun Jan 08 23:47:38 2017: Power switch shutdown request : SYSTEM SHUTTING DOWN
+2017-01-08,23:47:38.16: Shutting down Linux from powerSwitchShutdown to flush buffers (wait 30 secs)
+Linux Shutdown via syscall
+2017-01-08,23:47:38.89: [tDefrag] Defrag:TARGETED Scanned 264008(1.00GiB,1.00GiB/s) moved 73(292.00KiB,292.00KiB/s) clusters in 1Secs(7Secs)
+interrupt: AHCI Drive Removed unit: 0  drive: 0 portIntr: 0x80400000 sataStatus: 0x0
+interrupt: AHCI Drive Removed unit: 1  drive: 0 portIntr: 0x80400000 sataStatus: 0x0
+interrupt: AHCI Drive Removed unit: 1  drive: 1 portIntr: 0x80400000 sataStatus: 0x0
+DriInterrupt: 2017-01-08 23:47:59: mvSataInterruptServiceRoutine: EDMA Error detected on LBA: 0x0
+DriInterrupt: 2017-01-08 23:47:59: ------------------------------------------------
+DriInterrupt: 2017-01-08 23:47:59: SATAHC Int Cause  [0xd00a0014]: 0x00000000
+DriInterrupt: 2017-01-08 23:47:59: SATAHC Main Cause [0xd00a0020]: 0x00000001
+DriInterrupt: 2017-01-08 23:47:59: Edma Config       [0xd00a2000]: 0x0000101f
+DriInterrupt: 2017-01-08 23:47:59: Edma Int Cause    [0xd00a2008]: 0x00000028
+DriInterrupt: 2017-01-08 23:47:59: Edma Command      [0xd00a2028]: 0x00000000
+DriInterrupt: 2017-01-08 23:47:59: Edma Status       [0xd00a2030]: 0x00001140
+DriInterrupt: 2017-01-08 23:47:59: SATA IF Config    [0xd00a2050]: 0x00186095
+DriInterrupt: 2017-01-08 23:47:59: SATA SStatus      [0xd00a2300]: 0x00000000
+DriInterrupt: 2017-01-08 23:47:59: SATA SError       [0xd00a2304]: 0x00190002
+DriInterrupt: 2017-01-08 23:47:59: Shadow Error      [0xd00a2104]: 0x00000000
+DriInterrupt: 2017-01-08 23:47:59: Shadow Status     [0xd00a211c]: 0x7f7f7f7f
+DriInterrupt: 2017-01-08 23:47:59: ReqQ in-ptr       [0xd00a2014]: 0x00000008
+DriInterrupt: 2017-01-08 23:47:59: ReqQ out-ptr      [0xd00a2018]: 0x00000008
+DriInterrupt: 2017-01-08 23:47:59: RespQ in-ptr      [0xd00a2020]: 0x00000002
+DriInterrupt: 2017-01-08 23:47:59: RespQ out-ptr     [0xd00a2024]: 0x00000002
+DriInterrupt: 2017-01-08 23:47:59: cmdActive[0]: 0x0  cmdActive[1]: 0x0
+DriInterrupt: 2017-01-08 23:47:59: ------------------------------------------------
+DriInterrupt: 2017-01-08 23:47:59: mvSataInterruptServiceRoutine:  port: 0  deviceInterrupt: 0x0  responseDone: 0x0  edmaError: 0x1
+DriInterrupt: 2017-01-08 23:47:59: 0 0: Edma Error Reg 0x28
+DriInterrupt: 2017-01-08 23:47:59: Disconnect Detected
+DriInterrupt: 2017-01-08 23:47:59: [0, slot 0]: device disconnected event received 
+DriInterrupt: 2017-01-08 23:47:59: mvSataInterruptServiceRoutine:  Callback NOT ACTIVATED for port 0!  cmdActivated[0]: 0x0  cmdActivated[1]: 0x0 unitCause: 0x0  mainCause: 0x1
+[tHibernate] 2017-01-08 23:48:00: RTP is deleted 
+[tHibernate] 2017-01-08 23:48:00: Hibernation has 'taken care' of RTP...
+[tHibernate] 2017-01-08 23:48:00: System Hibernation: bringDownReason = other
+[tHibernate] 2017-01-08 23:48:01: 
+Disabling all un-Needed Interrupts (Notably: PMU Panic/PowerDownReq)
+[tAhciMon] 2017-01-08 23:48:01: 
+**************************
+rtpEventNotifyDiskRemove: Device disconnected event received. Adapter 0, Slot 3
+Total inserts: 4, Total removes: 1
+**************************
+[tAhciMon] 2017-01-08 23:48:01: rtpEventNotifyDiskRemove: new eventOrder 0x7
+[tAhciMon] 2017-01-08 23:48:01: 
+**************************
+rtpEventNotifyDiskRemove: Device disconnected event received. Adapter 0, Slot 1
+Total inserts: 4, Total removes: 2
+**************************
+[tAhciMon] 2017-01-08 23:48:01: rtpEventNotifyDiskRemove: new eventOrder 0x5
+[Sata Evnt] 2017-01-08 23:48:01: mvSataClearPendingCommand: for slot 0
+[tAhciMon] 2017-01-08 23:48:01: 
+**************************
+rtpEventNotifyDiskRemove: Device disconnected event received. Adapter 0, Slot 2
+Total inserts: 4, Total removes: 3
+**************************
+[Sata Evnt] 2017-01-08 23:48:01: 
+**************************
+rtpEventNotifyDiskRemove: Device disconnected event received. Adapter 0, Slot 0
+Total inserts: 4, Total removes: 4
+**************************
+[tAhciMon] 2017-01-08 23:48:01: rtpEventNotifyDiskRemove: new eventOrder 0x1
+[Sata Evnt] 2017-01-08 23:48:01: rtpEventNotifyDiskRemove: new eventOrder 0x0
+[tHibernate] 2017-01-08 23:48:01: PMU Shutdown Timer: 58.46 seconds (3507 sysTicks) Remaining
+[tHibernate] 2017-01-08 23:48:01: HIB: hibernate header is marked DIRTY 
+[tHibernate] 2017-01-08 23:48:03: Copy to eUSB - Done
+[tHibernate] 2017-01-08 23:48:40: Copy to eUSB - Done
+[tHibernate] 2017-01-08 23:48:41: Copy to eUSB - Done
+[tHibernate] 2017-01-08 23:48:42: Copy to eUSB - Done
+[tHibernate] 2017-01-08 23:48:42: Hibernation Record Update Completes...
+Writing diagnostics to flash file /bd0/Crashlogs/crashlog-20170108-2348, please wait.
+
+Log Generated: SUN JAN 08 23:48:43 2017
+-------------------- CRASH LOG FLASH FILE END ----------------------
