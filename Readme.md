@@ -7,12 +7,13 @@ I also bought another Drobo 5N (Unit 2) from eBay, to check some of my assumptio
 
 | Directory | Description |
 |---|---|
-| [3D/](3D/) | OpenSCAD and 3D-print files (PCB carrier) |
-| [Datasheets/](Datasheets/) | Component datasheets and reference material |
-| [gfx/](gfx/) | Images used in this repo (figures and photos) |
-| [Unit1/](Unit1/) | Unit 1: crashlogs, bootlogs, traces (PulseView), and USB-DOM files/image |
-| [Unit2/](Unit2/) | Unit 2: crashlogs, USB-DOM files |
-| [USB-DOM/](USB-DOM/) | Disk-on-module images and vxWorks files |
+| [3D](3D/) | OpenSCAD and 3D-print files (PCB carrier) |
+| [Disassembly](Disassembly/) | Disassembly instructions including images |
+| [Datasheets](Datasheets/) | Component datasheets and reference material |
+| [gfx](gfx/) | Images used in this repo (figures and photos) |
+| [Unit1](Unit1/) | Unit 1: crashlogs, bootlogs, traces (PulseView), and USB-DOM files/image |
+| [Unit2](Unit2/) | Unit 2: crashlogs, bootlogs, traces (PulseView), USB-DOM files |
+| [USB-DOM](USB-DOM/) | Disk-on-module images and vxWorks files |
 
 # USB DOM (Disk on Module)
 The Drobo 5N comes with a 1GB FAT16 formatted internal USB drive. It uses a module which is connected using a 2mm pitch internal USB connector (like the ones on a regular PC motherboard, but smaller). You can make yourself an adapter with 2mm pitch Header-Pins.
@@ -30,35 +31,6 @@ The Drobo 5N comes with a 1GB FAT16 formatted internal USB drive. It uses a modu
 # Crashlogs (Unit 1)
 - timestamp offset -9h; 2026-05-03 03:19 MESZ ~ 2026-05-02 18:19 in log
 - crashlog-20260504-1210 shows drobo crashing
-
-# Disassembly
-Requires a PH2, a PH1 and a flat hat screwdriver
-- Remove magnetic front cover
-- Remove drives
-- Unhook door from bottom opening
-- Unscrew bottom feet (4x PH2)
-- Lift the outer shell slightly at the half with the opening and slide the inner parts out to the back end (pay attention to the plastic catch)
-- The front rubber seal around the drive cage might have got loose now, remove it
-- Unclip the back plastic (2 clips on each side, one on the top)
-- Unclip the front plastic (2 clips on each side, one on the top)
-- Remove the top and bottom screw on each side (4x PH1)
-- Press the top of the case backwards (against the sides) for ~3-5mm and then turn the case around on its top
-- Try to pry the bottom part of the back (where the connector openings are) backwards. A flat hat screwdriver might help to lever against the chamfered edges
-- Turn it back right way up
-- Slide tha top/back all the way back until the back side is free - then lift it carefully ~10mm. Be aware of the Power switch and Fan cables inside!
-- Carefully unplug the power switch from the right side, then unplug the Fan (can be done from the left side)
-- Remove the top/back
-- optionally: Use a flat hat screw driver or a dull pin to push out the plastic pegs, that hold the Fan, from the back side. Then unclip the Fan cable clips and remove the Fan
-- optionally: Remove the Power switch by pushing it from the back while carefully compressing the flaps on the side with a flat hat screwdriver
-- Unplug the battery
-- Remove the remaining two screws on each side (4x PH1)
-- Carefully lift the backplane assembly up
-- Unscrew the backplane from its frame (8x PH2)
-- Unscrew battery holder from its frame (2x PH2)
-- Unscrew the main PCB and its shield (6x PH1)
-- Carefully lift the PCB shield without bending its fingers on the side
-- Remove the main PCB
-- optionally: Unscrew the USB DOM (Disk on module) and lift it (1x PH1)
 
 # Battery
 The Battery is a 3.6V 2150mAh Li-Ion 18650 (Panasonic CGR 18650 CH). Model "Bumblebee b".
