@@ -42,6 +42,48 @@ I measured:
 - 3 Slow, 4 Fast: Performing Shutdown
 - on: normal operation
 - off: off/stand-by
+-> MSP430 P4.6
+
+# Power-Switch:
+- Blue: Switch to white
+- White: 3V
+- Red: LED (GND?)
+-> MSP430 P1.1
+
+# PMU - MSP430F2252
+
+## J11 (MSP430F2252 Prog)
+- 1: Vcc
+- 2: Test
+- 3: Reset
+- 4: GND
+
+## Flash/Memory Layout
+Boot: 0x0C00 - 0x0FFF (1kb) (Identical on Unit1/Unit2)
+Info: 0x1000 - 0x10FF (256b; INFOA-INFOD)
+Code: 0xC000 - 0xFFFF (16kb)
+
+Remove J13 to read/write to MSP430 while drobo is powered (plugged in is enough).
+While flashing, FAN might tun on.
+Didn't try supplying 3V through J11.
+
+## Failure Modes
+
+### Cleared INFO Segments
+https://www.youtube.com/live/jLmZw1f3uVw?t=13111
+
+### Power Switch LED blinking rapidly and extremely faint (look closely in dark!) after plugging in
+Probably caused by PMU constantly resetting and initial High-Z output of the PMU turns on the LED for just a few ms.
+Probably due to corrupt INFO segment in flash.
+https://www.youtube.com/live/jLmZw1f3uVw?t=10425
+
+### Power Switch LED constantly blinking fast (~500ms 50% duty cicle) after plugging-in
+PMU in FailSafe mode; FAN pulsing with LED.
+No reaction to power switch.
+Probably caused by corrupt INFO segment.
+
+### Power Switch LED constantly blinking fast (~500ms 50% duty cicle) after power on
+PMU in FailSafe mode; FAN at full speed
 
 # Serial
 
@@ -127,4 +169,43 @@ W 23 02 00      P0 SET ALL LOW
 W 23 06 00      P0 CNF ALL OUT
 W 23 03 00      P1 SET ALL LOW
 W 23 07 1F      P1 CNF 0001 1111 (diskPresence IN)
+```
+
+Mesured on working Unit 1 with disk in slot 0:
+```
+W 23 07 FF      P1 CNF ALL IN
+R 23 01 :: F7   P1 GET 11110111 (diskPresence -> Disk in Slot 0)
+
+W 23 06 00      P0 CNF ALL OUT
+W 23 02 00      P0 SET ALL LOW
+W 23 07 1F      P1 CNF 0001 1111 (diskPresence IN)
+W 23 03 00      P1 SET ALL LOW
+
+R 23 01 :: 17   P1 GET 0001 0111 (diskPresence -> Disk in Slot 0)
+R 23 01 :: 17   P1 GET 0001 0111 (diskPresence -> Disk in Slot 0)
+R 23 01 :: 17   P1 GET 0001 0111 (diskPresence -> Disk in Slot 0)
+R 23 01 :: 17   P1 GET 0001 0111 (diskPresence -> Disk in Slot 0)
+R 23 01 :: 17   P1 GET 0001 0111 (diskPresence -> Disk in Slot 0)
+R 23 00 :: 00   P0 GET 0000 0000 (Disk power is all off)
+R 23 00 :: 00   P0 GET 0000 0000 (Disk power is all off)
+R 23 00 :: 00   P0 GET 0000 0000 (Disk power is all off)
+R 23 00 :: 00   P0 GET 0000 0000 (Disk power is all off)
+R 23 00 :: 00   P0 GET 0000 0000 (Disk power is all off)
+R 23 00 :: 00   P0 GET 0000 0000 (Disk power is all off)
+W 23 02 08      P0 SET 0000 1000 (Power Slot 0)
+R 23 00 :: 08   P0 GET 0000 1000 (Power is on for Slot 0)
+W 23 02 08      P0 SET 0000 1000 (Power Slot 0)
+R 23 00 :: 08   P0 GET 0000 1000 (Power is on for Slot 0)
+W 23 02 08      P0 SET 0000 1000 (Power Slot 0)
+R 23 00 :: 08   P0 GET 0000 1000 (Power is on for Slot 0)
+W 23 02 08      P0 SET 0000 1000 (Power Slot 0)
+R 23 00 :: 08   P0 GET 0000 1000 (Power is on for Slot 0)
+W 23 02 08      P0 SET 0000 1000 (Power Slot 0)
+R 23 01 :: 17   P1 GET 0001 0111 (diskPresence -> Disk in Slot 0)
+R 23 01 :: 17   P1 GET 0001 0111 (diskPresence -> Disk in Slot 0)
+R 23 01 :: 17
+R 23 01 :: 17
+R 23 01 :: 17
+R 23 01 :: 17
+...
 ```
