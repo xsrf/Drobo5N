@@ -1,0 +1,77 @@
+[VX%20TX]
+name=VX TX
+enabled=true
+color=4279638298
+conversion_type=0
+conv_options=0
+
+[LX%20TX]
+name=LX TX
+enabled=true
+color=4287582722
+conversion_type=0
+conv_options=0
+
+[PMU%20TX]
+name=PMU TX
+enabled=true
+color=4291559424
+conversion_type=0
+conv_options=0
+
+[PMU%20RX]
+name=PMU RX
+enabled=true
+color=4294277376
+conversion_type=0
+conv_options=0
+
+[PWR%20LED]
+name=PWR LED
+enabled=true
+color=4293776384
+conversion_type=0
+conv_options=0
+
+[D5]
+name=D5
+enabled=false
+color=4285780502
+conversion_type=0
+conv_options=0
+
+[D6]
+name=D6
+enabled=false
+color=4281623972
+conversion_type=0
+conv_options=0
+
+[D7]
+name=D7
+enabled=false
+color=4285878395
+conversion_type=0
+conv_options=0
+
+[General]
+decode_signals=0
+generated_signals=0
+views=1
+meta_objs=0
+
+[view0]
+scale=0.033409752127266
+v_offset=-413
+splitter_state=@ByteArray(\0\0\0\xff\0\0\0\x1\0\0\0\x2\0\0\0^\0\0\a\x1b\x1\0\0\0\x1\x1\0\0\0\x1\0)
+segment_display_mode=1
+offset=22 serialization::archive 14 0 0 0 0 30 73793437 79279051 18046969 51259074 75940528 0 0 0 6
+zero_offset=22 serialization::archive 14 0 0 0 0 0 0 0 0 0 0 0 0 0 6
+VX%20TX\trace_height=26
+LX%20TX\trace_height=26
+PMU%20TX\trace_height=26
+PMU%20RX\trace_height=26
+PWR%20LED\trace_height=26
+D5\trace_height=26
+D6\trace_height=26
+D7\trace_height=26
