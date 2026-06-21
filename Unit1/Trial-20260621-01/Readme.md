@@ -1,4 +1,4 @@
-# Experimet 2026-06-21 - 01
+# Trial 2026-06-21 - 01
 
 I've had the PMU starting in failsafe mode many times after flashing MAIN and INFO from the working unit to this one.
 Every time the System booted, the VxWorks system has senn the PMU in failsafe mode and reflashed the PMU.
