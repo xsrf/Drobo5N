@@ -1,4 +1,4 @@
-# Trial 2026-06-21 - 01
+# Trial 2026-06-21 - 01: PMU Update
 
 I've had the PMU starting in failsafe mode many times after flashing MAIN and INFO from the working unit to this one.
 Every time the System booted, the VxWorks system has senn the PMU in failsafe mode and reflashed the PMU.
@@ -38,6 +38,8 @@ Captured and Powered Up!
 Interesting fact, the PMU now reports as `PMU Version: 1.0.0x007a, Download Version 122 (Variant 0) [Failsafe Ver 3]`. Before all this, when the PMU was fine and the SATA controller was the issue, it reported as `PMU Version: 1.0.0x0078, Download Version 120 (Variant 0) [Failsafe Ver 3]` and VxWorks was fine. Maybe Firmware 4.2.1 accepts both as valid but shipps with `1.0.0x007a`?
 
 No clue why it now finally fixed itself!
+
+Might be important: During all this the MSP-EXP430G2 debugger was connected and the Jumper J13 was removed.
 
 ## Timeline
 - fw_msp_2026-06-21_19-39-40
